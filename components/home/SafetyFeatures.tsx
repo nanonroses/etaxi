@@ -6,7 +6,11 @@ import { Button } from '@/components/ui/button';
 import { Check } from 'lucide-react';
 import Link from 'next/link';
 
-export function SafetyFeatures() {
+interface SafetyFeaturesProps {
+  intro?: string;
+}
+
+export function SafetyFeatures({ intro }: SafetyFeaturesProps) {
   const t = useTranslations('safety');
   const locale = useLocale();
 

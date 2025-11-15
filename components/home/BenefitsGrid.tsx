@@ -3,11 +3,25 @@
 import { useTranslations } from 'next-intl';
 import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Shield, DollarSign, FileCheck, Car } from 'lucide-react';
+import type { Benefit } from '@/lib/sanity.queries';
 
-export function BenefitsGrid() {
+interface BenefitsGridProps {
+  benefits?: Benefit[];
+}
+
+// Map icon names to components
+const iconMap: Record<string, any> = {
+  Shield,
+  DollarSign,
+  FileCheck,
+  Car,
+};
+
+export function BenefitsGrid({ benefits: cmsBenefits }: BenefitsGridProps) {
   const t = useTranslations('benefits');
 
-  const benefits = [
+  // Fallback benefits using translations
+  const defaultBenefits = [
     {
       icon: Shield,
       title: t('security.title'),
@@ -29,6 +43,15 @@ export function BenefitsGrid() {
       description: t('regulated.description'),
     },
   ];
+
+  // Use CMS benefits if available, otherwise use defaults
+  const benefits = cmsBenefits && cmsBenefits.length > 0
+    ? cmsBenefits.map(b => ({
+        icon: b.icon ? iconMap[b.icon] || Shield : Shield,
+        title: b.title,
+        description: b.description,
+      }))
+    : defaultBenefits;
 
   return (
     <section className="w-full py-12 md:py-24 bg-white">

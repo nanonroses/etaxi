@@ -5,8 +5,18 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Smartphone } from 'lucide-react';
 
-export function DownloadAppCTA() {
+interface DownloadAppCTAProps {
+  headline?: string;
+  subheadline?: string;
+  playStoreUrl?: string;
+  appStoreUrl?: string;
+}
+
+export function DownloadAppCTA({ headline, subheadline, playStoreUrl, appStoreUrl }: DownloadAppCTAProps) {
   const t = useTranslations('download');
+
+  const title = headline || t('title');
+  const description = subheadline || t('description');
 
   return (
     <section className="w-full py-12 md:py-24 bg-white">
@@ -24,10 +34,10 @@ export function DownloadAppCTA() {
               {/* Content */}
               <div className="flex-1 text-center md:text-left">
                 <h2 className="text-3xl font-bold mb-2">
-                  {t('title')}
+                  {title}
                 </h2>
                 <p className="text-white/90 mb-6">
-                  {t('description')}
+                  {description}
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">

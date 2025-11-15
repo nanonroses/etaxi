@@ -5,8 +5,10 @@ import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
 import { DownloadAppCTA } from '@/components/home/DownloadAppCTA';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card';
 import { Check } from 'lucide-react';
+import { getAppDownload } from '@/lib/sanity.queries';
 
-export default function DescargarAppPage() {
+export default async function DescargarAppPage() {
+  const appData = await getAppDownload();
   const t = useTranslations('downloadPage');
 
   const features = [
