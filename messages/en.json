@@ -73,6 +73,9 @@
         "description": "Request your taxi anytime, day or night"
       }
     },
+    "screenshots": {
+      "title": "The ETAXI app"
+    },
     "faq": {
       "title": "Frequently Asked Questions",
       "q1": {

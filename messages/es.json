@@ -73,6 +73,9 @@
         "description": "Pide tu taxi en cualquier momento del día"
       }
     },
+    "screenshots": {
+      "title": "La app ETAXI"
+    },
     "faq": {
       "title": "Preguntas Frecuentes",
       "q1": {
