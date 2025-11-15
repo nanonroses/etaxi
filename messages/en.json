@@ -49,6 +49,67 @@
     "appStore": "Download on App Store",
     "playStore": "Get it on Google Play"
   },
+  "compliancePage": {
+    "hero": {
+      "title": "Regulatory Compliance",
+      "subtitle": "100% regulated under Chilean law"
+    },
+    "intro": {
+      "title": "ETAXI operates with complete legal transparency",
+      "description": "We work exclusively with regulated taxis that comply with all current regulations in Chile."
+    },
+    "regulations": {
+      "title": "Regulatory Framework",
+      "law21553": {
+        "title": "Law 21.553",
+        "description": "Modernization of paid passenger transport. ETAXI complies with all requirements established in this law that regulates taxi services in Chile."
+      },
+      "ds212": {
+        "title": "Supreme Decree 212",
+        "description": "Regulations for paid passenger transport services. All our drivers and vehicles comply with the established technical and safety requirements."
+      },
+      "municipal": {
+        "title": "Municipal Registration",
+        "description": "All taxis on ETAXI have valid municipal permits and are properly registered in their respective municipalities."
+      },
+      "licenses": {
+        "title": "Professional Licenses",
+        "description": "Drivers with valid class A1 license and current national passenger service registration."
+      }
+    },
+    "commitment": {
+      "title": "Our Commitment",
+      "description": "ETAXI is committed to maintaining the highest standards of legal compliance and transparency, working only with authorized professionals."
+    }
+  },
+  "safetyPage": {
+    "hero": {
+      "title": "Your safety is our priority",
+      "subtitle": "Travel safely with 100% regulated taxis and complete traceability"
+    },
+    "intro": {
+      "title": "Why is ETAXI safe?",
+      "description": "ETAXI works exclusively with taxis regulated by the Ministry of Transport. Each trip has multiple layers of security to protect passengers and drivers."
+    },
+    "features": {
+      "panic": {
+        "title": "Panic Button",
+        "description": "Instant access to authorities in case of emergency. Your real-time location is automatically shared."
+      },
+      "traceability": {
+        "title": "Trip Traceability",
+        "description": "Each trip is recorded: driver, license plate, route, times. You and your trusted contacts can track the trip in real time."
+      },
+      "regulatedDrivers": {
+        "title": "Regulated Drivers",
+        "description": "All our drivers are professionals with class A1 license, municipal registration and verified background checks according to Law 21.553."
+      },
+      "insurance": {
+        "title": "Mandatory Insurance",
+        "description": "All taxis have current civil liability insurance and SOAP according to Chilean regulations."
+      }
+    }
+  },
   "requestTaxiPage": {
     "hero": {
       "title": "Request your taxi now",
@@ -124,6 +185,65 @@
       "q4": {
         "question": "Can I use ETAXI without registering?",
         "answer": "To request a taxi you need to create an account, but registration is quick and only requires your email or phone number."
+      }
+    }
+  },
+  "helpPage": {
+    "hero": {
+      "title": "Help and Complaints",
+      "subtitle": "We're here to solve your questions"
+    },
+    "intro": {
+      "description": "Find quick answers to frequently asked questions or file a complaint if needed."
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "q1": {
+        "question": "How do I request a taxi?",
+        "answer": "Download the ETAXI app, create your account, enter your origin and destination, and confirm. A regulated taxi will arrive in minutes."
+      },
+      "q2": {
+        "question": "Can I cancel a trip?",
+        "answer": "Yes, you can cancel before the taxi arrives. Check the cancellation policy in the app."
+      },
+      "q3": {
+        "question": "How can I rate the driver?",
+        "answer": "At the end of the trip, the app will ask you to rate your experience and the driver."
+      },
+      "q4": {
+        "question": "What do I do if I forgot something in the taxi?",
+        "answer": "Contact immediately through the app. We have a record of the driver and can help you recover your belongings."
+      }
+    },
+    "complaints": {
+      "title": "Do you have a complaint?",
+      "description": "If you had a bad experience, we want to know. Submit your complaint and we'll review it within 48 hours.",
+      "button": "Submit Complaint"
+    },
+    "support": {
+      "title": "Need more help?",
+      "description": "Our team is available 24/7 to help you.",
+      "email": "soporte@etaxi.cl",
+      "phone": "+56 2 1234 5678"
+    }
+  },
+  "contactPage": {
+    "hero": {
+      "title": "Contact Us",
+      "subtitle": "We're here to help"
+    },
+    "intro": {
+      "description": "Have questions or inquiries? Write to us and we'll respond shortly."
+    },
+    "info": {
+      "title": "Contact Information",
+      "email": "contacto@etaxi.cl",
+      "phone": "+56 2 1234 5678",
+      "social": {
+        "title": "Follow us on social media",
+        "facebook": "Facebook",
+        "twitter": "Twitter",
+        "instagram": "Instagram"
       }
     }
   },

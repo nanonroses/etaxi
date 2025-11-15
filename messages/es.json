@@ -49,6 +49,67 @@
     "appStore": "Descargar en App Store",
     "playStore": "Descargar en Google Play"
   },
+  "compliancePage": {
+    "hero": {
+      "title": "Cumplimiento Normativo",
+      "subtitle": "100% regulado bajo la ley chilena"
+    },
+    "intro": {
+      "title": "ETAXI opera con total transparencia legal",
+      "description": "Trabajamos exclusivamente con taxis regulados que cumplen con todas las normativas vigentes en Chile."
+    },
+    "regulations": {
+      "title": "Marco Normativo",
+      "law21553": {
+        "title": "Ley 21.553",
+        "description": "Modernización del transporte remunerado de pasajeros. ETAXI cumple con todos los requisitos establecidos en esta ley que regula los servicios de taxi en Chile."
+      },
+      "ds212": {
+        "title": "Decreto Supremo 212",
+        "description": "Reglamento de los servicios de transporte remunerado de pasajeros. Todos nuestros conductores y vehículos cumplen con las exigencias técnicas y de seguridad establecidas."
+      },
+      "municipal": {
+        "title": "Registro Municipal",
+        "description": "Todos los taxis en ETAXI cuentan con permisos municipales vigentes y están debidamente inscritos en sus respectivas comunas."
+      },
+      "licenses": {
+        "title": "Licencias Profesionales",
+        "description": "Conductores con licencia clase A1 vigente y registro nacional de servicios de pasajeros al día."
+      }
+    },
+    "commitment": {
+      "title": "Nuestro Compromiso",
+      "description": "ETAXI se compromete a mantener los más altos estándares de cumplimiento legal y transparencia, trabajando solo con profesionales autorizados."
+    }
+  },
+  "safetyPage": {
+    "hero": {
+      "title": "Tu seguridad es nuestra prioridad",
+      "subtitle": "Viaja tranquilo con taxis 100% regulados y trazabilidad completa"
+    },
+    "intro": {
+      "title": "¿Por qué ETAXI es seguro?",
+      "description": "ETAXI trabaja exclusivamente con taxis regulados por el Ministerio de Transportes. Cada viaje cuenta con múltiples capas de seguridad para proteger a pasajeros y conductores."
+    },
+    "features": {
+      "panic": {
+        "title": "Botón de Pánico",
+        "description": "Acceso instantáneo a autoridades en caso de emergencia. Tu ubicación en tiempo real se comparte automáticamente."
+      },
+      "traceability": {
+        "title": "Trazabilidad del Viaje",
+        "description": "Cada viaje queda registrado: conductor, patente, ruta, horarios. Tú y tus contactos de confianza pueden seguir el viaje en tiempo real."
+      },
+      "regulatedDrivers": {
+        "title": "Conductores Regulados",
+        "description": "Todos nuestros conductores son profesionales con licencia clase A1, registro municipal y antecedentes verificados según Ley 21.553."
+      },
+      "insurance": {
+        "title": "Seguro Obligatorio",
+        "description": "Todos los taxis cuentan con seguro de responsabilidad civil y SOAP vigente según normativa chilena."
+      }
+    }
+  },
   "requestTaxiPage": {
     "hero": {
       "title": "Pide tu taxi ahora",
@@ -124,6 +185,65 @@
       "q4": {
         "question": "¿Puedo usar ETAXI sin registrarme?",
         "answer": "Para pedir un taxi necesitas crear una cuenta, pero el registro es rápido y solo requiere tu email o número de teléfono."
+      }
+    }
+  },
+  "helpPage": {
+    "hero": {
+      "title": "Ayuda y Reclamos",
+      "subtitle": "Estamos aquí para resolver tus dudas"
+    },
+    "intro": {
+      "description": "Encuentra respuestas rápidas a las preguntas más frecuentes o presenta un reclamo si lo necesitas."
+    },
+    "faq": {
+      "title": "Preguntas Frecuentes",
+      "q1": {
+        "question": "¿Cómo pido un taxi?",
+        "answer": "Descarga la app ETAXI, crea tu cuenta, indica tu origen y destino, y confirma. Un taxi regulado llegará en minutos."
+      },
+      "q2": {
+        "question": "¿Puedo cancelar un viaje?",
+        "answer": "Sí, puedes cancelar antes de que el taxi llegue. Revisa la política de cancelación en la app."
+      },
+      "q3": {
+        "question": "¿Cómo puedo calificar al conductor?",
+        "answer": "Al finalizar el viaje, la app te pedirá que califiques tu experiencia y al conductor."
+      },
+      "q4": {
+        "question": "¿Qué hago si olvidé algo en el taxi?",
+        "answer": "Contacta inmediatamente a través de la app. Tenemos registro del conductor y podemos ayudarte a recuperar tus pertenencias."
+      }
+    },
+    "complaints": {
+      "title": "¿Tienes un reclamo?",
+      "description": "Si tuviste una mala experiencia, queremos saberlo. Presenta tu reclamo y lo revisaremos en un plazo máximo de 48 horas.",
+      "button": "Presentar Reclamo"
+    },
+    "support": {
+      "title": "¿Necesitas más ayuda?",
+      "description": "Nuestro equipo está disponible 24/7 para ayudarte.",
+      "email": "soporte@etaxi.cl",
+      "phone": "+56 2 1234 5678"
+    }
+  },
+  "contactPage": {
+    "hero": {
+      "title": "Contáctanos",
+      "subtitle": "Estamos aquí para ayudarte"
+    },
+    "intro": {
+      "description": "¿Tienes dudas o consultas? Escríbenos y te responderemos a la brevedad."
+    },
+    "info": {
+      "title": "Información de Contacto",
+      "email": "contacto@etaxi.cl",
+      "phone": "+56 2 1234 5678",
+      "social": {
+        "title": "Síguenos en redes sociales",
+        "facebook": "Facebook",
+        "twitter": "Twitter",
+        "instagram": "Instagram"
       }
     }
   },
