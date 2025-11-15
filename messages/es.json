@@ -49,6 +49,37 @@
     "appStore": "Descargar en App Store",
     "playStore": "Descargar en Google Play"
   },
+  "requestTaxiPage": {
+    "hero": {
+      "title": "Pide tu taxi ahora",
+      "subtitle": "Rápido, seguro y 100% regulado"
+    },
+    "form": {
+      "originLabel": "Origen",
+      "originPlaceholder": "Ingresa tu ubicación de origen",
+      "destinationLabel": "Destino",
+      "destinationPlaceholder": "¿A dónde vas?",
+      "passengersLabel": "Número de pasajeros",
+      "passengersPlaceholder": "Ej: 1, 2, 3...",
+      "submitButton": "Confirmar viaje",
+      "note": "Esta es una versión de demostración. Para solicitar un taxi real, descarga la app móvil."
+    },
+    "howItWorks": {
+      "title": "Cómo funciona",
+      "step1": {
+        "title": "Indica origen y destino",
+        "description": "Ingresa tu ubicación actual y a dónde quieres ir"
+      },
+      "step2": {
+        "title": "Confirma y recibe el taxi",
+        "description": "Revisa los detalles y confirma. Un taxi regulado llegará en minutos"
+      },
+      "step3": {
+        "title": "Viaja seguro",
+        "description": "Disfruta de tu viaje con trazabilidad completa y botón de pánico"
+      }
+    }
+  },
   "downloadPage": {
     "hero": {
       "title": "Descarga la app ETAXI",
