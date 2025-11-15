@@ -1,0 +1,82 @@
+{
+  "nav": {
+    "home": "Home",
+    "requestTaxi": "Request Taxi",
+    "downloadApp": "Download App",
+    "security": "Security",
+    "business": "Business",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Travel with security, transparency and compliance",
+    "subtitle": "ETAXI, Chile's regulated taxi app",
+    "ctaPrimary": "Request Taxi",
+    "ctaSecondary": "Download App"
+  },
+  "benefits": {
+    "title": "Why choose ETAXI?",
+    "security": {
+      "title": "Security",
+      "description": "Protected trips with anonymous recording and panic button"
+    },
+    "transparency": {
+      "title": "Fare Transparency",
+      "description": "Official fares without dynamic pricing"
+    },
+    "compliance": {
+      "title": "Legal Compliance",
+      "description": "100% regulated under Law 21.553 and Decree 212"
+    },
+    "regulated": {
+      "title": "Regulated Taxis",
+      "description": "Only professional and authorized taxis"
+    }
+  },
+  "safety": {
+    "title": "Your safety is our priority",
+    "features": {
+      "recording": "Anonymous trip recording",
+      "panic": "Panic button",
+      "tracking": "Complete traceability",
+      "verified": "Verified drivers",
+      "support": "24/7 support"
+    },
+    "learnMore": "Learn more"
+  },
+  "download": {
+    "title": "Download the ETAXI app",
+    "description": "Available for iOS and Android",
+    "appStore": "Download on App Store",
+    "playStore": "Get it on Google Play"
+  },
+  "contact": {
+    "title": "Contact us",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "message": "Message",
+      "type": "Inquiry type",
+      "submit": "Send message",
+      "success": "Message sent successfully",
+      "error": "Error sending message"
+    },
+    "types": {
+      "general": "General inquiry",
+      "support": "Technical support",
+      "business": "Business inquiry"
+    }
+  },
+  "footer": {
+    "legal": {
+      "terms": "Terms and Conditions",
+      "privacy": "Privacy Policy",
+      "compliance": "Regulatory Compliance"
+    },
+    "support": {
+      "help": "Help",
+      "claims": "Claims"
+    },
+    "copyright": "© 2025 ETAXI. All rights reserved."
+  }
+}

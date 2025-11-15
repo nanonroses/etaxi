@@ -1,0 +1,82 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "requestTaxi": "Pedir Taxi",
+    "downloadApp": "Descargar App",
+    "security": "Seguridad",
+    "business": "Empresas",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Viaja con seguridad, transparencia y cumplimiento",
+    "subtitle": "ETAXI, la app chilena de taxis regulados",
+    "ctaPrimary": "Pedir Taxi",
+    "ctaSecondary": "Descargar App"
+  },
+  "benefits": {
+    "title": "¿Por qué elegir ETAXI?",
+    "security": {
+      "title": "Seguridad",
+      "description": "Viajes protegidos con grabación anónima y botón de pánico"
+    },
+    "transparency": {
+      "title": "Transparencia Tarifaria",
+      "description": "Tarifa oficial sin aumentos dinámicos"
+    },
+    "compliance": {
+      "title": "Cumplimiento Legal",
+      "description": "100% regulado bajo Ley 21.553 y Decreto 212"
+    },
+    "regulated": {
+      "title": "Taxis Regulados",
+      "description": "Solo taxis profesionales y autorizados"
+    }
+  },
+  "safety": {
+    "title": "Tu seguridad es nuestra prioridad",
+    "features": {
+      "recording": "Grabación anónima del viaje",
+      "panic": "Botón de pánico",
+      "tracking": "Trazabilidad completa",
+      "verified": "Conductores verificados",
+      "support": "Soporte 24/7"
+    },
+    "learnMore": "Conocer más"
+  },
+  "download": {
+    "title": "Descarga la app ETAXI",
+    "description": "Disponible para iOS y Android",
+    "appStore": "Descargar en App Store",
+    "playStore": "Descargar en Google Play"
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "form": {
+      "name": "Nombre",
+      "email": "Correo electrónico",
+      "phone": "Teléfono",
+      "message": "Mensaje",
+      "type": "Tipo de consulta",
+      "submit": "Enviar mensaje",
+      "success": "Mensaje enviado correctamente",
+      "error": "Error al enviar el mensaje"
+    },
+    "types": {
+      "general": "Consulta general",
+      "support": "Soporte técnico",
+      "business": "Consulta empresarial"
+    }
+  },
+  "footer": {
+    "legal": {
+      "terms": "Términos y Condiciones",
+      "privacy": "Política de Privacidad",
+      "compliance": "Cumplimiento Normativo"
+    },
+    "support": {
+      "help": "Ayuda",
+      "claims": "Reclamos"
+    },
+    "copyright": "© 2025 ETAXI. Todos los derechos reservados."
+  }
+}
