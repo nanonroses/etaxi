@@ -49,6 +49,50 @@
     "appStore": "Download on App Store",
     "playStore": "Get it on Google Play"
   },
+  "downloadPage": {
+    "hero": {
+      "title": "Download the ETAXI app",
+      "subtitle": "Your regulated taxi at your fingertips"
+    },
+    "whyUse": {
+      "title": "Why use ETAXI?",
+      "feature1": {
+        "title": "100% Regulated Taxis",
+        "description": "Only professional drivers with valid licenses"
+      },
+      "feature2": {
+        "title": "Transparent Fares",
+        "description": "No surge pricing during peak hours"
+      },
+      "feature3": {
+        "title": "Guaranteed Safety",
+        "description": "Monitored trips with integrated panic button"
+      },
+      "feature4": {
+        "title": "Available 24/7",
+        "description": "Request your taxi anytime, day or night"
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "q1": {
+        "question": "Is it available for iOS and Android?",
+        "answer": "Yes, ETAXI is available on both App Store (iOS) and Google Play (Android)."
+      },
+      "q2": {
+        "question": "Is the app free to download?",
+        "answer": "Yes, downloading the app is completely free. You only pay for the rides you take."
+      },
+      "q3": {
+        "question": "What permissions does the app need?",
+        "answer": "The app needs access to your location to show nearby taxis and calculate routes. All permissions are optional and can be configured in settings."
+      },
+      "q4": {
+        "question": "Can I use ETAXI without registering?",
+        "answer": "To request a taxi you need to create an account, but registration is quick and only requires your email or phone number."
+      }
+    }
+  },
   "contact": {
     "title": "Contact us",
     "form": {
