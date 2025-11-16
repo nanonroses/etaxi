@@ -10,7 +10,7 @@ export function Footer() {
   return (
     <footer className="w-full border-t border-[hsl(var(--border))] bg-white">
       <div className="container mx-auto max-w-[1200px] px-4 py-12">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
           {/* Brand */}
           <div>
             <h3 className="text-xl font-bold tracking-tight text-[hsl(var(--primary))]">
@@ -23,26 +23,59 @@ export function Footer() {
             </p>
           </div>
 
-          {/* Legal Links */}
+          {/* Services Links */}
           <div>
             <h4 className="text-sm font-semibold text-[hsl(var(--foreground))] mb-4">
-              {locale === 'es' ? 'Legal' : 'Legal'}
+              {locale === 'es' ? 'Servicios' : 'Services'}
             </h4>
             <ul className="space-y-2">
               <li>
                 <Link
-                  href={`/${locale}/terminos`}
+                  href={`/${locale}/pedir-taxi`}
                   className="text-sm text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--primary))] transition-colors"
                 >
-                  {t('legal.terms')}
+                  {locale === 'es' ? 'Pedir Taxi' : 'Request Taxi'}
                 </Link>
               </li>
               <li>
                 <Link
-                  href={`/${locale}/privacidad`}
+                  href={`/${locale}/descargar-app`}
                   className="text-sm text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--primary))] transition-colors"
                 >
-                  {t('legal.privacy')}
+                  {locale === 'es' ? 'Descargar App' : 'Download App'}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={`/${locale}/seguridad`}
+                  className="text-sm text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--primary))] transition-colors"
+                >
+                  {locale === 'es' ? 'Seguridad' : 'Security'}
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Company Links */}
+          <div>
+            <h4 className="text-sm font-semibold text-[hsl(var(--foreground))] mb-4">
+              {locale === 'es' ? 'Empresa' : 'Company'}
+            </h4>
+            <ul className="space-y-2">
+              <li>
+                <Link
+                  href={`/${locale}/empresas-gremios`}
+                  className="text-sm text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--primary))] transition-colors"
+                >
+                  {locale === 'es' ? 'Empresas & Gremios' : 'Business & Guilds'}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={`/${locale}/conductores`}
+                  className="text-sm text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--primary))] transition-colors"
+                >
+                  {locale === 'es' ? 'Conductores' : 'Drivers'}
                 </Link>
               </li>
               <li>
@@ -50,7 +83,7 @@ export function Footer() {
                   href={`/${locale}/cumplimiento`}
                   className="text-sm text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--primary))] transition-colors"
                 >
-                  {t('legal.compliance')}
+                  {locale === 'es' ? 'Cumplimiento' : 'Compliance'}
                 </Link>
               </li>
             </ul>
@@ -67,15 +100,7 @@ export function Footer() {
                   href={`/${locale}/ayuda`}
                   className="text-sm text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--primary))] transition-colors"
                 >
-                  {t('support.help')}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={`/${locale}/reclamos`}
-                  className="text-sm text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--primary))] transition-colors"
-                >
-                  {t('support.claims')}
+                  {locale === 'es' ? 'Ayuda' : 'Help'}
                 </Link>
               </li>
               <li>

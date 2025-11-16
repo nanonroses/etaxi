@@ -17,7 +17,9 @@ export function Navbar() {
     { href: `/${locale}/pedir-taxi`, label: t('requestTaxi') },
     { href: `/${locale}/descargar-app`, label: t('downloadApp') },
     { href: `/${locale}/seguridad`, label: t('security') },
-    { href: `/${locale}/empresas`, label: t('business') },
+    { href: `/${locale}/cumplimiento`, label: t('compliance') },
+    { href: `/${locale}/empresas-gremios`, label: t('business') },
+    { href: `/${locale}/conductores`, label: t('drivers') },
     { href: `/${locale}/contacto`, label: t('contact') },
   ];
 

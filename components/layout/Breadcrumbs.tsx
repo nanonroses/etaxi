@@ -3,11 +3,12 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { ChevronRight } from 'lucide-react';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 
 export function Breadcrumbs() {
   const pathname = usePathname();
   const locale = useLocale();
+  const t = useTranslations('breadcrumbs');
 
   // Remove locale from pathname and split into segments
   const pathWithoutLocale = pathname.replace(`/${locale}`, '');
@@ -26,7 +27,7 @@ export function Breadcrumbs() {
             href={`/${locale}`}
             className="text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--primary))] transition-colors"
           >
-            Inicio
+            {t('home')}
           </Link>
         </li>
 

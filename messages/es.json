@@ -4,8 +4,13 @@
     "requestTaxi": "Pedir Taxi",
     "downloadApp": "Descargar App",
     "security": "Seguridad",
-    "business": "Empresas",
+    "compliance": "Cumplimiento",
+    "business": "Empresas & Gremios",
+    "drivers": "Conductores",
     "contact": "Contacto"
+  },
+  "breadcrumbs": {
+    "home": "Inicio"
   },
   "hero": {
     "title": "Viaja con seguridad, transparencia y cumplimiento",
