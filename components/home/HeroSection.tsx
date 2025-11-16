@@ -22,26 +22,26 @@ export function HeroSection({ title, subtitle, primaryCta, secondaryCta }: HeroS
   const secondaryCtaLabel = secondaryCta || t('ctaSecondary');
 
   return (
-    <section className="w-full py-16 md:py-24 lg:py-32 bg-gradient-to-b from-white to-[hsl(var(--muted))]">
-      <div className="container mx-auto max-w-[1200px] px-4">
+    <section className="w-full py-20 bg-gradient-to-b from-white to-[hsl(var(--muted))]">
+      <div className="container mx-auto max-w-3xl px-4">
         <div className="flex flex-col items-center text-center space-y-8">
-          <div className="space-y-6 max-w-4xl">
-            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl text-[hsl(var(--foreground))] leading-tight">
+          <div className="space-y-4">
+            <h1 className="text-4xl md:text-5xl font-bold text-[#0C1A2B] leading-tight">
               {heroTitle}
             </h1>
-            <p className="text-lg text-[hsl(var(--muted-foreground))] md:text-xl lg:text-2xl max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg text-muted-foreground leading-relaxed">
               {heroSubtitle}
             </p>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 pt-4">
+          <div className="flex flex-col sm:flex-row gap-4">
             <Link href={`/${locale}/pedir-taxi`}>
-              <Button size="lg" className="w-full sm:w-auto min-w-[180px]">
+              <Button size="lg" className="w-full sm:w-auto min-w-[180px] bg-[#F8D347] text-[#0C1A2B] hover:bg-[#F8D347]/90">
                 {primaryCtaLabel}
               </Button>
             </Link>
             <Link href={`/${locale}/descargar-app`}>
-              <Button size="lg" variant="outline" className="w-full sm:w-auto min-w-[180px]">
+              <Button size="lg" variant="outline" className="w-full sm:w-auto min-w-[180px] border-[#0C1A2B] text-[#0C1A2B] hover:bg-[#0C1A2B]/5">
                 {secondaryCtaLabel}
               </Button>
             </Link>
