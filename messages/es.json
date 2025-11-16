@@ -265,6 +265,54 @@
       "business": "Consulta empresarial"
     }
   },
+  "businessPage": {
+    "hero": {
+      "title": "Transporte regulado para empresas y gremios",
+      "subtitle": "ETAXI ofrece trazabilidad, cumplimiento normativo y herramientas de gestión para quienes operan taxis autorizados en Chile."
+    },
+    "enterprise": {
+      "benefit1": {
+        "title": "Trazabilidad completa del viaje",
+        "description": "Cada traslado queda registrado con conductor, vehículo y ruta. Ideal para auditorías internas, control de gastos y reportes de movilidad corporativa."
+      },
+      "benefit2": {
+        "title": "Cumplimiento normativo asegurado",
+        "description": "Trabajamos exclusivamente con taxis autorizados bajo la Ley 21.553 y el Decreto Supremo 212. Tu empresa cumple sin preocupaciones."
+      },
+      "benefit3": {
+        "title": "Reportes y control centralizado",
+        "description": "Consolidados mensuales, seguimiento por centro de costos, usuarios y proyectos. Visibilidad total del uso de transporte regulado."
+      },
+      "benefit4": {
+        "title": "Integración con políticas internas",
+        "description": "Políticas de movilidad, seguridad y cumplimiento integradas al flujo de solicitud de viajes. Configuración flexible según tus necesidades."
+      }
+    },
+    "guild": {
+      "intro": "ETAXI ayuda a los gremios a modernizar su operación sin perder su estructura tradicional. Digitaliza la gestión de taxis, conductores y servicios manteniendo el control de tu organización.",
+      "benefit1": {
+        "title": "Gestión centralizada de conductores y vehículos",
+        "body": "Administra cupos, turnos, permisos y estados del vehículo desde una sola plataforma. Mantén actualizado el registro de tu flota autorizada."
+      },
+      "benefit2": {
+        "title": "Control tarifario transparente",
+        "body": "Tarifas definidas por la autoridad o por el propio gremio, según corresponda. Sin cobros ocultos ni desviaciones de las normas establecidas."
+      },
+      "benefit3": {
+        "title": "Asignación eficiente de servicios",
+        "body": "Recepción y asignación de viajes desde una sola plataforma digital. Optimiza la distribución de servicios entre tus conductores asociados."
+      },
+      "benefit4": {
+        "title": "Historial completo de operación",
+        "body": "Registro detallado de viajes para auditorías, concesiones municipales y procesos gremiales. Trazabilidad total del servicio prestado por cada conductor."
+      }
+    },
+    "cta": {
+      "title": "Hablemos sobre tu operación",
+      "subtitle": "Ya seas una empresa, una municipalidad o un gremio de taxistas, ETAXI puede digitalizar tu sistema de transporte regulado manteniendo el cumplimiento normativo.",
+      "button": "Agenda una reunión"
+    }
+  },
   "footer": {
     "legal": {
       "terms": "Términos y Condiciones",

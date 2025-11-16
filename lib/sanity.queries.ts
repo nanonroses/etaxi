@@ -55,6 +55,27 @@ export interface CompliancePage {
   regulations?: Regulation[];
 }
 
+export interface EnterpriseBenefit {
+  title: string;
+  description: string;
+}
+
+export interface GuildBenefit {
+  title: string;
+  body: string;
+}
+
+export interface BusinessPage {
+  heroTitle: string;
+  heroSubtitle: string;
+  enterpriseBenefits?: EnterpriseBenefit[];
+  guildIntro?: string;
+  guildBenefits?: GuildBenefit[];
+  ctaTitle?: string;
+  ctaSubtitle?: string;
+  ctaButton?: string;
+}
+
 // Queries
 export async function getSiteSettings(): Promise<SiteSettings | null> {
   if (!client) return null;
@@ -112,6 +133,18 @@ export async function getCompliancePage(): Promise<CompliancePage | null> {
     return await client.fetch(query);
   } catch (error) {
     console.error('Error fetching compliance page:', error);
+    return null;
+  }
+}
+
+export async function getBusinessPage(): Promise<BusinessPage | null> {
+  if (!client) return null;
+
+  try {
+    const query = '*[_type == "businessPage"][0]';
+    return await client.fetch(query);
+  } catch (error) {
+    console.error('Error fetching business page:', error);
     return null;
   }
 }
