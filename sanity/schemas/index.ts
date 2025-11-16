@@ -4,6 +4,7 @@ import homePage from './homePage';
 import safetyPage from './safetyPage';
 import compliancePage from './compliancePage';
 import businessPage from './businessPage';
+import driverPage from './driverPage';
 
 export const schemaTypes = [
   siteSettings,
@@ -12,4 +13,5 @@ export const schemaTypes = [
   safetyPage,
   compliancePage,
   businessPage,
+  driverPage,
 ];

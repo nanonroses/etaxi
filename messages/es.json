@@ -313,6 +313,54 @@
       "button": "Agenda una reunión"
     }
   },
+  "driverPage": {
+    "hero": {
+      "title": "Conduce con una plataforma legal y transparente",
+      "subtitle": "ETAXI conecta a conductores de taxi regulados con pasajeros que buscan seguridad, trazabilidad y cumplimiento normativo."
+    },
+    "benefits": {
+      "benefit1": {
+        "title": "Pasajeros que valoran el taxi regulado",
+        "description": "Te conectas con usuarios que prefieren un servicio formal, autorizado y trazable."
+      },
+      "benefit2": {
+        "title": "Transparencia en viajes y pagos",
+        "description": "Registro claro de tus servicios realizados y condiciones acordadas con tu gremio o central."
+      },
+      "benefit3": {
+        "title": "Herramientas de gestión",
+        "description": "Visualización de tu actividad, historial de viajes y soporte cuando lo necesites."
+      },
+      "benefit4": {
+        "title": "Apoyo a la formalidad",
+        "description": "Formas parte de una plataforma diseñada para trabajar dentro de la normativa chilena."
+      }
+    },
+    "requirements": {
+      "title": "Requisitos principales",
+      "intro": "Para operar con ETAXI debes ser conductor de taxi regulado y cumplir los requisitos legales vigentes.",
+      "list": [
+        "Licencia profesional de taxi válida según normativa chilena.",
+        "Vehículo inscrito y autorizado como taxi.",
+        "Permisos y documentación al día (licencia, revisión técnica, seguro obligatorio, etc.).",
+        "Adscripción a un gremio, cooperativa o empresa de transporte cuando corresponda."
+      ]
+    },
+    "steps": {
+      "title": "Cómo empezar a trabajar con ETAXI",
+      "list": [
+        "Completa el formulario de interés para conductores.",
+        "Validamos tu documentación y la autorización de tu vehículo.",
+        "Te incorporamos a la flota de tu gremio o central asociada.",
+        "Descargas la app y comienzas a recibir servicios."
+      ]
+    },
+    "cta": {
+      "title": "¿Eres conductor de taxi regulado?",
+      "subtitle": "Déjanos tus datos y te contactaremos para explicarte cómo integrarte a ETAXI a través de tu gremio o empresa de transporte.",
+      "button": "Quiero postular"
+    }
+  },
   "footer": {
     "legal": {
       "terms": "Términos y Condiciones",

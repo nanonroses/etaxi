@@ -76,6 +76,24 @@ export interface BusinessPage {
   ctaButton?: string;
 }
 
+export interface DriverBenefit {
+  title: string;
+  description: string;
+}
+
+export interface DriverPage {
+  heroTitle: string;
+  heroSubtitle: string;
+  benefits?: DriverBenefit[];
+  requirementsIntro?: string;
+  requirements?: string[];
+  stepsTitle?: string;
+  steps?: string[];
+  ctaTitle?: string;
+  ctaSubtitle?: string;
+  ctaButton?: string;
+}
+
 // Queries
 export async function getSiteSettings(): Promise<SiteSettings | null> {
   if (!client) return null;
@@ -145,6 +163,18 @@ export async function getBusinessPage(): Promise<BusinessPage | null> {
     return await client.fetch(query);
   } catch (error) {
     console.error('Error fetching business page:', error);
+    return null;
+  }
+}
+
+export async function getDriverPage(): Promise<DriverPage | null> {
+  if (!client) return null;
+
+  try {
+    const query = '*[_type == "driverPage"][0]';
+    return await client.fetch(query);
+  } catch (error) {
+    console.error('Error fetching driver page:', error);
     return null;
   }
 }
