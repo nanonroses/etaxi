@@ -23,31 +23,32 @@ export function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-[hsl(var(--border))] bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
-      <nav className="container mx-auto flex h-16 items-center justify-between px-4">
-        {/* Logo */}
-        <Link href={`/${locale}`} className="flex items-center space-x-2">
-          <span className="text-2xl font-bold text-[hsl(var(--primary))]">
-            ETAXI
-          </span>
-        </Link>
+      <div className="container mx-auto max-w-[1200px]">
+        <nav className="flex h-16 items-center justify-between px-4">
+          {/* Logo */}
+          <Link href={`/${locale}`} className="flex items-center space-x-2">
+            <span className="text-2xl font-bold tracking-tight text-[hsl(var(--primary))]">
+              ETAXI
+            </span>
+          </Link>
 
-        {/* Desktop Navigation */}
-        <div className="hidden md:flex md:items-center md:gap-6">
-          <ul className="flex items-center gap-6">
-            {navLinks.map((link) => (
-              <li key={link.href}>
-                <Link
-                  href={link.href}
-                  className="text-sm font-medium text-[hsl(var(--foreground))] hover:text-[hsl(var(--primary))] transition-colors"
-                >
-                  {link.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex md:items-center md:gap-8">
+            <ul className="flex items-center gap-8">
+              {navLinks.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-sm font-medium text-[hsl(var(--foreground))] hover:text-[hsl(var(--primary))] transition-colors"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
 
-          <LanguageSelector />
-        </div>
+            <LanguageSelector />
+          </div>
 
         {/* Mobile Menu Button */}
         <button
@@ -72,19 +73,20 @@ export function Navbar() {
                   <Link
                     href={link.href}
                     onClick={() => setMobileMenuOpen(false)}
-                    className="block px-4 py-3 text-sm font-medium text-[hsl(var(--foreground))] hover:bg-[hsl(var(--muted))] transition-colors"
+                    className="block px-6 py-3 text-base font-medium text-[hsl(var(--foreground))] hover:bg-[hsl(var(--muted))] transition-colors"
                   >
                     {link.label}
                   </Link>
                 </li>
               ))}
-              <li className="px-4 py-3">
+              <li className="px-6 py-3">
                 <LanguageSelector />
               </li>
             </ul>
           </div>
         )}
-      </nav>
+        </nav>
+      </div>
     </header>
   );
 }

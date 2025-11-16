@@ -9,14 +9,14 @@ export function Footer() {
 
   return (
     <footer className="w-full border-t border-[hsl(var(--border))] bg-white">
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto max-w-[1200px] px-4 py-12">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           {/* Brand */}
           <div>
-            <h3 className="text-lg font-bold text-[hsl(var(--primary))]">
+            <h3 className="text-xl font-bold tracking-tight text-[hsl(var(--primary))]">
               ETAXI
             </h3>
-            <p className="mt-2 text-sm text-[hsl(var(--muted-foreground))]">
+            <p className="mt-3 text-base text-[hsl(var(--muted-foreground))]">
               {locale === 'es'
                 ? 'Taxis regulados en Chile'
                 : 'Regulated taxis in Chile'}
@@ -25,7 +25,7 @@ export function Footer() {
 
           {/* Legal Links */}
           <div>
-            <h4 className="text-sm font-semibold text-[hsl(var(--foreground))] mb-3">
+            <h4 className="text-sm font-semibold text-[hsl(var(--foreground))] mb-4">
               {locale === 'es' ? 'Legal' : 'Legal'}
             </h4>
             <ul className="space-y-2">
@@ -58,7 +58,7 @@ export function Footer() {
 
           {/* Support Links */}
           <div>
-            <h4 className="text-sm font-semibold text-[hsl(var(--foreground))] mb-3">
+            <h4 className="text-sm font-semibold text-[hsl(var(--foreground))] mb-4">
               {locale === 'es' ? 'Soporte' : 'Support'}
             </h4>
             <ul className="space-y-2">
@@ -91,7 +91,7 @@ export function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="mt-8 border-t border-[hsl(var(--border))] pt-6 text-center">
+        <div className="mt-12 border-t border-[hsl(var(--border))] pt-8 text-center">
           <p className="text-sm text-[hsl(var(--muted-foreground))]">
             {t('copyright')}
           </p>

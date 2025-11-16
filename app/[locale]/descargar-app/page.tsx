@@ -55,18 +55,18 @@ export default async function DescargarAppPage() {
 
       <main className="flex-1">
         {/* Breadcrumbs */}
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto max-w-[1200px] px-4">
           <Breadcrumbs />
         </div>
 
         {/* Hero Section */}
-        <section className="w-full py-12 md:py-16 bg-gradient-to-b from-white to-[hsl(var(--muted))]">
-          <div className="container mx-auto px-4">
-            <div className="flex flex-col items-center text-center space-y-4 max-w-3xl mx-auto">
-              <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-[hsl(var(--foreground))]">
+        <section className="w-full py-16 md:py-24 bg-gradient-to-b from-white to-[hsl(var(--muted))]">
+          <div className="container mx-auto max-w-[1200px] px-4">
+            <div className="flex flex-col items-center text-center space-y-6 max-w-4xl mx-auto">
+              <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl text-[hsl(var(--foreground))] leading-tight">
                 {t('hero.title')}
               </h1>
-              <p className="text-xl text-[hsl(var(--muted-foreground))] md:text-2xl">
+              <p className="text-lg text-[hsl(var(--muted-foreground))] md:text-xl lg:text-2xl max-w-3xl mx-auto leading-relaxed">
                 {t('hero.subtitle')}
               </p>
             </div>
@@ -77,13 +77,13 @@ export default async function DescargarAppPage() {
         <DownloadAppCTA />
 
         {/* Why Use ETAXI Section */}
-        <section className="w-full py-12 md:py-24 bg-white">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12 text-[hsl(var(--foreground))]">
+        <section className="w-full py-16 md:py-24 bg-white">
+          <div className="container mx-auto max-w-[1200px] px-4">
+            <h2 className="text-3xl font-semibold text-center mb-12 text-[hsl(var(--foreground))] tracking-tight">
               {t('whyUse.title')}
             </h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               {features.map((feature, index) => (
                 <Card key={index} className="border-[hsl(var(--border))]">
                   <CardHeader>
@@ -106,13 +106,13 @@ export default async function DescargarAppPage() {
         </section>
 
         {/* App Screenshots Placeholder */}
-        <section className="w-full py-12 md:py-24 bg-[hsl(var(--muted))]">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12 text-[hsl(var(--foreground))]">
+        <section className="w-full py-16 md:py-24 bg-[hsl(var(--muted))]">
+          <div className="container mx-auto max-w-[1200px] px-4">
+            <h2 className="text-3xl font-semibold text-center mb-12 text-[hsl(var(--foreground))] tracking-tight">
               {t('screenshots.title')}
             </h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
               {[1, 2, 3].map((item) => (
                 <Card key={item} className="overflow-hidden">
                   <div className="aspect-[9/16] bg-gradient-to-br from-[hsl(var(--primary))]/10 to-[hsl(var(--accent))]/10 flex items-center justify-center">
@@ -132,13 +132,13 @@ export default async function DescargarAppPage() {
         </section>
 
         {/* FAQ Section */}
-        <section className="w-full py-12 md:py-24 bg-white">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12 text-[hsl(var(--foreground))]">
+        <section className="w-full py-16 md:py-24 bg-white">
+          <div className="container mx-auto max-w-[1200px] px-4">
+            <h2 className="text-3xl font-semibold text-center mb-12 text-[hsl(var(--foreground))] tracking-tight">
               {t('faq.title')}
             </h2>
 
-            <div className="max-w-3xl mx-auto space-y-4">
+            <div className="max-w-3xl mx-auto space-y-6">
               {faqs.map((faq, index) => (
                 <Card key={index} className="border-[hsl(var(--border))]">
                   <CardHeader>

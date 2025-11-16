@@ -23,28 +23,28 @@ export function SafetyFeatures({ intro }: SafetyFeaturesProps) {
   ];
 
   return (
-    <section className="w-full py-12 md:py-24 bg-[hsl(var(--muted))]">
-      <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto">
-          <Card>
-            <CardHeader className="text-center">
-              <CardTitle className="text-3xl font-bold mb-4">
+    <section className="w-full py-16 md:py-24 bg-[hsl(var(--muted))]">
+      <div className="container mx-auto max-w-[1200px] px-4">
+        <div className="max-w-4xl mx-auto">
+          <Card className="shadow-sm">
+            <CardHeader className="text-center pb-6">
+              <CardTitle className="text-3xl font-semibold tracking-tight">
                 {t('title')}
               </CardTitle>
             </CardHeader>
-            <CardContent>
-              <ul className="space-y-3">
+            <CardContent className="pt-6">
+              <ul className="space-y-4">
                 {features.map((feature, index) => (
                   <li key={index} className="flex items-start gap-3">
                     <Check className="w-5 h-5 text-[hsl(var(--primary))] mt-0.5 flex-shrink-0" />
-                    <span className="text-[hsl(var(--foreground))]">{feature}</span>
+                    <span className="text-base text-[hsl(var(--foreground))] leading-relaxed">{feature}</span>
                   </li>
                 ))}
               </ul>
 
-              <div className="mt-6 text-center">
+              <div className="mt-8 text-center">
                 <Link href={`/${locale}/seguridad`}>
-                  <Button variant="link">
+                  <Button variant="link" className="text-base">
                     {t('learnMore')} →
                   </Button>
                 </Link>

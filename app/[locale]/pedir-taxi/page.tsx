@@ -35,18 +35,18 @@ export default function PedirTaxiPage() {
 
       <main className="flex-1">
         {/* Breadcrumbs */}
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto max-w-[1200px] px-4">
           <Breadcrumbs />
         </div>
 
         {/* Hero Section */}
-        <section className="w-full py-12 md:py-16 bg-gradient-to-b from-white to-[hsl(var(--muted))]">
-          <div className="container mx-auto px-4">
-            <div className="flex flex-col items-center text-center space-y-4 max-w-3xl mx-auto">
-              <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-[hsl(var(--foreground))]">
+        <section className="w-full py-16 md:py-24 bg-gradient-to-b from-white to-[hsl(var(--muted))]">
+          <div className="container mx-auto max-w-[1200px] px-4">
+            <div className="flex flex-col items-center text-center space-y-6 max-w-4xl mx-auto">
+              <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl text-[hsl(var(--foreground))] leading-tight">
                 {t('hero.title')}
               </h1>
-              <p className="text-xl text-[hsl(var(--muted-foreground))] md:text-2xl">
+              <p className="text-lg text-[hsl(var(--muted-foreground))] md:text-xl lg:text-2xl max-w-3xl mx-auto leading-relaxed">
                 {t('hero.subtitle')}
               </p>
             </div>
@@ -54,8 +54,8 @@ export default function PedirTaxiPage() {
         </section>
 
         {/* Request Form Section */}
-        <section className="w-full py-12 md:py-24 bg-white">
-          <div className="container mx-auto px-4">
+        <section className="w-full py-16 md:py-24 bg-white">
+          <div className="container mx-auto max-w-[1200px] px-4">
             <div className="max-w-2xl mx-auto">
               <Card className="border-[hsl(var(--border))]">
                 <CardHeader>
@@ -137,9 +137,9 @@ export default function PedirTaxiPage() {
         </section>
 
         {/* How It Works Section */}
-        <section className="w-full py-12 md:py-24 bg-[hsl(var(--muted))]">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12 text-[hsl(var(--foreground))]">
+        <section className="w-full py-16 md:py-24 bg-[hsl(var(--muted))]">
+          <div className="container mx-auto max-w-[1200px] px-4">
+            <h2 className="text-3xl font-semibold text-center mb-12 text-[hsl(var(--foreground))] tracking-tight">
               {t('howItWorks.title')}
             </h2>
 
