@@ -20,7 +20,6 @@ export function ContactForm() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // TODO: Implement actual form submission
-    console.log('Form submitted:', formData);
     alert(t('success'));
   };
 
