@@ -3,9 +3,8 @@ import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
 import { DownloadAppCTA } from '@/components/home/DownloadAppCTA';
-import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
+import { RequestTaxiForm } from '@/components/forms/RequestTaxiForm';
+import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { MapPin, CheckCircle, Shield } from 'lucide-react';
 import { seoConfig } from '@/app/seo.config';
 import type { Metadata } from 'next';
@@ -78,81 +77,7 @@ export default function PedirTaxiPage() {
         <section className="w-full py-16 md:py-24 bg-white">
           <div className="container mx-auto max-w-[1200px] px-4">
             <div className="max-w-2xl mx-auto">
-              <Card className="border-[hsl(var(--border))]">
-                <CardHeader>
-                  <CardTitle className="text-2xl">
-                    {t('form.originLabel')}
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-6">
-                  {/* Origin Input */}
-                  <div className="space-y-2">
-                    <label
-                      htmlFor="origin"
-                      className="text-sm font-medium text-[hsl(var(--foreground))]"
-                    >
-                      {t('form.originLabel')}
-                    </label>
-                    <Input
-                      id="origin"
-                      type="text"
-                      placeholder={t('form.originPlaceholder')}
-                      className="w-full"
-                      aria-label={t('form.originLabel')}
-                    />
-                  </div>
-
-                  {/* Destination Input */}
-                  <div className="space-y-2">
-                    <label
-                      htmlFor="destination"
-                      className="text-sm font-medium text-[hsl(var(--foreground))]"
-                    >
-                      {t('form.destinationLabel')}
-                    </label>
-                    <Input
-                      id="destination"
-                      type="text"
-                      placeholder={t('form.destinationPlaceholder')}
-                      className="w-full"
-                      aria-label={t('form.destinationLabel')}
-                    />
-                  </div>
-
-                  {/* Passengers Input */}
-                  <div className="space-y-2">
-                    <label
-                      htmlFor="passengers"
-                      className="text-sm font-medium text-[hsl(var(--foreground))]"
-                    >
-                      {t('form.passengersLabel')}
-                    </label>
-                    <Input
-                      id="passengers"
-                      type="number"
-                      min="1"
-                      max="4"
-                      placeholder={t('form.passengersPlaceholder')}
-                      className="w-full"
-                      aria-label={t('form.passengersLabel')}
-                    />
-                  </div>
-
-                  {/* Submit Button */}
-                  <Button
-                    variant="default"
-                    className="w-full"
-                    type="button"
-                  >
-                    {t('form.submitButton')}
-                  </Button>
-
-                  {/* Note */}
-                  <p className="text-sm text-[hsl(var(--muted-foreground))] text-center mt-4">
-                    {t('form.note')}
-                  </p>
-                </CardContent>
-              </Card>
+              <RequestTaxiForm />
             </div>
           </div>
         </section>

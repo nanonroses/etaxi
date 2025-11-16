@@ -1,0 +1,64 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Solicitudes de taxi desde la web (B2C)
+model RideRequest {
+  id             String   @id @default(cuid())
+  createdAt      DateTime @default(now())
+  name           String
+  phone          String
+  email          String?
+  pickupAddress  String
+  dropoffAddress String?
+  when           String   // "ahora", "fecha/hora", texto libre inicial
+  notes          String?
+  source         String   @default("web") // web, landing, campaña
+  status         String   @default("pending") // pending, contacted, completed, cancelled
+
+  @@map("ride_requests")
+}
+
+// Leads de empresas y gremios (B2B)
+model CompanyLead {
+  id          String   @id @default(cuid())
+  createdAt   DateTime @default(now())
+  companyName String
+  contactName String
+  email       String
+  phone       String?
+  employees   Int?
+  city        String?
+  message     String?
+  source      String   @default("empresas-gremios-web")
+  status      String   @default("new") // new, contacted, qualified, converted
+
+  @@map("company_leads")
+}
+
+// Leads de conductores (B2D - Business to Driver)
+model DriverLead {
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now())
+  fullName  String
+  email     String?
+  phone     String
+  city      String?
+  hasTaxi   Boolean  @default(false)
+  notes     String?
+  source    String   @default("conductores-web")
+  status    String   @default("new") // new, contacted, qualified, registered
+
+  @@map("driver_leads")
+}

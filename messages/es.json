@@ -121,14 +121,29 @@
       "subtitle": "Rápido, seguro y 100% regulado"
     },
     "form": {
-      "originLabel": "Origen",
-      "originPlaceholder": "Ingresa tu ubicación de origen",
-      "destinationLabel": "Destino",
-      "destinationPlaceholder": "¿A dónde vas?",
-      "passengersLabel": "Número de pasajeros",
-      "passengersPlaceholder": "Ej: 1, 2, 3...",
-      "submitButton": "Confirmar viaje",
-      "note": "Esta es una versión de demostración. Para solicitar un taxi real, descarga la app móvil."
+      "title": "Solicitar taxi",
+      "nameLabel": "Nombre completo",
+      "namePlaceholder": "Tu nombre",
+      "phoneLabel": "Teléfono",
+      "phonePlaceholder": "+56 9 1234 5678",
+      "emailLabel": "Email",
+      "emailPlaceholder": "tu@email.com",
+      "originLabel": "Dirección de origen",
+      "originPlaceholder": "Calle Principal 123, Santiago",
+      "destinationLabel": "Dirección de destino",
+      "destinationPlaceholder": "Avenida Central 456, Santiago",
+      "whenLabel": "¿Cuándo necesitas el taxi?",
+      "whenNow": "Ahora",
+      "when15min": "En 15 minutos",
+      "when30min": "En 30 minutos",
+      "when1hour": "En 1 hora",
+      "notesLabel": "Comentarios adicionales",
+      "notesPlaceholder": "Ej: Tengo equipaje, necesito taxi grande, etc.",
+      "submitButton": "Solicitar taxi",
+      "sending": "Enviando...",
+      "success": "Solicitud recibida. Te contactaremos pronto.",
+      "error": "Error al enviar la solicitud. Por favor intenta nuevamente.",
+      "note": "Recibirás un contacto vía teléfono o email para confirmar tu taxi."
     },
     "howItWorks": {
       "title": "Cómo funciona",
@@ -316,6 +331,28 @@
       "title": "Hablemos sobre tu operación",
       "subtitle": "Ya seas una empresa, una municipalidad o un gremio de taxistas, ETAXI puede digitalizar tu sistema de transporte regulado manteniendo el cumplimiento normativo.",
       "button": "Agenda una reunión"
+    },
+    "contactForm": {
+      "title": "Solicita información corporativa",
+      "description": "Déjanos tus datos y te contactaremos para conversar sobre las necesidades de tu empresa o gremio.",
+      "companyNameLabel": "Nombre de la empresa/gremio",
+      "companyNamePlaceholder": "Ej: Transportes ABC Ltda.",
+      "contactNameLabel": "Nombre de contacto",
+      "contactNamePlaceholder": "Tu nombre",
+      "emailLabel": "Email corporativo",
+      "emailPlaceholder": "contacto@empresa.cl",
+      "phoneLabel": "Teléfono",
+      "phonePlaceholder": "+56 9 1234 5678",
+      "employeesLabel": "Número de empleados/asociados",
+      "employeesPlaceholder": "Ej: 50",
+      "cityLabel": "Ciudad",
+      "cityPlaceholder": "Santiago",
+      "messageLabel": "Cuéntanos sobre tu necesidad",
+      "messagePlaceholder": "Ej: Necesitamos una solución de transporte para nuestros ejecutivos...",
+      "submitButton": "Enviar solicitud",
+      "sending": "Enviando...",
+      "success": "Solicitud recibida. Nos pondremos en contacto contigo pronto.",
+      "error": "Error al enviar la solicitud. Por favor intenta nuevamente."
     }
   },
   "driverPage": {
@@ -364,6 +401,27 @@
       "title": "¿Eres conductor de taxi regulado?",
       "subtitle": "Déjanos tus datos y te contactaremos para explicarte cómo integrarte a ETAXI a través de tu gremio o empresa de transporte.",
       "button": "Quiero postular"
+    }
+  },
+  "driversPage": {
+    "joinForm": {
+      "title": "Únete como conductor",
+      "description": "Completa el formulario y te contactaremos para validar tu documentación e incorporarte a la plataforma.",
+      "fullNameLabel": "Nombre completo",
+      "fullNamePlaceholder": "Juan Pérez González",
+      "phoneLabel": "Teléfono",
+      "phonePlaceholder": "+56 9 1234 5678",
+      "emailLabel": "Email",
+      "emailPlaceholder": "conductor@ejemplo.cl",
+      "cityLabel": "Ciudad donde operas",
+      "cityPlaceholder": "Santiago",
+      "hasTaxiLabel": "¿Tienes taxi propio?",
+      "notesLabel": "Información adicional",
+      "notesPlaceholder": "Ej: Pertenezco al gremio X, tengo licencia A1 vigente...",
+      "submitButton": "Enviar postulación",
+      "sending": "Enviando...",
+      "success": "Solicitud recibida. Nos comunicaremos contigo pronto.",
+      "error": "Error al enviar la solicitud. Por favor intenta nuevamente."
     }
   },
   "footer": {
