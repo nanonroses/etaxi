@@ -6,6 +6,12 @@ import { Button } from '@/components/ui/button';
 import { Check, Users, FileCheck, TrendingUp, Shield } from 'lucide-react';
 import Link from 'next/link';
 import { getDriverPage } from '@/lib/sanity.queries';
+import { generateMetadata as genMeta } from '@/app/seo.config';
+import type { Metadata } from 'next';
+
+export async function generateMetadata(): Promise<Metadata> {
+  return genMeta('conductores', 'es');
+}
 
 export default async function ConductoresPage() {
   // Fetch from Sanity CMS

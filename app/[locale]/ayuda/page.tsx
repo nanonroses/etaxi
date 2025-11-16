@@ -6,6 +6,12 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/com
 import { Button } from '@/components/ui/button';
 import { ContactForm } from '@/components/common/ContactForm';
 import { HelpCircle, AlertCircle, Mail, Phone } from 'lucide-react';
+import { generateMetadata as genMeta } from '@/app/seo.config';
+import type { Metadata } from 'next';
+
+export function generateMetadata(): Metadata {
+  return genMeta('ayuda', 'es');
+}
 
 export default function AyudaPage() {
   const t = useTranslations('helpPage');

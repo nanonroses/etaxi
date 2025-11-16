@@ -5,6 +5,12 @@ import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
 import { ContactForm } from '@/components/common/ContactForm';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { Mail, Phone, Facebook, Twitter, Instagram } from 'lucide-react';
+import { generateMetadata as genMeta } from '@/app/seo.config';
+import type { Metadata} from 'next';
+
+export function generateMetadata(): Metadata {
+  return genMeta('contacto', 'es');
+}
 
 export default function ContactoPage() {
   const t = useTranslations('contactPage');

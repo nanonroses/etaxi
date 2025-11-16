@@ -5,6 +5,12 @@ import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
 import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { FileCheck, Scale, MapPin, IdCard } from 'lucide-react';
 import { getCompliancePage } from '@/lib/sanity.queries';
+import { generateMetadata as genMeta } from '@/app/seo.config';
+import type { Metadata } from 'next';
+
+export async function generateMetadata(): Promise<Metadata> {
+  return genMeta('cumplimiento', 'es');
+}
 
 // Map icon names to components
 const iconMap: Record<string, any> = {

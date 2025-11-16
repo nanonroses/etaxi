@@ -7,6 +7,12 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/com
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { MapPin, CheckCircle, Shield } from 'lucide-react';
+import { generateMetadata as genMeta } from '@/app/seo.config';
+import type { Metadata } from 'next';
+
+export async function generateMetadata(): Promise<Metadata> {
+  return genMeta('pedirTaxi', 'es');
+}
 
 export default function PedirTaxiPage() {
   const t = useTranslations('requestTaxiPage');

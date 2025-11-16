@@ -6,6 +6,12 @@ import { SafetyFeatures } from '@/components/home/SafetyFeatures';
 import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Shield, Activity, Users, FileCheck } from 'lucide-react';
 import { getSafetyPage } from '@/lib/sanity.queries';
+import { generateMetadata as genMeta } from '@/app/seo.config';
+import type { Metadata } from 'next';
+
+export async function generateMetadata(): Promise<Metadata> {
+  return genMeta('seguridad', 'es');
+}
 
 // Map icon names to components
 const iconMap: Record<string, any> = {

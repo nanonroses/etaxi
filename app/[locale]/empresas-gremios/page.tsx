@@ -6,6 +6,12 @@ import { Button } from '@/components/ui/button';
 import { Check } from 'lucide-react';
 import Link from 'next/link';
 import { getBusinessPage } from '@/lib/sanity.queries';
+import { generateMetadata as genMeta } from '@/app/seo.config';
+import type { Metadata } from 'next';
+
+export async function generateMetadata(): Promise<Metadata> {
+  return genMeta('empresasGremios', 'es');
+}
 
 export default async function EmpresasGremiosPage() {
   // Fetch from Sanity CMS
