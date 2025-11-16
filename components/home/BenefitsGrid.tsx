@@ -55,7 +55,7 @@ export function BenefitsGrid({ benefits: cmsBenefits }: BenefitsGridProps) {
   return (
     <section className="w-full py-16 bg-white">
       <div className="container mx-auto max-w-[1200px] px-4">
-        <h2 className="text-3xl font-bold text-center mb-12 text-[#0C1A2B]">
+        <h2 className="text-3xl font-bold text-center mb-12 text-[#182b33]">
           {t('title')}
         </h2>
 
@@ -63,11 +63,14 @@ export function BenefitsGrid({ benefits: cmsBenefits }: BenefitsGridProps) {
           {benefits.map((benefit, index) => {
             const Icon = benefit.icon;
             return (
-              <div key={index} className="bg-[#F5F5F5] rounded-xl p-6 shadow-sm space-y-4">
-                <div className="w-14 h-14 rounded-lg bg-[#F8D347]/20 flex items-center justify-center">
-                  <Icon className="w-7 h-7 text-[#0C1A2B]" />
+              <div
+                key={index}
+                className="bg-[#F5F5F5] rounded-xl p-6 shadow-sm space-y-4 transition-transform duration-150 hover:-translate-y-1 hover:shadow-lg"
+              >
+                <div className="w-14 h-14 rounded-lg bg-[#dd1828]/10 flex items-center justify-center">
+                  <Icon className="w-7 h-7 text-[#dd1828]" />
                 </div>
-                <h3 className="text-xl font-semibold text-[#0C1A2B]">
+                <h3 className="text-xl font-semibold text-[#182b33]">
                   {benefit.title}
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">

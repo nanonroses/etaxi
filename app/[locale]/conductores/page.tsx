@@ -6,12 +6,27 @@ import { Button } from '@/components/ui/button';
 import { Check, Users, FileCheck, TrendingUp, Shield } from 'lucide-react';
 import Link from 'next/link';
 import { getDriverPage } from '@/lib/sanity.queries';
-import { generateMetadata as genMeta } from '@/app/seo.config';
+import { seoConfig } from '@/app/seo.config';
 import type { Metadata } from 'next';
 
-export async function generateMetadata(): Promise<Metadata> {
-  return genMeta('conductores', 'es');
-}
+export const metadata: Metadata = {
+  title: seoConfig.conductores.title,
+  description: seoConfig.conductores.description,
+  keywords: seoConfig.conductores.keywords,
+  openGraph: {
+    title: seoConfig.conductores.title,
+    description: seoConfig.conductores.description,
+    url: 'https://www.etaxi.cl/conductores',
+    siteName: 'ETAXI',
+    type: 'website',
+    locale: 'es_CL',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: seoConfig.conductores.title,
+    description: seoConfig.conductores.description,
+  },
+};
 
 export default async function ConductoresPage() {
   // Fetch from Sanity CMS

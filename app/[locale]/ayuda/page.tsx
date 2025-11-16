@@ -6,12 +6,27 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/com
 import { Button } from '@/components/ui/button';
 import { ContactForm } from '@/components/common/ContactForm';
 import { HelpCircle, AlertCircle, Mail, Phone } from 'lucide-react';
-import { generateMetadata as genMeta } from '@/app/seo.config';
+import { seoConfig } from '@/app/seo.config';
 import type { Metadata } from 'next';
 
-export function generateMetadata(): Metadata {
-  return genMeta('ayuda', 'es');
-}
+export const metadata: Metadata = {
+  title: seoConfig.ayuda.title,
+  description: seoConfig.ayuda.description,
+  keywords: seoConfig.ayuda.keywords,
+  openGraph: {
+    title: seoConfig.ayuda.title,
+    description: seoConfig.ayuda.description,
+    url: 'https://www.etaxi.cl/ayuda',
+    siteName: 'ETAXI',
+    type: 'website',
+    locale: 'es_CL',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: seoConfig.ayuda.title,
+    description: seoConfig.ayuda.description,
+  },
+};
 
 export default function AyudaPage() {
   const t = useTranslations('helpPage');

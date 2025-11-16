@@ -5,12 +5,27 @@ import { BenefitsGrid } from '@/components/home/BenefitsGrid';
 import { SafetyFeatures } from '@/components/home/SafetyFeatures';
 import { DownloadAppCTA } from '@/components/home/DownloadAppCTA';
 import { getHomePage, getSiteSettings, getAppDownload } from '@/lib/sanity.queries';
-import { generateMetadata as genMeta } from '@/app/seo.config';
+import { seoConfig } from '@/app/seo.config';
 import type { Metadata } from 'next';
 
-export async function generateMetadata(): Promise<Metadata> {
-  return genMeta('home', 'es');
-}
+export const metadata: Metadata = {
+  title: seoConfig.home.title,
+  description: seoConfig.home.description,
+  keywords: seoConfig.home.keywords,
+  openGraph: {
+    title: seoConfig.home.title,
+    description: seoConfig.home.description,
+    url: 'https://www.etaxi.cl/',
+    siteName: 'ETAXI',
+    type: 'website',
+    locale: 'es_CL',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: seoConfig.home.title,
+    description: seoConfig.home.description,
+  },
+};
 
 export default async function Home() {
   // Fetch data from Sanity CMS

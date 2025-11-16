@@ -7,12 +7,27 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/com
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { MapPin, CheckCircle, Shield } from 'lucide-react';
-import { generateMetadata as genMeta } from '@/app/seo.config';
+import { seoConfig } from '@/app/seo.config';
 import type { Metadata } from 'next';
 
-export async function generateMetadata(): Promise<Metadata> {
-  return genMeta('pedirTaxi', 'es');
-}
+export const metadata: Metadata = {
+  title: seoConfig.pedirTaxi.title,
+  description: seoConfig.pedirTaxi.description,
+  keywords: seoConfig.pedirTaxi.keywords,
+  openGraph: {
+    title: seoConfig.pedirTaxi.title,
+    description: seoConfig.pedirTaxi.description,
+    url: 'https://www.etaxi.cl/pedir-taxi',
+    siteName: 'ETAXI',
+    type: 'website',
+    locale: 'es_CL',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: seoConfig.pedirTaxi.title,
+    description: seoConfig.pedirTaxi.description,
+  },
+};
 
 export default function PedirTaxiPage() {
   const t = useTranslations('requestTaxiPage');

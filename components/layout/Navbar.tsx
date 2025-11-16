@@ -41,7 +41,7 @@ export function Navbar() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm font-medium text-[hsl(var(--foreground))] hover:text-[hsl(var(--primary))] transition-colors"
+                    className="text-sm font-medium text-[#182b33] hover:text-[#dd1828] transition-colors duration-150"
                   >
                     {link.label}
                   </Link>

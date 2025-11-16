@@ -6,12 +6,27 @@ import { Button } from '@/components/ui/button';
 import { Check } from 'lucide-react';
 import Link from 'next/link';
 import { getBusinessPage } from '@/lib/sanity.queries';
-import { generateMetadata as genMeta } from '@/app/seo.config';
+import { seoConfig } from '@/app/seo.config';
 import type { Metadata } from 'next';
 
-export async function generateMetadata(): Promise<Metadata> {
-  return genMeta('empresasGremios', 'es');
-}
+export const metadata: Metadata = {
+  title: seoConfig.empresasGremios.title,
+  description: seoConfig.empresasGremios.description,
+  keywords: seoConfig.empresasGremios.keywords,
+  openGraph: {
+    title: seoConfig.empresasGremios.title,
+    description: seoConfig.empresasGremios.description,
+    url: 'https://www.etaxi.cl/empresas-gremios',
+    siteName: 'ETAXI',
+    type: 'website',
+    locale: 'es_CL',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: seoConfig.empresasGremios.title,
+    description: seoConfig.empresasGremios.description,
+  },
+};
 
 export default async function EmpresasGremiosPage() {
   // Fetch from Sanity CMS

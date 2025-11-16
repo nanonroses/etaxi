@@ -6,12 +6,27 @@ import { DownloadAppCTA } from '@/components/home/DownloadAppCTA';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card';
 import { Check } from 'lucide-react';
 import { getAppDownload } from '@/lib/sanity.queries';
-import { generateMetadata as genMeta } from '@/app/seo.config';
+import { seoConfig } from '@/app/seo.config';
 import type { Metadata } from 'next';
 
-export async function generateMetadata(): Promise<Metadata> {
-  return genMeta('descargarApp', 'es');
-}
+export const metadata: Metadata = {
+  title: seoConfig.descargarApp.title,
+  description: seoConfig.descargarApp.description,
+  keywords: seoConfig.descargarApp.keywords,
+  openGraph: {
+    title: seoConfig.descargarApp.title,
+    description: seoConfig.descargarApp.description,
+    url: 'https://www.etaxi.cl/descargar-app',
+    siteName: 'ETAXI',
+    type: 'website',
+    locale: 'es_CL',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: seoConfig.descargarApp.title,
+    description: seoConfig.descargarApp.description,
+  },
+};
 
 export default async function DescargarAppPage() {
   const appData = await getAppDownload();

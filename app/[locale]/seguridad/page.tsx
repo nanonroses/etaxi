@@ -6,12 +6,27 @@ import { SafetyFeatures } from '@/components/home/SafetyFeatures';
 import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Shield, Activity, Users, FileCheck } from 'lucide-react';
 import { getSafetyPage } from '@/lib/sanity.queries';
-import { generateMetadata as genMeta } from '@/app/seo.config';
+import { seoConfig } from '@/app/seo.config';
 import type { Metadata } from 'next';
 
-export async function generateMetadata(): Promise<Metadata> {
-  return genMeta('seguridad', 'es');
-}
+export const metadata: Metadata = {
+  title: seoConfig.seguridad.title,
+  description: seoConfig.seguridad.description,
+  keywords: seoConfig.seguridad.keywords,
+  openGraph: {
+    title: seoConfig.seguridad.title,
+    description: seoConfig.seguridad.description,
+    url: 'https://www.etaxi.cl/seguridad',
+    siteName: 'ETAXI',
+    type: 'website',
+    locale: 'es_CL',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: seoConfig.seguridad.title,
+    description: seoConfig.seguridad.description,
+  },
+};
 
 // Map icon names to components
 const iconMap: Record<string, any> = {

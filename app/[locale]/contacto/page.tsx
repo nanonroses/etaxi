@@ -5,12 +5,27 @@ import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
 import { ContactForm } from '@/components/common/ContactForm';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { Mail, Phone, Facebook, Twitter, Instagram } from 'lucide-react';
-import { generateMetadata as genMeta } from '@/app/seo.config';
-import type { Metadata} from 'next';
+import { seoConfig } from '@/app/seo.config';
+import type { Metadata } from 'next';
 
-export function generateMetadata(): Metadata {
-  return genMeta('contacto', 'es');
-}
+export const metadata: Metadata = {
+  title: seoConfig.contacto.title,
+  description: seoConfig.contacto.description,
+  keywords: seoConfig.contacto.keywords,
+  openGraph: {
+    title: seoConfig.contacto.title,
+    description: seoConfig.contacto.description,
+    url: 'https://www.etaxi.cl/contacto',
+    siteName: 'ETAXI',
+    type: 'website',
+    locale: 'es_CL',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: seoConfig.contacto.title,
+    description: seoConfig.contacto.description,
+  },
+};
 
 export default function ContactoPage() {
   const t = useTranslations('contactPage');
