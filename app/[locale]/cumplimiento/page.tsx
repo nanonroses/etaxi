@@ -4,32 +4,59 @@ import { Footer } from '@/components/layout/Footer';
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
 import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { FileCheck, Scale, MapPin, IdCard } from 'lucide-react';
+import { getCompliancePage } from '@/lib/sanity.queries';
 
-export default function CumplimientoPage() {
+// Map icon names to components
+const iconMap: Record<string, any> = {
+  Scale,
+  FileCheck,
+  MapPin,
+  IdCard,
+};
+
+export default async function CumplimientoPage() {
+  // Fetch from Sanity CMS
+  const cmsData = await getCompliancePage();
   const t = useTranslations('compliancePage');
 
-  const regulations = [
-    {
-      icon: Scale,
-      title: t('regulations.law21553.title'),
-      description: t('regulations.law21553.description'),
-    },
-    {
-      icon: FileCheck,
-      title: t('regulations.ds212.title'),
-      description: t('regulations.ds212.description'),
-    },
-    {
-      icon: MapPin,
-      title: t('regulations.municipal.title'),
-      description: t('regulations.municipal.description'),
-    },
-    {
-      icon: IdCard,
-      title: t('regulations.licenses.title'),
-      description: t('regulations.licenses.description'),
-    },
-  ];
+  // Use CMS data with fallbacks to translations
+  const heroTitle = cmsData?.title || t('hero.title');
+  const heroSubtitle = t('hero.subtitle');
+  const introTitle = t('intro.title');
+  const introDescription = cmsData?.intro || t('intro.description');
+  const regulationsTitle = t('regulations.title');
+  const commitmentTitle = t('commitment.title');
+  const commitmentDescription = cmsData?.lawMention || t('commitment.description');
+
+  // Use CMS regulations if available, otherwise use translations
+  const regulations = cmsData?.regulations && cmsData.regulations.length > 0
+    ? cmsData.regulations.map((regulation) => ({
+        icon: regulation.icon ? iconMap[regulation.icon] || Scale : Scale,
+        title: regulation.title,
+        description: regulation.description,
+      }))
+    : [
+        {
+          icon: Scale,
+          title: t('regulations.law21553.title'),
+          description: t('regulations.law21553.description'),
+        },
+        {
+          icon: FileCheck,
+          title: t('regulations.ds212.title'),
+          description: t('regulations.ds212.description'),
+        },
+        {
+          icon: MapPin,
+          title: t('regulations.municipal.title'),
+          description: t('regulations.municipal.description'),
+        },
+        {
+          icon: IdCard,
+          title: t('regulations.licenses.title'),
+          description: t('regulations.licenses.description'),
+        },
+      ];
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -46,10 +73,10 @@ export default function CumplimientoPage() {
           <div className="container mx-auto px-4">
             <div className="flex flex-col items-center text-center space-y-4 max-w-3xl mx-auto">
               <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-[hsl(var(--foreground))]">
-                {t('hero.title')}
+                {heroTitle}
               </h1>
               <p className="text-xl text-[hsl(var(--muted-foreground))] md:text-2xl">
-                {t('hero.subtitle')}
+                {heroSubtitle}
               </p>
             </div>
           </div>
@@ -60,10 +87,10 @@ export default function CumplimientoPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center space-y-4">
               <h2 className="text-3xl font-bold text-[hsl(var(--foreground))]">
-                {t('intro.title')}
+                {introTitle}
               </h2>
               <p className="text-lg text-[hsl(var(--muted-foreground))]">
-                {t('intro.description')}
+                {introDescription}
               </p>
             </div>
           </div>
@@ -73,7 +100,7 @@ export default function CumplimientoPage() {
         <section className="w-full py-12 md:py-24 bg-[hsl(var(--muted))]">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-center mb-12 text-[hsl(var(--foreground))]">
-              {t('regulations.title')}
+              {regulationsTitle}
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -104,10 +131,10 @@ export default function CumplimientoPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center space-y-4">
               <h2 className="text-3xl font-bold text-[hsl(var(--foreground))]">
-                {t('commitment.title')}
+                {commitmentTitle}
               </h2>
               <p className="text-lg text-[hsl(var(--muted-foreground))]">
-                {t('commitment.description')}
+                {commitmentDescription}
               </p>
             </div>
           </div>
