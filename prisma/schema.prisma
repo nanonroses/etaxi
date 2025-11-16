@@ -62,3 +62,15 @@ model DriverLead {
 
   @@map("driver_leads")
 }
+
+// Usuarios del backoffice (Admin)
+model User {
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now())
+  email     String   @unique
+  password  String   // hashed with bcrypt
+  name      String?
+  role      String   @default("admin") // admin, operator, viewer
+
+  @@map("users")
+}
