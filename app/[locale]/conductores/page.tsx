@@ -74,19 +74,23 @@ export default async function ConductoresPage() {
         </div>
 
         {/* Enhanced Hero Section */}
-        <section className="w-full py-12 md:py-20 bg-gradient-to-br from-[#0C1A2B] via-[#182b33] to-[#0C1A2B] text-white relative overflow-hidden">
+        <section className="w-full py-12 md:py-20 bg-gradient-to-br from-[#182b33] via-[#030c13] to-[#182b33] text-white relative overflow-hidden">
+          {/* Animated Background */}
+          <div className="absolute inset-0 bg-gradient-to-br from-[#182b33] via-[#030c13] to-[#182b33] animate-gradient-slow" />
+
           {/* Background decorative elements */}
           <div className="absolute inset-0 opacity-10">
-            <div className="absolute top-20 left-20 w-64 h-64 rounded-full bg-[#F8D347] blur-3xl" />
-            <div className="absolute bottom-20 right-20 w-64 h-64 rounded-full bg-[#F8D347] blur-3xl" />
+            <div className="absolute top-20 left-20 w-80 h-80 rounded-full bg-[#fff500] blur-[120px]" />
+            <div className="absolute bottom-20 right-20 w-80 h-80 rounded-full bg-[#fff500] blur-[120px]" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 rounded-full bg-[#dd1828] blur-[140px] opacity-30" />
           </div>
 
           <div className="container mx-auto max-w-[1200px] px-4 relative z-10">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               {/* Left: Text content */}
               <div className="text-center md:text-left space-y-6">
-                <div className="inline-block px-4 py-2 bg-[#F8D347]/20 rounded-full mb-4">
-                  <p className="text-sm font-semibold text-[#F8D347]">
+                <div className="inline-block px-4 py-2 bg-[#fff500]/20 rounded-full mb-4">
+                  <p className="text-sm font-semibold text-[#fff500]">
                     {t('hero.badge')}
                   </p>
                 </div>
@@ -103,7 +107,7 @@ export default async function ConductoresPage() {
                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
                   <a
                     href="#registro"
-                    className="inline-flex items-center justify-center px-6 py-3 bg-[#F8D347] text-[#0C1A2B] rounded-lg font-semibold text-lg hover:bg-[#F8D347]/90 transition-colors"
+                    className="inline-flex items-center justify-center px-6 py-3 bg-[#fff500] text-[#030c13] rounded-lg font-semibold text-lg hover:bg-[#fff500]/90 hover:shadow-[0_0_20px_rgba(221,24,40,0.5)] transition-all duration-300 hover:scale-105"
                   >
                     <Car className="w-5 h-5 mr-2" />
                     {t('hero.cta1')}
@@ -121,11 +125,11 @@ export default async function ConductoresPage() {
               <div className="flex justify-center">
                 <div className="relative">
                   {/* Glow effect */}
-                  <div className="absolute inset-0 bg-[#F8D347]/20 blur-3xl rounded-full" />
+                  <div className="absolute inset-0 bg-[#fff500]/20 blur-3xl rounded-full" />
 
                   {/* Icon */}
-                  <div className="relative w-64 h-64 rounded-full bg-gradient-to-br from-[#F8D347] to-[#F8D347]/70 flex items-center justify-center shadow-2xl transform hover:scale-105 transition-transform duration-300">
-                    <Car className="w-32 h-32 text-[#0C1A2B]" />
+                  <div className="relative w-64 h-64 rounded-full bg-gradient-to-br from-[#fff500] to-[#fff500]/70 flex items-center justify-center shadow-2xl transform hover:scale-110 transition-transform duration-300">
+                    <Car className="w-32 h-32 text-[#030c13]" />
                   </div>
                 </div>
               </div>
@@ -155,8 +159,14 @@ export default async function ConductoresPage() {
         <DriverFAQ />
 
         {/* Final CTA Section */}
-        <section className="w-full py-16 bg-gradient-to-br from-[#0C1A2B] to-[#182b33] text-white" id="registro">
-          <div className="container mx-auto max-w-4xl px-4 text-center">
+        <section className="w-full py-16 bg-gradient-to-r from-[#dd1828] via-[#182b33] to-[#030c13] text-white relative overflow-hidden" id="registro">
+          {/* Background decorative elements */}
+          <div className="absolute inset-0 opacity-10">
+            <div className="absolute top-10 left-10 w-64 h-64 rounded-full bg-[#fff500] blur-3xl" />
+            <div className="absolute bottom-10 right-10 w-64 h-64 rounded-full bg-[#fff500] blur-3xl" />
+          </div>
+
+          <div className="container mx-auto max-w-4xl px-4 text-center relative z-10">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               {t('cta.title')}
             </h2>
@@ -164,7 +174,7 @@ export default async function ConductoresPage() {
               {t('cta.subtitle')}
             </p>
             <Link href="/contacto">
-              <Button size="lg" className="bg-[#F8D347] text-[#0C1A2B] hover:bg-[#F8D347]/90 min-w-[250px] text-lg">
+              <Button size="lg" className="bg-[#fff500] text-[#030c13] hover:bg-[#fff500]/90 hover:shadow-[0_0_20px_rgba(221,24,40,0.5)] min-w-[250px] text-lg font-bold transition-all duration-300 hover:scale-105">
                 {t('cta.button')}
               </Button>
             </Link>

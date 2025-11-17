@@ -19,8 +19,8 @@ export function StructuredData({ type, data }: StructuredDataProps) {
           url: baseUrl,
           logo: `${baseUrl}/logo-etaxi.png`,
           description: 'Plataforma de taxis 100% legales y regulados en Chile. Cumplimiento total de Ley 21.553 y Decreto Supremo 212.',
-          email: 'contacto@etaxi.cl',
-          telephone: '+56912345678',
+          email: 'contacto@etaxichile.cl',
+          telephone: '+56962116017',
           address: {
             '@type': 'PostalAddress',
             addressCountry: 'CL',
@@ -28,10 +28,10 @@ export function StructuredData({ type, data }: StructuredDataProps) {
             addressRegion: 'Región Metropolitana',
           },
           sameAs: [
-            'https://www.facebook.com/etaxichile',
-            'https://www.instagram.com/etaxichile',
-            'https://www.linkedin.com/company/etaxi',
-            'https://twitter.com/etaxichile',
+            'https://facebook.com/etaxichile',
+            'https://instagram.com/etaxi_cl',
+            'https://x.com/etaxi_cl',
+            'https://www.youtube.com/@etaxichile6351',
           ],
           areaServed: {
             '@type': 'Country',
@@ -79,8 +79,8 @@ export function StructuredData({ type, data }: StructuredDataProps) {
           name: 'ETAXI',
           image: `${baseUrl}/logo-etaxi.png`,
           url: baseUrl,
-          telephone: '+56912345678',
-          email: 'contacto@etaxi.cl',
+          telephone: '+56962116017',
+          email: 'contacto@etaxichile.cl',
           priceRange: '$$',
           address: {
             '@type': 'PostalAddress',

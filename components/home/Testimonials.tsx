@@ -95,7 +95,7 @@ export function Testimonials() {
           </button>
 
           {/* Testimonial Cards */}
-          <div className="relative h-[400px] md:h-[350px]">
+          <div className="relative min-h-[480px] md:min-h-[420px]">
             <AnimatePresence mode="wait">
               <motion.div
                 key={currentIndex}
@@ -105,7 +105,7 @@ export function Testimonials() {
                 transition={{ duration: 0.5, ease: 'easeInOut' }}
                 className="absolute inset-0"
               >
-                <div className="h-full bg-white rounded-3xl shadow-2xl p-8 md:p-12 border border-gray-100 relative overflow-hidden">
+                <div className="h-full bg-white rounded-3xl shadow-2xl p-8 md:p-12 border border-gray-100 relative">
                   {/* Gradient overlay */}
                   <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-[#dd1828]/5 to-transparent rounded-full blur-2xl" />
 

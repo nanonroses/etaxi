@@ -43,7 +43,7 @@ export function HeroSection({ title, subtitle, primaryCta, secondaryCta }: HeroS
       {/* Diagonal overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-[#dd1828]/90 to-transparent" />
 
-      <div className="container relative mx-auto max-w-7xl px-4 py-20">
+      <div className="container relative mx-auto max-w-7xl px-4 py-20 pb-32 md:pb-40 z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[70vh]">
           {/* Left Content */}
           <motion.div
@@ -156,7 +156,7 @@ export function HeroSection({ title, subtitle, primaryCta, secondaryCta }: HeroS
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.8 }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-20 pt-12 border-t border-white/10"
+          className="relative z-20 grid grid-cols-2 md:grid-cols-4 gap-6 mt-20 pt-12 border-t border-white/10"
         >
           {stats.map((stat, index) => {
             const Icon = stat.icon;
@@ -184,7 +184,7 @@ export function HeroSection({ title, subtitle, primaryCta, secondaryCta }: HeroS
       </div>
 
       {/* Bottom curve */}
-      <div className="absolute bottom-0 left-0 right-0">
+      <div className="absolute bottom-0 left-0 right-0 z-0">
         <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full">
           <path d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="white"/>
         </svg>

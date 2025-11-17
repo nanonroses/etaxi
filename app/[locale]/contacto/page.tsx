@@ -4,7 +4,7 @@ import { Footer } from '@/components/layout/Footer';
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
 import { ContactForm } from '@/components/common/ContactForm';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Mail, Phone, Facebook, Twitter, Instagram } from 'lucide-react';
+import { Mail, Phone, Facebook, Twitter, Instagram, Youtube, MessageCircle } from 'lucide-react';
 import { seoConfig } from '@/app/seo.config';
 import type { Metadata } from 'next';
 
@@ -83,10 +83,10 @@ export default function ContactoPage() {
                       <div>
                         <p className="text-sm text-[hsl(var(--muted-foreground))]">Email</p>
                         <a
-                          href={`mailto:${t('info.email')}`}
+                          href="mailto:contacto@etaxichile.cl"
                           className="text-[hsl(var(--foreground))] font-medium hover:text-[hsl(var(--primary))] transition-colors"
                         >
-                          {t('info.email')}
+                          contacto@etaxichile.cl
                         </a>
                       </div>
                     </div>
@@ -99,10 +99,28 @@ export default function ContactoPage() {
                       <div>
                         <p className="text-sm text-[hsl(var(--muted-foreground))]">Teléfono</p>
                         <a
-                          href={`tel:${t('info.phone')}`}
+                          href="tel:+56962116017"
                           className="text-[hsl(var(--foreground))] font-medium hover:text-[hsl(var(--primary))] transition-colors"
                         >
-                          {t('info.phone')}
+                          +56 9 6211 6017
+                        </a>
+                      </div>
+                    </div>
+
+                    {/* WhatsApp */}
+                    <div className="flex items-center space-x-4">
+                      <div className="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0">
+                        <MessageCircle className="w-6 h-6 text-green-600" aria-hidden="true" />
+                      </div>
+                      <div>
+                        <p className="text-sm text-[hsl(var(--muted-foreground))]">WhatsApp</p>
+                        <a
+                          href="https://wa.me/56962116017"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-[hsl(var(--foreground))] font-medium hover:text-green-600 transition-colors"
+                        >
+                          +56 9 6211 6017
                         </a>
                       </div>
                     </div>
@@ -117,33 +135,42 @@ export default function ContactoPage() {
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <div className="flex space-x-4">
+                    <div className="flex flex-wrap gap-3">
                       <a
-                        href="https://facebook.com/etaxi"
+                        href="https://facebook.com/etaxichile"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="w-12 h-12 rounded-full bg-[hsl(var(--primary))]/10 flex items-center justify-center hover:bg-[hsl(var(--primary))]/20 transition-colors"
-                        aria-label={t('info.social.facebook')}
+                        className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center hover:bg-blue-600 hover:scale-110 transition-all group"
+                        aria-label="Facebook"
                       >
-                        <Facebook className="w-6 h-6 text-[hsl(var(--primary))]" aria-hidden="true" />
+                        <Facebook className="w-6 h-6 text-blue-600 group-hover:text-white transition-colors" aria-hidden="true" />
                       </a>
                       <a
-                        href="https://twitter.com/etaxi_cl"
+                        href="https://x.com/etaxi_cl"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="w-12 h-12 rounded-full bg-[hsl(var(--primary))]/10 flex items-center justify-center hover:bg-[hsl(var(--primary))]/20 transition-colors"
-                        aria-label={t('info.social.twitter')}
+                        className="w-12 h-12 rounded-full bg-sky-100 flex items-center justify-center hover:bg-sky-500 hover:scale-110 transition-all group"
+                        aria-label="Twitter/X"
                       >
-                        <Twitter className="w-6 h-6 text-[hsl(var(--primary))]" aria-hidden="true" />
+                        <Twitter className="w-6 h-6 text-sky-600 group-hover:text-white transition-colors" aria-hidden="true" />
                       </a>
                       <a
                         href="https://instagram.com/etaxi_cl"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="w-12 h-12 rounded-full bg-[hsl(var(--primary))]/10 flex items-center justify-center hover:bg-[hsl(var(--primary))]/20 transition-colors"
-                        aria-label={t('info.social.instagram')}
+                        className="w-12 h-12 rounded-full bg-pink-100 flex items-center justify-center hover:bg-pink-600 hover:scale-110 transition-all group"
+                        aria-label="Instagram"
                       >
-                        <Instagram className="w-6 h-6 text-[hsl(var(--primary))]" aria-hidden="true" />
+                        <Instagram className="w-6 h-6 text-pink-600 group-hover:text-white transition-colors" aria-hidden="true" />
+                      </a>
+                      <a
+                        href="https://www.youtube.com/@etaxichile6351"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-12 h-12 rounded-full bg-red-100 flex items-center justify-center hover:bg-red-600 hover:scale-110 transition-all group"
+                        aria-label="YouTube"
+                      >
+                        <Youtube className="w-6 h-6 text-red-600 group-hover:text-white transition-colors" aria-hidden="true" />
                       </a>
                     </div>
                   </CardContent>

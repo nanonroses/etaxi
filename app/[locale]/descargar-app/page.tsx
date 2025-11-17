@@ -3,15 +3,16 @@ import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
 import { DownloadAppCTA } from '@/components/home/DownloadAppCTA';
+import { DownloadHero } from '@/components/download/DownloadHero';
 import { AppStats } from '@/components/download/AppStats';
 import { AppFeatures } from '@/components/download/AppFeatures';
 import { AppScreenshots } from '@/components/download/AppScreenshots';
 import { SystemRequirements } from '@/components/download/SystemRequirements';
+import { AccordionAnimated } from '@/components/ui/accordion-animated';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card';
-import { Check, Smartphone } from 'lucide-react';
+import { Check } from 'lucide-react';
 import { getAppDownload } from '@/lib/sanity.queries';
 import { seoConfig } from '@/app/seo.config';
-import Image from 'next/image';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -93,83 +94,8 @@ export default async function DescargarAppPage() {
           <Breadcrumbs />
         </div>
 
-        {/* Enhanced Hero Section */}
-        <section className="w-full py-12 md:py-20 bg-gradient-to-b from-[#0C1A2B] via-[#182b33] to-[#0C1A2B] text-white relative overflow-hidden">
-          {/* Background decorative elements */}
-          <div className="absolute inset-0 opacity-10">
-            <div className="absolute top-20 left-20 w-64 h-64 rounded-full bg-[#F8D347] blur-3xl" />
-            <div className="absolute bottom-20 right-20 w-64 h-64 rounded-full bg-[#F8D347] blur-3xl" />
-          </div>
-
-          <div className="container mx-auto max-w-[1200px] px-4 relative z-10">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-              {/* Left: Text content */}
-              <div className="text-center md:text-left space-y-6">
-                <div className="inline-block px-4 py-2 bg-[#F8D347]/20 rounded-full mb-4">
-                  <p className="text-sm font-semibold text-[#F8D347]">
-                    {t('hero.badge')}
-                  </p>
-                </div>
-
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                  {t('hero.title')}
-                </h1>
-
-                <p className="text-lg md:text-xl text-white/80 leading-relaxed">
-                  {t('hero.subtitle')}
-                </p>
-
-                {/* Download Buttons */}
-                <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                  <a
-                    href="#download"
-                    className="inline-flex items-center justify-center px-6 py-3 bg-[#F8D347] text-[#0C1A2B] rounded-lg font-semibold text-lg hover:bg-[#F8D347]/90 transition-colors"
-                  >
-                    <Smartphone className="w-5 h-5 mr-2" />
-                    Descargar Ahora
-                  </a>
-                  <a
-                    href="#features"
-                    className="inline-flex items-center justify-center px-6 py-3 bg-white/10 text-white rounded-lg font-semibold text-lg hover:bg-white/20 transition-colors backdrop-blur-sm"
-                  >
-                    Ver Características
-                  </a>
-                </div>
-              </div>
-
-              {/* Right: Phone mockup */}
-              <div className="flex justify-center">
-                <div className="relative">
-                  {/* Glow effect */}
-                  <div className="absolute inset-0 bg-[#F8D347]/20 blur-3xl rounded-full" />
-
-                  {/* Phone */}
-                  <div className="relative bg-gray-900 rounded-[3rem] p-4 shadow-2xl transform hover:scale-105 transition-transform duration-300" style={{ width: '300px' }}>
-                    {/* Notch */}
-                    <div className="bg-black rounded-t-[2.5rem] h-8 flex items-center justify-center mb-2">
-                      <div className="w-24 h-5 bg-gray-900 rounded-full" />
-                    </div>
-
-                    {/* Screen */}
-                    <div className="aspect-[9/16] rounded-[2rem] bg-gradient-to-br from-[#F8D347] to-[#F8D347]/70 flex items-center justify-center relative overflow-hidden">
-                      <Image
-                        src="/images/placeholders/Screen Etaxi Chile.webp"
-                        alt="ETAXI App - Pantalla"
-                        fill
-                        className="object-cover rounded-[2rem]"
-                      />
-                    </div>
-
-                    {/* Home indicator */}
-                    <div className="bg-black rounded-b-[2.5rem] h-10 flex items-center justify-center mt-2">
-                      <div className="w-28 h-1 bg-white rounded-full opacity-50" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        {/* Hero Section */}
+        <DownloadHero />
 
         {/* Stats Section */}
         <AppStats />
@@ -225,27 +151,30 @@ export default async function DescargarAppPage() {
         <SystemRequirements />
 
         {/* FAQ Section */}
-        <section className="w-full py-16 md:py-20 bg-gradient-to-b from-[hsl(var(--muted))] to-white">
-          <div className="container mx-auto max-w-[1200px] px-4">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[#0C1A2B]">
-              {t('faq.title')}
-            </h2>
+        <section className="w-full py-20 bg-gradient-to-b from-[hsl(var(--muted))] via-white to-[hsl(var(--muted))] relative overflow-hidden">
+          {/* Decorative background */}
+          <div className="absolute inset-0 opacity-5">
+            <div className="absolute top-20 left-20 w-96 h-96 bg-[#F8D347] rounded-full blur-3xl animate-pulse" />
+            <div className="absolute bottom-20 right-20 w-96 h-96 bg-blue-500 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
+          </div>
 
-            <div className="max-w-3xl mx-auto space-y-4">
-              {faqs.map((faq, index) => (
-                <Card key={index} className="border-2 hover:shadow-lg transition-shadow">
-                  <CardHeader>
-                    <CardTitle className="text-lg text-[#0C1A2B]">
-                      {faq.question}
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-muted-foreground leading-relaxed">
-                      {faq.answer}
-                    </p>
-                  </CardContent>
-                </Card>
-              ))}
+          <div className="container mx-auto max-w-[1200px] px-4 relative z-10">
+            <div className="text-center mb-16">
+              <div className="inline-block px-6 py-2 bg-[#F8D347]/10 rounded-full mb-4 border border-[#F8D347]/20">
+                <p className="text-sm font-semibold text-[#0C1A2B]">
+                  Preguntas Frecuentes
+                </p>
+              </div>
+              <h2 className="text-3xl md:text-5xl font-bold text-center mb-4 text-[#0C1A2B]">
+                {t('faq.title')}
+              </h2>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                Resolvemos tus dudas sobre la aplicación ETAXI
+              </p>
+            </div>
+
+            <div className="max-w-3xl mx-auto">
+              <AccordionAnimated items={faqs} />
             </div>
           </div>
         </section>

@@ -2,152 +2,363 @@
 
 import Link from 'next/link';
 import { useTranslations, useLocale } from 'next-intl';
+import { motion } from 'framer-motion';
+import {
+  Smartphone,
+  Building2,
+  Headphones,
+  Scale,
+  Shield,
+  Facebook,
+  Instagram,
+  Twitter,
+  Youtube,
+  ChevronRight,
+  Star,
+  Users,
+  CheckCircle,
+  Apple,
+  PlayCircle,
+  Mail,
+  Phone
+} from 'lucide-react';
 
 export function Footer() {
   const t = useTranslations('footer');
   const locale = useLocale();
+  const currentYear = new Date().getFullYear();
+
+  const serviceLinks = [
+    { href: `/${locale}/pedir-taxi`, label: locale === 'es' ? 'Pedir Taxi' : 'Request Taxi' },
+    { href: `/${locale}/descargar-app`, label: locale === 'es' ? 'Descargar App' : 'Download App' },
+    { href: `/${locale}/seguridad`, label: locale === 'es' ? 'Seguridad' : 'Security' },
+  ];
+
+  const companyLinks = [
+    { href: `/${locale}/empresas-gremios`, label: locale === 'es' ? 'Empresas & Gremios' : 'Business & Guilds' },
+    { href: `/${locale}/conductores`, label: locale === 'es' ? 'Conductores' : 'Drivers' },
+    { href: `/${locale}/cumplimiento`, label: locale === 'es' ? 'Cumplimiento' : 'Compliance' },
+  ];
+
+  const supportLinks = [
+    { href: `/${locale}/ayuda`, label: locale === 'es' ? 'Ayuda' : 'Help' },
+    { href: `/${locale}/contacto`, label: locale === 'es' ? 'Contacto' : 'Contact' },
+  ];
+
+  const legalLinks = [
+    { href: `/${locale}/terminos-y-condiciones`, label: t('legal.terms') },
+    { href: `/${locale}/politica-privacidad`, label: t('legal.privacy') },
+    { href: `/${locale}/politica-cookies`, label: t('legal.cookies') },
+    { href: `/${locale}/cumplimiento`, label: t('legal.compliance') },
+  ];
+
+  const socialLinks = [
+    { icon: Facebook, href: 'https://facebook.com/etaxichile', label: 'Facebook', color: 'hover:bg-blue-600' },
+    { icon: Instagram, href: 'https://instagram.com/etaxi_cl', label: 'Instagram', color: 'hover:bg-pink-600' },
+    { icon: Twitter, href: 'https://x.com/etaxi_cl', label: 'Twitter/X', color: 'hover:bg-sky-500' },
+    { icon: Youtube, href: 'https://www.youtube.com/@etaxichile6351', label: 'YouTube', color: 'hover:bg-red-600' },
+  ];
+
+  const stats = [
+    { icon: Users, value: '500+', label: locale === 'es' ? 'Conductores' : 'Drivers' },
+    { icon: CheckCircle, value: '15,000+', label: locale === 'es' ? 'Viajes' : 'Trips' },
+    { icon: Star, value: '4.8★', label: 'Rating' },
+  ];
 
   return (
-    <footer className="w-full border-t border-[hsl(var(--border))] bg-white">
-      <div className="container mx-auto max-w-[1200px] px-4 py-12">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
-          {/* Brand */}
-          <div>
-            <h3 className="text-xl font-bold tracking-tight text-[hsl(var(--primary))]">
+    <footer className="w-full bg-gradient-to-br from-[#182b33] via-[#030c13] to-[#182b33] text-white relative overflow-hidden">
+      {/* Background decorative elements */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute top-20 left-20 w-96 h-96 rounded-full bg-[#dd1828] blur-[120px]" />
+        <div className="absolute bottom-20 right-20 w-96 h-96 rounded-full bg-[#fff500] blur-[120px]" />
+      </div>
+
+      {/* Top decorative wave */}
+      <div className="absolute top-0 left-0 right-0">
+        <svg viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full">
+          <path d="M0 0L60 5C120 10 240 20 360 25C480 30 600 30 720 25C840 20 960 10 1080 10C1200 10 1320 20 1380 25L1440 30V0H1380C1320 0 1200 0 1080 0C960 0 840 0 720 0C600 0 480 0 360 0C240 0 120 0 60 0H0Z" fill="currentColor" className="text-gray-100" />
+        </svg>
+      </div>
+
+      <div className="container mx-auto max-w-[1200px] px-4 py-16 relative z-10">
+        {/* Header Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="text-center mb-12"
+        >
+          {/* Logo with glow */}
+          <div className="relative inline-block mb-4">
+            <div className="absolute inset-0 bg-gradient-to-r from-[#dd1828] to-[#fff500] blur-xl opacity-30 rounded-full" />
+            <h2 className="relative text-5xl font-bold bg-gradient-to-r from-[#dd1828] to-[#fff500] bg-clip-text text-transparent">
               ETAXI
-            </h3>
-            <p className="mt-3 text-base text-[hsl(var(--muted-foreground))]">
-              {locale === 'es'
-                ? 'Taxis regulados en Chile'
-                : 'Regulated taxis in Chile'}
-            </p>
+            </h2>
           </div>
 
-          {/* Services Links */}
-          <div>
-            <h4 className="text-sm font-semibold text-[hsl(var(--foreground))] mb-4">
-              {locale === 'es' ? 'Servicios' : 'Services'}
-            </h4>
-            <ul className="space-y-2">
-              <li>
-                <Link
-                  href={`/${locale}/pedir-taxi`}
-                  className="text-sm text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--primary))] transition-colors"
-                >
-                  {locale === 'es' ? 'Pedir Taxi' : 'Request Taxi'}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={`/${locale}/descargar-app`}
-                  className="text-sm text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--primary))] transition-colors"
-                >
-                  {locale === 'es' ? 'Descargar App' : 'Download App'}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={`/${locale}/seguridad`}
-                  className="text-sm text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--primary))] transition-colors"
-                >
-                  {locale === 'es' ? 'Seguridad' : 'Security'}
-                </Link>
-              </li>
-            </ul>
+          {/* Badge */}
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#fff500]/10 border border-[#fff500]/30 mb-6">
+            <Shield className="w-4 h-4 text-[#fff500]" />
+            <span className="text-sm font-semibold text-[#fff500]">
+              {locale === 'es' ? '100% Regulado - Ley 21.553' : '100% Regulated - Law 21.553'}
+            </span>
           </div>
 
-          {/* Company Links */}
-          <div>
-            <h4 className="text-sm font-semibold text-[hsl(var(--foreground))] mb-4">
-              {locale === 'es' ? 'Empresa' : 'Company'}
-            </h4>
-            <ul className="space-y-2">
-              <li>
-                <Link
-                  href={`/${locale}/empresas-gremios`}
-                  className="text-sm text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--primary))] transition-colors"
-                >
-                  {locale === 'es' ? 'Empresas & Gremios' : 'Business & Guilds'}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={`/${locale}/conductores`}
-                  className="text-sm text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--primary))] transition-colors"
-                >
-                  {locale === 'es' ? 'Conductores' : 'Drivers'}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={`/${locale}/cumplimiento`}
-                  className="text-sm text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--primary))] transition-colors"
-                >
-                  {locale === 'es' ? 'Cumplimiento' : 'Compliance'}
-                </Link>
-              </li>
-            </ul>
-          </div>
+          {/* Tagline */}
+          <p className="text-lg text-white/80 mb-6">
+            {locale === 'es' ? 'Taxis 100% Regulados en Chile' : '100% Regulated Taxis in Chile'}
+          </p>
 
-          {/* Support Links */}
-          <div>
-            <h4 className="text-sm font-semibold text-[hsl(var(--foreground))] mb-4">
-              {locale === 'es' ? 'Soporte' : 'Support'}
-            </h4>
-            <ul className="space-y-2">
-              <li>
-                <Link
-                  href={`/${locale}/ayuda`}
-                  className="text-sm text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--primary))] transition-colors"
+          {/* Mini Stats */}
+          <div className="flex flex-wrap justify-center gap-6 mb-8">
+            {stats.map((stat, index) => {
+              const Icon = stat.icon;
+              return (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: index * 0.1 }}
+                  className="flex items-center gap-2"
                 >
-                  {locale === 'es' ? 'Ayuda' : 'Help'}
-                </Link>
+                  <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#dd1828] to-[#182b33] flex items-center justify-center">
+                    <Icon className="w-4 h-4 text-white" />
+                  </div>
+                  <div className="text-left">
+                    <div className="text-sm font-bold text-white">{stat.value}</div>
+                    <div className="text-xs text-white/60">{stat.label}</div>
+                  </div>
+                </motion.div>
+              );
+            })}
+          </div>
+        </motion.div>
+
+        {/* Links Grid */}
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-4 mb-12">
+          {/* Services */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+          >
+            <div className="flex items-center gap-2 mb-4">
+              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#fff500] to-[#dd1828] flex items-center justify-center shadow-lg">
+                <Smartphone className="w-5 h-5 text-[#182b33]" />
+              </div>
+              <h4 className="text-base font-bold text-white">
+                {locale === 'es' ? 'Servicios' : 'Services'}
+              </h4>
+            </div>
+            <ul className="space-y-2">
+              {serviceLinks.map((link, index) => (
+                <li key={index}>
+                  <Link
+                    href={link.href}
+                    className="group flex items-center gap-2 text-sm text-white/70 hover:text-[#fff500] transition-all duration-300"
+                  >
+                    <ChevronRight className="w-3 h-3 opacity-0 group-hover:opacity-100 -ml-5 group-hover:ml-0 transition-all duration-300" />
+                    <span className="group-hover:translate-x-1 transition-transform duration-300">{link.label}</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+
+          {/* Company */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
+            <div className="flex items-center gap-2 mb-4">
+              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#dd1828] to-[#182b33] flex items-center justify-center shadow-lg">
+                <Building2 className="w-5 h-5 text-white" />
+              </div>
+              <h4 className="text-base font-bold text-white">
+                {locale === 'es' ? 'Empresa' : 'Company'}
+              </h4>
+            </div>
+            <ul className="space-y-2">
+              {companyLinks.map((link, index) => (
+                <li key={index}>
+                  <Link
+                    href={link.href}
+                    className="group flex items-center gap-2 text-sm text-white/70 hover:text-[#dd1828] transition-all duration-300"
+                  >
+                    <ChevronRight className="w-3 h-3 opacity-0 group-hover:opacity-100 -ml-5 group-hover:ml-0 transition-all duration-300" />
+                    <span className="group-hover:translate-x-1 transition-transform duration-300">{link.label}</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+
+          {/* Support & Contact */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+          >
+            <div className="flex items-center gap-2 mb-4">
+              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#182b33] to-[#030c13] flex items-center justify-center shadow-lg border border-white/20">
+                <Headphones className="w-5 h-5 text-white" />
+              </div>
+              <h4 className="text-base font-bold text-white">
+                {locale === 'es' ? 'Contacto' : 'Contact'}
+              </h4>
+            </div>
+            <ul className="space-y-3">
+              {supportLinks.map((link, index) => (
+                <li key={index}>
+                  <Link
+                    href={link.href}
+                    className="group flex items-center gap-2 text-sm text-white/70 hover:text-white transition-all duration-300"
+                  >
+                    <ChevronRight className="w-3 h-3 opacity-0 group-hover:opacity-100 -ml-5 group-hover:ml-0 transition-all duration-300" />
+                    <span className="group-hover:translate-x-1 transition-transform duration-300">{link.label}</span>
+                  </Link>
+                </li>
+              ))}
+              <li>
+                <a
+                  href="mailto:contacto@etaxichile.cl"
+                  className="group flex items-center gap-2 text-sm text-white/70 hover:text-[#fff500] transition-all duration-300"
+                >
+                  <Mail className="w-3.5 h-3.5 flex-shrink-0" />
+                  <span className="group-hover:translate-x-1 transition-transform duration-300">contacto@etaxichile.cl</span>
+                </a>
               </li>
               <li>
-                <Link
-                  href={`/${locale}/contacto`}
-                  className="text-sm text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--primary))] transition-colors"
+                <a
+                  href="https://wa.me/56962116017"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex items-center gap-2 text-sm text-white/70 hover:text-green-400 transition-all duration-300"
                 >
-                  {locale === 'es' ? 'Contacto' : 'Contact'}
-                </Link>
+                  <Phone className="w-3.5 h-3.5 flex-shrink-0" />
+                  <span className="group-hover:translate-x-1 transition-transform duration-300">+56 9 6211 6017</span>
+                </a>
               </li>
             </ul>
-          </div>
+          </motion.div>
+
+          {/* Legal */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+          >
+            <div className="flex items-center gap-2 mb-4">
+              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#596065] to-[#182b33] flex items-center justify-center shadow-lg">
+                <Scale className="w-5 h-5 text-white" />
+              </div>
+              <h4 className="text-base font-bold text-white">Legal</h4>
+            </div>
+            <ul className="space-y-2">
+              {legalLinks.map((link, index) => (
+                <li key={index}>
+                  <Link
+                    href={link.href}
+                    className="group flex items-center gap-2 text-sm text-white/70 hover:text-[#596065] transition-all duration-300"
+                  >
+                    <ChevronRight className="w-3 h-3 opacity-0 group-hover:opacity-100 -ml-5 group-hover:ml-0 transition-all duration-300" />
+                    <span className="group-hover:translate-x-1 transition-transform duration-300">{link.label}</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
         </div>
 
-        {/* Legal Links */}
-        <div className="mt-12 border-t border-[hsl(var(--border))] pt-8">
-          <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-6">
+        {/* Social Links */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.5 }}
+          className="mb-12"
+        >
+          <h4 className="text-center text-sm font-semibold text-white/60 mb-4">
+            {locale === 'es' ? 'Síguenos en Redes Sociales' : 'Follow Us on Social Media'}
+          </h4>
+          <div className="flex justify-center gap-4">
+            {socialLinks.map((social, index) => {
+              const Icon = social.icon;
+              return (
+                <a
+                  key={index}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={social.label}
+                  className={`w-12 h-12 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center ${social.color} transition-all duration-300 hover:scale-110 hover:border-white/40 hover:shadow-lg`}
+                >
+                  <Icon className="w-5 h-5 text-white" />
+                </a>
+              );
+            })}
+          </div>
+        </motion.div>
+
+        {/* CTA Download */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.6 }}
+          className="bg-gradient-to-r from-[#fff500] to-[#dd1828] rounded-2xl p-8 mb-12 text-center shadow-2xl"
+        >
+          <h3 className="text-2xl font-bold text-[#182b33] mb-4">
+            {locale === 'es' ? 'Descarga ETAXI' : 'Download ETAXI'}
+          </h3>
+          <p className="text-[#182b33]/80 mb-6">
+            {locale === 'es' ? 'Disponible en iOS y Android' : 'Available on iOS and Android'}
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href={`/${locale}/terminos-y-condiciones`}
-              className="text-sm text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--primary))] transition-colors"
+              href={`/${locale}/descargar-app`}
+              className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#182b33] text-white rounded-lg font-semibold hover:bg-[#030c13] transition-all duration-300 hover:scale-105 shadow-lg"
             >
-              {t('legal.terms')}
+              <Apple className="w-5 h-5" />
+              App Store
             </Link>
             <Link
-              href={`/${locale}/politica-privacidad`}
-              className="text-sm text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--primary))] transition-colors"
+              href={`/${locale}/descargar-app`}
+              className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#182b33] text-white rounded-lg font-semibold hover:bg-[#030c13] transition-all duration-300 hover:scale-105 shadow-lg"
             >
-              {t('legal.privacy')}
-            </Link>
-            <Link
-              href={`/${locale}/politica-cookies`}
-              className="text-sm text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--primary))] transition-colors"
-            >
-              {t('legal.cookies')}
-            </Link>
-            <Link
-              href={`/${locale}/cumplimiento`}
-              className="text-sm text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--primary))] transition-colors"
-            >
-              {t('legal.compliance')}
+              <PlayCircle className="w-5 h-5" />
+              Google Play
             </Link>
           </div>
+        </motion.div>
 
+        {/* Bottom Section */}
+        <div className="border-t border-white/10 pt-8">
           {/* Copyright */}
-          <p className="text-sm text-[hsl(var(--muted-foreground))] text-center">
-            {t('copyright')}
-          </p>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.7 }}
+            className="flex flex-col items-center gap-4"
+          >
+            <div className="flex items-center gap-2 text-sm text-white/60">
+              <Shield className="w-4 h-4 text-[#fff500]" />
+              <span>© {currentYear} ETAXI - {locale === 'es' ? 'Todos los derechos reservados' : 'All rights reserved'}</span>
+            </div>
+            <p className="text-xs text-white/40 text-center max-w-2xl">
+              {locale === 'es'
+                ? 'ETAXI es una plataforma 100% regulada bajo la Ley 21.553 de Chile. Todos nuestros conductores están certificados y cumplen con la normativa vigente.'
+                : 'ETAXI is a 100% regulated platform under Chilean Law 21.553. All our drivers are certified and comply with current regulations.'}
+            </p>
+          </motion.div>
         </div>
       </div>
     </footer>
