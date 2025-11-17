@@ -9,7 +9,7 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
+  provider = "sqlite"
   url      = env("DATABASE_URL")
 }
 
@@ -73,4 +73,263 @@ model User {
   role      String   @default("admin") // admin, operator, viewer
 
   @@map("users")
+}
+
+// ========================================
+// CORE OPERACIONAL - EAT (MVP)
+// ========================================
+
+// Operador de flota (Gremio, Central, Empresa, Municipalidad)
+model FleetOperator {
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  name      String
+  type      String   // GUILD, CENTRAL, COMPANY, MUNICIPALITY
+  city      String
+  isActive  Boolean  @default(true)
+
+  contactEmail String?
+  contactPhone String?
+
+  // Relaciones
+  taxis       Taxi[]
+  drivers     Driver[]
+  assignments Assignment[]
+
+  @@map("fleet_operators")
+  @@index([city])
+  @@index([isActive])
+}
+
+// Taxi (Vehículo regulado)
+model Taxi {
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  licensePlate String @unique
+  type         String @default("STANDARD") // STANDARD, EXECUTIVE, TOURISM, VAN, LUXURY, ACCESSIBLE
+  city         String
+  zone         String?
+
+  operationalStatus String @default("OFFLINE") // AVAILABLE, BUSY, OFFLINE, MAINTENANCE
+
+  fleetOperatorId String
+  fleetOperator   FleetOperator @relation(fields: [fleetOperatorId], references: [id])
+
+  // Relaciones
+  assignments Assignment[]
+
+  @@map("taxis")
+  @@index([licensePlate])
+  @@index([operationalStatus])
+  @@index([fleetOperatorId])
+  @@index([city])
+}
+
+// Conductor (Operacional)
+model Driver {
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  fullName            String
+  phone               String
+  email               String?
+  password            String // hashed with bcrypt (for mobile app auth)
+  professionalLicense String?
+  licenseValidUntil   DateTime?
+
+  isEnabled Boolean @default(true)
+
+  fleetOperatorId String
+  fleetOperator   FleetOperator @relation(fields: [fleetOperatorId], references: [id])
+
+  // Relaciones
+  assignments      Assignment[]
+  driverPositions  DriverPosition[]
+
+  @@map("drivers")
+  @@index([isEnabled])
+  @@index([fleetOperatorId])
+  @@index([phone])
+}
+
+// Pasajero (Usuario de la App Pasajero)
+model Passenger {
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  phone String @unique
+  name  String?
+  email String?
+
+  // Relaciones
+  requests PassengerRequest[]
+  ratings  Rating[]
+
+  @@map("passengers")
+  @@index([phone])
+}
+
+// Solicitud operacional de pasajero (MVP)
+model PassengerRequest {
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Relación con pasajero (si viene de app)
+  passengerId String?
+  passenger   Passenger? @relation(fields: [passengerId], references: [id])
+
+  // Datos del pasajero (para solicitudes sin cuenta)
+  passengerName  String
+  passengerPhone String
+  passengerEmail String?
+
+  // Direcciones
+  originAddress      String
+  destinationAddress String?
+
+  // Coordenadas GPS
+  pickupLat  Float?
+  pickupLng  Float?
+  dropoffLat Float?
+  dropoffLng Float?
+
+  // Tipo de taxi solicitado
+  taxiType String? // BASIC, EXECUTIVE, TOURISM, VAN, LUXURY
+
+  // Programación
+  scheduledFor DateTime? // null = inmediato
+
+  // Canal de origen
+  channel String @default("WEB") // WEB, APP_PASSENGER, PHONE_CENTRAL, BACKOFFICE
+
+  // Estado (State Machine)
+  status String @default("CREATED")
+  // CREATED, PENDING_ASSIGNMENT, ASSIGNED, DRIVER_EN_ROUTE,
+  // PASSENGER_ONBOARD, COMPLETED, CANCELED_BY_PASSENGER,
+  // CANCELED_BY_DRIVER, CANCELED_BY_OPERATOR, EXPIRED
+
+  notes String?
+
+  // Relaciones
+  assignment Assignment?
+
+  @@map("passenger_requests")
+  @@index([status])
+  @@index([createdAt])
+  @@index([channel])
+  @@index([passengerId])
+}
+
+// Asignación de viaje
+model Assignment {
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  passengerRequestId String           @unique
+  passengerRequest   PassengerRequest @relation(fields: [passengerRequestId], references: [id])
+
+  taxiId String?
+  taxi   Taxi?   @relation(fields: [taxiId], references: [id])
+
+  driverId String?
+  driver   Driver? @relation(fields: [driverId], references: [id])
+
+  fleetOperatorId String?
+  fleetOperator   FleetOperator? @relation(fields: [fleetOperatorId], references: [id])
+
+  status String @default("CREATED")
+  // CREATED, SENT_TO_DRIVER, ACCEPTED_BY_DRIVER,
+  // REJECTED_BY_DRIVER, COMPLETED, CANCELED
+
+  assignedBy String // SYSTEM, OPERATOR:{userId}, FLEET:{operatorId}
+
+  // Timestamps del flujo
+  sentToDriverAt DateTime?
+  acceptedAt     DateTime?
+  rejectedAt     DateTime?
+  enRouteAt      DateTime?
+  onboardAt      DateTime?
+  completedAt    DateTime?
+  canceledAt     DateTime?
+
+  cancellationReason String?
+  canceledBy         String? // PASSENGER, DRIVER, OPERATOR, SYSTEM
+
+  // Tarifa
+  estimatedFare Decimal?
+  finalFare     Decimal?
+
+  // Relaciones
+  rating Rating?
+
+  @@map("assignments")
+  @@index([status])
+  @@index([passengerRequestId])
+  @@index([taxiId])
+  @@index([driverId])
+}
+
+// Registro de auditoría
+model AuditLog {
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now())
+
+  entityType String // PASSENGER_REQUEST, ASSIGNMENT, TAXI, DRIVER, FLEET_OPERATOR
+  entityId   String
+
+  action      String // created, status_changed, assigned, canceled, etc.
+  performedBy String // SYSTEM, USER:{id}, PASSENGER:{id}, DRIVER:{id}
+
+  metadata Json? // previousState, newState, ip, userAgent, etc.
+
+  @@map("audit_logs")
+  @@index([entityType, entityId])
+  @@index([createdAt])
+  @@index([performedBy])
+}
+
+// Calificación de viaje (Rating)
+model Rating {
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now())
+
+  passengerId  String
+  passenger    Passenger @relation(fields: [passengerId], references: [id])
+
+  assignmentId String     @unique
+  assignment   Assignment @relation(fields: [assignmentId], references: [id])
+
+  rating  Int    // 1-5
+  comment String?
+
+  @@map("ratings")
+  @@index([passengerId])
+  @@index([assignmentId])
+}
+
+// Posición GPS del conductor (para tracking)
+model DriverPosition {
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  driverId String
+  driver   Driver @relation(fields: [driverId], references: [id])
+
+  lat     Float
+  lng     Float
+  heading Float? // 0-360 degrees
+  speed   Float? // km/h
+
+  @@map("driver_positions")
+  @@index([driverId])
+  @@index([updatedAt])
 }

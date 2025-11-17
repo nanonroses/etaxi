@@ -1,7 +1,7 @@
 import { auth } from '@/lib/auth';
 import { redirect } from 'next/navigation';
 import Link from 'next/link';
-import { LogOut, LayoutDashboard, Car, Building2, Users } from 'lucide-react';
+import { LogOut, LayoutDashboard, Car, Building2, Users, Radio } from 'lucide-react';
 
 export default async function AdminLayout({
   children,
@@ -31,6 +31,28 @@ export default async function AdminLayout({
             <LayoutDashboard className="w-5 h-5" />
             <span>Dashboard</span>
           </Link>
+
+          {/* Sección Operacional - MVP */}
+          <div className="mt-6 mb-2 px-3">
+            <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider">
+              Operación MVP
+            </p>
+          </div>
+
+          <Link
+            href="/admin/operacion/solicitudes"
+            className="flex items-center gap-3 px-3 py-2 mb-1 rounded-lg text-gray-300 hover:bg-[#dd1828]/10 hover:text-[#dd1828] transition-colors"
+          >
+            <Radio className="w-5 h-5" />
+            <span>Asignación Manual</span>
+          </Link>
+
+          {/* Sección de Datos */}
+          <div className="mt-6 mb-2 px-3">
+            <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider">
+              Captación de Datos
+            </p>
+          </div>
 
           <Link
             href="/admin/ride-requests"

@@ -1,9 +1,17 @@
-import { useTranslations } from 'next-intl';
+import { getTranslations } from 'next-intl/server';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
 import { Button } from '@/components/ui/button';
-import { Check, Users, FileCheck, TrendingUp, Shield } from 'lucide-react';
+import { DriverStats } from '@/components/drivers/DriverStats';
+import { DriverBenefits } from '@/components/drivers/DriverBenefits';
+import { DriverRequirements } from '@/components/drivers/DriverRequirements';
+import { OnboardingProcess } from '@/components/drivers/OnboardingProcess';
+import { EarningsCalculator } from '@/components/drivers/EarningsCalculator';
+import { DriverTestimonials } from '@/components/drivers/DriverTestimonials';
+import { DriverFAQ } from '@/components/drivers/DriverFAQ';
+import { StructuredData } from '@/components/seo/StructuredData';
+import { Check, Users, FileCheck, TrendingUp, Shield, Car } from 'lucide-react';
 import Link from 'next/link';
 import { getDriverPage } from '@/lib/sanity.queries';
 import { seoConfig } from '@/app/seo.config';
@@ -13,6 +21,13 @@ export const metadata: Metadata = {
   title: seoConfig.conductores.title,
   description: seoConfig.conductores.description,
   keywords: seoConfig.conductores.keywords,
+  alternates: {
+    canonical: 'https://www.etaxi.cl/es/conductores',
+    languages: {
+      'es-CL': 'https://www.etaxi.cl/es/conductores',
+      'en-US': 'https://www.etaxi.cl/en/drivers',
+    },
+  },
   openGraph: {
     title: seoConfig.conductores.title,
     description: seoConfig.conductores.description,
@@ -20,6 +35,14 @@ export const metadata: Metadata = {
     siteName: 'ETAXI',
     type: 'website',
     locale: 'es_CL',
+    images: [
+      {
+        url: 'https://www.etaxi.cl/og-image-drivers.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'ETAXI Conductores - Únete a la Plataforma Legal',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
@@ -31,172 +54,118 @@ export const metadata: Metadata = {
 export default async function ConductoresPage() {
   // Fetch from Sanity CMS
   const cmsData = await getDriverPage();
-  const t = useTranslations('driverPage');
-
-  // Use CMS data with fallbacks to translations
-  const heroTitle = cmsData?.heroTitle || t('hero.title');
-  const heroSubtitle = cmsData?.heroSubtitle || t('hero.subtitle');
-
-  // Benefits
-  const benefits = cmsData?.benefits && cmsData.benefits.length > 0
-    ? cmsData.benefits
-    : [
-        {
-          title: t('benefits.benefit1.title'),
-          description: t('benefits.benefit1.description'),
-        },
-        {
-          title: t('benefits.benefit2.title'),
-          description: t('benefits.benefit2.description'),
-        },
-        {
-          title: t('benefits.benefit3.title'),
-          description: t('benefits.benefit3.description'),
-        },
-        {
-          title: t('benefits.benefit4.title'),
-          description: t('benefits.benefit4.description'),
-        },
-      ];
-
-  // Requirements
-  const requirementsIntro = cmsData?.requirementsIntro || t('requirements.intro');
-  const requirements = cmsData?.requirements && cmsData.requirements.length > 0
-    ? cmsData.requirements
-    : [
-        t('requirements.list.0'),
-        t('requirements.list.1'),
-        t('requirements.list.2'),
-        t('requirements.list.3'),
-      ];
-
-  // Steps
-  const stepsTitle = cmsData?.stepsTitle || t('steps.title');
-  const steps = cmsData?.steps && cmsData.steps.length > 0
-    ? cmsData.steps
-    : [
-        t('steps.list.0'),
-        t('steps.list.1'),
-        t('steps.list.2'),
-        t('steps.list.3'),
-      ];
-
-  // CTA
-  const ctaTitle = cmsData?.ctaTitle || t('cta.title');
-  const ctaSubtitle = cmsData?.ctaSubtitle || t('cta.subtitle');
-  const ctaButton = cmsData?.ctaButton || t('cta.button');
+  const t = await getTranslations('driverPage');
 
   return (
     <div className="flex min-h-screen flex-col">
+      {/* Schema.org Structured Data */}
+      <StructuredData type="service" data={{
+        serviceType: 'Driver Partnership Program',
+        catalogName: 'Programa para Conductores',
+        description: 'Únete a ETAXI como conductor profesional. Plataforma 100% legal, sin comisiones abusivas, más viajes y respeto a tu trabajo.',
+      }} />
+
       <Navbar />
 
       <main className="flex-1">
         {/* Breadcrumbs */}
-        <div className="container mx-auto max-w-[1200px] px-4">
+        <div className="container mx-auto max-w-[1200px] px-4 py-4">
           <Breadcrumbs />
         </div>
 
-        {/* Hero Section */}
-        <section className="w-full py-20 bg-gradient-to-b from-white to-[hsl(var(--muted))]">
-          <div className="container mx-auto max-w-3xl px-4">
-            <div className="flex flex-col items-center text-center space-y-8">
-              <div className="space-y-4">
-                <h1 className="text-4xl md:text-5xl font-bold text-[#dd1828] leading-tight">
-                  {heroTitle}
+        {/* Enhanced Hero Section */}
+        <section className="w-full py-12 md:py-20 bg-gradient-to-br from-[#0C1A2B] via-[#182b33] to-[#0C1A2B] text-white relative overflow-hidden">
+          {/* Background decorative elements */}
+          <div className="absolute inset-0 opacity-10">
+            <div className="absolute top-20 left-20 w-64 h-64 rounded-full bg-[#F8D347] blur-3xl" />
+            <div className="absolute bottom-20 right-20 w-64 h-64 rounded-full bg-[#F8D347] blur-3xl" />
+          </div>
+
+          <div className="container mx-auto max-w-[1200px] px-4 relative z-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+              {/* Left: Text content */}
+              <div className="text-center md:text-left space-y-6">
+                <div className="inline-block px-4 py-2 bg-[#F8D347]/20 rounded-full mb-4">
+                  <p className="text-sm font-semibold text-[#F8D347]">
+                    {t('hero.badge')}
+                  </p>
+                </div>
+
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+                  {t('hero.title')}
                 </h1>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  {heroSubtitle}
+
+                <p className="text-lg md:text-xl text-white/80 leading-relaxed">
+                  {t('hero.subtitle')}
                 </p>
+
+                {/* CTAs */}
+                <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                  <a
+                    href="#registro"
+                    className="inline-flex items-center justify-center px-6 py-3 bg-[#F8D347] text-[#0C1A2B] rounded-lg font-semibold text-lg hover:bg-[#F8D347]/90 transition-colors"
+                  >
+                    <Car className="w-5 h-5 mr-2" />
+                    {t('hero.cta1')}
+                  </a>
+                  <a
+                    href="#requisitos"
+                    className="inline-flex items-center justify-center px-6 py-3 bg-white/10 text-white rounded-lg font-semibold text-lg hover:bg-white/20 transition-colors backdrop-blur-sm"
+                  >
+                    {t('hero.cta2')}
+                  </a>
+                </div>
+              </div>
+
+              {/* Right: Visual element */}
+              <div className="flex justify-center">
+                <div className="relative">
+                  {/* Glow effect */}
+                  <div className="absolute inset-0 bg-[#F8D347]/20 blur-3xl rounded-full" />
+
+                  {/* Icon */}
+                  <div className="relative w-64 h-64 rounded-full bg-gradient-to-br from-[#F8D347] to-[#F8D347]/70 flex items-center justify-center shadow-2xl transform hover:scale-105 transition-transform duration-300">
+                    <Car className="w-32 h-32 text-[#0C1A2B]" />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Benefits Section */}
-        <section className="w-full py-16 bg-white">
-          <div className="container mx-auto max-w-[1200px] px-4">
-            <h2 className="text-3xl font-bold text-center mb-12 text-[#182b33]">
-              Beneficios para conductores
-            </h2>
+        {/* Stats Section */}
+        <DriverStats />
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-              {benefits.map((benefit, index) => (
-                <div key={index} className="bg-[#F5F5F5] rounded-xl p-6 shadow-sm space-y-4">
-                  <div className="flex items-start gap-3">
-                    <Check className="w-6 h-6 text-[#dd1828] mt-1 flex-shrink-0" />
-                    <div>
-                      <h3 className="text-xl font-semibold text-[#182b33] mb-2">
-                        {benefit.title}
-                      </h3>
-                      <p className="text-muted-foreground leading-relaxed">
-                        {benefit.description}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+        {/* Benefits Section */}
+        <DriverBenefits />
+
+        {/* Earnings Calculator */}
+        <EarningsCalculator />
 
         {/* Requirements Section */}
-        <section className="w-full py-16 bg-[hsl(var(--muted))]">
-          <div className="container mx-auto max-w-3xl px-4">
-            <h2 className="text-3xl font-bold text-center mb-6 text-[#182b33]">
-              {t('requirements.title')}
+        <DriverRequirements />
+
+        {/* Onboarding Process */}
+        <OnboardingProcess />
+
+        {/* Testimonials */}
+        <DriverTestimonials />
+
+        {/* FAQ */}
+        <DriverFAQ />
+
+        {/* Final CTA Section */}
+        <section className="w-full py-16 bg-gradient-to-br from-[#0C1A2B] to-[#182b33] text-white" id="registro">
+          <div className="container mx-auto max-w-4xl px-4 text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              {t('cta.title')}
             </h2>
-            <p className="text-lg text-center text-muted-foreground mb-8 leading-relaxed">
-              {requirementsIntro}
+            <p className="text-lg text-white/80 mb-8">
+              {t('cta.subtitle')}
             </p>
-
-            <div className="bg-white rounded-xl p-8 shadow-sm">
-              <ul className="space-y-4">
-                {requirements.map((req, idx) => (
-                  <li key={idx} className="flex items-start gap-3">
-                    <FileCheck className="w-5 h-5 text-[#dd1828] mt-1 flex-shrink-0" />
-                    <span className="text-muted-foreground leading-relaxed">{req}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        {/* Steps Section */}
-        <section className="w-full py-16 bg-white">
-          <div className="container mx-auto max-w-3xl px-4">
-            <h2 className="text-3xl font-bold text-center mb-12 text-[#182b33]">
-              {stepsTitle}
-            </h2>
-
-            <div className="space-y-6">
-              {steps.map((step, idx) => (
-                <div key={idx} className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#dd1828] text-white flex items-center justify-center font-bold">
-                    {idx + 1}
-                  </div>
-                  <div className="pt-2">
-                    <p className="text-lg text-muted-foreground leading-relaxed">{step}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* CTA Section */}
-        <section className="w-full py-16 bg-[hsl(var(--muted))]">
-          <div className="container mx-auto max-w-3xl px-4 text-center">
-            <h2 className="text-3xl font-bold text-[#182b33] mb-4">
-              {ctaTitle}
-            </h2>
-            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              {ctaSubtitle}
-            </p>
-
             <Link href="/contacto">
-              <Button size="lg" className="w-full sm:w-auto min-w-[200px] bg-[#dd1828] text-white hover:bg-[#dd1828]/90">
-                {ctaButton}
+              <Button size="lg" className="bg-[#F8D347] text-[#0C1A2B] hover:bg-[#F8D347]/90 min-w-[250px] text-lg">
+                {t('cta.button')}
               </Button>
             </Link>
           </div>

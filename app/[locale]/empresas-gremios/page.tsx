@@ -3,194 +3,153 @@ import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
 import { Button } from '@/components/ui/button';
-import { Check } from 'lucide-react';
+import { EnterpriseBenefits } from '@/components/business/EnterpriseBenefits';
+import { GuildBenefits } from '@/components/business/GuildBenefits';
+import { CaseStudies } from '@/components/business/CaseStudies';
+import { ComparisonTable } from '@/components/business/ComparisonTable';
+import { EnterpriseProcess } from '@/components/business/EnterpriseProcess';
+import { GuildProcess } from '@/components/business/GuildProcess';
+import { B2BContactForm } from '@/components/business/B2BContactForm';
+import { B2BCTA, DualCTA } from '@/components/business/B2BCTA';
+import { StructuredData } from '@/components/seo/StructuredData';
+import { Building2, Calendar, Shield } from 'lucide-react';
 import Link from 'next/link';
-import { getBusinessPage } from '@/lib/sanity.queries';
-import { seoConfig } from '@/app/seo.config';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: seoConfig.empresasGremios.title,
-  description: seoConfig.empresasGremios.description,
-  keywords: seoConfig.empresasGremios.keywords,
+  title: 'ETAXI Empresas y Gremios - Soluciones B2B de Transporte Regulado',
+  description: 'Digitaliza tu operación de movilidad corporativa o gremial con ETAXI. Trazabilidad completa, gestión centralizada, reportes en tiempo real y 100% legal según Ley 21.553.',
+  keywords: ['ETAXI empresas', 'transporte corporativo', 'gremios taxi', 'soluciones B2B', 'gestión de flota', 'movilidad empresarial', 'Ley 21.553'],
+  alternates: {
+    canonical: 'https://www.etaxi.cl/es/empresas-gremios',
+    languages: {
+      'es-CL': 'https://www.etaxi.cl/es/empresas-gremios',
+      'en-US': 'https://www.etaxi.cl/en/business-guilds',
+    },
+  },
   openGraph: {
-    title: seoConfig.empresasGremios.title,
-    description: seoConfig.empresasGremios.description,
+    title: 'ETAXI Empresas y Gremios - Soluciones B2B de Transporte Regulado',
+    description: 'Digitaliza tu operación con la única plataforma 100% legal. Trazabilidad, reportes y gestión centralizada.',
     url: 'https://www.etaxi.cl/empresas-gremios',
     siteName: 'ETAXI',
     type: 'website',
     locale: 'es_CL',
+    images: [
+      {
+        url: 'https://www.etaxi.cl/og-image-business.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'ETAXI Empresas y Gremios - Soluciones B2B',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: seoConfig.empresasGremios.title,
-    description: seoConfig.empresasGremios.description,
+    title: 'ETAXI Empresas y Gremios - Soluciones B2B',
+    description: 'Digitaliza tu operación de transporte regulado con trazabilidad completa y gestión centralizada.',
   },
 };
 
-export default async function EmpresasGremiosPage() {
-  // Fetch from Sanity CMS
-  const cmsData = await getBusinessPage();
+export default function EmpresasGremiosPage() {
   const t = useTranslations('businessPage');
-
-  // Use CMS data with fallbacks to translations
-  const heroTitle = cmsData?.heroTitle || t('hero.title');
-  const heroSubtitle = cmsData?.heroSubtitle || t('hero.subtitle');
-
-  // Enterprise benefits
-  const enterpriseBenefits = cmsData?.enterpriseBenefits && cmsData.enterpriseBenefits.length > 0
-    ? cmsData.enterpriseBenefits
-    : [
-        {
-          title: t('enterprise.benefit1.title'),
-          description: t('enterprise.benefit1.description'),
-        },
-        {
-          title: t('enterprise.benefit2.title'),
-          description: t('enterprise.benefit2.description'),
-        },
-        {
-          title: t('enterprise.benefit3.title'),
-          description: t('enterprise.benefit3.description'),
-        },
-        {
-          title: t('enterprise.benefit4.title'),
-          description: t('enterprise.benefit4.description'),
-        },
-      ];
-
-  // Guild section
-  const guildIntro = cmsData?.guildIntro || t('guild.intro');
-  const guildBenefits = cmsData?.guildBenefits && cmsData.guildBenefits.length > 0
-    ? cmsData.guildBenefits
-    : [
-        {
-          title: t('guild.benefit1.title'),
-          body: t('guild.benefit1.body'),
-        },
-        {
-          title: t('guild.benefit2.title'),
-          body: t('guild.benefit2.body'),
-        },
-        {
-          title: t('guild.benefit3.title'),
-          body: t('guild.benefit3.body'),
-        },
-        {
-          title: t('guild.benefit4.title'),
-          body: t('guild.benefit4.body'),
-        },
-      ];
-
-  // CTA section
-  const ctaTitle = cmsData?.ctaTitle || t('cta.title');
-  const ctaSubtitle = cmsData?.ctaSubtitle || t('cta.subtitle');
-  const ctaButton = cmsData?.ctaButton || t('cta.button');
 
   return (
     <div className="flex min-h-screen flex-col">
+      {/* Schema.org Structured Data */}
+      <StructuredData type="service" data={{
+        serviceType: 'B2B Corporate Transport Solutions',
+        catalogName: 'Soluciones Empresariales y Gremiales',
+        description: 'Soluciones de transporte regulado para empresas y gremios. Gestión de flota, facturación centralizada, reportes y 100% cumplimiento legal.',
+      }} />
+
       <Navbar />
 
       <main className="flex-1">
         {/* Breadcrumbs */}
-        <div className="container mx-auto max-w-[1200px] px-4">
+        <div className="container mx-auto max-w-[1200px] px-4 py-4">
           <Breadcrumbs />
         </div>
 
         {/* Hero Section */}
-        <section className="w-full py-20 bg-gradient-to-b from-white to-[hsl(var(--muted))]">
-          <div className="container mx-auto max-w-3xl px-4">
-            <div className="flex flex-col items-center text-center space-y-8">
-              <div className="space-y-4">
-                <h1 className="text-4xl md:text-5xl font-bold text-[#dd1828] leading-tight">
-                  {heroTitle}
-                </h1>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  {heroSubtitle}
+        <section className="w-full py-12 md:py-20 bg-gradient-to-br from-[#030c13] via-[#182b33] to-[#030c13] text-white relative overflow-hidden animate-gradient">
+          {/* Background decorative elements */}
+          <div className="absolute inset-0 opacity-10">
+            <div className="absolute top-20 left-20 w-64 h-64 rounded-full bg-[#fff500] blur-3xl" />
+            <div className="absolute bottom-20 right-20 w-64 h-64 rounded-full bg-[#fff500] blur-3xl" />
+          </div>
+
+          <div className="container mx-auto max-w-[1200px] px-4 relative z-10">
+            <div className="text-center space-y-6 max-w-4xl mx-auto">
+              {/* Badge */}
+              <div className="inline-block px-4 py-2 bg-[#dd1828]/20 rounded-full mb-4 border border-[#dd1828]/30">
+                <p className="text-sm font-semibold text-[#fff500]">
+                  {t('hero.badge')}
                 </p>
+              </div>
+
+              {/* Icon */}
+              <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-[#dd1828]/20 mb-6 backdrop-blur-sm border-2 border-[#dd1828]/30">
+                <Building2 className="w-10 h-10 text-[#fff500]" />
+              </div>
+
+              {/* Title */}
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+                {t('hero.title')}
+              </h1>
+
+              {/* Subtitle */}
+              <p className="text-lg md:text-xl text-white/80 leading-relaxed">
+                {t('hero.subtitle')}
+              </p>
+
+              {/* CTA Buttons */}
+              <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6">
+                <Button
+                  size="lg"
+                  className="bg-[#dd1828] text-white hover:bg-[#dd1828]/90 hover:border-[#fff500] border-2 border-transparent min-w-[220px] text-lg h-14 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
+                >
+                  <Calendar className="w-6 h-6 mr-2" />
+                  {t('hero.ctaDemo')}
+                </Button>
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="border-2 border-[#fff500] text-[#fff500] hover:bg-[#fff500]/10 min-w-[220px] text-lg h-14 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
+                >
+                  <Shield className="w-6 h-6 mr-2" />
+                  {t('hero.ctaMeeting')}
+                </Button>
               </div>
             </div>
           </div>
         </section>
 
         {/* Enterprise Benefits Section */}
-        <section className="w-full py-16 bg-white">
-          <div className="container mx-auto max-w-[1200px] px-4">
-            <h2 className="text-3xl font-bold text-center mb-12 text-[#182b33]">
-              Soluciones para empresas
-            </h2>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-              {enterpriseBenefits.map((benefit, index) => (
-                <div key={index} className="bg-[#F5F5F5] rounded-xl p-6 shadow-sm space-y-4">
-                  <div className="flex items-start gap-3">
-                    <Check className="w-6 h-6 text-[#dd1828] mt-1 flex-shrink-0" />
-                    <div>
-                      <h3 className="text-xl font-semibold text-[#182b33] mb-2">
-                        {benefit.title}
-                      </h3>
-                      <p className="text-muted-foreground leading-relaxed">
-                        {benefit.description}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+        <EnterpriseBenefits />
 
         {/* Guild Benefits Section */}
-        <section className="w-full py-16 bg-[hsl(var(--muted))]">
-          <div className="container mx-auto max-w-[1200px] px-4">
-            <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl font-bold text-center mb-6 text-[#182b33]">
-                Soluciones para gremios de taxistas
-              </h2>
-              <p className="text-lg text-center text-muted-foreground mb-12 leading-relaxed">
-                {guildIntro}
-              </p>
+        <GuildBenefits />
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {guildBenefits.map((benefit, index) => (
-                  <div key={index} className="bg-white rounded-xl p-6 shadow-sm">
-                    <h3 className="text-lg font-semibold text-[#182b33] mb-3">
-                      {benefit.title}
-                    </h3>
-                    <p className="text-muted-foreground leading-relaxed">
-                      {benefit.body}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
+        {/* Case Studies */}
+        <CaseStudies />
 
-        {/* CTA Section */}
-        <section className="w-full py-16 bg-white">
-          <div className="container mx-auto max-w-3xl px-4 text-center">
-            <h2 className="text-3xl font-bold text-[#182b33] mb-4">
-              {ctaTitle}
-            </h2>
-            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              {ctaSubtitle}
-            </p>
+        {/* Comparison Table */}
+        <ComparisonTable />
 
-            <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <Link href="/contacto">
-                <Button size="lg" className="w-full sm:w-auto min-w-[200px] bg-[#dd1828] text-white hover:bg-[#dd1828]/90">
-                  {ctaButton}
-                </Button>
-              </Link>
-              <Link href="/ayuda">
-                <Button size="lg" variant="outline" className="w-full sm:w-auto min-w-[200px] border-[#182b33] text-[#182b33] hover:bg-[#182b33]/5">
-                  Solicitar información
-                </Button>
-              </Link>
-            </div>
-          </div>
-        </section>
+        {/* Enterprise Process */}
+        <EnterpriseProcess />
+
+        {/* Guild Process */}
+        <GuildProcess />
+
+        {/* Dual CTA (Enterprise vs Guild) */}
+        <DualCTA />
+
+        {/* B2B Contact Form */}
+        <B2BContactForm />
+
+        {/* Final CTA */}
+        <B2BCTA />
       </main>
 
       <Footer />

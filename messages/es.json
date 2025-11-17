@@ -3,20 +3,27 @@
     "home": "Inicio",
     "requestTaxi": "Pedir Taxi",
     "downloadApp": "Descargar App",
+    "howItWorks": "Cómo Funciona",
+    "passengers": "Pasajeros",
+    "passengerInfo": "Info Pasajeros",
+    "drivers": "Conductores",
+    "driverInfo": "Info Conductores",
+    "howItWorksDrivers": "Cómo Funciona",
+    "driverSafety": "Seguridad",
     "security": "Seguridad",
     "compliance": "Cumplimiento",
     "business": "Empresas & Gremios",
-    "drivers": "Conductores",
+    "businessInfo": "Info Empresas",
     "contact": "Contacto"
   },
   "breadcrumbs": {
     "home": "Inicio"
   },
   "hero": {
-    "title": "Viaja con seguridad, transparencia y cumplimiento",
-    "subtitle": "ETAXI, la app chilena de taxis regulados",
-    "ctaPrimary": "Pedir Taxi",
-    "ctaSecondary": "Descargar App"
+    "title": "Taxis Legales con Tecnología Moderna",
+    "subtitle": "La primera plataforma 100% regulada de Chile. Viaja seguro con conductores profesionales, tarifa justa y trazabilidad completa.",
+    "ctaPrimary": "Descargar App",
+    "ctaSecondary": "Soy Conductor"
   },
   "benefits": {
     "title": "¿Por qué elegir ETAXI?",
@@ -54,6 +61,79 @@
     "appStore": "Descargar en App Store",
     "playStore": "Descargar en Google Play"
   },
+  "howItWorks": {
+    "title": "Cómo funciona",
+    "subtitle": "Tres pasos simples para tu viaje seguro",
+    "step1": {
+      "title": "Descarga y crea tu cuenta",
+      "description": "Disponible en App Store y Google Play. Regístrate con tu teléfono en segundos."
+    },
+    "step2": {
+      "title": "Solicita tu taxi",
+      "description": "Indica tu origen y destino. La app te conecta con taxis legales cercanos."
+    },
+    "step3": {
+      "title": "Viaja tranquilo",
+      "description": "Sigue tu viaje en tiempo real con trazabilidad completa y botón de pánico integrado."
+    }
+  },
+  "whyEtaxi": {
+    "title": "¿Por qué ETAXI?",
+    "subtitle": "La alternativa legal y transparente",
+    "vsCompetition": {
+      "title": "vs apps de transporte no regulado",
+      "feature1": {
+        "them": "Conductores sin licencia profesional",
+        "us": "Solo conductores con licencia A1 vigente"
+      },
+      "feature2": {
+        "them": "Tarifas dinámicas (hasta 3x más caras)",
+        "us": "Tarifa oficial fija, sin aumentos en horario punta"
+      },
+      "feature3": {
+        "them": "Sin registro municipal ni permisos",
+        "us": "100% regulado bajo Ley 21.553 y Decreto 212"
+      },
+      "feature4": {
+        "them": "Sin seguro adecuado para pasajeros",
+        "us": "Seguro obligatorio SOAP y responsabilidad civil"
+      },
+      "feature5": {
+        "them": "Plataforma extranjera sin fiscalización local",
+        "us": "Plataforma chilena fiscalizada por el Ministerio de Transportes"
+      }
+    }
+  },
+  "conductorCta": {
+    "title": "¿Eres conductor de taxi?",
+    "subtitle": "Únete a la plataforma que respeta tu trabajo profesional",
+    "features": {
+      "legal": "Trabaja legal y tranquilo",
+      "transparent": "Sin comisiones abusivas",
+      "support": "Soporte dedicado 24/7"
+    },
+    "button": "Registrarme como Conductor"
+  },
+  "testimonials": {
+    "title": "Lo que dicen nuestros usuarios",
+    "items": {
+      "passenger1": {
+        "name": "María González",
+        "role": "Pasajera frecuente",
+        "text": "Finalmente una app de taxis que es 100% legal. Me siento mucho más segura sabiendo que todos los conductores están regulados."
+      },
+      "passenger2": {
+        "name": "Carlos Muñoz",
+        "role": "Usuario corporativo",
+        "text": "Para mi empresa es fundamental la trazabilidad y el cumplimiento normativo. ETAXI cumple con todos nuestros requisitos."
+      },
+      "driver1": {
+        "name": "Roberto Silva",
+        "role": "Conductor profesional",
+        "text": "Llevo 15 años como taxista y ETAXI es la única plataforma que realmente respeta nuestro trabajo profesional."
+      }
+    }
+  },
   "compliancePage": {
     "hero": {
       "title": "Cumplimiento Normativo",
@@ -89,29 +169,206 @@
   },
   "safetyPage": {
     "hero": {
-      "title": "Tu seguridad es nuestra prioridad",
-      "subtitle": "Viaja tranquilo con taxis 100% regulados y trazabilidad completa"
+      "title": "Tu Seguridad es Nuestra Máxima Prioridad",
+      "subtitle": "Viaja tranquilo sabiendo que cada aspecto de tu viaje está protegido, regulado y monitoreado",
+      "badge": "100% Seguro y Legal",
+      "trustPoint1": "Conductores verificados",
+      "trustPoint2": "Vehículos autorizados",
+      "trustPoint3": "Trazabilidad GPS",
+      "footerLeft": "100% Legal",
+      "footerRight": "Ley 21.553"
     },
     "intro": {
       "title": "¿Por qué ETAXI es seguro?",
       "description": "ETAXI trabaja exclusivamente con taxis regulados por el Ministerio de Transportes. Cada viaje cuenta con múltiples capas de seguridad para proteger a pasajeros y conductores."
     },
-    "features": {
-      "panic": {
-        "title": "Botón de Pánico",
-        "description": "Acceso instantáneo a autoridades en caso de emergencia. Tu ubicación en tiempo real se comparte automáticamente."
+    "verifiedDrivers": {
+      "title": "Conductores 100% Verificados",
+      "subtitle": "Cada conductor pasa por un riguroso proceso de validación antes de poder operar",
+      "requirement1": {
+        "title": "Licencia Profesional A1",
+        "description": "Licencia de conducir profesional vigente según Ley de Tránsito. Verificamos autenticidad con Registro Civil."
       },
-      "traceability": {
-        "title": "Trazabilidad del Viaje",
-        "description": "Cada viaje queda registrado: conductor, patente, ruta, horarios. Tú y tus contactos de confianza pueden seguir el viaje en tiempo real."
+      "requirement2": {
+        "title": "Antecedentes Limpios",
+        "description": "Sin anotaciones penales vigentes. Verificación en Registro de Inhabilidades para trabajar con menores."
       },
-      "regulatedDrivers": {
-        "title": "Conductores Regulados",
-        "description": "Todos nuestros conductores son profesionales con licencia clase A1, registro municipal y antecedentes verificados según Ley 21.553."
+      "requirement3": {
+        "title": "Registro Nacional de Servicios",
+        "description": "Inscripción obligatoria en el Registro Nacional de Servicios de Transporte Remunerado de Pasajeros."
       },
-      "insurance": {
-        "title": "Seguro Obligatorio",
-        "description": "Todos los taxis cuentan con seguro de responsabilidad civil y SOAP vigente según normativa chilena."
+      "requirement4": {
+        "title": "Capacitación Obligatoria",
+        "description": "Todos los conductores completan capacitación en uso de plataforma, atención al cliente y protocolos de seguridad."
+      }
+    },
+    "authorizedVehicles": {
+      "title": "Vehículos 100% Autorizados",
+      "subtitle": "Solo taxis que cumplen con toda la normativa vigente",
+      "requirement1": {
+        "title": "Registro Municipal",
+        "description": "Inscripción vigente en el Registro de Taxis del municipio correspondiente según DS 212/92."
+      },
+      "requirement2": {
+        "title": "Revisión Técnica",
+        "description": "Revisión técnica y de gases al día. Verificación cada 6 meses según normativa del Ministerio de Transportes."
+      },
+      "requirement3": {
+        "title": "Taxímetro Homologado",
+        "description": "Taxímetro certificado y sellado por el Servicio de Impuestos Internos (SII). Tarifa oficial programada."
+      },
+      "requirement4": {
+        "title": "Seguros Vigentes",
+        "description": "SOAP (Seguro Obligatorio de Accidentes Personales) y seguro de responsabilidad civil al día."
+      }
+    },
+    "liveTracking": {
+      "title": "Trazabilidad y Tracking en Tiempo Real",
+      "subtitle": "Seguimiento completo de tu viaje de principio a fin",
+      "feature1": {
+        "title": "GPS en Tiempo Real",
+        "description": "Sistema de geolocalización que registra cada segundo del viaje con precisión GPS. Ubicación actualizada en vivo."
+      },
+      "feature2": {
+        "title": "Compartir Viaje",
+        "description": "Comparte tu ubicación en vivo con contactos de confianza. Ellos pueden ver tu ruta, conductor y tiempo estimado de llegada."
+      },
+      "feature3": {
+        "title": "Registro de Rutas",
+        "description": "Cada metro recorrido queda documentado. Ruta completa guardada para auditoría, reclamos o consultas futuras."
+      },
+      "feature4": {
+        "title": "Notificaciones Automáticas",
+        "description": "Alertas cuando el taxi está llegando, cuando inicias el viaje y cuando llegas a destino. Tranquilidad para ti y tu familia."
+      }
+    },
+    "driverProfile": {
+      "title": "Conoce a tu Conductor Antes de Subir",
+      "subtitle": "Toda la información visible antes de confirmar tu viaje",
+      "info1": {
+        "title": "Foto del Conductor",
+        "description": "Foto reciente verificada para que identifiques a tu conductor fácilmente."
+      },
+      "info2": {
+        "title": "Nombre Completo",
+        "description": "Identidad verificada con cédula de identidad chilena."
+      },
+      "info3": {
+        "title": "Calificación y Reseñas",
+        "description": "Promedio de calificaciones de otros pasajeros. Comentarios reales de viajes anteriores."
+      },
+      "info4": {
+        "title": "Datos del Vehículo",
+        "description": "Marca, modelo, color y patente del taxi. Confirma que sea el vehículo correcto antes de subir."
+      },
+      "info5": {
+        "title": "Cantidad de Viajes",
+        "description": "Historial de viajes completados en la plataforma. Experiencia comprobable."
+      },
+      "info6": {
+        "title": "Certificaciones",
+        "description": "Insignias de conductor destacado, puntualidad, limpieza del vehículo y más."
+      }
+    },
+    "safetyComparison": {
+      "title": "ETAXI vs Apps No Reguladas: Seguridad Real vs Riesgos",
+      "subtitle": "La diferencia entre viajar protegido o arriesgarte",
+      "feature1": {
+        "title": "Conductores",
+        "etaxi": "Licencia A1 profesional + antecedentes verificados + capacitación obligatoria",
+        "others": "Cualquier persona con auto y licencia básica. Sin verificación real."
+      },
+      "feature2": {
+        "title": "Vehículos",
+        "etaxi": "Taxis inscritos + revisión técnica específica + taxímetro sellado",
+        "others": "Auto particular sin revisión para transporte de pasajeros"
+      },
+      "feature3": {
+        "title": "Seguro",
+        "etaxi": "SOAP obligatorio + responsabilidad civil vigente + cobertura completa",
+        "others": "Seguro básico de auto particular (no cubre transporte de pasajeros)"
+      },
+      "feature4": {
+        "title": "Fiscalización",
+        "etaxi": "Ministerio de Transportes + Municipalidades + Ley 21.553",
+        "others": "Plataforma extranjera sin fiscalización local real"
+      },
+      "feature5": {
+        "title": "Emergencias",
+        "etaxi": "Botón de pánico + GPS + soporte 24/7 local + protocolo definido",
+        "others": "Soporte limitado en inglés desde el extranjero"
+      }
+    },
+    "emergencySupport": {
+      "title": "Sistema de Emergencia y Soporte 24/7",
+      "subtitle": "Ayuda inmediata cuando más la necesitas",
+      "feature1": {
+        "title": "Botón de Pánico Integrado",
+        "description": "Un toque activa alertas a: autoridades, central ETAXI y contactos de emergencia. Tu ubicación GPS se comparte automáticamente."
+      },
+      "feature2": {
+        "title": "Central de Monitoreo 24/7",
+        "description": "Equipo dedicado monitoreando viajes en tiempo real. Respuesta inmediata ante cualquier anomalía o alerta."
+      },
+      "feature3": {
+        "title": "Protocolo de Emergencia",
+        "description": "Procedimientos claros y definidos para cada tipo de incidente. Coordinación directa con Carabineros y servicios de emergencia."
+      },
+      "feature4": {
+        "title": "Soporte Multicanal",
+        "description": "Teléfono, WhatsApp, chat in-app y email. Atención en español, en Chile, por personas reales."
+      }
+    },
+    "tripAudit": {
+      "title": "Historial y Auditoría de Viajes",
+      "subtitle": "Cada detalle documentado y accesible",
+      "feature1": {
+        "title": "Historial Completo",
+        "description": "Acceso a todos tus viajes: fecha, hora, origen, destino, conductor, tarifa y calificación."
+      },
+      "feature2": {
+        "title": "Recibos Digitales",
+        "description": "Comprobante detallado de cada viaje. Exportable para rendiciones, reembolsos o facturación corporativa."
+      },
+      "feature3": {
+        "title": "Trazabilidad Permanente",
+        "description": "Registro permanente guardado de forma segura. Disponible para reclamos, auditorías o consultas futuras."
+      },
+      "feature4": {
+        "title": "Reportes y Estadísticas",
+        "description": "Visualiza tus patrones de movilidad, gastos totales y conductores frecuentes. Control total de tu información."
+      }
+    },
+    "legalCompliance": {
+      "title": "Cumplimiento Legal Total",
+      "subtitle": "100% alineado con la normativa chilena de transporte remunerado",
+      "law1": {
+        "title": "Ley 21.553 (Ley EAT)",
+        "description": "Modernización del transporte remunerado de pasajeros. ETAXI cumple íntegramente con todos los requisitos establecidos para plataformas digitales de taxi."
+      },
+      "law2": {
+        "title": "Decreto Supremo 212/92",
+        "description": "Reglamento de los servicios de transporte remunerado de pasajeros. Vehículos y conductores verificados según especificaciones técnicas."
+      },
+      "law3": {
+        "title": "Registro Municipal",
+        "description": "Todos los taxis operan con permisos municipales vigentes. Cumplimiento de ordenanzas locales de cada comuna."
+      },
+      "law4": {
+        "title": "Protección de Datos (Ley 19.628)",
+        "description": "Tratamiento de datos personales conforme a ley chilena. Información encriptada y protocolos de privacidad estrictos."
+      },
+      "badge": "Auditado y Fiscalizado por el Ministerio de Transportes y Telecomunicaciones"
+    },
+    "cta": {
+      "title": "Viaja Seguro con ETAXI",
+      "subtitle": "Descarga la app y experimenta la tranquilidad de viajar en taxis legales con máxima seguridad",
+      "button": "Descargar App Ahora",
+      "features": {
+        "feature1": "Conductores verificados",
+        "feature2": "Trazabilidad completa",
+        "feature3": "Botón de pánico",
+        "feature4": "100% Legal"
       }
     }
   },
@@ -163,48 +420,116 @@
   },
   "downloadPage": {
     "hero": {
-      "title": "Descarga la app ETAXI",
-      "subtitle": "Tu taxi regulado a un toque de distancia"
+      "title": "Tu Taxi Legal, Ahora en tu Bolsillo",
+      "subtitle": "Descarga la app ETAXI y viaja con la tranquilidad de un servicio 100% regulado, seguro y transparente.",
+      "badge": "Más de 10,000 descargas"
     },
-    "whyUse": {
-      "title": "¿Por qué usar ETAXI?",
+    "stats": {
+      "downloads": "10,000+",
+      "downloadsLabel": "Descargas",
+      "rating": "4.8",
+      "ratingLabel": "Calificación",
+      "trips": "50,000+",
+      "tripsLabel": "Viajes realizados",
+      "drivers": "1,000+",
+      "driversLabel": "Conductores activos"
+    },
+    "appFeatures": {
+      "title": "Todo lo que necesitas en una app",
+      "subtitle": "Diseñada para hacer tu experiencia de viaje simple, segura y confiable",
       "feature1": {
-        "title": "Taxis 100% Regulados",
-        "description": "Solo conductores profesionales con licencia vigente"
+        "title": "Solicita tu taxi en segundos",
+        "description": "Indica tu origen y destino. La app te conecta automáticamente con taxis legales cercanos."
       },
       "feature2": {
-        "title": "Tarifa Transparente",
-        "description": "Sin aumento de precios en horas punta"
+        "title": "Tracking en tiempo real",
+        "description": "Sigue la ubicación de tu taxi antes y durante el viaje. Comparte tu ruta con contactos de confianza."
       },
       "feature3": {
-        "title": "Seguridad Garantizada",
-        "description": "Viajes monitoreados con botón de pánico integrado"
+        "title": "Historial completo de viajes",
+        "description": "Accede a todos tus viajes anteriores con detalles del conductor, ruta y calificación."
+      },
+      "feature4": {
+        "title": "Califica tu experiencia",
+        "description": "Ayuda a mejorar el servicio calificando a tu conductor al finalizar cada viaje."
+      },
+      "feature5": {
+        "title": "Botón de pánico integrado",
+        "description": "Acceso directo a emergencias con tu ubicación compartida automáticamente."
+      },
+      "feature6": {
+        "title": "Perfil personalizado",
+        "description": "Guarda tus direcciones frecuentes y preferencias para viajes más rápidos."
+      }
+    },
+    "whyUse": {
+      "title": "¿Por qué elegir ETAXI?",
+      "feature1": {
+        "title": "Taxis 100% Regulados",
+        "description": "Solo conductores profesionales con licencia A1 vigente y permisos municipales al día"
+      },
+      "feature2": {
+        "title": "Tarifa Justa y Transparente",
+        "description": "Tarifa oficial fija, sin aumentos dinámicos ni sorpresas en horas punta"
+      },
+      "feature3": {
+        "title": "Seguridad de Verdad",
+        "description": "Trazabilidad completa, botón de pánico, y seguro obligatorio en cada viaje"
       },
       "feature4": {
         "title": "Disponible 24/7",
-        "description": "Pide tu taxi en cualquier momento del día"
+        "description": "Solicita tu taxi cuando lo necesites, día o noche, todos los días del año"
       }
     },
     "screenshots": {
-      "title": "La app ETAXI"
+      "title": "Conoce la app ETAXI",
+      "subtitle": "Interfaz simple e intuitiva diseñada para ti",
+      "screen1": "Pantalla principal",
+      "screen2": "Solicitar taxi",
+      "screen3": "Tracking en vivo",
+      "screen4": "Detalles del conductor",
+      "screen5": "Historial de viajes"
+    },
+    "systemRequirements": {
+      "title": "Requisitos del Sistema",
+      "ios": {
+        "title": "iOS",
+        "version": "iOS 13.0 o superior",
+        "devices": "Compatible con iPhone, iPad y iPod touch",
+        "storage": "50 MB de espacio disponible"
+      },
+      "android": {
+        "title": "Android",
+        "version": "Android 6.0 o superior",
+        "devices": "Compatible con smartphones y tablets",
+        "storage": "50 MB de espacio disponible"
+      }
     },
     "faq": {
       "title": "Preguntas Frecuentes",
       "q1": {
         "question": "¿Está disponible para iOS y Android?",
-        "answer": "Sí, ETAXI está disponible tanto en App Store (iOS) como en Google Play (Android)."
+        "answer": "Sí, ETAXI está disponible tanto en App Store (iOS) como en Google Play (Android). Descárgala gratis en tu dispositivo preferido."
       },
       "q2": {
         "question": "¿Es gratis descargar la app?",
-        "answer": "Sí, la descarga de la aplicación es completamente gratuita. Solo pagas por los viajes que realizas."
+        "answer": "Sí, la descarga es 100% gratuita y no tiene costo de suscripción. Solo pagas por los viajes que realizas según la tarifa oficial."
       },
       "q3": {
         "question": "¿Qué permisos necesita la app?",
-        "answer": "La app necesita acceso a tu ubicación para mostrarte taxis cercanos y calcular rutas. Todos los permisos son opcionales y puedes configurarlos en ajustes."
+        "answer": "La app necesita acceso a tu ubicación para mostrarte taxis cercanos y calcular rutas. Opcionalmente, puedes permitir notificaciones para recibir actualizaciones sobre tu viaje. Todos los permisos son configurables."
       },
       "q4": {
         "question": "¿Puedo usar ETAXI sin registrarme?",
-        "answer": "Para pedir un taxi necesitas crear una cuenta, pero el registro es rápido y solo requiere tu email o número de teléfono."
+        "answer": "Para solicitar un taxi necesitas crear una cuenta. El registro es rápido y solo requiere tu número de teléfono. Usamos OTP (código por SMS) para mayor seguridad, sin necesidad de contraseñas."
+      },
+      "q5": {
+        "question": "¿Cómo funciona el pago?",
+        "answer": "El pago se realiza directamente al conductor al finalizar el viaje. Puedes pagar en efectivo o con los métodos que el conductor acepte. La tarifa es oficial y transparente."
+      },
+      "q6": {
+        "question": "¿Puedo cancelar un viaje?",
+        "answer": "Sí, puedes cancelar tu solicitud antes de que el conductor llegue. Revisa la política de cancelación en la app para más detalles."
       }
     }
   },
@@ -287,120 +612,988 @@
   },
   "businessPage": {
     "hero": {
-      "title": "Transporte regulado para empresas y gremios",
-      "subtitle": "ETAXI ofrece trazabilidad, cumplimiento normativo y herramientas de gestión para quienes operan taxis autorizados en Chile."
+      "badge": "Soluciones B2B y Gremiales",
+      "title": "Soluciones de Transporte Corporativo y para Gremios",
+      "subtitle": "Digitaliza tu operación de movilidad con la única plataforma 100% legal que cumple Ley 21.553. Trazabilidad completa, gestión centralizada y reportes en tiempo real.",
+      "ctaDemo": "Solicitar Demo",
+      "ctaMeeting": "Agendar Reunión"
     },
     "enterprise": {
+      "title": "Soluciones para Empresas",
+      "subtitle": "Gestiona el transporte corporativo con total control, seguridad y cumplimiento normativo",
       "benefit1": {
-        "title": "Trazabilidad completa del viaje",
-        "description": "Cada traslado queda registrado con conductor, vehículo y ruta. Ideal para auditorías internas, control de gastos y reportes de movilidad corporativa."
+        "title": "Transporte Corporativo Regulado",
+        "description": "Asegura que todos los traslados de tu empresa se realicen en taxis 100% legales y autorizados. Cumple con políticas internas de movilidad y reduce riesgos legales."
       },
       "benefit2": {
-        "title": "Cumplimiento normativo asegurado",
-        "description": "Trabajamos exclusivamente con taxis autorizados bajo la Ley 21.553 y el Decreto Supremo 212. Tu empresa cumple sin preocupaciones."
+        "title": "Facturación Centralizada",
+        "description": "Recibe una sola factura mensual consolidada con el detalle de todos los viajes. Simplifica la contabilidad y reduce el tiempo administrativo."
       },
       "benefit3": {
-        "title": "Reportes y control centralizado",
-        "description": "Consolidados mensuales, seguimiento por centro de costos, usuarios y proyectos. Visibilidad total del uso de transporte regulado."
+        "title": "Centros de Costo Personalizados",
+        "description": "Asigna cada viaje a proyectos, departamentos o centros de costo específicos. Control total de gastos por área de tu organización."
       },
       "benefit4": {
-        "title": "Integración con políticas internas",
-        "description": "Políticas de movilidad, seguridad y cumplimiento integradas al flujo de solicitud de viajes. Configuración flexible según tus necesidades."
+        "title": "Reportes y Analítica Avanzada",
+        "description": "Dashboard con métricas en tiempo real: viajes por usuario, gastos por centro de costo, horarios peak, rutas frecuentes y más. Toma decisiones informadas."
+      },
+      "benefit5": {
+        "title": "Control de Tarifas Corporativas",
+        "description": "Tarifas oficiales fijas sin aumentos dinámicos. Presupuesta con certeza y evita sorpresas en los gastos de movilidad."
+      },
+      "benefit6": {
+        "title": "Servicio Prioritario y Soporte Dedicado",
+        "description": "Atención preferencial para tus colaboradores. Account manager exclusivo y soporte técnico dedicado para tu empresa."
+      },
+      "benefit7": {
+        "title": "Integración con ERP y Sistemas",
+        "description": "API para integrar ETAXI con tu sistema de gestión empresarial. Automatiza aprobaciones, validaciones y sincronización de datos."
+      },
+      "benefit8": {
+        "title": "SLA y Garantías de Servicio",
+        "description": "Acuerdos de nivel de servicio con tiempos de respuesta garantizados. Disponibilidad 24/7 para tus operaciones críticas."
       }
     },
     "guild": {
-      "intro": "ETAXI ayuda a los gremios a modernizar su operación sin perder su estructura tradicional. Digitaliza la gestión de taxis, conductores y servicios manteniendo el control de tu organización.",
+      "title": "Soluciones para Gremios y Centrales",
+      "subtitle": "Moderniza la gestión de tu flota manteniendo el control y la autonomía de tu organización",
+      "intro": "ETAXI digitaliza la operación de gremios y centrales de taxi sin alterar su estructura tradicional. Mantén el control de tu organización mientras accedes a tecnología de clase mundial.",
       "benefit1": {
-        "title": "Gestión centralizada de conductores y vehículos",
-        "body": "Administra cupos, turnos, permisos y estados del vehículo desde una sola plataforma. Mantén actualizado el registro de tu flota autorizada."
+        "title": "Gestión de Flota Completa",
+        "description": "Panel de control para administrar conductores, vehículos, turnos y disponibilidad. Registro centralizado de tu flota autorizada con estado en tiempo real."
       },
       "benefit2": {
-        "title": "Control tarifario transparente",
-        "body": "Tarifas definidas por la autoridad o por el propio gremio, según corresponda. Sin cobros ocultos ni desviaciones de las normas establecidas."
+        "title": "Asignación Automática de Viajes",
+        "description": "Algoritmo que distribuye servicios entre tus conductores según disponibilidad, ubicación y turnos. Optimiza la operación y maximiza ingresos para todos."
       },
       "benefit3": {
-        "title": "Asignación eficiente de servicios",
-        "body": "Recepción y asignación de viajes desde una sola plataforma digital. Optimiza la distribución de servicios entre tus conductores asociados."
+        "title": "Panel de Operador en Tiempo Real",
+        "description": "Monitorea toda tu flota en un mapa en vivo. Ve qué conductores están disponibles, en viaje o fuera de servicio. Control total de la operación."
       },
       "benefit4": {
-        "title": "Historial completo de operación",
-        "body": "Registro detallado de viajes para auditorías, concesiones municipales y procesos gremiales. Trazabilidad total del servicio prestado por cada conductor."
+        "title": "Trazabilidad GPS de Cada Viaje",
+        "description": "Registro completo de cada servicio: conductor, pasajero, ruta, horarios y tarifa. Ideal para auditorías municipales y renovación de permisos."
+      },
+      "benefit5": {
+        "title": "Estadísticas y Reportes Gremiales",
+        "description": "Reportes consolidados de viajes, ingresos, desempeño por conductor y tendencias. Toma decisiones informadas para tu gremio."
+      },
+      "benefit6": {
+        "title": "Roles y Permisos Configurables",
+        "description": "Define permisos para directiva, operadores, supervisores y conductores. Cada rol con accesos específicos según tu estructura organizacional."
+      },
+      "benefit7": {
+        "title": "Control Tarifario por Gremio",
+        "description": "Configura tarifas según normativa municipal o acuerdos del gremio. Transparencia total sin cobros ocultos ni comisiones abusivas."
+      },
+      "benefit8": {
+        "title": "Autonomía Total del Gremio",
+        "description": "El gremio mantiene control sobre sus asociados, políticas internas y gestión. ETAXI solo provee la tecnología sin interferir en tu organización."
       }
     },
-    "cta": {
-      "title": "Hablemos sobre tu operación",
-      "subtitle": "Ya seas una empresa, una municipalidad o un gremio de taxistas, ETAXI puede digitalizar tu sistema de transporte regulado manteniendo el cumplimiento normativo.",
-      "button": "Agenda una reunión"
+    "caseStudies": {
+      "title": "Casos de Éxito",
+      "subtitle": "Empresas y gremios que ya confían en ETAXI",
+      "case1": {
+        "company": "Empresa Minera del Norte",
+        "industry": "Minería",
+        "employees": "500+",
+        "challenge": "Gestionar traslados de trabajadores en turnos nocturnos con total trazabilidad para auditorías de seguridad.",
+        "solution": "Implementación de ETAXI con panel corporativo, asignación de viajes por turno y reportes automáticos de cumplimiento.",
+        "results": "30% reducción en costos de transporte. 100% trazabilidad para auditorías. 95% satisfacción de trabajadores."
+      },
+      "case2": {
+        "company": "Gremio de Taxis Centro",
+        "industry": "Gremio de Taxistas",
+        "members": "120",
+        "challenge": "Competir con apps no reguladas sin perder identidad gremial. Necesitaban tecnología moderna respetando estructura tradicional.",
+        "solution": "Digitalización completa con panel de operador, asignación automática y estadísticas gremiales. Capacitación a todos los socios.",
+        "results": "+40% viajes mensuales. Control total de operación. Retención del 95% de los socios activos."
+      },
+      "case3": {
+        "company": "Corporación Retail Nacional",
+        "industry": "Retail",
+        "employees": "2,000+",
+        "challenge": "Reemplazar reembolsos de taxi por sistema centralizado con control de gastos y centros de costo.",
+        "solution": "Integración ETAXI con ERP corporativo. Asignación por centro de costo y proyecto. Facturación mensual consolidada.",
+        "results": "50% reducción en tiempo administrativo. Ahorro del 25% en costos de movilidad. Visibilidad total de gastos."
+      }
+    },
+    "comparison": {
+      "title": "ETAXI vs Otros Sistemas",
+      "subtitle": "Compara nuestra solución B2B con alternativas del mercado",
+      "feature1": {
+        "title": "Cumplimiento Legal",
+        "etaxi": "100% legal. Solo taxis autorizados con Ley 21.553 y DS 212",
+        "apps": "Vehículos no regulados. Riesgo de multas y fiscalización",
+        "traditional": "Legal pero sin trazabilidad ni control digital"
+      },
+      "feature2": {
+        "title": "Trazabilidad de Viajes",
+        "etaxi": "GPS en tiempo real. Registro completo de cada viaje para auditorías",
+        "apps": "Trazabilidad limitada. Conductor puede desviarse",
+        "traditional": "Sin registro digital. Solo vouchers en papel"
+      },
+      "feature3": {
+        "title": "Reportes Corporativos",
+        "etaxi": "Dashboard avanzado. Reportes por centro de costo, usuario y proyecto",
+        "apps": "Reportes básicos. Sin integración con sistemas empresariales",
+        "traditional": "Reportes manuales en Excel. Alto esfuerzo administrativo"
+      },
+      "feature4": {
+        "title": "Tarifas y Costos",
+        "etaxi": "Tarifa oficial fija. Sin aumentos dinámicos. Presupuestable",
+        "apps": "Tarifas dinámicas impredecibles. Sobrecostos en horas peak",
+        "traditional": "Tarifa oficial pero sin control de gastos"
+      },
+      "feature5": {
+        "title": "Integración Empresarial",
+        "etaxi": "API para ERP. Sincronización automática de datos y centros de costo",
+        "apps": "Integración limitada o inexistente",
+        "traditional": "Sin integración digital"
+      },
+      "feature6": {
+        "title": "Facturación",
+        "etaxi": "Factura consolidada mensual. Un solo documento para contabilidad",
+        "apps": "Factura por viaje o boletas. Alto esfuerzo contable",
+        "traditional": "Facturas dispersas de múltiples radios. Difícil consolidar"
+      }
+    },
+    "enterpriseProcess": {
+      "title": "Proceso de Implementación para Empresas",
+      "subtitle": "Desde la primera reunión hasta la operación completa en 5 pasos",
+      "step1": {
+        "number": "1",
+        "title": "Reunión Inicial y Demo",
+        "description": "Agende una reunión con nuestro equipo comercial. Le mostramos la plataforma en acción, entendemos sus necesidades y respondemos todas sus consultas.",
+        "icon": "calendar"
+      },
+      "step2": {
+        "number": "2",
+        "title": "Análisis de Requerimientos",
+        "description": "Analizamos su operación actual: usuarios, rutas frecuentes, centros de costo, políticas de movilidad y requisitos de integración. Diseñamos solución a medida.",
+        "icon": "fileText"
+      },
+      "step3": {
+        "number": "3",
+        "title": "Propuesta Comercial y Contrato",
+        "description": "Presentamos propuesta técnica y comercial detallada. Acordamos tarifas, SLA, condiciones de servicio y firmamos contrato marco.",
+        "icon": "fileSignature"
+      },
+      "step4": {
+        "number": "4",
+        "title": "Configuración y Capacitación",
+        "description": "Configuramos su cuenta corporativa: usuarios, centros de costo, permisos, políticas. Capacitamos a su equipo administrativo y usuarios finales.",
+        "icon": "settings"
+      },
+      "step5": {
+        "number": "5",
+        "title": "Operación y Soporte Continuo",
+        "description": "Su empresa empieza a operar con ETAXI. Account manager dedicado, soporte técnico 24/7, reportes mensuales y reuniones de seguimiento.",
+        "icon": "checkCircle"
+      }
+    },
+    "guildProcess": {
+      "title": "Proceso de Implementación para Gremios",
+      "subtitle": "Digitalice su operación manteniendo el control y autonomía del gremio",
+      "step1": {
+        "number": "1",
+        "title": "Contacto y Presentación",
+        "description": "Reunión con la directiva del gremio. Explicamos cómo ETAXI funciona, respetamos su estructura tradicional y mostramos casos de éxito de otros gremios.",
+        "icon": "users"
+      },
+      "step2": {
+        "number": "2",
+        "title": "Análisis de la Operación Gremial",
+        "description": "Evaluamos cantidad de socios, estructura organizacional, sistema actual de asignación, tarifas y necesidades específicas del gremio.",
+        "icon": "clipboard"
+      },
+      "step3": {
+        "number": "3",
+        "title": "Acuerdo Gremial y Condiciones",
+        "description": "Negociamos condiciones comerciales con la directiva. Definimos comisiones, políticas de asignación, control tarifario y autonomía del gremio.",
+        "icon": "handshake"
+      },
+      "step4": {
+        "number": "4",
+        "title": "Registro de Conductores y Flota",
+        "description": "Validamos documentación de cada socio (licencia A1, permisos, vehículo). Damos de alta conductores y taxis en la plataforma con todos los datos actualizados.",
+        "icon": "fileCheck"
+      },
+      "step5": {
+        "number": "5",
+        "title": "Capacitación a Socios y Operadores",
+        "description": "Capacitamos a operadores del gremio en el panel de control y a conductores en la app. Soporte presencial durante primeras semanas de operación.",
+        "icon": "graduationCap"
+      },
+      "step6": {
+        "number": "6",
+        "title": "Operación Gremial Digital",
+        "description": "El gremio opera con tecnología moderna manteniendo su autonomía. Panel de operador para asignar viajes, estadísticas gremiales y soporte continuo.",
+        "icon": "activity"
+      }
     },
     "contactForm": {
-      "title": "Solicita información corporativa",
-      "description": "Déjanos tus datos y te contactaremos para conversar sobre las necesidades de tu empresa o gremio.",
+      "title": "Solicitar Información Corporativa",
+      "description": "Complete el formulario y nuestro equipo comercial se comunicará con usted para agendar una demo personalizada.",
+      "typeLabel": "Tipo de organización",
+      "typeEnterprise": "Empresa / Corporación",
+      "typeGuild": "Gremio / Central de Taxis",
+      "typeMunicipality": "Municipalidad / Gobierno",
       "companyNameLabel": "Nombre de la empresa/gremio",
       "companyNamePlaceholder": "Ej: Transportes ABC Ltda.",
-      "contactNameLabel": "Nombre de contacto",
-      "contactNamePlaceholder": "Tu nombre",
+      "contactNameLabel": "Nombre completo del contacto",
+      "contactNamePlaceholder": "Juan Pérez González",
+      "positionLabel": "Cargo",
+      "positionPlaceholder": "Ej: Gerente de Operaciones",
       "emailLabel": "Email corporativo",
       "emailPlaceholder": "contacto@empresa.cl",
-      "phoneLabel": "Teléfono",
+      "phoneLabel": "Teléfono de contacto",
       "phonePlaceholder": "+56 9 1234 5678",
-      "employeesLabel": "Número de empleados/asociados",
-      "employeesPlaceholder": "Ej: 50",
-      "cityLabel": "Ciudad",
-      "cityPlaceholder": "Santiago",
-      "messageLabel": "Cuéntanos sobre tu necesidad",
-      "messagePlaceholder": "Ej: Necesitamos una solución de transporte para nuestros ejecutivos...",
-      "submitButton": "Enviar solicitud",
-      "sending": "Enviando...",
-      "success": "Solicitud recibida. Nos pondremos en contacto contigo pronto.",
-      "error": "Error al enviar la solicitud. Por favor intenta nuevamente."
+      "employeesLabel": "Número de empleados/socios",
+      "employeesPlaceholder": "Ej: 100",
+      "cityLabel": "Ciudad principal de operación",
+      "cityPlaceholder": "Santiago, Valparaíso, Concepción...",
+      "messageLabel": "Cuéntenos sobre su necesidad",
+      "messagePlaceholder": "Ej: Necesitamos digitalizar la gestión de nuestra flota de 50 taxis...",
+      "submitButton": "Solicitar Demo",
+      "sending": "Enviando solicitud...",
+      "success": "✅ Solicitud recibida. Un ejecutivo se comunicará con usted dentro de 24 horas.",
+      "error": "❌ Error al enviar la solicitud. Por favor intente nuevamente o escríbanos a contacto@etaxi.cl"
+    },
+    "cta": {
+      "title": "¿Listo para Digitalizar su Operación?",
+      "subtitle": "Únase a las empresas y gremios que ya confían en ETAXI para gestionar su transporte regulado",
+      "demo": "Solicitar Demo Personalizada",
+      "meeting": "Agendar Reunión con Ejecutivo",
+      "phone": "Llamar Ahora: +56 9 XXXX XXXX",
+      "trustBadge": "Más de 50 empresas y 20 gremios ya operan con ETAXI"
+    },
+    "finalCTA": {
+      "enterprise": {
+        "title": "¿Es usted una empresa?",
+        "description": "Optimice su transporte corporativo con trazabilidad completa y cumplimiento garantizado",
+        "button": "Agendar Demo Empresarial"
+      },
+      "guild": {
+        "title": "¿Representa un gremio o central?",
+        "description": "Modernice su operación sin perder autonomía. Tecnología al servicio de su gremio",
+        "button": "Conocer Solución Gremial"
+      }
     }
   },
   "driverPage": {
     "hero": {
-      "title": "Conduce con una plataforma legal y transparente",
-      "subtitle": "ETAXI conecta a conductores de taxi regulados con pasajeros que buscan seguridad, trazabilidad y cumplimiento normativo."
+      "title": "Conduce con la Plataforma que Respeta tu Trabajo",
+      "subtitle": "Únete a ETAXI y forma parte del futuro del taxi regulado en Chile. Más viajes, mejor tecnología, siempre legal.",
+      "badge": "100% Legal y Regulado",
+      "cta1": "Registrarme Ahora",
+      "cta2": "Ver Requisitos"
+    },
+    "stats": {
+      "drivers": "1,000+",
+      "driversLabel": "Conductores activos",
+      "trips": "50,000+",
+      "tripsLabel": "Viajes mensuales",
+      "rating": "4.8",
+      "ratingLabel": "Calificación promedio",
+      "earnings": "$800K",
+      "earningsLabel": "Promedio mensual"
     },
     "benefits": {
+      "title": "¿Por qué conducir con ETAXI?",
+      "subtitle": "La plataforma diseñada para conductores profesionales",
       "benefit1": {
-        "title": "Pasajeros que valoran el taxi regulado",
-        "description": "Te conectas con usuarios que prefieren un servicio formal, autorizado y trazable."
+        "title": "Trabaja 100% Legal",
+        "description": "Sin riesgos de multas ni fiscalizaciones. ETAXI cumple con Ley 21.553 y Decreto 212. Tu trabajo profesional es respetado y valorado."
       },
       "benefit2": {
-        "title": "Transparencia en viajes y pagos",
-        "description": "Registro claro de tus servicios realizados y condiciones acordadas con tu gremio o central."
+        "title": "Sin Comisiones Abusivas",
+        "description": "Comisión justa y transparente. Coordinado con tu gremio o central. Sin sorpresas, sin cambios unilaterales."
       },
       "benefit3": {
-        "title": "Herramientas de gestión",
-        "description": "Visualización de tu actividad, historial de viajes y soporte cuando lo necesites."
+        "title": "Más Viajes, Mejor Tecnología",
+        "description": "Accede a pasajeros que valoran el taxi regulado. App intuitiva con GPS, historial y estadísticas en tiempo real."
       },
       "benefit4": {
-        "title": "Apoyo a la formalidad",
-        "description": "Formas parte de una plataforma diseñada para trabajar dentro de la normativa chilena."
+        "title": "Soporte Dedicado 24/7",
+        "description": "Equipo técnico disponible cuando lo necesites. Capacitación inicial incluida. Comunidad de conductores activa."
+      },
+      "benefit5": {
+        "title": "Respeto a tu Gremio",
+        "description": "Trabajamos con cooperativas y centrales. No competimos con tu organización, la fortalecemos con tecnología."
+      },
+      "benefit6": {
+        "title": "Seguridad para Ti y tus Pasajeros",
+        "description": "Botón de emergencia, trazabilidad completa, seguros obligatorios al día. Protección en cada viaje."
       }
     },
     "requirements": {
-      "title": "Requisitos principales",
-      "intro": "Para operar con ETAXI debes ser conductor de taxi regulado y cumplir los requisitos legales vigentes.",
-      "list": [
-        "Licencia profesional de taxi válida según normativa chilena.",
-        "Vehículo inscrito y autorizado como taxi.",
-        "Permisos y documentación al día (licencia, revisión técnica, seguro obligatorio, etc.).",
-        "Adscripción a un gremio, cooperativa o empresa de transporte cuando corresponda."
-      ]
+      "title": "Requisitos según Normativa Chilena",
+      "subtitle": "Para conducir con ETAXI debes cumplir la legislación vigente",
+      "legal": {
+        "title": "Documentación Legal Obligatoria",
+        "req1": {
+          "title": "Licencia Profesional Clase A1",
+          "description": "Licencia de conducir profesional vigente según Ley de Tránsito (Ley 18.290)"
+        },
+        "req2": {
+          "title": "Registro Nacional de Servicios",
+          "description": "Inscripción en el Registro Nacional de Servicios de Transporte Remunerado de Pasajeros"
+        },
+        "req3": {
+          "title": "Permiso Municipal de Circulación",
+          "description": "Autorización municipal vigente para prestar servicios de taxi en tu comuna"
+        },
+        "req4": {
+          "title": "Certificado de Antecedentes",
+          "description": "Sin anotaciones vigentes en el Registro de Inhabilidades para trabajar con menores"
+        }
+      },
+      "vehicle": {
+        "title": "Requisitos del Vehículo",
+        "req1": {
+          "title": "Inscripción como Taxi",
+          "description": "Vehículo inscrito en el Registro de Taxis del municipio correspondiente"
+        },
+        "req2": {
+          "title": "Revisión Técnica Vigente",
+          "description": "Revisión técnica y de gases al día según normativa del Ministerio de Transportes"
+        },
+        "req3": {
+          "title": "Seguro Obligatorio (SOAP)",
+          "description": "Seguro Obligatorio de Accidentes Personales vigente"
+        },
+        "req4": {
+          "title": "Taxímetro Homologado",
+          "description": "Taxímetro certificado y sellado por el Servicio de Impuestos Internos (SII)"
+        }
+      },
+      "optional": {
+        "title": "Según Modalidad de Trabajo",
+        "req1": "Adscripción a gremio, cooperativa o empresa de transporte (si aplica)",
+        "req2": "Autorización de tu central o gremio para operar con ETAXI",
+        "req3": "Pago al día de cuotas gremiales (si corresponde)"
+      }
     },
-    "steps": {
-      "title": "Cómo empezar a trabajar con ETAXI",
-      "list": [
-        "Completa el formulario de interés para conductores.",
-        "Validamos tu documentación y la autorización de tu vehículo.",
-        "Te incorporamos a la flota de tu gremio o central asociada.",
-        "Descargas la app y comienzas a recibir servicios."
-      ]
+    "onboarding": {
+      "title": "Proceso de Incorporación",
+      "subtitle": "4 pasos simples para empezar a trabajar con ETAXI",
+      "step1": {
+        "title": "Completa el Registro",
+        "description": "Llena el formulario con tus datos personales y de tu vehículo. Toma solo 5 minutos."
+      },
+      "step2": {
+        "title": "Validación de Documentos",
+        "description": "Nuestro equipo verifica tu licencia A1, permisos municipales y documentación del vehículo. Respuesta en 24-48 horas."
+      },
+      "step3": {
+        "title": "Capacitación y Setup",
+        "description": "Te enseñamos a usar la app conductor. Configuramos tu perfil y te incorporamos a tu gremio o central en la plataforma."
+      },
+      "step4": {
+        "title": "¡Comienza a Trabajar!",
+        "description": "Descarga la app, activa tu disponibilidad y empieza a recibir solicitudes de viajes. Soporte 24/7 disponible."
+      }
+    },
+    "earnings": {
+      "title": "Potencial de Ingresos",
+      "subtitle": "Basado en datos reales de conductores activos en Santiago",
+      "fullTime": {
+        "title": "Jornada Completa",
+        "hours": "40-45 horas/semana",
+        "trips": "120-150 viajes/mes",
+        "earnings": "$700K - $1M",
+        "description": "Conductores que trabajan tiempo completo con ETAXI"
+      },
+      "partTime": {
+        "title": "Medio Tiempo",
+        "hours": "20-25 horas/semana",
+        "trips": "60-80 viajes/mes",
+        "earnings": "$350K - $500K",
+        "description": "Ideal para complementar otros ingresos"
+      },
+      "note": "* Ingresos estimados. Varían según ciudad, horarios y demanda. No incluyen costos operacionales (combustible, mantención, etc.)"
+    },
+    "testimonials": {
+      "title": "Lo que dicen nuestros conductores",
+      "testimonial1": {
+        "name": "Roberto Silva",
+        "experience": "15 años como taxista",
+        "city": "Santiago",
+        "text": "Después de 15 años en esto, ETAXI es lo mejor que le ha pasado al taxi regulado. Más viajes, menos tiempo vacío, y todo 100% legal."
+      },
+      "testimonial2": {
+        "name": "María Fernández",
+        "experience": "8 años como conductora",
+        "city": "Viña del Mar",
+        "text": "La app es super fácil de usar y el soporte técnico siempre responde rápido. Me siento respaldada y segura trabajando con ETAXI."
+      },
+      "testimonial3": {
+        "name": "Carlos Muñoz",
+        "experience": "3 años como taxista",
+        "city": "Concepción",
+        "text": "Empecé hace 6 meses con ETAXI y ya duplicó mis viajes. Los pasajeros valoran que seamos legales y nos califican bien."
+      }
+    },
+    "faq": {
+      "title": "Preguntas Frecuentes",
+      "q1": {
+        "question": "¿Cuánto cobra ETAXI de comisión?",
+        "answer": "La comisión se coordina directamente con tu gremio o central. Es transparente y justa, sin cambios sorpresivos. Contacta con nosotros para conocer las condiciones específicas de tu zona."
+      },
+      "q2": {
+        "question": "¿Necesito tener smartphone?",
+        "answer": "Sí, necesitas un smartphone Android 6.0+ o iOS 13.0+ para usar la app conductor. No requiere un teléfono de alta gama, funciona en equipos básicos."
+      },
+      "q3": {
+        "question": "¿Puedo trabajar con ETAXI y otras plataformas?",
+        "answer": "Sí, siempre que tu gremio o central lo autorice. ETAXI no exige exclusividad, pero debes cumplir con tus obligaciones como conductor profesional."
+      },
+      "q4": {
+        "question": "¿Qué pasa si no tengo gremio?",
+        "answer": "ETAXI trabaja principalmente con gremios, cooperativas y centrales de taxi. Si no estás afiliado, podemos orientarte sobre opciones en tu comuna."
+      },
+      "q5": {
+        "question": "¿Cómo recibo los pagos de los viajes?",
+        "answer": "El pasajero paga directamente al conductor al finalizar el viaje (efectivo o métodos que aceptes). ETAXI no intermedia pagos en esta fase del proyecto."
+      },
+      "q6": {
+        "question": "¿Hay multas si cancelo un viaje?",
+        "answer": "Entendemos que pueden surgir imprevistos. No hay multas por cancelaciones ocasionales, pero cancelaciones frecuentes pueden afectar tu calificación y asignación de viajes."
+      }
     },
     "cta": {
-      "title": "¿Eres conductor de taxi regulado?",
-      "subtitle": "Déjanos tus datos y te contactaremos para explicarte cómo integrarte a ETAXI a través de tu gremio o empresa de transporte.",
-      "button": "Quiero postular"
+      "title": "¿Listo para Unirte a ETAXI?",
+      "subtitle": "Forma parte de la plataforma que está transformando el taxi regulado en Chile",
+      "button": "Registrarme como Conductor"
+    }
+  },
+  "passengerPage": {
+    "hero": {
+      "title": "Tu Taxi Legal, Siempre a tu Alcance",
+      "subtitle": "Viaja seguro con la primera plataforma 100% regulada de Chile. Conductores profesionales, tarifa justa y tecnología que protege cada viaje.",
+      "badge": "100% Regulado y Legal",
+      "cta1": "Descargar App Gratis",
+      "cta2": "Ver Cómo Funciona"
+    },
+    "stats": {
+      "passengers": "25,000+",
+      "passengersLabel": "Pasajeros activos",
+      "trips": "50,000+",
+      "tripsLabel": "Viajes completados",
+      "rating": "4.8",
+      "ratingLabel": "Calificación promedio",
+      "cities": "15+",
+      "citiesLabel": "Ciudades disponibles"
+    },
+    "benefits": {
+      "title": "¿Por qué los pasajeros eligen ETAXI?",
+      "subtitle": "Todas las ventajas de una app moderna con la seguridad del taxi regulado",
+      "benefit1": {
+        "title": "Conductores 100% Profesionales",
+        "description": "Todos nuestros conductores tienen licencia A1 vigente, permisos municipales al día y antecedentes verificados. Viaja con profesionales de verdad."
+      },
+      "benefit2": {
+        "title": "Tarifa Justa y Transparente",
+        "description": "Pagás la tarifa oficial fija. Sin aumentos dinámicos, sin sorpresas en horas punta. El precio que ves es el precio que pagás."
+      },
+      "benefit3": {
+        "title": "Seguridad en Cada Viaje",
+        "description": "Trazabilidad completa del viaje, botón de pánico integrado, seguro obligatorio vigente. Tu seguridad es nuestra prioridad número uno."
+      },
+      "benefit4": {
+        "title": "Tracking en Tiempo Real",
+        "description": "Seguí la ubicación de tu taxi antes y durante el viaje. Compartí tu ruta con contactos de confianza para mayor tranquilidad."
+      },
+      "benefit5": {
+        "title": "Cumplimiento Legal Total",
+        "description": "100% regulado bajo Ley 21.553 y Decreto 212. Trabajamos solo con taxis autorizados y fiscalizados por el Ministerio de Transportes."
+      },
+      "benefit6": {
+        "title": "Disponible 24/7",
+        "description": "Solicitá tu taxi cuando lo necesités, día o noche. Cobertura en las principales ciudades de Chile, todos los días del año."
+      }
+    },
+    "howToUse": {
+      "title": "Cómo usar ETAXI",
+      "subtitle": "Solicitar tu taxi legal nunca fue tan fácil",
+      "step1": {
+        "number": "1",
+        "title": "Descargá la App",
+        "description": "Disponible gratis en App Store y Google Play. Registrate con tu número de teléfono en menos de 1 minuto.",
+        "detail": "Sin costo de suscripción. Solo pagás por los viajes que realizás."
+      },
+      "step2": {
+        "number": "2",
+        "title": "Indicá Origen y Destino",
+        "description": "La app detecta tu ubicación automáticamente. Ingresá tu destino o seleccioná uno de tus lugares frecuentes.",
+        "detail": "Guardá tus direcciones favoritas para viajes más rápidos."
+      },
+      "step3": {
+        "number": "3",
+        "title": "Confirmá tu Solicitud",
+        "description": "Revisá los detalles del viaje y la tarifa estimada. La app te conecta automáticamente con el taxi legal más cercano.",
+        "detail": "Ves los datos del conductor y la patente del vehículo antes de que llegue."
+      },
+      "step4": {
+        "number": "4",
+        "title": "Seguí tu Taxi en Vivo",
+        "description": "Mirá en tiempo real dónde está tu taxi y cuánto falta para que llegue. Recibís notificaciones cuando esté cerca.",
+        "detail": "Compartí tu viaje con familiares o amigos para mayor seguridad."
+      },
+      "step5": {
+        "number": "5",
+        "title": "Viajá Seguro",
+        "description": "Durante el viaje tenés trazabilidad completa, botón de pánico y soporte 24/7. Todo queda registrado.",
+        "detail": "Acceso directo a emergencias con tu ubicación compartida automáticamente."
+      },
+      "step6": {
+        "number": "6",
+        "title": "Calificá tu Experiencia",
+        "description": "Al finalizar, calificá al conductor y dejá un comentario. Ayudás a mejorar el servicio para todos.",
+        "detail": "Accedé a tu historial completo de viajes cuando quieras."
+      }
+    },
+    "comparison": {
+      "title": "ETAXI vs Apps No Reguladas",
+      "subtitle": "La diferencia entre viajar legal o arriesgarte",
+      "etaxi": "ETAXI",
+      "others": "Apps No Reguladas",
+      "feature1": {
+        "title": "Conductores",
+        "etaxi": "Licencia A1 profesional vigente + permisos municipales verificados",
+        "others": "Cualquier persona sin formación profesional ni permisos"
+      },
+      "feature2": {
+        "title": "Tarifa",
+        "etaxi": "Tarifa oficial fija. Transparente siempre.",
+        "others": "Tarifa dinámica (hasta 3x más cara en hora punta)"
+      },
+      "feature3": {
+        "title": "Legalidad",
+        "etaxi": "100% regulado bajo Ley 21.553 y Decreto 212",
+        "others": "Operan en zona gris legal sin permisos adecuados"
+      },
+      "feature4": {
+        "title": "Seguro",
+        "etaxi": "Seguro SOAP obligatorio + responsabilidad civil vigente",
+        "others": "Sin seguro adecuado para transporte de pasajeros"
+      },
+      "feature5": {
+        "title": "Fiscalización",
+        "etaxi": "Fiscalizado por Ministerio de Transportes de Chile",
+        "others": "Plataforma extranjera sin control local"
+      },
+      "feature6": {
+        "title": "Vehículo",
+        "etaxi": "Revisión técnica + taxímetro homologado + registro municipal",
+        "others": "Auto particular sin revisión específica para pasajeros"
+      },
+      "feature7": {
+        "title": "Trazabilidad",
+        "etaxi": "Registro completo: conductor, patente, ruta, horarios",
+        "others": "Trazabilidad limitada y sin respaldo legal"
+      },
+      "feature8": {
+        "title": "Soporte",
+        "etaxi": "Atención 24/7 en Chile con respaldo institucional",
+        "others": "Soporte limitado desde el extranjero"
+      }
+    },
+    "useCases": {
+      "title": "ETAXI para cada situación",
+      "subtitle": "Viajes seguros cuando más los necesitás",
+      "case1": {
+        "title": "Viajes Nocturnos",
+        "description": "Volvé seguro a casa después de salir de noche. Trazabilidad completa, conductor verificado y botón de pánico siempre disponible.",
+        "icon": "moon"
+      },
+      "case2": {
+        "title": "Traslados al Aeropuerto",
+        "description": "Llegá a tiempo sin preocupaciones. Conductores profesionales que conocen las mejores rutas. Espacio para equipaje garantizado.",
+        "icon": "plane"
+      },
+      "case3": {
+        "title": "Viajes Corporativos",
+        "description": "Movilidad empresarial con trazabilidad total. Ideal para reuniones, eventos y traslados de ejecutivos con facturación formal.",
+        "icon": "briefcase"
+      },
+      "case4": {
+        "title": "Con Familia",
+        "description": "Viajá tranquilo con tus hijos o adultos mayores. Conductores de confianza, vehículos seguros y tracking compartido con familiares.",
+        "icon": "users"
+      },
+      "case5": {
+        "title": "Emergencias Médicas",
+        "description": "Cuando necesitás llegar rápido a un centro de salud. Conductores profesionales que priorizan tu urgencia de forma segura.",
+        "icon": "heart"
+      },
+      "case6": {
+        "title": "Día a Día",
+        "description": "Tus traslados cotidianos: trabajo, trámites, compras. Tarifa justa, sin sorpresas y con la comodidad de guardar tus destinos frecuentes.",
+        "icon": "calendar"
+      }
+    },
+    "appFeatures": {
+      "title": "Funcionalidades de la App",
+      "subtitle": "Diseñada para que tu experiencia sea simple y segura",
+      "feature1": {
+        "title": "Solicitud Instantánea",
+        "description": "Pedí tu taxi en segundos. La app detecta tu ubicación y te conecta con el taxi legal más cercano."
+      },
+      "feature2": {
+        "title": "Historial de Viajes",
+        "description": "Accedé a todos tus viajes anteriores con detalles completos: conductor, ruta, calificación y recibos."
+      },
+      "feature3": {
+        "title": "Lugares Favoritos",
+        "description": "Guardá tus direcciones frecuentes (casa, trabajo, gym) para solicitudes más rápidas."
+      },
+      "feature4": {
+        "title": "Compartir Viaje",
+        "description": "Enviá tu ubicación en tiempo real a contactos de confianza. Ellos pueden seguir tu viaje completo."
+      },
+      "feature5": {
+        "title": "Calificaciones",
+        "description": "Calificá cada viaje y ayudá a mantener la calidad del servicio. Leé opiniones de otros pasajeros."
+      },
+      "feature6": {
+        "title": "Soporte Integrado",
+        "description": "Contacto directo con atención al cliente desde la app. Resolvé dudas o reportá problemas al instante."
+      }
+    },
+    "safety": {
+      "title": "Tu Seguridad es lo Primero",
+      "subtitle": "Múltiples capas de protección en cada viaje",
+      "feature1": {
+        "title": "Botón de Pánico",
+        "description": "Acceso instantáneo a emergencias. Tu ubicación se comparte automáticamente con autoridades.",
+        "icon": "alert"
+      },
+      "feature2": {
+        "title": "Trazabilidad Completa",
+        "description": "Registro detallado de conductor, vehículo, ruta y horarios. Todo queda documentado.",
+        "icon": "map"
+      },
+      "feature3": {
+        "title": "Conductores Verificados",
+        "description": "Antecedentes chequeados, licencia profesional vigente y capacitación obligatoria.",
+        "icon": "shield"
+      },
+      "feature4": {
+        "title": "Soporte 24/7",
+        "description": "Equipo dedicado disponible día y noche para cualquier consulta o emergencia.",
+        "icon": "headphones"
+      }
+    },
+    "testimonials": {
+      "title": "Experiencias de Pasajeros Reales",
+      "subtitle": "Miles de usuarios ya confían en ETAXI",
+      "testimonial1": {
+        "name": "María González",
+        "role": "Pasajera frecuente",
+        "city": "Santiago",
+        "text": "Después de usar apps no reguladas, descubrir ETAXI fue un alivio. Finalmente puedo viajar tranquila sabiendo que todo es legal y seguro."
+      },
+      "testimonial2": {
+        "name": "Carlos Rojas",
+        "role": "Ejecutivo",
+        "city": "Viña del Mar",
+        "text": "Para mis viajes de trabajo necesito factura formal y trazabilidad. ETAXI cumple con todo lo que mi empresa requiere."
+      },
+      "testimonial3": {
+        "name": "Andrea Martínez",
+        "role": "Madre de familia",
+        "city": "Concepción",
+        "text": "Uso ETAXI para los traslados con mis hijos. El poder compartir el viaje en vivo con mi esposo me da mucha tranquilidad."
+      },
+      "testimonial4": {
+        "name": "Jorge Vargas",
+        "role": "Adulto mayor",
+        "city": "Santiago",
+        "text": "La app es muy fácil de usar incluso para mí. Los conductores son profesionales y respetuosos. Ya no uso otro servicio."
+      }
+    },
+    "faq": {
+      "title": "Preguntas Frecuentes",
+      "q1": {
+        "question": "¿ETAXI está disponible en mi ciudad?",
+        "answer": "ETAXI está disponible en las principales ciudades de Chile y seguimos expandiéndonos. Descargá la app para ver si hay cobertura en tu zona. Si no, pronto llegaremos."
+      },
+      "q2": {
+        "question": "¿Cuánto cuesta usar ETAXI?",
+        "answer": "Descargar y registrarse es 100% gratis. Solo pagás la tarifa oficial del viaje, sin costo de suscripción ni cargos ocultos. La tarifa es fija y transparente."
+      },
+      "q3": {
+        "question": "¿Cómo se calcula la tarifa?",
+        "answer": "Utilizamos la tarifa oficial regulada por el Ministerio de Transportes. Es una tarifa fija que no cambia según la demanda, hora punta o clima. Siempre transparente."
+      },
+      "q4": {
+        "question": "¿Qué métodos de pago aceptan?",
+        "answer": "Actualmente el pago se realiza directamente al conductor al finalizar el viaje (efectivo o métodos que el conductor acepte). Estamos trabajando en integrar pagos digitales en la app."
+      },
+      "q5": {
+        "question": "¿Puedo solicitar un taxi para otra persona?",
+        "answer": "Sí, podés solicitar un taxi para un familiar o amigo ingresando la dirección de recogida correspondiente. Ideal para ayudar a adultos mayores o enviar taxis a otras personas."
+      },
+      "q6": {
+        "question": "¿Qué pasa si tengo un problema durante el viaje?",
+        "answer": "Tenés varias opciones: usar el botón de pánico para emergencias, contactar a soporte 24/7 desde la app o reportar el problema después del viaje. Toda queja se investiga."
+      },
+      "q7": {
+        "question": "¿Puedo cancelar un viaje solicitado?",
+        "answer": "Sí, podés cancelar antes de que el conductor llegue. La app te indicará las condiciones de cancelación. Te pedimos hacerlo solo cuando sea necesario para no afectar a los conductores."
+      },
+      "q8": {
+        "question": "¿Cómo sé que el conductor es confiable?",
+        "answer": "Todos nuestros conductores pasan por verificación de antecedentes, tienen licencia A1 profesional vigente y están registrados legalmente. Además, cada conductor tiene calificación visible."
+      }
+    },
+    "cta": {
+      "title": "Descargá ETAXI y Empezá a Viajar Legal",
+      "subtitle": "Más de 25,000 pasajeros ya confían en nosotros. Unite a la comunidad de usuarios que eligen seguridad, legalidad y transparencia.",
+      "button": "Descargar App Ahora",
+      "available": "Disponible para iOS y Android",
+      "note": "Sin costo de descarga. Sin suscripciones. Solo pagás por tus viajes."
+    }
+  },
+  "howItWorksPage": {
+    "hero": {
+      "title": "Cómo Funciona ETAXI",
+      "subtitle": "La plataforma que conecta pasajeros, conductores y empresas bajo un modelo 100% legal y transparente",
+      "badge": "Simple, Seguro y Legal"
+    },
+    "passengerFlow": {
+      "title": "Para Pasajeros",
+      "subtitle": "Solicitar un taxi legal nunca fue tan fácil",
+      "step1": {
+        "number": "1",
+        "title": "Descarga la App",
+        "description": "Instala ETAXI gratis desde App Store o Google Play. Regístrate con tu número de teléfono usando código OTP. Sin contraseñas complicadas.",
+        "icon": "download"
+      },
+      "step2": {
+        "number": "2",
+        "title": "Solicita tu Taxi",
+        "description": "Abre la app, permite tu ubicación y selecciona tu destino. La app te muestra taxis legales cercanos con su tiempo estimado de llegada.",
+        "icon": "map"
+      },
+      "step3": {
+        "number": "3",
+        "title": "Confirma los Detalles",
+        "description": "Revisa la tarifa estimada (oficial, sin aumentos dinámicos), los datos del conductor y la patente del vehículo. Confirma tu solicitud.",
+        "icon": "check"
+      },
+      "step4": {
+        "number": "4",
+        "title": "Sigue tu Taxi en Tiempo Real",
+        "description": "Mira dónde está tu taxi en el mapa. Comparte tu viaje con contactos de confianza. Recibe notificaciones cuando esté llegando.",
+        "icon": "eye"
+      },
+      "step5": {
+        "number": "5",
+        "title": "Viaja Seguro",
+        "description": "Durante el viaje tenés acceso al botón de pánico, trazabilidad completa y soporte 24/7. Todo queda registrado para tu seguridad.",
+        "icon": "shield"
+      },
+      "step6": {
+        "number": "6",
+        "title": "Paga y Califica",
+        "description": "Al finalizar, paga directamente al conductor (efectivo o métodos digitales). Califica tu experiencia para ayudar a mejorar el servicio.",
+        "icon": "star"
+      }
+    },
+    "driverFlow": {
+      "title": "Para Conductores",
+      "subtitle": "Trabaja legal y accede a más pasajeros con tecnología moderna",
+      "step1": {
+        "number": "1",
+        "title": "Regístrate en ETAXI",
+        "description": "Completa el formulario de registro con tus datos personales y del vehículo. Necesitas licencia A1, permisos municipales y documentos del taxi.",
+        "icon": "clipboard"
+      },
+      "step2": {
+        "number": "2",
+        "title": "Validación de Documentos",
+        "description": "Nuestro equipo verifica tu licencia profesional, permisos, antecedentes y que tu vehículo cumpla con todos los requisitos legales. Respuesta en 24-48 hrs.",
+        "icon": "fileCheck"
+      },
+      "step3": {
+        "number": "3",
+        "title": "Capacitación",
+        "description": "Te enseñamos a usar la app conductor: cómo aceptar viajes, navegar, marcar estados y usar todas las funcionalidades. Soporte dedicado disponible.",
+        "icon": "graduationCap"
+      },
+      "step4": {
+        "number": "4",
+        "title": "Activa tu Disponibilidad",
+        "description": "Descarga la app conductor, inicia sesión y activa tu disponibilidad cuando estés listo para trabajar. Controlas cuándo y dónde trabajas.",
+        "icon": "power"
+      },
+      "step5": {
+        "number": "5",
+        "title": "Recibe Solicitudes",
+        "description": "La plataforma te asigna viajes según tu ubicación y disponibilidad. Ves la dirección de origen, destino y tarifa estimada antes de aceptar.",
+        "icon": "bell"
+      },
+      "step6": {
+        "number": "6",
+        "title": "Completa el Viaje",
+        "description": "Recoge al pasajero, realiza el viaje siguiendo la ruta GPS, cobra al finalizar y recibe tu calificación. Acceso a historial y estadísticas.",
+        "icon": "checkCircle"
+      }
+    },
+    "businessFlow": {
+      "title": "Para Empresas y Gremios",
+      "subtitle": "Digitaliza tu operación manteniendo el control y cumplimiento legal",
+      "step1": {
+        "number": "1",
+        "title": "Contacto Inicial",
+        "description": "Completa el formulario de contacto empresarial. Nuestro equipo comercial se comunica contigo para entender tus necesidades específicas.",
+        "icon": "phone"
+      },
+      "step2": {
+        "number": "2",
+        "title": "Análisis y Propuesta",
+        "description": "Analizamos tu operación actual: cantidad de vehículos, estructura organizacional, necesidades de reportes y facturación. Diseñamos una solución a medida.",
+        "icon": "fileText"
+      },
+      "step3": {
+        "number": "3",
+        "title": "Implementación",
+        "description": "Configuramos la plataforma según tus requisitos: usuarios, permisos, centros de costo, políticas de movilidad. Capacitamos a tu equipo operativo.",
+        "icon": "settings"
+      },
+      "step4": {
+        "number": "4",
+        "title": "Registro de Flota",
+        "description": "Damos de alta a tus conductores y vehículos verificando que cumplan con toda la normativa. Gestión centralizada de tu flota autorizada.",
+        "icon": "users"
+      },
+      "step5": {
+        "number": "5",
+        "title": "Operación y Monitoreo",
+        "description": "Empiezas a operar con trazabilidad completa. Panel de control en tiempo real, asignación de viajes, seguimiento de flota y reportes automáticos.",
+        "icon": "activity"
+      },
+      "step6": {
+        "number": "6",
+        "title": "Reportes y Optimización",
+        "description": "Acceso a reportes consolidados, auditoría de viajes, control de gastos y métricas de desempeño. Mejora continua de tu operación.",
+        "icon": "barChart"
+      }
+    },
+    "ecosystem": {
+      "title": "El Ecosistema ETAXI",
+      "subtitle": "Cómo conectamos a todos los actores de forma legal y eficiente",
+      "passenger": {
+        "title": "Pasajero",
+        "actions": [
+          "Solicita viaje desde la app",
+          "Recibe taxi legal verificado",
+          "Viaja con trazabilidad completa",
+          "Paga tarifa oficial transparente"
+        ]
+      },
+      "platform": {
+        "title": "Plataforma ETAXI",
+        "features": [
+          "Conecta oferta y demanda",
+          "Valida conductores y vehículos",
+          "Registra todo el viaje",
+          "Cumple normativa 100%"
+        ]
+      },
+      "driver": {
+        "title": "Conductor",
+        "actions": [
+          "Recibe solicitud de viaje",
+          "Acepta servicio asignado",
+          "Realiza viaje seguro",
+          "Cobra tarifa regulada"
+        ]
+      },
+      "authority": {
+        "title": "Autoridad",
+        "role": [
+          "Ministerio de Transportes fiscaliza",
+          "Municipalidades otorgan permisos",
+          "Cumplimiento Ley 21.553",
+          "Trazabilidad para auditorías"
+        ]
+      }
+    },
+    "techStack": {
+      "title": "Tecnología Detrás de ETAXI",
+      "subtitle": "Cómo la tecnología hace posible el taxi legal del futuro",
+      "feature1": {
+        "title": "Apps Móviles",
+        "description": "iOS y Android nativas con GPS, notificaciones push y sincronización en tiempo real"
+      },
+      "feature2": {
+        "title": "Backend Robusto",
+        "description": "Servidor escalable que procesa miles de solicitudes simultáneas con alta disponibilidad"
+      },
+      "feature3": {
+        "title": "Matching Inteligente",
+        "description": "Algoritmo que asigna el taxi más cercano optimizando tiempos de espera y eficiencia"
+      },
+      "feature4": {
+        "title": "Tracking en Tiempo Real",
+        "description": "Sistema de geolocalización que registra cada segundo del viaje con precisión GPS"
+      },
+      "feature5": {
+        "title": "Seguridad y Encriptación",
+        "description": "Datos encriptados, autenticación segura y cumplimiento de normativas de privacidad"
+      },
+      "feature6": {
+        "title": "Panel de Administración",
+        "description": "Dashboard para operadores con métricas, reportes y gestión de flota en vivo"
+      }
+    },
+    "videoDemo": {
+      "title": "ETAXI en Acción",
+      "subtitle": "Mira cómo funciona la plataforma en la vida real",
+      "placeholder": "Próximamente: Video demo de la plataforma",
+      "features": {
+        "feature1": "Solicitud de viaje paso a paso",
+        "feature2": "Experiencia del conductor",
+        "feature3": "Panel de administración",
+        "feature4": "Casos de uso reales"
+      }
+    },
+    "benefits": {
+      "title": "¿Por Qué ETAXI Funciona?",
+      "subtitle": "Los pilares que hacen de ETAXI una plataforma confiable",
+      "benefit1": {
+        "title": "100% Legal",
+        "description": "Cumplimiento total de Ley 21.553 y Decreto 212. Solo taxis autorizados."
+      },
+      "benefit2": {
+        "title": "Transparencia Total",
+        "description": "Tarifa oficial fija. Sin aumentos dinámicos ni sorpresas."
+      },
+      "benefit3": {
+        "title": "Trazabilidad Completa",
+        "description": "Cada viaje registrado: conductor, ruta, horarios. Todo documentado."
+      },
+      "benefit4": {
+        "title": "Seguridad Garantizada",
+        "description": "Conductores verificados, seguros vigentes, botón de pánico integrado."
+      }
+    },
+    "cta": {
+      "passenger": {
+        "title": "¿Listo para viajar seguro?",
+        "description": "Descarga la app y empieza a usar taxis legales hoy mismo",
+        "button": "Descargar App ETAXI"
+      },
+      "driver": {
+        "title": "¿Sos conductor profesional?",
+        "description": "Únete a la plataforma que respeta tu trabajo y te da acceso a más pasajeros",
+        "button": "Registrarme como Conductor"
+      }
     }
   },
   "driversPage": {
@@ -424,10 +1617,392 @@
       "error": "Error al enviar la solicitud. Por favor intenta nuevamente."
     }
   },
+  "legalPages": {
+    "terms": {
+      "title": "Términos y Condiciones de Uso",
+      "lastUpdated": "Última actualización: Enero 2025",
+      "section1": {
+        "title": "1. Aceptación de los Términos",
+        "content": "Al acceder y utilizar el sitio web www.etaxi.cl (en adelante, el 'Sitio') y las aplicaciones móviles de ETAXI (en adelante, las 'Apps'), usted acepta estar sujeto a estos Términos y Condiciones de Uso, todas las leyes y regulaciones aplicables en Chile, y acepta que es responsable del cumplimiento de todas las leyes locales aplicables. Si no está de acuerdo con alguno de estos términos, no debe utilizar este Sitio ni las Apps."
+      },
+      "section2": {
+        "title": "2. Descripción del Servicio",
+        "subtitle": "ETAXI es una plataforma tecnológica de intermediación",
+        "content": "ETAXI SpA (en adelante, 'ETAXI') es una plataforma tecnológica que conecta a usuarios (pasajeros) con conductores de taxis legalmente autorizados y sus vehículos debidamente registrados ante las autoridades competentes. ETAXI NO es un operador de transporte, NO es propietaria de los vehículos, y NO es empleadora de los conductores. El servicio de transporte propiamente tal es prestado por conductores profesionales independientes o vinculados a gremios, cooperativas o centrales de taxi autorizadas.",
+        "responsibilities": {
+          "title": "Responsabilidades:",
+          "etaxi": "ETAXI provee la tecnología, la plataforma digital, la trazabilidad GPS de los viajes, el sistema de asignación de servicios y soporte técnico.",
+          "operators": "Los operadores de taxi, gremios, cooperativas o conductores individuales son responsables del servicio de transporte, del estado de los vehículos, del cumplimiento de normativas de tránsito y transporte, y de la atención al pasajero durante el viaje."
+        }
+      },
+      "section3": {
+        "title": "3. Alcance del Servicio",
+        "web": {
+          "title": "3.1 Sitio Web (www.etaxi.cl)",
+          "content": "El Sitio tiene fines informativos y comerciales. Permite a empresas, gremios y usuarios conocer los servicios de ETAXI, solicitar información, contactar al equipo comercial y acceder a recursos educativos sobre la plataforma."
+        },
+        "apps": {
+          "title": "3.2 Aplicaciones Móviles",
+          "passenger": "App Pasajero: Permite a los usuarios solicitar servicios de taxi, ver la ubicación del vehículo asignado, pagar el servicio y calificar la experiencia.",
+          "driver": "App Conductor: Permite a conductores autorizados recibir solicitudes de servicio, navegar hacia el pasajero, marcar estados del viaje y gestionar su disponibilidad."
+        }
+      },
+      "section4": {
+        "title": "4. Registro y Cuenta de Usuario",
+        "content": "Para utilizar las Apps, los usuarios deben registrarse proporcionando información veraz, precisa y actualizada. Los conductores deben además cumplir con requisitos legales específicos (Licencia Clase A1, permisos municipales, vehículo autorizado, etc.) que serán validados por ETAXI antes de su activación en la plataforma.",
+        "obligations": "El usuario es responsable de mantener la confidencialidad de su cuenta y contraseña, y de todas las actividades que ocurran bajo su cuenta."
+      },
+      "section5": {
+        "title": "5. Uso Aceptable",
+        "intro": "Al utilizar ETAXI, el usuario se compromete a:",
+        "rule1": "Proporcionar información veraz y no suplantar identidades.",
+        "rule2": "No utilizar la plataforma para fines ilegales, fraudulentos o no autorizados.",
+        "rule3": "No intentar vulnerar la seguridad de la plataforma, realizar ingeniería inversa de las Apps o acceder a áreas restringidas.",
+        "rule4": "Respetar a conductores, pasajeros y personal de soporte. Comportamientos ofensivos, discriminatorios o violentos pueden resultar en suspensión o eliminación de la cuenta.",
+        "rule5": "Cumplir con las leyes de tránsito y transporte aplicables en Chile."
+      },
+      "section6": {
+        "title": "6. Limitaciones de Responsabilidad",
+        "intro": "ETAXI actúa como intermediario tecnológico. Por tanto:",
+        "limit1": "ETAXI no es responsable por daños, pérdidas, retrasos, accidentes o perjuicios que ocurran durante el servicio de transporte prestado por terceros (conductores, gremios, cooperativas).",
+        "limit2": "ETAXI no garantiza la disponibilidad ininterrumpida de la plataforma, las Apps o el servicio de conectividad. Puede haber interrupciones por mantenimiento, fallas técnicas o causas de fuerza mayor.",
+        "limit3": "ETAXI no se hace responsable por la pérdida de objetos personales dentro de los vehículos. El usuario debe contactar directamente al conductor o gremio correspondiente.",
+        "limit4": "ETAXI no responde por la calidad del servicio de transporte prestado por terceros, aunque facilita mecanismos de reporte, calificación y mejora continua."
+      },
+      "section7": {
+        "title": "7. Tarifas y Pagos",
+        "content": "Las tarifas de los servicios de taxi son determinadas por la normativa vigente (tarifas oficiales reguladas) o por acuerdos entre el usuario y el operador/gremio en casos permitidos por la ley. ETAXI puede facilitar el procesamiento de pagos digitales a través de pasarelas de pago de terceros. El usuario acepta pagar los montos correspondientes por los servicios utilizados."
+      },
+      "section8": {
+        "title": "8. Propiedad Intelectual",
+        "content": "Todo el contenido del Sitio y las Apps (textos, gráficos, logotipos, íconos, imágenes, código fuente, diseño) es propiedad de ETAXI SpA o de sus licenciantes y está protegido por las leyes de propiedad intelectual de Chile y tratados internacionales. Queda prohibida la reproducción, distribución o modificación no autorizada."
+      },
+      "section9": {
+        "title": "9. Modificación de los Términos",
+        "content": "ETAXI se reserva el derecho de modificar estos Términos y Condiciones en cualquier momento. Los cambios entrarán en vigencia al ser publicados en el Sitio. Es responsabilidad del usuario revisar periódicamente estos términos. El uso continuado del Sitio o las Apps tras la publicación de cambios constituye la aceptación de los nuevos términos."
+      },
+      "section10": {
+        "title": "10. Ley Aplicable y Jurisdicción",
+        "content": "Estos Términos y Condiciones se rigen por las leyes de la República de Chile. Cualquier controversia derivada del uso del Sitio o las Apps será sometida a la jurisdicción de los tribunales ordinarios de justicia de Santiago de Chile, renunciando las partes expresamente a cualquier otro fuero que pudiera corresponderles."
+      },
+      "section11": {
+        "title": "11. Contacto",
+        "content": "Para consultas sobre estos Términos y Condiciones, puede contactarnos en:",
+        "email": "Email: legal@etaxi.cl",
+        "address": "Dirección: Santiago, Chile"
+      }
+    },
+    "privacy": {
+      "title": "Política de Privacidad",
+      "lastUpdated": "Última actualización: Enero 2025",
+      "intro": "En ETAXI SpA ('ETAXI', 'nosotros', 'nuestro') nos comprometemos a proteger su privacidad. Esta Política de Privacidad describe cómo recopilamos, usamos, compartimos y protegemos su información personal cuando utiliza nuestro sitio web www.etaxi.cl y nuestras aplicaciones móviles.",
+      "section1": {
+        "title": "1. Información que Recopilamos",
+        "web": {
+          "title": "1.1 A través del Sitio Web",
+          "item1": "Datos de contacto: Nombre, email, teléfono, empresa (cuando completa formularios de contacto o solicita información).",
+          "item2": "Datos de navegación: Dirección IP, tipo de navegador, páginas visitadas, tiempo de permanencia (a través de cookies y tecnologías similares).",
+          "item3": "Datos de leads comerciales: Información proporcionada en formularios B2B para empresas y gremios interesados en nuestras soluciones."
+        },
+        "apps": {
+          "title": "1.2 A través de las Aplicaciones Móviles",
+          "passenger": {
+            "title": "App Pasajero:",
+            "item1": "Datos de registro: Nombre, teléfono, email (opcional), fotografía de perfil (opcional).",
+            "item2": "Datos de ubicación: Ubicación GPS en tiempo real para solicitar y trazar el viaje.",
+            "item3": "Datos del viaje: Origen, destino, ruta seguida, duración, tarifa, conductor asignado.",
+            "item4": "Datos de pago: Método de pago seleccionado (efectivo o digital). Si usa pago digital, los datos de tarjeta son procesados por pasarelas de pago de terceros y no son almacenados directamente por ETAXI.",
+            "item5": "Datos del dispositivo: Modelo, sistema operativo, identificadores únicos (para notificaciones push y soporte técnico)."
+          },
+          "driver": {
+            "title": "App Conductor:",
+            "item1": "Datos personales: Nombre completo, RUT, teléfono, email, fotografía.",
+            "item2": "Datos profesionales: Licencia de conducir Clase A1, permisos municipales, certificados de antecedentes.",
+            "item3": "Datos del vehículo: Patente, marca, modelo, año, color, documentos de autorización.",
+            "item4": "Datos de ubicación: Ubicación GPS en tiempo real cuando está disponible para recibir servicios.",
+            "item5": "Datos de viajes: Historial de viajes realizados, calificaciones recibidas, ingresos generados."
+          }
+        }
+      },
+      "section2": {
+        "title": "2. Cómo Usamos su Información",
+        "intro": "Utilizamos la información recopilada para:",
+        "purpose1": "Operación del servicio: Conectar pasajeros con conductores, asignar viajes, calcular rutas y tarifas, procesar pagos.",
+        "purpose2": "Seguridad y prevención de fraudes: Verificar identidad de conductores, detectar comportamientos sospechosos, garantizar cumplimiento de normativas.",
+        "purpose3": "Soporte al cliente: Responder consultas, resolver reclamos, proveer asistencia técnica.",
+        "purpose4": "Mejora del servicio: Analizar patrones de uso, estadísticas agregadas, optimizar algoritmos de asignación.",
+        "purpose5": "Comunicaciones: Enviar notificaciones relacionadas con el servicio, actualizaciones de la plataforma, información comercial (con su consentimiento).",
+        "purpose6": "Cumplimiento legal: Responder a requerimientos de autoridades competentes cuando sea legalmente exigible."
+      },
+      "section3": {
+        "title": "3. Con Quién Compartimos su Información",
+        "intro": "ETAXI puede compartir su información personal con:",
+        "party1": {
+          "title": "Conductores y operadores:",
+          "content": "Los pasajeros comparten su nombre, ubicación de origen/destino y teléfono con el conductor asignado para facilitar el servicio. Los conductores comparten su nombre, fotografía, vehículo y ubicación con los pasajeros."
+        },
+        "party2": {
+          "title": "Gremios, cooperativas y centrales de taxi:",
+          "content": "Si el conductor pertenece a un gremio asociado, estos pueden acceder a datos del conductor y estadísticas de viajes para gestión operativa."
+        },
+        "party3": {
+          "title": "Empresas clientes (B2B):",
+          "content": "Si usted es empleado de una empresa que contrata servicios de ETAXI, su empresa puede acceder a información de viajes corporativos asignados a su cuenta."
+        },
+        "party4": {
+          "title": "Proveedores de servicios tecnológicos:",
+          "content": "Servidores en la nube (AWS, Google Cloud), servicios de mapas (Google Maps), pasarelas de pago, herramientas de analítica (Google Analytics), servicios de envío de emails y notificaciones push."
+        },
+        "party5": {
+          "title": "Autoridades y cumplimiento legal:",
+          "content": "Podemos divulgar información si es requerido por ley, orden judicial, fiscalización de autoridades de transporte o para proteger derechos, seguridad y propiedad de ETAXI y sus usuarios."
+        },
+        "noSale": "ETAXI NO vende ni comercializa su información personal a terceros con fines publicitarios."
+      },
+      "section4": {
+        "title": "4. Sus Derechos (Derechos ARCO)",
+        "intro": "De acuerdo con la legislación chilena sobre protección de datos personales, usted tiene derecho a:",
+        "right1": "Acceso: Solicitar información sobre qué datos personales tenemos sobre usted.",
+        "right2": "Rectificación: Corregir datos inexactos o incompletos.",
+        "right3": "Cancelación: Solicitar la eliminación de sus datos personales cuando ya no sean necesarios para los fines para los cuales fueron recopilados.",
+        "right4": "Oposición: Oponerse al tratamiento de sus datos personales en ciertos casos.",
+        "exercise": "Para ejercer estos derechos, puede enviarnos un email a privacidad@etaxi.cl con su solicitud. Responderemos en un plazo razonable."
+      },
+      "section5": {
+        "title": "5. Seguridad de la Información",
+        "content": "Implementamos medidas técnicas y organizativas para proteger su información personal contra acceso no autorizado, pérdida, alteración o divulgación. Utilizamos cifrado SSL/TLS para transmisiones de datos, autenticación segura, control de accesos y monitoreo de seguridad. Sin embargo, ningún sistema es 100% seguro. Le recomendamos también tomar precauciones con su contraseña y dispositivos."
+      },
+      "section6": {
+        "title": "6. Retención de Datos",
+        "content": "Conservamos su información personal mientras su cuenta esté activa o sea necesaria para prestar el servicio. Los datos de viajes y transacciones pueden conservarse por períodos más largos para cumplimiento legal, contable y de auditoría (generalmente 5-7 años según normativa chilena). Datos anonimizados pueden conservarse indefinidamente con fines estadísticos."
+      },
+      "section7": {
+        "title": "7. Cookies y Tecnologías Similares",
+        "content": "Utilizamos cookies y tecnologías similares para mejorar la experiencia del usuario, recordar preferencias, analizar tráfico web y mostrar contenido relevante. Para más información, consulte nuestra Política de Cookies."
+      },
+      "section8": {
+        "title": "8. Transferencias Internacionales",
+        "content": "Algunos de nuestros proveedores de servicios tecnológicos pueden estar ubicados fuera de Chile (por ejemplo, servidores en la nube). En estos casos, aseguramos que existan medidas de protección adecuadas mediante contratos de tratamiento de datos y cláusulas de transferencia estándar."
+      },
+      "section9": {
+        "title": "9. Menores de Edad",
+        "content": "ETAXI no está dirigido a menores de 18 años. No recopilamos intencionalmente información personal de menores sin consentimiento de sus padres o tutores. Si detectamos que hemos recopilado datos de un menor sin autorización, procederemos a eliminarlos."
+      },
+      "section10": {
+        "title": "10. Cambios a esta Política",
+        "content": "Podemos actualizar esta Política de Privacidad ocasionalmente. La versión actualizada será publicada en nuestro Sitio con la fecha de 'Última actualización'. Le recomendamos revisar esta política periódicamente."
+      },
+      "section11": {
+        "title": "11. Contacto",
+        "content": "Para consultas sobre privacidad y protección de datos, contáctenos en:",
+        "email": "Email: privacidad@etaxi.cl",
+        "address": "Dirección: Santiago, Chile"
+      }
+    },
+    "cookies": {
+      "title": "Política de Cookies",
+      "lastUpdated": "Última actualización: Enero 2025",
+      "intro": "Esta Política de Cookies explica qué son las cookies, cómo las utilizamos en el sitio web www.etaxi.cl, qué tipos de cookies empleamos y cómo puede gestionarlas o desactivarlas.",
+      "section1": {
+        "title": "1. ¿Qué son las Cookies?",
+        "content": "Las cookies son pequeños archivos de texto que se almacenan en su dispositivo (computadora, tablet, smartphone) cuando visita un sitio web. Las cookies permiten que el sitio web reconozca su dispositivo y recuerde información sobre su visita, como sus preferencias de idioma, configuración y actividad de navegación."
+      },
+      "section2": {
+        "title": "2. ¿Para qué Usamos las Cookies?",
+        "intro": "Utilizamos cookies para:",
+        "purpose1": "Funcionalidad del sitio: Recordar sus preferencias (idioma seleccionado, configuración de visualización).",
+        "purpose2": "Seguridad: Detectar y prevenir actividades fraudulentas, proteger su cuenta.",
+        "purpose3": "Análisis y estadísticas: Entender cómo los usuarios interactúan con nuestro sitio, qué páginas visitan, cuánto tiempo permanecen. Esto nos ayuda a mejorar la experiencia del usuario.",
+        "purpose4": "Rendimiento: Medir el rendimiento del sitio, identificar problemas técnicos y optimizar la velocidad de carga."
+      },
+      "section3": {
+        "title": "3. Tipos de Cookies que Utilizamos",
+        "essential": {
+          "title": "3.1 Cookies Esenciales (Estrictamente Necesarias)",
+          "content": "Estas cookies son imprescindibles para el funcionamiento del sitio web. Permiten navegar por el sitio y utilizar funciones básicas como acceso a áreas seguras. Sin estas cookies, el sitio no puede funcionar correctamente.",
+          "examples": "Ejemplos: Cookies de sesión, cookies de autenticación, cookies de seguridad."
+        },
+        "analytics": {
+          "title": "3.2 Cookies Analíticas",
+          "content": "Estas cookies recopilan información sobre cómo los visitantes utilizan el sitio web (páginas visitadas, tiempo de permanencia, enlaces clicados). La información es agregada y anónima. Utilizamos estas cookies para analizar el tráfico web y mejorar nuestro sitio.",
+          "examples": "Ejemplos: Google Analytics (si se implementa), cookies de análisis de comportamiento."
+        },
+        "functional": {
+          "title": "3.3 Cookies Funcionales",
+          "content": "Estas cookies permiten que el sitio recuerde las elecciones que hace el usuario (como el idioma, la región o las preferencias de visualización) y proporcionan características mejoradas y más personalizadas.",
+          "examples": "Ejemplos: Cookies de preferencias de idioma, cookies de ubicación aproximada."
+        },
+        "marketing": {
+          "title": "3.4 Cookies de Marketing y Publicidad (si aplica)",
+          "content": "Estas cookies se utilizan para mostrar anuncios relevantes para el usuario y para medir la eficacia de campañas publicitarias. Actualmente, ETAXI NO utiliza cookies de marketing o publicidad de terceros. Esta sección se incluye para transparencia futura.",
+          "note": "Nota: Si en el futuro implementamos publicidad o remarketing, actualizaremos esta política y solicitaremos su consentimiento explícito donde sea requerido por ley."
+        }
+      },
+      "section4": {
+        "title": "4. Cookies de Terceros",
+        "content": "Algunos de nuestros proveedores de servicios (como Google Analytics, Google Maps, pasarelas de pago) pueden establecer cookies en su dispositivo cuando visita nuestro sitio. Estas cookies de terceros están sujetas a las políticas de privacidad de esos terceros. Le recomendamos revisar dichas políticas.",
+        "examples": "Ejemplos: Google Analytics, Google Maps, proveedores de servicios en la nube."
+      },
+      "section5": {
+        "title": "5. Cómo Gestionar y Desactivar las Cookies",
+        "intro": "Usted puede controlar y administrar las cookies de varias formas:",
+        "browser": {
+          "title": "5.1 Configuración del Navegador",
+          "content": "La mayoría de los navegadores web permiten controlar las cookies a través de la configuración. Puede configurar su navegador para rechazar cookies o para que le notifique cuando se envíen cookies. Sin embargo, si desactiva las cookies, algunas funciones del sitio pueden no funcionar correctamente.",
+          "links": "Enlaces a instrucciones de configuración de cookies:",
+          "chrome": "Google Chrome: Configuración > Privacidad y seguridad > Cookies",
+          "firefox": "Mozilla Firefox: Opciones > Privacidad y seguridad > Cookies",
+          "safari": "Safari: Preferencias > Privacidad > Cookies",
+          "edge": "Microsoft Edge: Configuración > Privacidad, búsqueda y servicios > Cookies"
+        },
+        "optOut": {
+          "title": "5.2 Desactivar Cookies Analíticas",
+          "content": "Si desea desactivar Google Analytics específicamente, puede instalar el complemento de inhabilitación de Google Analytics disponible en: https://tools.google.com/dlpage/gaoptout"
+        },
+        "consequences": {
+          "title": "5.3 Consecuencias de Desactivar Cookies",
+          "content": "Si desactiva todas las cookies, es posible que no pueda utilizar algunas funciones del sitio web, como recordar sus preferencias de idioma, mantener su sesión iniciada o acceder a áreas personalizadas."
+        }
+      },
+      "section6": {
+        "title": "6. Duración de las Cookies",
+        "session": "Cookies de sesión: Se eliminan automáticamente cuando cierra su navegador.",
+        "persistent": "Cookies persistentes: Permanecen en su dispositivo durante un período de tiempo específico (días, meses o años) o hasta que las elimine manualmente.",
+        "duration": "La duración de nuestras cookies varía según su propósito. Las cookies esenciales suelen ser de sesión, mientras que las cookies analíticas y funcionales pueden ser persistentes (típicamente de 6 meses a 2 años)."
+      },
+      "section7": {
+        "title": "7. Actualizaciones de esta Política",
+        "content": "Podemos actualizar esta Política de Cookies ocasionalmente para reflejar cambios en nuestras prácticas o en la legislación aplicable. La versión actualizada será publicada en nuestro sitio con la fecha de 'Última actualización'."
+      },
+      "section8": {
+        "title": "8. Contacto",
+        "content": "Si tiene preguntas sobre nuestra Política de Cookies, puede contactarnos en:",
+        "email": "Email: privacidad@etaxi.cl",
+        "address": "Dirección: Santiago, Chile"
+      }
+    }
+  },
+  "complianceRegulatoryPage": {
+    "hero": {
+      "badge": "Cumplimiento Normativo B2B",
+      "title": "Cumplimiento Normativo para Empresas y Gremios",
+      "subtitle": "Opera con orden y trazabilidad bajo la Ley 21.553 y el Decreto 212",
+      "description": "ETAXI es una plataforma tecnológica diseñada para ayudar a empresas y gremios a gestionar taxis regulados con trazabilidad completa, reduciendo riesgo regulatorio y facilitando el cumplimiento normativo.",
+      "cta": "Hablar con un Especialista"
+    },
+    "regulations": {
+      "title": "Marco Normativo en el que Funciona ETAXI",
+      "subtitle": "ETAXI se alinea con el marco regulatorio chileno de transporte para ayudar a empresas y gremios a operar dentro de la ley.",
+      "law21553": {
+        "title": "Ley 21.553 — Empresas de Aplicación de Transporte (EAT)",
+        "description": "Esta ley establece el marco legal para plataformas tecnológicas que intermedian servicios de transporte remunerado de pasajeros.",
+        "bullet1": "Exige que las plataformas trabajen solo con vehículos debidamente autorizados por el Ministerio de Transportes",
+        "bullet2": "Establece obligaciones de trazabilidad, registro de viajes y transparencia tarifaria",
+        "bullet3": "Protege tanto a pasajeros como a conductores con estándares de seguridad y seguros obligatorios"
+      },
+      "ds212": {
+        "title": "Decreto Supremo 212 — Taxis y Servicios Regulados",
+        "description": "Norma que regula la operación de taxis colectivos, radiotaxis y servicios de transporte remunerado de pasajeros.",
+        "bullet1": "Define requisitos de habilitación de vehículos (permisos municipales, revisión técnica, seguros)",
+        "bullet2": "Establece que solo conductores autorizados pueden operar taxis regulados",
+        "bullet3": "Exige tarifas aprobadas por autoridad competente y registro de actividad operacional"
+      }
+    },
+    "role": {
+      "title": "Rol de ETAXI dentro de este Marco",
+      "subtitle": "ETAXI es un proveedor de tecnología, no un operador de transporte. Clarificamos qué hacemos y qué no hacemos.",
+      "does": {
+        "title": "ETAXI Sí Hace:",
+        "item1": "Provee la plataforma tecnológica para asignación de viajes y gestión de flota",
+        "item2": "Facilita trazabilidad completa de viajes (origen, destino, conductor, hora)",
+        "item3": "Permite control operacional y emisión de reportes para empresas y gremios",
+        "item4": "Ofrece herramientas para validar que solo conductores y vehículos autorizados operen"
+      },
+      "doesnt": {
+        "title": "ETAXI No Hace:",
+        "item1": "No opera transporte ni es empleador de conductores",
+        "item2": "No contrata ni paga directamente a choferes (esa es responsabilidad del operador)",
+        "item3": "No fija tarifas como operador (las tarifas son configuradas por el operador autorizado)",
+        "item4": "No emite boletas ni facturas por viajes (eso lo hace el operador de transporte)"
+      }
+    },
+    "roleTable": {
+      "header": {
+        "aspect": "Aspecto",
+        "responsible": "Responsable Principal",
+        "etaxiSupport": "Apoyo ETAXI"
+      },
+      "row1": {
+        "aspect": "Habilitación de taxis",
+        "responsible": "Empresa / Gremio",
+        "etaxiSupport": "Registro y validación en plataforma"
+      },
+      "row2": {
+        "aspect": "Contrato con conductores",
+        "responsible": "Empresa / Gremio",
+        "etaxiSupport": "Gestión operativa y trazabilidad"
+      },
+      "row3": {
+        "aspect": "Tarifas autorizadas",
+        "responsible": "Autoridad + Operador",
+        "etaxiSupport": "Configuración y control en app"
+      },
+      "row4": {
+        "aspect": "Pago de remuneraciones",
+        "responsible": "Empresa / Gremio",
+        "etaxiSupport": "Reportes de viajes realizados"
+      }
+    },
+    "risks": {
+      "title": "Riesgos de Operar con Apps No Reguladas",
+      "subtitle": "Usar plataformas que no se alinean con la normativa chilena puede exponer a empresas y gremios a problemas legales, operacionales y reputacionales.",
+      "risk1": "Riesgo de multas por uso de servicios de transporte no ajustados a normativa (Ley 21.553 y DS 212)",
+      "risk2": "Dificultad para respaldar seguros en caso de accidente si el servicio no está debidamente autorizado",
+      "risk3": "Desorden en responsabilidades laborales: confusión sobre quién es empleador y quién gestiona la relación con conductores",
+      "risk4": "Impacto en reputación corporativa: operar con servicios informales puede afectar imagen ante stakeholders, clientes y autoridades",
+      "counterpoint": {
+        "title": "ETAXI está diseñada para dar orden, trazabilidad y soporte documental",
+        "description": "Al trabajar exclusivamente con taxis regulados y alinearse con la normativa chilena, ETAXI ayuda a empresas y gremios a reducir riesgo legal, tener mayor control operacional y mantener trazabilidad auditable de todos los viajes."
+      }
+    },
+    "benefits": {
+      "title": "Beneficios Concretos de ETAXI para Cumplimiento",
+      "subtitle": "ETAXI aporta herramientas orientadas a compliance, auditoría interna y control de riesgos.",
+      "benefit1": {
+        "title": "Registro Completo de Viajes y Conductores",
+        "description": "Cada viaje queda registrado con fecha, hora, origen, destino, conductor y vehículo, facilitando auditorías internas y externas."
+      },
+      "benefit2": {
+        "title": "Reportes para Control de Gestión",
+        "description": "Descarga reportes de viajes por centro de costo, conductor o período, útiles para conciliación contable y revisión de gasto."
+      },
+      "benefit3": {
+        "title": "Políticas de Solo Taxi Regulado / Solo Conductor Habilitado",
+        "description": "Define reglas en la plataforma para asegurar que solo vehículos y conductores autorizados puedan operar, reduciendo riesgo de incumplimiento."
+      },
+      "benefit4": {
+        "title": "Soporte Documental para Seguros y Compliance",
+        "description": "En caso de auditoría, siniestro o revisión de compliance, ETAXI provee documentación de respaldo sobre quién, cuándo y dónde se realizó cada viaje."
+      }
+    },
+    "disclaimer": {
+      "title": "Aviso Legal",
+      "text1": "La información contenida en esta página es de carácter general y referencial. No constituye asesoría jurídica ni reemplaza la opinión de un abogado o asesor legal.",
+      "text2": "Cada empresa, gremio u operador de transporte es responsable de revisar su situación particular con su área legal y de asegurar que cumple con toda la normativa vigente aplicable a su actividad.",
+      "text3": "ETAXI provee herramientas tecnológicas para apoyar el cumplimiento normativo, pero la responsabilidad última de operar conforme a ley recae en el operador de transporte que utiliza la plataforma."
+    },
+    "finalCta": {
+      "title": "Conversemos sobre Cómo Ordenar tu Operación de Transporte",
+      "description": "ETAXI ayuda a ordenar, documentar y dar trazabilidad a la gestión de taxis regulados para empresas y gremios. Agenda una reunión con nuestro equipo.",
+      "ctaPrimary": "Contactar a Ventas",
+      "ctaSecondary": "Ver Solución Empresas"
+    }
+  },
   "footer": {
     "legal": {
       "terms": "Términos y Condiciones",
       "privacy": "Política de Privacidad",
+      "cookies": "Política de Cookies",
       "compliance": "Cumplimiento Normativo"
     },
     "support": {

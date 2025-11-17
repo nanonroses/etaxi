@@ -36,6 +36,12 @@ export const seoConfig = {
       'ETAXI opera con taxis regulados, alineados con la Ley 21.553 y el Decreto 212, explicado en lenguaje simple.',
     keywords: 'Ley 21.553, Decreto 212, cumplimiento normativo, taxi regulado Chile',
   },
+  cumplimientoNormativo: {
+    title: 'Cumplimiento Normativo para Empresas y Gremios | ETAXI',
+    description:
+      'ETAXI se alinea con Ley 21.553 y DS 212 para ofrecer una plataforma que ayuda a empresas y gremios a operar taxis regulados con orden, trazabilidad y reducción de riesgo regulatorio.',
+    keywords: 'cumplimiento normativo transporte, Ley 21.553, plataforma taxis regulados, DS 212, compliance transporte Chile, empresas transporte regulado',
+  },
   empresasGremios: {
     title: 'ETAXI para empresas y gremios — Transporte regulado',
     description:

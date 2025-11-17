@@ -3,7 +3,23 @@
     "allow": [
       "Bash(npm install:*)",
       "Bash(npm run build:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git checkout:*)",
+      "Bash(git branch:*)",
+      "Bash(git merge:*)",
+      "Bash(npx prisma init:*)",
+      "Bash(npx prisma generate:*)",
+      "Bash(npx prisma migrate:*)",
+      "Bash(npm audit:*)",
+      "Bash(npx tsc:*)",
+      "Bash(tree:*)",
+      "Bash(npx tsx:*)",
+      "Bash(test:*)",
+      "Bash(npx prisma:*)",
+      "Bash(cat:*)",
+      "Bash(node -e:*)",
+      "Bash(DATABASE_URL=\"file:./dev.db\" npx tsx:*)",
+      "Bash(find:*)"
     ],
     "deny": [],
     "ask": []

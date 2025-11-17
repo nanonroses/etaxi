@@ -119,21 +119,27 @@ export default function ContactoPage() {
                   <CardContent>
                     <div className="flex space-x-4">
                       <a
-                        href="#"
+                        href="https://facebook.com/etaxi"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="w-12 h-12 rounded-full bg-[hsl(var(--primary))]/10 flex items-center justify-center hover:bg-[hsl(var(--primary))]/20 transition-colors"
                         aria-label={t('info.social.facebook')}
                       >
                         <Facebook className="w-6 h-6 text-[hsl(var(--primary))]" aria-hidden="true" />
                       </a>
                       <a
-                        href="#"
+                        href="https://twitter.com/etaxi_cl"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="w-12 h-12 rounded-full bg-[hsl(var(--primary))]/10 flex items-center justify-center hover:bg-[hsl(var(--primary))]/20 transition-colors"
                         aria-label={t('info.social.twitter')}
                       >
                         <Twitter className="w-6 h-6 text-[hsl(var(--primary))]" aria-hidden="true" />
                       </a>
                       <a
-                        href="#"
+                        href="https://instagram.com/etaxi_cl"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="w-12 h-12 rounded-full bg-[hsl(var(--primary))]/10 flex items-center justify-center hover:bg-[hsl(var(--primary))]/20 transition-colors"
                         aria-label={t('info.social.instagram')}
                       >

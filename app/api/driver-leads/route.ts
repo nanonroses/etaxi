@@ -1,8 +1,23 @@
 import { NextResponse } from 'next/server';
 import { prisma } from '@/lib/prisma';
+import { rateLimit, handleRateLimitError } from '@/lib/rate-limit';
+
+// Rate limiter: 5 requests per minute per IP (stricter for leads)
+const limiter = rateLimit({
+  interval: 60 * 1000, // 1 minute
+  maxRequests: 5,
+});
 
 export async function POST(req: Request) {
   try {
+    // Apply rate limiting
+    try {
+      await limiter.check(req);
+    } catch (error) {
+      const { status, body, headers } = handleRateLimitError(error);
+      return NextResponse.json(body, { status, headers });
+    }
+
     const body = await req.json();
 
     const { fullName, email, phone, city, hasTaxi, notes } = body;

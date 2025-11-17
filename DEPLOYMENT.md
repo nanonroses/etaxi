@@ -1,6 +1,56 @@
-# ETAXI - Guía de Despliegue en Vercel
+# ETAXI - Guía de Despliegue
 
-Esta guía cubre el proceso completo de despliegue del MVP ETAXI en Vercel.
+Esta guía cubre las opciones de despliegue del MVP ETAXI.
+
+## 🚀 Opciones de Deploy Disponibles
+
+### Opción A: Cloudflare Pages (Recomendado)
+
+**Guía completa:** [docs/CLOUDFLARE_PAGES_DEPLOY.md](./docs/CLOUDFLARE_PAGES_DEPLOY.md)
+
+**Ventajas:**
+- ✅ CDN global de Cloudflare
+- ✅ Plan gratuito generoso
+- ✅ SSL automático
+- ✅ Web Analytics incluido
+- ✅ DDoS protection
+
+**Ideal para:**
+- Sitios estáticos y SSG
+- Alta performance global
+- Máxima disponibilidad
+
+---
+
+### Opción B: Vercel (Alternativa)
+
+**Guía completa:** [docs/DEPLOY_CHECKLIST.md](./docs/DEPLOY_CHECKLIST.md) (Opción B)
+
+**Ventajas:**
+- ✅ Integración nativa con Next.js
+- ✅ SSR completo sin configuración
+- ✅ Preview deployments automáticos
+- ✅ Vercel Analytics
+
+**Ideal para:**
+- Apps con SSR intensivo
+- Integración con Vercel Postgres
+- Workflow Vercel-first
+
+---
+
+## 📚 Migración desde esta Guía
+
+Esta guía originalmente cubría solo Vercel. Ahora hemos expandido las opciones:
+
+1. **Para deploy en Cloudflare Pages:** Ver [CLOUDFLARE_PAGES_DEPLOY.md](./docs/CLOUDFLARE_PAGES_DEPLOY.md)
+2. **Para deploy en Vercel:** La guía abajo sigue siendo válida
+
+---
+
+# Guía Original: Deploy en Vercel
+
+> **Nota:** Esta es la guía heredada enfocada en Vercel.
 
 ## FASE 8: CIERRE, PRODUCCIÓN Y DESPLIEGUE
 

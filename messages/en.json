@@ -3,15 +3,24 @@
     "home": "Home",
     "requestTaxi": "Request Taxi",
     "downloadApp": "Download App",
+    "howItWorks": "How It Works",
+    "passengers": "Passengers",
+    "passengerInfo": "Passenger Info",
+    "drivers": "Drivers",
+    "driverInfo": "Driver Info",
+    "howItWorksDrivers": "How It Works",
+    "driverSafety": "Safety",
     "security": "Security",
+    "compliance": "Compliance",
     "business": "Business",
+    "businessInfo": "Business Info",
     "contact": "Contact"
   },
   "hero": {
-    "title": "Travel with security, transparency and compliance",
-    "subtitle": "ETAXI, Chile's regulated taxi app",
-    "ctaPrimary": "Request Taxi",
-    "ctaSecondary": "Download App"
+    "title": "Legal Taxis with Modern Technology",
+    "subtitle": "Chile's first 100% regulated platform. Travel safely with professional drivers, fair fares and complete traceability.",
+    "ctaPrimary": "Download App",
+    "ctaSecondary": "I'm a Driver"
   },
   "benefits": {
     "title": "Why choose ETAXI?",
@@ -49,6 +58,79 @@
     "appStore": "Download on App Store",
     "playStore": "Get it on Google Play"
   },
+  "howItWorks": {
+    "title": "How it works",
+    "subtitle": "Three simple steps for your safe trip",
+    "step1": {
+      "title": "Download and create your account",
+      "description": "Available on App Store and Google Play. Register with your phone in seconds."
+    },
+    "step2": {
+      "title": "Request your taxi",
+      "description": "Enter your origin and destination. The app connects you with nearby legal taxis."
+    },
+    "step3": {
+      "title": "Travel safely",
+      "description": "Track your trip in real-time with complete traceability and integrated panic button."
+    }
+  },
+  "whyEtaxi": {
+    "title": "Why ETAXI?",
+    "subtitle": "The legal and transparent alternative",
+    "vsCompetition": {
+      "title": "vs unregulated transport apps",
+      "feature1": {
+        "them": "Drivers without professional license",
+        "us": "Only drivers with valid A1 license"
+      },
+      "feature2": {
+        "them": "Dynamic pricing (up to 3x more expensive)",
+        "us": "Fixed official fare, no surge pricing"
+      },
+      "feature3": {
+        "them": "No municipal registration or permits",
+        "us": "100% regulated under Law 21.553 and Decree 212"
+      },
+      "feature4": {
+        "them": "No adequate insurance for passengers",
+        "us": "Mandatory SOAP insurance and civil liability"
+      },
+      "feature5": {
+        "them": "Foreign platform without local oversight",
+        "us": "Chilean platform overseen by the Ministry of Transport"
+      }
+    }
+  },
+  "conductorCta": {
+    "title": "Are you a taxi driver?",
+    "subtitle": "Join the platform that respects your professional work",
+    "features": {
+      "legal": "Work legally and peacefully",
+      "transparent": "No abusive commissions",
+      "support": "Dedicated 24/7 support"
+    },
+    "button": "Register as a Driver"
+  },
+  "testimonials": {
+    "title": "What our users say",
+    "items": {
+      "passenger1": {
+        "name": "María González",
+        "role": "Frequent passenger",
+        "text": "Finally a taxi app that is 100% legal. I feel much safer knowing all drivers are regulated."
+      },
+      "passenger2": {
+        "name": "Carlos Muñoz",
+        "role": "Corporate user",
+        "text": "For my company, traceability and regulatory compliance are essential. ETAXI meets all our requirements."
+      },
+      "driver1": {
+        "name": "Roberto Silva",
+        "role": "Professional driver",
+        "text": "I've been a taxi driver for 15 years and ETAXI is the only platform that truly respects our professional work."
+      }
+    }
+  },
   "compliancePage": {
     "hero": {
       "title": "Regulatory Compliance",
@@ -85,7 +167,13 @@
   "safetyPage": {
     "hero": {
       "title": "Your safety is our priority",
-      "subtitle": "Travel safely with 100% regulated taxis and complete traceability"
+      "subtitle": "Travel safely with 100% regulated taxis and complete traceability",
+      "badge": "100% Safe and Legal",
+      "trustPoint1": "Verified drivers",
+      "trustPoint2": "Authorized vehicles",
+      "trustPoint3": "GPS traceability",
+      "footerLeft": "100% Legal",
+      "footerRight": "Law 21.553"
     },
     "intro": {
       "title": "Why is ETAXI safe?",
@@ -143,48 +231,116 @@
   },
   "downloadPage": {
     "hero": {
-      "title": "Download the ETAXI app",
-      "subtitle": "Your regulated taxi at your fingertips"
+      "title": "Your Legal Taxi, Now in Your Pocket",
+      "subtitle": "Download the ETAXI app and travel with the peace of mind of a 100% regulated, safe and transparent service.",
+      "badge": "Over 10,000 downloads"
     },
-    "whyUse": {
-      "title": "Why use ETAXI?",
+    "stats": {
+      "downloads": "10,000+",
+      "downloadsLabel": "Downloads",
+      "rating": "4.8",
+      "ratingLabel": "Rating",
+      "trips": "50,000+",
+      "tripsLabel": "Trips completed",
+      "drivers": "1,000+",
+      "driversLabel": "Active drivers"
+    },
+    "appFeatures": {
+      "title": "Everything you need in one app",
+      "subtitle": "Designed to make your travel experience simple, safe and reliable",
       "feature1": {
-        "title": "100% Regulated Taxis",
-        "description": "Only professional drivers with valid licenses"
+        "title": "Request your taxi in seconds",
+        "description": "Enter your origin and destination. The app automatically connects you with nearby legal taxis."
       },
       "feature2": {
-        "title": "Transparent Fares",
-        "description": "No surge pricing during peak hours"
+        "title": "Real-time tracking",
+        "description": "Track your taxi's location before and during the trip. Share your route with trusted contacts."
       },
       "feature3": {
-        "title": "Guaranteed Safety",
-        "description": "Monitored trips with integrated panic button"
+        "title": "Complete trip history",
+        "description": "Access all your previous trips with driver details, route and rating."
+      },
+      "feature4": {
+        "title": "Rate your experience",
+        "description": "Help improve the service by rating your driver at the end of each trip."
+      },
+      "feature5": {
+        "title": "Integrated panic button",
+        "description": "Direct access to emergencies with your location automatically shared."
+      },
+      "feature6": {
+        "title": "Personalized profile",
+        "description": "Save your frequent addresses and preferences for faster trips."
+      }
+    },
+    "whyUse": {
+      "title": "Why choose ETAXI?",
+      "feature1": {
+        "title": "100% Regulated Taxis",
+        "description": "Only professional drivers with valid A1 license and up-to-date municipal permits"
+      },
+      "feature2": {
+        "title": "Fair and Transparent Fare",
+        "description": "Fixed official fare, no dynamic pricing or surprises during peak hours"
+      },
+      "feature3": {
+        "title": "Real Safety",
+        "description": "Complete traceability, panic button, and mandatory insurance on every trip"
       },
       "feature4": {
         "title": "Available 24/7",
-        "description": "Request your taxi anytime, day or night"
+        "description": "Request your taxi whenever you need it, day or night, every day of the year"
       }
     },
     "screenshots": {
-      "title": "The ETAXI app"
+      "title": "Discover the ETAXI app",
+      "subtitle": "Simple and intuitive interface designed for you",
+      "screen1": "Home screen",
+      "screen2": "Request taxi",
+      "screen3": "Live tracking",
+      "screen4": "Driver details",
+      "screen5": "Trip history"
+    },
+    "systemRequirements": {
+      "title": "System Requirements",
+      "ios": {
+        "title": "iOS",
+        "version": "iOS 13.0 or later",
+        "devices": "Compatible with iPhone, iPad and iPod touch",
+        "storage": "50 MB of available space"
+      },
+      "android": {
+        "title": "Android",
+        "version": "Android 6.0 or later",
+        "devices": "Compatible with smartphones and tablets",
+        "storage": "50 MB of available space"
+      }
     },
     "faq": {
       "title": "Frequently Asked Questions",
       "q1": {
         "question": "Is it available for iOS and Android?",
-        "answer": "Yes, ETAXI is available on both App Store (iOS) and Google Play (Android)."
+        "answer": "Yes, ETAXI is available on both App Store (iOS) and Google Play (Android). Download it for free on your preferred device."
       },
       "q2": {
         "question": "Is the app free to download?",
-        "answer": "Yes, downloading the app is completely free. You only pay for the rides you take."
+        "answer": "Yes, the download is 100% free and there is no subscription cost. You only pay for the trips you take according to the official fare."
       },
       "q3": {
         "question": "What permissions does the app need?",
-        "answer": "The app needs access to your location to show nearby taxis and calculate routes. All permissions are optional and can be configured in settings."
+        "answer": "The app needs access to your location to show nearby taxis and calculate routes. Optionally, you can allow notifications to receive updates about your trip. All permissions are configurable."
       },
       "q4": {
         "question": "Can I use ETAXI without registering?",
-        "answer": "To request a taxi you need to create an account, but registration is quick and only requires your email or phone number."
+        "answer": "To request a taxi you need to create an account. Registration is quick and only requires your phone number. We use OTP (SMS code) for better security, no passwords needed."
+      },
+      "q5": {
+        "question": "How does payment work?",
+        "answer": "Payment is made directly to the driver at the end of the trip. You can pay in cash or with the methods the driver accepts. The fare is official and transparent."
+      },
+      "q6": {
+        "question": "Can I cancel a trip?",
+        "answer": "Yes, you can cancel your request before the driver arrives. Check the cancellation policy in the app for more details."
       }
     }
   },
@@ -263,6 +419,649 @@
       "general": "General inquiry",
       "support": "Technical support",
       "business": "Business inquiry"
+    }
+  },
+  "passengerPage": {
+    "hero": {
+      "title": "Your Legal Taxi, Always Within Reach",
+      "subtitle": "Travel safely with Chile's first 100% regulated platform. Professional drivers, fair fares and technology that protects every trip.",
+      "badge": "100% Regulated and Legal",
+      "cta1": "Download App Free",
+      "cta2": "See How It Works"
+    },
+    "stats": {
+      "passengers": "25,000+",
+      "passengersLabel": "Active passengers",
+      "trips": "50,000+",
+      "tripsLabel": "Completed trips",
+      "rating": "4.8",
+      "ratingLabel": "Average rating",
+      "cities": "15+",
+      "citiesLabel": "Available cities"
+    },
+    "benefits": {
+      "title": "Why passengers choose ETAXI?",
+      "subtitle": "All the advantages of a modern app with the safety of regulated taxis",
+      "benefit1": {
+        "title": "100% Professional Drivers",
+        "description": "All our drivers have a valid A1 license, up-to-date municipal permits and verified background checks. Travel with real professionals."
+      },
+      "benefit2": {
+        "title": "Fair and Transparent Fares",
+        "description": "Pay the official fixed rate. No dynamic pricing, no surprises during peak hours. The price you see is the price you pay."
+      },
+      "benefit3": {
+        "title": "Safety on Every Trip",
+        "description": "Complete trip traceability, integrated panic button, valid mandatory insurance. Your safety is our number one priority."
+      },
+      "benefit4": {
+        "title": "Real-Time Tracking",
+        "description": "Track your taxi's location before and during the trip. Share your route with trusted contacts for extra peace of mind."
+      },
+      "benefit5": {
+        "title": "Full Legal Compliance",
+        "description": "100% regulated under Law 21.553 and Decree 212. We work only with taxis authorized and overseen by the Ministry of Transport."
+      },
+      "benefit6": {
+        "title": "Available 24/7",
+        "description": "Request your taxi whenever you need it, day or night. Coverage in Chile's main cities, every day of the year."
+      }
+    },
+    "howToUse": {
+      "title": "How to use ETAXI",
+      "subtitle": "Requesting your legal taxi has never been easier",
+      "step1": {
+        "number": "1",
+        "title": "Download the App",
+        "description": "Available free on App Store and Google Play. Register with your phone number in less than 1 minute.",
+        "detail": "No subscription cost. You only pay for the trips you take."
+      },
+      "step2": {
+        "number": "2",
+        "title": "Enter Origin and Destination",
+        "description": "The app detects your location automatically. Enter your destination or select one of your frequent places.",
+        "detail": "Save your favorite addresses for faster trips."
+      },
+      "step3": {
+        "number": "3",
+        "title": "Confirm Your Request",
+        "description": "Review trip details and estimated fare. The app automatically connects you with the nearest legal taxi.",
+        "detail": "See driver information and vehicle license plate before it arrives."
+      },
+      "step4": {
+        "number": "4",
+        "title": "Track Your Taxi Live",
+        "description": "See in real-time where your taxi is and how long until it arrives. Receive notifications when it's nearby.",
+        "detail": "Share your trip with family or friends for extra safety."
+      },
+      "step5": {
+        "number": "5",
+        "title": "Travel Safely",
+        "description": "During the trip you have complete traceability, panic button and 24/7 support. Everything is recorded.",
+        "detail": "Direct access to emergencies with your location automatically shared."
+      },
+      "step6": {
+        "number": "6",
+        "title": "Rate Your Experience",
+        "description": "When finished, rate the driver and leave a comment. Help improve the service for everyone.",
+        "detail": "Access your complete trip history whenever you want."
+      }
+    },
+    "comparison": {
+      "title": "ETAXI vs Unregulated Apps",
+      "subtitle": "The difference between traveling legally or taking risks",
+      "etaxi": "ETAXI",
+      "others": "Unregulated Apps",
+      "feature1": {
+        "title": "Drivers",
+        "etaxi": "Valid professional A1 license + verified municipal permits",
+        "others": "Anyone without professional training or permits"
+      },
+      "feature2": {
+        "title": "Fares",
+        "etaxi": "Fixed official fare. Always transparent.",
+        "others": "Dynamic pricing (up to 3x more expensive at peak times)"
+      },
+      "feature3": {
+        "title": "Legality",
+        "etaxi": "100% regulated under Law 21.553 and Decree 212",
+        "others": "Operate in legal gray area without proper permits"
+      },
+      "feature4": {
+        "title": "Insurance",
+        "etaxi": "Mandatory SOAP insurance + valid civil liability",
+        "others": "No adequate insurance for passenger transport"
+      },
+      "feature5": {
+        "title": "Oversight",
+        "etaxi": "Overseen by Chile's Ministry of Transport",
+        "others": "Foreign platform without local control"
+      },
+      "feature6": {
+        "title": "Vehicle",
+        "etaxi": "Technical inspection + certified taximeter + municipal registration",
+        "others": "Private car without specific passenger inspection"
+      },
+      "feature7": {
+        "title": "Traceability",
+        "etaxi": "Complete record: driver, license plate, route, times",
+        "others": "Limited traceability without legal backing"
+      },
+      "feature8": {
+        "title": "Support",
+        "etaxi": "24/7 service in Chile with institutional backing",
+        "others": "Limited support from abroad"
+      }
+    },
+    "useCases": {
+      "title": "ETAXI for every situation",
+      "subtitle": "Safe trips when you need them most",
+      "case1": {
+        "title": "Night Trips",
+        "description": "Get home safely after going out at night. Complete traceability, verified driver and panic button always available.",
+        "icon": "moon"
+      },
+      "case2": {
+        "title": "Airport Transfers",
+        "description": "Arrive on time without worries. Professional drivers who know the best routes. Guaranteed luggage space.",
+        "icon": "plane"
+      },
+      "case3": {
+        "title": "Corporate Travel",
+        "description": "Business mobility with full traceability. Ideal for meetings, events and executive transfers with formal invoicing.",
+        "icon": "briefcase"
+      },
+      "case4": {
+        "title": "With Family",
+        "description": "Travel peacefully with your children or elderly. Trusted drivers, safe vehicles and tracking shared with family.",
+        "icon": "users"
+      },
+      "case5": {
+        "title": "Medical Emergencies",
+        "description": "When you need to get to a health center quickly. Professional drivers who prioritize your urgency safely.",
+        "icon": "heart"
+      },
+      "case6": {
+        "title": "Day to Day",
+        "description": "Your daily commutes: work, errands, shopping. Fair fare, no surprises and the convenience of saving frequent destinations.",
+        "icon": "calendar"
+      }
+    },
+    "appFeatures": {
+      "title": "App Features",
+      "subtitle": "Designed to make your experience simple and safe",
+      "feature1": {
+        "title": "Instant Request",
+        "description": "Request your taxi in seconds. The app detects your location and connects you with the nearest legal taxi."
+      },
+      "feature2": {
+        "title": "Trip History",
+        "description": "Access all your previous trips with complete details: driver, route, rating and receipts."
+      },
+      "feature3": {
+        "title": "Favorite Places",
+        "description": "Save your frequent addresses (home, work, gym) for faster requests."
+      },
+      "feature4": {
+        "title": "Share Trip",
+        "description": "Send your real-time location to trusted contacts. They can follow your complete trip."
+      },
+      "feature5": {
+        "title": "Ratings",
+        "description": "Rate each trip and help maintain service quality. Read reviews from other passengers."
+      },
+      "feature6": {
+        "title": "Integrated Support",
+        "description": "Direct contact with customer service from the app. Resolve doubts or report problems instantly."
+      }
+    },
+    "safety": {
+      "title": "Your Safety Comes First",
+      "subtitle": "Multiple layers of protection on every trip",
+      "feature1": {
+        "title": "Panic Button",
+        "description": "Instant access to emergencies. Your location is automatically shared with authorities.",
+        "icon": "alert"
+      },
+      "feature2": {
+        "title": "Complete Traceability",
+        "description": "Detailed record of driver, vehicle, route and times. Everything is documented.",
+        "icon": "map"
+      },
+      "feature3": {
+        "title": "Verified Drivers",
+        "description": "Background checks, valid professional license and mandatory training.",
+        "icon": "shield"
+      },
+      "feature4": {
+        "title": "24/7 Support",
+        "description": "Dedicated team available day and night for any query or emergency.",
+        "icon": "headphones"
+      }
+    },
+    "testimonials": {
+      "title": "Real Passenger Experiences",
+      "subtitle": "Thousands of users already trust ETAXI",
+      "testimonial1": {
+        "name": "María González",
+        "role": "Frequent passenger",
+        "city": "Santiago",
+        "text": "After using unregulated apps, discovering ETAXI was a relief. I can finally travel peacefully knowing everything is legal and safe."
+      },
+      "testimonial2": {
+        "name": "Carlos Rojas",
+        "role": "Executive",
+        "city": "Viña del Mar",
+        "text": "For my business trips I need formal invoicing and traceability. ETAXI meets everything my company requires."
+      },
+      "testimonial3": {
+        "name": "Andrea Martínez",
+        "role": "Mother",
+        "city": "Concepción",
+        "text": "I use ETAXI for trips with my children. Being able to share the live trip with my husband gives me great peace of mind."
+      },
+      "testimonial4": {
+        "name": "Jorge Vargas",
+        "role": "Senior citizen",
+        "city": "Santiago",
+        "text": "The app is very easy to use even for me. The drivers are professional and respectful. I don't use any other service."
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "q1": {
+        "question": "Is ETAXI available in my city?",
+        "answer": "ETAXI is available in Chile's main cities and we keep expanding. Download the app to see if there's coverage in your area. If not, we'll be there soon."
+      },
+      "q2": {
+        "question": "How much does using ETAXI cost?",
+        "answer": "Downloading and registering is 100% free. You only pay the official trip fare, with no subscription cost or hidden charges. The fare is fixed and transparent."
+      },
+      "q3": {
+        "question": "How is the fare calculated?",
+        "answer": "We use the official fare regulated by the Ministry of Transport. It's a fixed rate that doesn't change based on demand, peak hours or weather. Always transparent."
+      },
+      "q4": {
+        "question": "What payment methods do you accept?",
+        "answer": "Currently payment is made directly to the driver at the end of the trip (cash or methods the driver accepts). We're working on integrating digital payments in the app."
+      },
+      "q5": {
+        "question": "Can I request a taxi for someone else?",
+        "answer": "Yes, you can request a taxi for a family member or friend by entering the corresponding pickup address. Ideal for helping elderly people or sending taxis to others."
+      },
+      "q6": {
+        "question": "What if I have a problem during the trip?",
+        "answer": "You have several options: use the panic button for emergencies, contact 24/7 support from the app, or report the problem after the trip. All complaints are investigated."
+      },
+      "q7": {
+        "question": "Can I cancel a requested trip?",
+        "answer": "Yes, you can cancel before the driver arrives. The app will show you the cancellation conditions. We ask you to do so only when necessary to not affect drivers."
+      },
+      "q8": {
+        "question": "How do I know the driver is trustworthy?",
+        "answer": "All our drivers undergo background checks, have a valid professional A1 license and are legally registered. Additionally, each driver has a visible rating."
+      }
+    },
+    "cta": {
+      "title": "Download ETAXI and Start Traveling Legally",
+      "subtitle": "Over 25,000 passengers already trust us. Join the community of users who choose safety, legality and transparency.",
+      "button": "Download App Now",
+      "available": "Available for iOS and Android",
+      "note": "No download cost. No subscriptions. You only pay for your trips."
+    }
+  },
+  "howItWorksPage": {
+    "hero": {
+      "title": "How ETAXI Works",
+      "subtitle": "The platform that connects passengers, drivers and businesses under a 100% legal and transparent model",
+      "badge": "Simple, Safe and Legal"
+    },
+    "passengerFlow": {
+      "title": "For Passengers",
+      "subtitle": "Requesting a legal taxi has never been easier",
+      "step1": {
+        "number": "1",
+        "title": "Download the App",
+        "description": "Install ETAXI free from App Store or Google Play. Register with your phone number using OTP code. No complicated passwords.",
+        "icon": "download"
+      },
+      "step2": {
+        "number": "2",
+        "title": "Request your Taxi",
+        "description": "Open the app, allow your location and select your destination. The app shows you nearby legal taxis with estimated arrival time.",
+        "icon": "map"
+      },
+      "step3": {
+        "number": "3",
+        "title": "Confirm Details",
+        "description": "Review estimated fare (official, no surge pricing), driver details and vehicle license plate. Confirm your request.",
+        "icon": "check"
+      },
+      "step4": {
+        "number": "4",
+        "title": "Track Your Taxi in Real-Time",
+        "description": "See where your taxi is on the map. Share your trip with trusted contacts. Receive notifications when it's arriving.",
+        "icon": "eye"
+      },
+      "step5": {
+        "number": "5",
+        "title": "Travel Safely",
+        "description": "During the trip you have access to panic button, complete traceability and 24/7 support. Everything is recorded for your safety.",
+        "icon": "shield"
+      },
+      "step6": {
+        "number": "6",
+        "title": "Pay and Rate",
+        "description": "When finished, pay directly to the driver (cash or digital methods). Rate your experience to help improve the service.",
+        "icon": "star"
+      }
+    },
+    "driverFlow": {
+      "title": "For Drivers",
+      "subtitle": "Work legally and access more passengers with modern technology",
+      "step1": {
+        "number": "1",
+        "title": "Register on ETAXI",
+        "description": "Complete the registration form with your personal and vehicle data. You need A1 license, municipal permits and taxi documents.",
+        "icon": "clipboard"
+      },
+      "step2": {
+        "number": "2",
+        "title": "Document Validation",
+        "description": "Our team verifies your professional license, permits, background and that your vehicle meets all legal requirements. Response in 24-48 hrs.",
+        "icon": "fileCheck"
+      },
+      "step3": {
+        "number": "3",
+        "title": "Training",
+        "description": "We teach you how to use the driver app: how to accept trips, navigate, mark states and use all features. Dedicated support available.",
+        "icon": "graduationCap"
+      },
+      "step4": {
+        "number": "4",
+        "title": "Activate Your Availability",
+        "description": "Download the driver app, log in and activate your availability when you're ready to work. You control when and where you work.",
+        "icon": "power"
+      },
+      "step5": {
+        "number": "5",
+        "title": "Receive Requests",
+        "description": "The platform assigns you trips based on your location and availability. You see origin address, destination and estimated fare before accepting.",
+        "icon": "bell"
+      },
+      "step6": {
+        "number": "6",
+        "title": "Complete the Trip",
+        "description": "Pick up passenger, make the trip following GPS route, collect payment when finished and receive your rating. Access to history and statistics.",
+        "icon": "checkCircle"
+      }
+    },
+    "businessFlow": {
+      "title": "For Businesses and Guilds",
+      "subtitle": "Digitize your operation maintaining control and legal compliance",
+      "step1": {
+        "number": "1",
+        "title": "Initial Contact",
+        "description": "Complete the business contact form. Our sales team contacts you to understand your specific needs.",
+        "icon": "phone"
+      },
+      "step2": {
+        "number": "2",
+        "title": "Analysis and Proposal",
+        "description": "We analyze your current operation: number of vehicles, organizational structure, reporting and billing needs. We design a customized solution.",
+        "icon": "fileText"
+      },
+      "step3": {
+        "number": "3",
+        "title": "Implementation",
+        "description": "We configure the platform according to your requirements: users, permissions, cost centers, mobility policies. We train your operations team.",
+        "icon": "settings"
+      },
+      "step4": {
+        "number": "4",
+        "title": "Fleet Registration",
+        "description": "We register your drivers and vehicles verifying they comply with all regulations. Centralized management of your authorized fleet.",
+        "icon": "users"
+      },
+      "step5": {
+        "number": "5",
+        "title": "Operation and Monitoring",
+        "description": "You start operating with complete traceability. Real-time control panel, trip assignment, fleet tracking and automatic reports.",
+        "icon": "activity"
+      },
+      "step6": {
+        "number": "6",
+        "title": "Reports and Optimization",
+        "description": "Access to consolidated reports, trip auditing, expense control and performance metrics. Continuous improvement of your operation.",
+        "icon": "barChart"
+      }
+    },
+    "ecosystem": {
+      "title": "The ETAXI Ecosystem",
+      "subtitle": "How we connect all actors legally and efficiently",
+      "passenger": {
+        "title": "Passenger",
+        "actions": [
+          "Requests trip from app",
+          "Receives verified legal taxi",
+          "Travels with complete traceability",
+          "Pays transparent official fare"
+        ]
+      },
+      "platform": {
+        "title": "ETAXI Platform",
+        "features": [
+          "Connects supply and demand",
+          "Validates drivers and vehicles",
+          "Records entire trip",
+          "100% regulatory compliance"
+        ]
+      },
+      "driver": {
+        "title": "Driver",
+        "actions": [
+          "Receives trip request",
+          "Accepts assigned service",
+          "Performs safe trip",
+          "Collects regulated fare"
+        ]
+      },
+      "authority": {
+        "title": "Authority",
+        "role": [
+          "Ministry of Transport oversees",
+          "Municipalities grant permits",
+          "Law 21.553 compliance",
+          "Traceability for audits"
+        ]
+      }
+    },
+    "techStack": {
+      "title": "Technology Behind ETAXI",
+      "subtitle": "How technology makes the legal taxi of the future possible",
+      "feature1": {
+        "title": "Mobile Apps",
+        "description": "Native iOS and Android with GPS, push notifications and real-time synchronization"
+      },
+      "feature2": {
+        "title": "Robust Backend",
+        "description": "Scalable server processing thousands of simultaneous requests with high availability"
+      },
+      "feature3": {
+        "title": "Smart Matching",
+        "description": "Algorithm that assigns the nearest taxi optimizing wait times and efficiency"
+      },
+      "feature4": {
+        "title": "Real-Time Tracking",
+        "description": "Geolocation system that records every second of the trip with GPS precision"
+      },
+      "feature5": {
+        "title": "Security and Encryption",
+        "description": "Encrypted data, secure authentication and compliance with privacy regulations"
+      },
+      "feature6": {
+        "title": "Admin Dashboard",
+        "description": "Dashboard for operators with metrics, reports and live fleet management"
+      }
+    },
+    "videoDemo": {
+      "title": "ETAXI in Action",
+      "subtitle": "See how the platform works in real life",
+      "placeholder": "Coming soon: Platform demo video",
+      "features": {
+        "feature1": "Trip request step by step",
+        "feature2": "Driver experience",
+        "feature3": "Admin panel",
+        "feature4": "Real use cases"
+      }
+    },
+    "benefits": {
+      "title": "Why ETAXI Works?",
+      "subtitle": "The pillars that make ETAXI a reliable platform",
+      "benefit1": {
+        "title": "100% Legal",
+        "description": "Full compliance with Law 21.553 and Decree 212. Only authorized taxis."
+      },
+      "benefit2": {
+        "title": "Total Transparency",
+        "description": "Fixed official fare. No surge pricing or surprises."
+      },
+      "benefit3": {
+        "title": "Complete Traceability",
+        "description": "Every trip recorded: driver, route, times. Everything documented."
+      },
+      "benefit4": {
+        "title": "Guaranteed Safety",
+        "description": "Verified drivers, valid insurance, integrated panic button."
+      }
+    },
+    "cta": {
+      "passenger": {
+        "title": "Ready to travel safely?",
+        "description": "Download the app and start using legal taxis today",
+        "button": "Download ETAXI App"
+      },
+      "driver": {
+        "title": "Are you a professional driver?",
+        "description": "Join the platform that respects your work and gives you access to more passengers",
+        "button": "Register as Driver"
+      }
+    }
+  },
+  "complianceRegulatoryPage": {
+    "hero": {
+      "badge": "B2B Regulatory Compliance",
+      "title": "Regulatory Compliance for Companies and Unions",
+      "subtitle": "Operate with order and traceability under Law 21.553 and Decree 212",
+      "description": "ETAXI is a technology platform designed to help companies and unions manage regulated taxis with full traceability, reducing regulatory risk and facilitating compliance.",
+      "cta": "Talk to a Specialist"
+    },
+    "regulations": {
+      "title": "Regulatory Framework in Which ETAXI Operates",
+      "subtitle": "ETAXI aligns with Chile's transportation regulatory framework to help companies and unions operate within the law.",
+      "law21553": {
+        "title": "Law 21.553 — Transportation Application Companies (EAT)",
+        "description": "This law establishes the legal framework for technology platforms that intermediate remunerated passenger transportation services.",
+        "bullet1": "Requires platforms to work only with vehicles duly authorized by the Ministry of Transport",
+        "bullet2": "Establishes obligations for traceability, trip records, and fare transparency",
+        "bullet3": "Protects both passengers and drivers with safety standards and mandatory insurance"
+      },
+      "ds212": {
+        "title": "Supreme Decree 212 — Taxis and Regulated Services",
+        "description": "Regulation governing the operation of collective taxis, radio taxis, and remunerated passenger transport services.",
+        "bullet1": "Defines vehicle licensing requirements (municipal permits, technical inspection, insurance)",
+        "bullet2": "Establishes that only authorized drivers can operate regulated taxis",
+        "bullet3": "Requires fares approved by competent authority and operational activity records"
+      }
+    },
+    "role": {
+      "title": "ETAXI's Role within this Framework",
+      "subtitle": "ETAXI is a technology provider, not a transport operator. We clarify what we do and what we don't do.",
+      "does": {
+        "title": "ETAXI Does:",
+        "item1": "Provides the technology platform for trip assignment and fleet management",
+        "item2": "Facilitates complete trip traceability (origin, destination, driver, time)",
+        "item3": "Enables operational control and report generation for companies and unions",
+        "item4": "Offers tools to validate that only authorized drivers and vehicles operate"
+      },
+      "doesnt": {
+        "title": "ETAXI Doesn't:",
+        "item1": "Doesn't operate transport or employ drivers",
+        "item2": "Doesn't contract or pay drivers directly (that's the operator's responsibility)",
+        "item3": "Doesn't set fares as operator (fares are configured by the authorized operator)",
+        "item4": "Doesn't issue invoices for trips (that's done by the transport operator)"
+      }
+    },
+    "roleTable": {
+      "header": {
+        "aspect": "Aspect",
+        "responsible": "Primary Responsible",
+        "etaxiSupport": "ETAXI Support"
+      },
+      "row1": {
+        "aspect": "Taxi licensing",
+        "responsible": "Company / Union",
+        "etaxiSupport": "Platform registration and validation"
+      },
+      "row2": {
+        "aspect": "Driver contracts",
+        "responsible": "Company / Union",
+        "etaxiSupport": "Operational management and traceability"
+      },
+      "row3": {
+        "aspect": "Authorized fares",
+        "responsible": "Authority + Operator",
+        "etaxiSupport": "App configuration and control"
+      },
+      "row4": {
+        "aspect": "Payment of wages",
+        "responsible": "Company / Union",
+        "etaxiSupport": "Trip reports"
+      }
+    },
+    "risks": {
+      "title": "Risks of Operating with Unregulated Apps",
+      "subtitle": "Using platforms that don't align with Chilean regulations can expose companies and unions to legal, operational, and reputational problems.",
+      "risk1": "Risk of fines for using transport services not compliant with regulations (Law 21.553 and DS 212)",
+      "risk2": "Difficulty backing insurance claims in case of accident if service isn't properly authorized",
+      "risk3": "Disorder in labor responsibilities: confusion about who is the employer and who manages the relationship with drivers",
+      "risk4": "Corporate reputation impact: operating with informal services can affect image before stakeholders, clients, and authorities",
+      "counterpoint": {
+        "title": "ETAXI is designed to provide order, traceability, and documentary support",
+        "description": "By working exclusively with regulated taxis and aligning with Chilean regulations, ETAXI helps companies and unions reduce legal risk, have greater operational control, and maintain auditable traceability of all trips."
+      }
+    },
+    "benefits": {
+      "title": "Concrete Benefits of ETAXI for Compliance",
+      "subtitle": "ETAXI provides tools oriented to compliance, internal audit, and risk control.",
+      "benefit1": {
+        "title": "Complete Trip and Driver Registry",
+        "description": "Every trip is recorded with date, time, origin, destination, driver, and vehicle, facilitating internal and external audits."
+      },
+      "benefit2": {
+        "title": "Management Control Reports",
+        "description": "Download trip reports by cost center, driver, or period, useful for accounting reconciliation and expense review."
+      },
+      "benefit3": {
+        "title": "Regulated Taxi Only / Authorized Driver Only Policies",
+        "description": "Define rules in the platform to ensure only authorized vehicles and drivers can operate, reducing compliance risk."
+      },
+      "benefit4": {
+        "title": "Documentary Support for Insurance and Compliance",
+        "description": "In case of audit, claim, or compliance review, ETAXI provides supporting documentation about who, when, and where each trip was made."
+      }
+    },
+    "disclaimer": {
+      "title": "Legal Notice",
+      "text1": "The information contained on this page is general and for reference only. It does not constitute legal advice nor replaces the opinion of a lawyer or legal advisor.",
+      "text2": "Each company, union, or transport operator is responsible for reviewing their particular situation with their legal area and ensuring compliance with all applicable current regulations.",
+      "text3": "ETAXI provides technological tools to support regulatory compliance, but the ultimate responsibility for operating according to law rests with the transport operator using the platform."
+    },
+    "finalCta": {
+      "title": "Let's Talk About How to Organize Your Transport Operation",
+      "description": "ETAXI helps organize, document, and provide traceability to regulated taxi management for companies and unions. Schedule a meeting with our team.",
+      "ctaPrimary": "Contact Sales",
+      "ctaSecondary": "View Business Solution"
     }
   },
   "footer": {

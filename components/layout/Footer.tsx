@@ -115,9 +115,37 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Copyright */}
-        <div className="mt-12 border-t border-[hsl(var(--border))] pt-8 text-center">
-          <p className="text-sm text-[hsl(var(--muted-foreground))]">
+        {/* Legal Links */}
+        <div className="mt-12 border-t border-[hsl(var(--border))] pt-8">
+          <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-6">
+            <Link
+              href={`/${locale}/terminos-y-condiciones`}
+              className="text-sm text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--primary))] transition-colors"
+            >
+              {t('legal.terms')}
+            </Link>
+            <Link
+              href={`/${locale}/politica-privacidad`}
+              className="text-sm text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--primary))] transition-colors"
+            >
+              {t('legal.privacy')}
+            </Link>
+            <Link
+              href={`/${locale}/politica-cookies`}
+              className="text-sm text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--primary))] transition-colors"
+            >
+              {t('legal.cookies')}
+            </Link>
+            <Link
+              href={`/${locale}/cumplimiento`}
+              className="text-sm text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--primary))] transition-colors"
+            >
+              {t('legal.compliance')}
+            </Link>
+          </div>
+
+          {/* Copyright */}
+          <p className="text-sm text-[hsl(var(--muted-foreground))] text-center">
             {t('copyright')}
           </p>
         </div>
