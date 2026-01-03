@@ -7,6 +7,8 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card';
 
+const WHATSAPP_NUMBER = '56962116017';
+
 export function DriverLeadForm() {
   const t = useTranslations('driversPage.joinForm');
   const [formData, setFormData] = useState({
@@ -17,44 +19,25 @@ export function DriverLeadForm() {
     hasTaxi: false,
     notes: '',
   });
-  const [loading, setLoading] = useState(false);
-  const [message, setMessage] = useState<{ type: 'success' | 'error', text: string } | null>(null);
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setLoading(true);
-    setMessage(null);
 
-    try {
-      const res = await fetch('/api/driver-leads', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
-      });
+    // Construir mensaje para WhatsApp
+    const whatsappMessage = `*Solicitud de Conductor ETAXI*
 
-      const data = await res.json();
+*Nombre completo:* ${formData.fullName}
+*Teléfono:* ${formData.phone}
+*Email:* ${formData.email || 'No proporcionado'}
+*Ciudad:* ${formData.city || 'No especificada'}
+*¿Tiene taxi propio?:* ${formData.hasTaxi ? 'Sí' : 'No'}
 
-      if (!res.ok) {
-        throw new Error(data.error || 'Error al enviar la solicitud');
-      }
+*Notas adicionales:*
+${formData.notes || 'Sin notas'}`;
 
-      setMessage({ type: 'success', text: data.message || t('success') });
-      setFormData({
-        fullName: '',
-        email: '',
-        phone: '',
-        city: '',
-        hasTaxi: false,
-        notes: '',
-      });
-    } catch (err) {
-      setMessage({
-        type: 'error',
-        text: err instanceof Error ? err.message : t('error')
-      });
-    } finally {
-      setLoading(false);
-    }
+    // Abrir WhatsApp con el mensaje
+    const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(whatsappMessage)}`;
+    window.open(whatsappUrl, '_blank');
   };
 
   const handleChange = (
@@ -97,7 +80,6 @@ export function DriverLeadForm() {
               onChange={handleChange}
               placeholder={t('fullNamePlaceholder')}
               className="w-full"
-              disabled={loading}
             />
           </div>
 
@@ -118,7 +100,6 @@ export function DriverLeadForm() {
               onChange={handleChange}
               placeholder={t('phonePlaceholder')}
               className="w-full"
-              disabled={loading}
             />
           </div>
 
@@ -138,7 +119,6 @@ export function DriverLeadForm() {
               onChange={handleChange}
               placeholder={t('emailPlaceholder')}
               className="w-full"
-              disabled={loading}
             />
           </div>
 
@@ -158,7 +138,6 @@ export function DriverLeadForm() {
               onChange={handleChange}
               placeholder={t('cityPlaceholder')}
               className="w-full"
-              disabled={loading}
             />
           </div>
 
@@ -171,7 +150,6 @@ export function DriverLeadForm() {
               checked={formData.hasTaxi}
               onChange={handleChange}
               className="w-4 h-4 text-[hsl(var(--primary))] border-gray-300 rounded focus:ring-[hsl(var(--ring))]"
-              disabled={loading}
             />
             <label
               htmlFor="hasTaxi"
@@ -197,7 +175,6 @@ export function DriverLeadForm() {
               onChange={handleChange}
               placeholder={t('notesPlaceholder')}
               className="w-full"
-              disabled={loading}
               maxLength={500}
             />
             <p className="text-xs text-muted-foreground">
@@ -205,27 +182,13 @@ export function DriverLeadForm() {
             </p>
           </div>
 
-          {/* Mensaje de estado */}
-          {message && (
-            <div
-              className={`p-4 rounded-md ${
-                message.type === 'success'
-                  ? 'bg-green-50 text-green-800 border border-green-200'
-                  : 'bg-red-50 text-red-800 border border-red-200'
-              }`}
-            >
-              {message.text}
-            </div>
-          )}
-
           {/* Submit Button */}
           <Button
             variant="default"
             className="w-full"
             type="submit"
-            disabled={loading}
           >
-            {loading ? t('sending') : t('submitButton')}
+            {t('submitButton')}
           </Button>
         </form>
       </CardContent>

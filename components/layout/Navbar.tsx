@@ -27,9 +27,9 @@ export function Navbar() {
     passengers: {
       label: t('passengers'),
       items: [
-        { href: `/${locale}/pedir-taxi`, label: t('requestTaxi') },
         { href: `/${locale}/como-funciona`, label: t('howItWorks') },
         { href: `/${locale}/pasajeros`, label: t('passengerInfo') },
+        { href: `/${locale}/descargar-app`, label: t('downloadApp') },
         { href: `/${locale}/seguridad`, label: t('security') },
       ],
     },

@@ -9,7 +9,6 @@ import { CaseStudies } from '@/components/business/CaseStudies';
 import { ComparisonTable } from '@/components/business/ComparisonTable';
 import { EnterpriseProcess } from '@/components/business/EnterpriseProcess';
 import { GuildProcess } from '@/components/business/GuildProcess';
-import { B2BContactForm } from '@/components/business/B2BContactForm';
 import { B2BCTA, DualCTA } from '@/components/business/B2BCTA';
 import { StructuredData } from '@/components/seo/StructuredData';
 import { Building2, Calendar, Shield } from 'lucide-react';
@@ -144,9 +143,6 @@ export default function EmpresasGremiosPage() {
 
         {/* Dual CTA (Enterprise vs Guild) */}
         <DualCTA />
-
-        {/* B2B Contact Form */}
-        <B2BContactForm />
 
         {/* Final CTA */}
         <B2BCTA />

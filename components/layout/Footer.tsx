@@ -29,7 +29,7 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   const serviceLinks = [
-    { href: `/${locale}/pedir-taxi`, label: locale === 'es' ? 'Pedir Taxi' : 'Request Taxi' },
+    { href: `/${locale}/como-funciona`, label: locale === 'es' ? 'Cómo Funciona' : 'How It Works' },
     { href: `/${locale}/descargar-app`, label: locale === 'es' ? 'Descargar App' : 'Download App' },
     { href: `/${locale}/seguridad`, label: locale === 'es' ? 'Seguridad' : 'Security' },
   ];

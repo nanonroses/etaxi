@@ -7,6 +7,8 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 
+const WHATSAPP_NUMBER = '56962116017';
+
 export function ContactForm() {
   const t = useTranslations('contact.form');
   const [formData, setFormData] = useState({
@@ -19,8 +21,27 @@ export function ContactForm() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // TODO: Implement actual form submission
-    alert(t('success'));
+
+    // Construir mensaje para WhatsApp
+    const typeLabels: Record<string, string> = {
+      general: 'Consulta General',
+      support: 'Soporte',
+      business: 'Negocios',
+    };
+
+    const whatsappMessage = `*Nuevo mensaje de contacto ETAXI*
+
+*Nombre:* ${formData.name}
+*Email:* ${formData.email}
+*Teléfono:* ${formData.phone || 'No proporcionado'}
+*Tipo:* ${typeLabels[formData.type] || formData.type}
+
+*Mensaje:*
+${formData.message}`;
+
+    // Abrir WhatsApp con el mensaje
+    const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(whatsappMessage)}`;
+    window.open(whatsappUrl, '_blank');
   };
 
   const handleChange = (

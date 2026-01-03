@@ -12,8 +12,8 @@ export default createMiddleware({
 });
 
 export const config = {
-  // Match all pathnames except API routes, static files, and admin routes
+  // Match all pathnames except static files
   matcher: [
-    '/((?!api|_next|_vercel|admin|.*\\..*).*)'
+    '/((?!_next|_vercel|.*\\..*).*)'
   ]
 };
