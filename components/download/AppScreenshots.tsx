@@ -7,11 +7,13 @@ import { useState, useRef, useEffect } from 'react';
 function PhoneCard({
   label,
   gradient,
-  index
+  index,
+  imageSrc
 }: {
   label: string;
   gradient: string;
   index: number;
+  imageSrc?: string;
 }) {
   const [isHovered, setIsHovered] = useState(false);
   const [rotation, setRotation] = useState({ x: 0, y: 0 });
@@ -49,17 +51,15 @@ function PhoneCard({
       <div
         className="relative transition-transform duration-300 ease-out"
         style={{
-          transform: `perspective(1000px) rotateX(${rotation.x}deg) rotateY(${rotation.y}deg) ${
-            isHovered ? 'scale(1.05)' : 'scale(1)'
-          }`,
+          transform: `perspective(1000px) rotateX(${rotation.x}deg) rotateY(${rotation.y}deg) ${isHovered ? 'scale(1.05)' : 'scale(1)'
+            }`,
           transformStyle: 'preserve-3d'
         }}
       >
         {/* Glow effect on hover */}
         <div
-          className={`absolute inset-0 rounded-3xl bg-gradient-to-br ${gradient} opacity-0 blur-2xl transition-opacity duration-500 ${
-            isHovered ? 'opacity-30' : 'opacity-0'
-          }`}
+          className={`absolute inset-0 rounded-3xl bg-gradient-to-br ${gradient} opacity-0 blur-2xl transition-opacity duration-500 ${isHovered ? 'opacity-30' : 'opacity-0'
+            }`}
           style={{ transform: 'translateZ(-50px)' }}
         />
 
@@ -70,36 +70,41 @@ function PhoneCard({
           </div>
 
           {/* Screen content */}
-          <div
-            className={`aspect-[9/16] rounded-2xl bg-gradient-to-br ${gradient} flex flex-col items-center justify-center p-6 text-white relative overflow-hidden`}
-          >
-            {/* Decorative pattern */}
-            <div className="absolute inset-0 opacity-10">
-              <div className="absolute top-10 left-10 w-32 h-32 rounded-full bg-white blur-3xl" />
-              <div className="absolute bottom-10 right-10 w-32 h-32 rounded-full bg-white blur-3xl" />
-            </div>
+          <div className="aspect-[9/16] rounded-2xl relative overflow-hidden">
+            {imageSrc ? (
+              <img
+                src={imageSrc}
+                alt={label}
+                className="w-full h-full object-cover"
+              />
+            ) : (
+              <div className={`w-full h-full bg-gradient-to-br ${gradient} flex flex-col items-center justify-center p-6 text-white relative`}>
+                {/* Decorative pattern */}
+                <div className="absolute inset-0 opacity-10">
+                  <div className="absolute top-10 left-10 w-32 h-32 rounded-full bg-white blur-3xl" />
+                  <div className="absolute bottom-10 right-10 w-32 h-32 rounded-full bg-white blur-3xl" />
+                </div>
 
-            {/* Animated gradient overlay */}
-            <div className={`absolute inset-0 bg-gradient-to-tr from-white/0 via-white/20 to-white/0 transition-opacity duration-500 ${
-              isHovered ? 'opacity-100' : 'opacity-0'
-            }`} />
+                {/* Animated gradient overlay */}
+                <div className={`absolute inset-0 bg-gradient-to-tr from-white/0 via-white/20 to-white/0 transition-opacity duration-500 ${isHovered ? 'opacity-100' : 'opacity-0'
+                  }`} />
 
-            {/* Content */}
-            <div className="relative z-10 text-center">
-              <Smartphone className={`w-16 h-16 mx-auto mb-4 opacity-90 transition-transform duration-300 ${
-                isHovered ? 'scale-110 rotate-12' : 'scale-100 rotate-0'
-              }`} />
-              <p className="text-sm font-semibold opacity-90">
-                {label}
-              </p>
-            </div>
+                {/* Content */}
+                <div className="relative z-10 text-center">
+                  <Smartphone className={`w-16 h-16 mx-auto mb-4 opacity-90 transition-transform duration-300 ${isHovered ? 'scale-110 rotate-12' : 'scale-100 rotate-0'
+                    }`} />
+                  <p className="text-sm font-semibold opacity-90">
+                    {label}
+                  </p>
+                </div>
 
-            {/* Screenshot placeholder badge */}
-            <div className={`absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full transition-all duration-300 ${
-              isHovered ? 'scale-110 bg-white/30' : 'scale-100'
-            }`}>
-              <p className="text-xs font-medium">Preview</p>
-            </div>
+                {/* Screenshot placeholder badge */}
+                <div className={`absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full transition-all duration-300 ${isHovered ? 'scale-110 bg-white/30' : 'scale-100'
+                  }`}>
+                  <p className="text-xs font-medium">Preview</p>
+                </div>
+              </div>
+            )}
           </div>
 
           {/* Phone home indicator */}
@@ -140,22 +145,27 @@ export function AppScreenshots() {
     {
       label: t('screen1'),
       gradient: 'from-blue-500 to-cyan-500',
+      imageSrc: '/images/placeholders/Screen Etaxi Chile.webp',
     },
     {
       label: t('screen2'),
       gradient: 'from-purple-500 to-pink-500',
+      imageSrc: '/images/placeholders/Screenshot_20170918-133259.webp',
     },
     {
       label: t('screen3'),
       gradient: 'from-orange-500 to-red-500',
+      imageSrc: '/images/placeholders/Screenshot_20190428-185723_Etaxi Chile.webp',
     },
     {
       label: t('screen4'),
       gradient: 'from-green-500 to-emerald-500',
+      imageSrc: '/images/placeholders/Screenshot_20190929-165858_Etaxi Chile.webp',
     },
     {
       label: t('screen5'),
       gradient: 'from-indigo-500 to-purple-500',
+      imageSrc: '/images/placeholders/Screenshot_20190428-185735_Etaxi Chile.webp',
     },
   ];
 
@@ -198,6 +208,7 @@ export function AppScreenshots() {
                 label={screenshot.label}
                 gradient={screenshot.gradient}
                 index={index}
+                imageSrc={screenshot.imageSrc}
               />
             ))}
           </div>
@@ -207,11 +218,10 @@ export function AppScreenshots() {
             {screenshots.map((_, index) => (
               <div
                 key={index}
-                className={`h-2 rounded-full transition-all duration-300 ${
-                  Math.abs(scrollPosition - index * 320) < 200
+                className={`h-2 rounded-full transition-all duration-300 ${Math.abs(scrollPosition - index * 320) < 200
                     ? 'w-8 bg-[#F8D347]'
                     : 'w-2 bg-gray-300'
-                }`}
+                  }`}
               />
             ))}
           </div>
