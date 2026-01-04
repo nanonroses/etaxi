@@ -47,10 +47,10 @@ export function BenefitsGrid({ benefits: cmsBenefits }: BenefitsGridProps) {
   // Use CMS benefits if available, otherwise use defaults
   const benefits = cmsBenefits && cmsBenefits.length > 0
     ? cmsBenefits.map(b => ({
-        icon: b.icon ? iconMap[b.icon] || Shield : Shield,
-        title: b.title,
-        description: b.description,
-      }))
+      icon: b.icon ? iconMap[b.icon] || Shield : Shield,
+      title: b.title,
+      description: b.description,
+    }))
     : defaultBenefits;
 
   return (
@@ -67,7 +67,7 @@ export function BenefitsGrid({ benefits: cmsBenefits }: BenefitsGridProps) {
             {t('title')}
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Por qué elegir ETAXI para tus viajes
+            Viaja con la tranquilidad de un taxi 100% regulado
           </p>
         </motion.div>
 

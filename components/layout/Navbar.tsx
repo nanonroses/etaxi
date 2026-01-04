@@ -31,7 +31,6 @@ export function Navbar() {
         { href: `/${locale}/pasajeros`, label: t('passengerInfo') },
         { href: `/${locale}/aeropuerto`, label: t('airport') },
         { href: `/${locale}/descargar-app`, label: t('downloadApp') },
-        { href: `/${locale}/seguridad`, label: t('security') },
       ],
     },
     drivers: {
@@ -39,7 +38,6 @@ export function Navbar() {
       items: [
         { href: `/${locale}/conductores`, label: t('driverInfo') },
         { href: `/${locale}/como-funciona#conductores`, label: t('howItWorksDrivers') },
-        { href: `/${locale}/seguridad#conductores`, label: t('driverSafety') },
       ],
     },
     business: {
