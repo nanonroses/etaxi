@@ -29,6 +29,7 @@ export function Navbar() {
       items: [
         { href: `/${locale}/como-funciona`, label: t('howItWorks') },
         { href: `/${locale}/pasajeros`, label: t('passengerInfo') },
+        { href: `/${locale}/aeropuerto`, label: t('airport') },
         { href: `/${locale}/descargar-app`, label: t('downloadApp') },
         { href: `/${locale}/seguridad`, label: t('security') },
       ],

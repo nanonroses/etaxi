@@ -180,12 +180,12 @@ export default async function DescargarAppPage() {
         </section>
 
         {/* Final Download CTA */}
-        <section className="w-full py-16 bg-gradient-to-br from-[#0C1A2B] to-[#182b33] text-white">
+        <section className="w-full py-16 bg-white">
           <div className="container mx-auto max-w-4xl px-4 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#0C1A2B]">
               ¿Listo para empezar?
             </h2>
-            <p className="text-lg text-white/80 mb-8">
+            <p className="text-lg text-[#596065] mb-8">
               Descarga ETAXI gratis y viaja con la tranquilidad que mereces
             </p>
             <DownloadAppCTA
