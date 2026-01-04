@@ -2,10 +2,12 @@ import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { HeroSection } from '@/components/home/HeroSection';
 import { HowItWorks } from '@/components/home/HowItWorks';
+import { AirportCTA } from '@/components/home/AirportCTA';
 import { BenefitsGrid } from '@/components/home/BenefitsGrid';
+import { MinisterioValidation } from '@/components/home/MinisterioValidation';
 import { WhyETAXI } from '@/components/home/WhyETAXI';
 import { SafetyFeatures } from '@/components/home/SafetyFeatures';
-import { DownloadAppCTA } from '@/components/home/DownloadAppCTA';
+import { AppPreview } from '@/components/home/AppPreview';
 import { ConductorCTA } from '@/components/home/ConductorCTA';
 import { Testimonials } from '@/components/home/Testimonials';
 import { StructuredData } from '@/components/seo/StructuredData';
@@ -70,17 +72,14 @@ export default async function Home() {
           secondaryCta={siteSettings?.secondaryCtaLabel}
         />
         <HowItWorks />
+        <AirportCTA />
         <BenefitsGrid benefits={homeData?.benefits} />
+        <MinisterioValidation />
         <WhyETAXI />
         <SafetyFeatures intro={homeData?.safetyIntro} />
-        <DownloadAppCTA
-          headline={appDownload?.headline}
-          subheadline={appDownload?.subheadline}
-          playStoreUrl={appDownload?.playStoreUrl}
-          appStoreUrl={appDownload?.appStoreUrl}
-        />
-        <ConductorCTA />
+        <AppPreview />
         <Testimonials />
+        <ConductorCTA />
       </main>
 
       <Footer />
