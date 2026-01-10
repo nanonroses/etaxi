@@ -66,6 +66,12 @@ export const seoConfig = {
       'Comunícate con ETAXI para consultas, soporte o información comercial. Estamos disponibles para ayudarte.',
     keywords: 'contacto ETAXI, soporte ETAXI, consultas taxi regulado',
   },
+  blog: {
+    title: 'Blog ETAXI — Noticias y Guías de Transporte en Chile',
+    description:
+      'Mantente informado sobre regulación, seguridad y novedades del transporte de pasajeros en Chile. Artículos sobre Ley 21.553, taxis regulados y más.',
+    keywords: 'blog taxi Chile, noticias transporte, Ley 21.553, Ley Uber Chile, seguridad pasajeros',
+  },
 } as const;
 
 // Open Graph defaults

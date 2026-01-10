@@ -1076,5 +1076,43 @@
       "claims": "Claims"
     },
     "copyright": "© 2025 ETAXI. All rights reserved."
+  },
+  "blog": {
+    "hero": {
+      "badge": "ETAXI Blog",
+      "title": {
+        "part1": "News and Guides about",
+        "highlight": "Transport in Chile"
+      },
+      "subtitle": "Stay informed about regulation, safety, and passenger transport news in Chile. Articles written by industry experts.",
+      "stats": {
+        "articles": "Articles",
+        "categories": "Categories",
+        "updated": "Updated",
+        "verified": "Verified"
+      }
+    },
+    "categories": {
+      "all": "All"
+    },
+    "featured": "Featured",
+    "featuredArticles": "Featured Articles",
+    "allArticles": "All Articles",
+    "readMore": "Read more",
+    "backToBlog": "Back to Blog",
+    "author": "Author",
+    "minRead": "min read",
+    "share": "Share",
+    "relatedArticles": "Related Articles",
+    "noArticles": {
+      "title": "No articles",
+      "description": "We couldn't find articles in this category. Try another one."
+    },
+    "cta": {
+      "title": "Ready to travel safely?",
+      "subtitle": "Download ETAXI and travel with 100% regulated taxis, verified drivers, and complete traceability.",
+      "downloadApp": "Download App",
+      "learnMore": "How It Works"
+    }
   }
 }

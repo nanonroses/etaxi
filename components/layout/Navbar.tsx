@@ -239,6 +239,14 @@ export function Navbar() {
               {t('security')}
             </Link>
 
+            {/* Blog (standalone) */}
+            <Link
+              href={`/${locale}/blog`}
+              className="text-sm font-medium text-[#0C1A2B] hover:text-[#F8D347] transition-colors duration-150 focus:outline-none focus:ring-2 focus:ring-[#F8D347] focus:ring-offset-2 rounded px-2 py-1"
+            >
+              Blog
+            </Link>
+
             {/* Language Selector */}
             <LanguageSelector />
 
@@ -383,6 +391,15 @@ export function Navbar() {
                 className="block px-6 py-3 text-base font-medium text-[#0C1A2B] hover:bg-[#F8D347]/10 transition-colors border-b border-[hsl(var(--border))]"
               >
                 {t('security')}
+              </Link>
+
+              {/* Blog (standalone) */}
+              <Link
+                href={`/${locale}/blog`}
+                onClick={() => setMobileMenuOpen(false)}
+                className="block px-6 py-3 text-base font-medium text-[#0C1A2B] hover:bg-[#F8D347]/10 transition-colors border-b border-[hsl(var(--border))]"
+              >
+                Blog
               </Link>
 
               {/* Divider */}

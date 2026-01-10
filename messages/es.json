@@ -2042,5 +2042,43 @@
       "claims": "Reclamos"
     },
     "copyright": "© 2025 ETAXI. Todos los derechos reservados."
+  },
+  "blog": {
+    "hero": {
+      "badge": "Blog ETAXI",
+      "title": {
+        "part1": "Noticias y Guías sobre",
+        "highlight": "Transporte en Chile"
+      },
+      "subtitle": "Mantente informado sobre regulación, seguridad y novedades del transporte de pasajeros en Chile. Artículos escritos por expertos del sector.",
+      "stats": {
+        "articles": "Artículos",
+        "categories": "Categorías",
+        "updated": "Actualizado",
+        "verified": "Verificado"
+      }
+    },
+    "categories": {
+      "all": "Todos"
+    },
+    "featured": "Destacado",
+    "featuredArticles": "Artículos Destacados",
+    "allArticles": "Todos los Artículos",
+    "readMore": "Leer más",
+    "backToBlog": "Volver al Blog",
+    "author": "Autor",
+    "minRead": "min de lectura",
+    "share": "Compartir",
+    "relatedArticles": "Artículos Relacionados",
+    "noArticles": {
+      "title": "No hay artículos",
+      "description": "No encontramos artículos en esta categoría. Prueba con otra."
+    },
+    "cta": {
+      "title": "¿Listo para viajar seguro?",
+      "subtitle": "Descarga ETAXI y viaja con taxis 100% regulados, conductores verificados y total trazabilidad.",
+      "downloadApp": "Descargar App",
+      "learnMore": "Cómo Funciona"
+    }
   }
 }
