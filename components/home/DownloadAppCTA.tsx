@@ -143,7 +143,7 @@ export function DownloadAppCTA({ headline, subheadline, playStoreUrl, appStoreUr
                   <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
                 ))}
               </div>
-              <span className="text-gray-600">4.8 / 5.0 - Más de 15,000 descargas</span>
+              <span className="text-gray-600">4.8 / 5.0 - Más de 50,000 descargas</span>
             </motion.div>
           </motion.div>
 

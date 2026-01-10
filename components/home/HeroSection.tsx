@@ -27,7 +27,7 @@ export function HeroSection({ title, subtitle, primaryCta, secondaryCta }: HeroS
   // Stats data
   const stats = [
     { icon: Car, value: '500+', label: 'Conductores Certificados' },
-    { icon: CheckCircle, value: '15,000+', label: 'Viajes Seguros' },
+    { icon: CheckCircle, value: '50,000+', label: 'Viajes Seguros' },
     { icon: Users, value: '4.8★', label: 'Rating Usuarios' },
     { icon: Shield, value: '100%', label: 'Regulados' },
   ];

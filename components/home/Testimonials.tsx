@@ -183,7 +183,7 @@ export function Testimonials() {
         >
           {[
             { value: '4.8/5.0', label: 'Rating Promedio' },
-            { value: '15,000+', label: 'Viajes Completados' },
+            { value: '50,000+', label: 'Viajes Completados' },
             { value: '98%', label: 'Satisfacción' },
             { value: '500+', label: 'Conductores Activos' },
           ].map((stat, index) => (

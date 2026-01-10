@@ -62,7 +62,7 @@ export function Footer() {
 
   const stats = [
     { icon: Users, value: '500+', label: locale === 'es' ? 'Conductores' : 'Drivers' },
-    { icon: CheckCircle, value: '15,000+', label: locale === 'es' ? 'Viajes' : 'Trips' },
+    { icon: CheckCircle, value: '50,000+', label: locale === 'es' ? 'Viajes' : 'Trips' },
     { icon: Star, value: '4.8★', label: 'Rating' },
   ];
 
