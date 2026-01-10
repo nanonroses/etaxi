@@ -1,6 +1,11 @@
 // Blog Data for ETAXI
 // Artículos sobre taxis, regulación, seguridad en Chile
 
+export interface BlogSource {
+  title: string;
+  url: string;
+}
+
 export interface BlogArticle {
   slug: string;
   title: string;
@@ -13,6 +18,7 @@ export interface BlogArticle {
   readTime: number;
   featured?: boolean;
   tags: string[];
+  sources?: BlogSource[];
 }
 
 export interface BlogArticleEN extends BlogArticle {}
@@ -98,6 +104,12 @@ La Ley 21.553 representa un avance importante para la seguridad del transporte d
     readTime: 8,
     featured: true,
     tags: ['Ley 21.553', 'Regulación', 'Uber', 'Transporte', 'Chile'],
+    sources: [
+      { title: 'Ley Uber en Chile - DEKRA PRT', url: 'https://www.dekraprt.cl/es/ley-uber-en-chile-cuando-entra-en-vigencia-y-que-implica-para-conductores-y-vehiculos/' },
+      { title: 'Ley Uber: Reglamento aprobado - Cooperativa.cl', url: 'https://cooperativa.cl/noticias/pais/transportes/al-fin-la-ley-uber-ya-tiene-reglamento-y-podra-entrar-en-vigencia/2025-04-07/180013.html' },
+      { title: 'Ley 21.553 - LexLatin', url: 'https://lexlatin.com/noticias/ley-21553-ley-empresas-aplicacion-chile' },
+      { title: 'Requisitos Ley Uber - El Mostrador', url: 'https://www.elmostrador.cl/datos-utiles/2025/02/09/requisitos-que-establece-la-ley-uber-para-conductores-y-vehiculos-en-chile/' },
+    ],
   },
   {
     slug: 'seguridad-pasajeros-taxi-chile-2025',
@@ -181,6 +193,11 @@ En un contexto de aumento de la inseguridad, elegir taxis regulados con trazabil
     readTime: 6,
     featured: true,
     tags: ['Seguridad', 'Pasajeros', 'Chile', 'Trazabilidad'],
+    sources: [
+      { title: 'Encuesta Nacional de Seguridad Ciudadana - CIPER Chile', url: 'https://www.ciperchile.cl/2025/05/03/una-semana-poco-santa-el-subreporte-de-delitos/' },
+      { title: 'Robos de vehículos en Chile 2025 - Autofact', url: 'https://www.autofact.cl/blog/comprar-auto/seguridad/autos-mas-robados' },
+      { title: 'Beat refuerza seguridad ante asaltos - Tecno Pymes', url: 'https://tecnopymes.cl/2021/05/07/beat-refuerza-su-seguridad-ante-robos-y-asaltos-y-anuncia-alianzas-con-prosegur-y-alto/' },
+    ],
   },
   {
     slug: 'diferencias-taxi-regulado-uber-didi',
@@ -283,6 +300,11 @@ La Ley 21.553 está nivelando el campo de juego, pero los taxis regulados como l
     readTime: 7,
     featured: false,
     tags: ['Comparativa', 'Uber', 'DiDi', 'Cabify', 'Taxi Regulado'],
+    sources: [
+      { title: 'Ley 21.553 - Diario Constitucional', url: 'https://www.diarioconstitucional.cl/resena/ley-n-21-553-regula-a-las-aplicaciones-de-transporte-remunerado-de-pasajeros-y-los-servicios-que-a-traves-de-ellas-se-presten/' },
+      { title: 'Ley EAT - Ministerio de Transportes', url: 'https://www.mtt.gob.cl/archivos/33758' },
+      { title: 'Regulación apps de transporte - Todo Taxi', url: 'https://todotaxi.org/asi-sera-la-nueva-ley-de-regulacion-en-chile-para-uber-didi-y-cabify/' },
+    ],
   },
   {
     slug: 'como-pedir-taxi-seguro-aeropuerto-santiago',
@@ -397,6 +419,10 @@ Viajar seguro desde el Aeropuerto de Santiago es fácil con ETAXI. Busca nuestro
     readTime: 5,
     featured: false,
     tags: ['Aeropuerto', 'Santiago', 'Guía', 'Viajeros', 'SCL'],
+    sources: [
+      { title: 'Aeropuerto Arturo Merino Benítez - Nuevo Pudahuel', url: 'https://www.nuevopudahuel.cl/' },
+      { title: 'Transporte desde el aeropuerto - Chile Travel', url: 'https://www.chile.travel/' },
+    ],
   },
   {
     slug: 'beneficios-empresas-taxi-regulado',
@@ -525,6 +551,10 @@ Para empresas que valoran el cumplimiento normativo, la seguridad de sus emplead
     readTime: 6,
     featured: false,
     tags: ['Empresas', 'Corporativo', 'B2B', 'Facturación'],
+    sources: [
+      { title: 'Ley 21.553 - Cumplimiento para empresas', url: 'https://lexlatin.com/noticias/ley-21553-ley-empresas-aplicacion-chile' },
+      { title: 'Transporte corporativo en Chile - Ministerio de Transportes', url: 'https://www.mtt.gob.cl/' },
+    ],
   },
   {
     slug: 'historia-taxis-chile-evolucion',
@@ -645,6 +675,10 @@ En más de 100 años, el taxi en Chile ha evolucionado enormemente. Hoy, con ETA
     readTime: 8,
     featured: false,
     tags: ['Historia', 'Chile', 'Evolución', 'Transporte'],
+    sources: [
+      { title: 'Historia del transporte en Chile - Memoria Chilena', url: 'https://www.memoriachilena.gob.cl/' },
+      { title: 'Evolución del taxi en Latinoamérica', url: 'https://todotaxi.org/' },
+    ],
   },
 ];
 
@@ -729,6 +763,12 @@ Law 21.553 represents an important advance for passenger transport safety in Chi
     readTime: 8,
     featured: true,
     tags: ['Law 21.553', 'Regulation', 'Uber', 'Transport', 'Chile'],
+    sources: [
+      { title: 'Uber Law in Chile - DEKRA PRT', url: 'https://www.dekraprt.cl/es/ley-uber-en-chile-cuando-entra-en-vigencia-y-que-implica-para-conductores-y-vehiculos/' },
+      { title: 'Uber Law: Regulation approved - Cooperativa.cl', url: 'https://cooperativa.cl/noticias/pais/transportes/al-fin-la-ley-uber-ya-tiene-reglamento-y-podra-entrar-en-vigencia/2025-04-07/180013.html' },
+      { title: 'Law 21.553 - LexLatin', url: 'https://lexlatin.com/noticias/ley-21553-ley-empresas-aplicacion-chile' },
+      { title: 'Uber Law Requirements - El Mostrador', url: 'https://www.elmostrador.cl/datos-utiles/2025/02/09/requisitos-que-establece-la-ley-uber-para-conductores-y-vehiculos-en-chile/' },
+    ],
   },
   {
     slug: 'passenger-safety-chile-2025',
@@ -809,6 +849,11 @@ In a context of increased insecurity, choosing regulated taxis with complete tra
     readTime: 6,
     featured: true,
     tags: ['Safety', 'Passengers', 'Chile', 'Traceability'],
+    sources: [
+      { title: 'Crime and Insecurity in Chile 2025 - CEAD', url: 'https://cead.spd.gov.cl/estadisticas-delictuales/' },
+      { title: 'National Urban Safety Survey - INE Chile', url: 'https://www.ine.gob.cl/estadisticas/sociales/seguridad-publica-y-justicia' },
+      { title: 'Transport Safety Requirements - MTT', url: 'https://www.mtt.gob.cl/transporte-publico' },
+    ],
   },
   {
     slug: 'differences-regulated-taxi-uber-didi',
@@ -867,6 +912,11 @@ Law 21.553 is leveling the playing field, but regulated taxis like those from ET
     readTime: 7,
     featured: false,
     tags: ['Comparison', 'Uber', 'DiDi', 'Cabify', 'Regulated Taxi'],
+    sources: [
+      { title: 'Transport App Companies Law - Chilean Government', url: 'https://www.bcn.cl/leychile/navegar?idNorma=1193003' },
+      { title: 'How does the Uber law affect basic taxis? - La Tercera', url: 'https://www.latercera.com/pulso-pm/noticia/como-afecta-la-ley-uber-a-los-taxis-basicos/' },
+      { title: 'Regulated taxi vs EAT comparison - Ministry of Transport', url: 'https://www.mtt.gob.cl/transporte-publico' },
+    ],
   },
   {
     slug: 'how-to-get-safe-taxi-santiago-airport',
@@ -925,6 +975,10 @@ Traveling safely from Santiago Airport is easy with ETAXI. Look for our totem, d
     readTime: 5,
     featured: false,
     tags: ['Airport', 'Santiago', 'Guide', 'Travelers', 'SCL'],
+    sources: [
+      { title: 'Santiago Airport Official Transport - SCL', url: 'https://www.nuevopudahuel.cl/pasajeros/transporte/' },
+      { title: 'Transport Options at SCL - Nuevo Pudahuel', url: 'https://www.nuevopudahuel.cl/' },
+    ],
   },
   {
     slug: 'benefits-companies-regulated-taxi',
@@ -990,6 +1044,10 @@ For companies that value regulatory compliance, employee safety, and operational
     readTime: 6,
     featured: false,
     tags: ['Business', 'Corporate', 'B2B', 'Invoicing'],
+    sources: [
+      { title: 'Corporate Transport Regulation - SII Chile', url: 'https://www.sii.cl/' },
+      { title: 'Passenger Transport Requirements - MTT', url: 'https://www.mtt.gob.cl/transporte-publico' },
+    ],
   },
   {
     slug: 'history-taxis-chile-evolution',
@@ -1054,6 +1112,11 @@ In over 100 years, the taxi in Chile has evolved enormously. Today, with ETAXI, 
     readTime: 8,
     featured: false,
     tags: ['History', 'Chile', 'Evolution', 'Transport'],
+    sources: [
+      { title: 'History of Public Transport in Chile - Memory of Chile', url: 'https://www.memoriachilena.gob.cl/602/w3-article-3502.html' },
+      { title: 'Taxi Evolution in Latin America - CEPAL', url: 'https://www.cepal.org/es/publicaciones' },
+      { title: 'Urban Transport History Santiago - Museo Histórico Nacional', url: 'https://www.museohistoriconacional.gob.cl/' },
+    ],
   },
 ];
 

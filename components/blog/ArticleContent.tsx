@@ -1,6 +1,8 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { ExternalLink } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import type { BlogArticle } from '@/lib/blog-data';
 
 interface ArticleContentProps {
@@ -8,73 +10,300 @@ interface ArticleContentProps {
 }
 
 export function ArticleContent({ article }: ArticleContentProps) {
+  const t = useTranslations('blog');
+
   return (
-    <motion.article
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.3 }}
-      className="prose prose-lg max-w-none
-        prose-headings:text-[#182b33] prose-headings:font-bold
-        prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4
-        prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3
-        prose-p:text-gray-600 prose-p:leading-relaxed
-        prose-strong:text-[#182b33]
-        prose-a:text-[#dd1828] prose-a:no-underline hover:prose-a:underline
-        prose-ul:my-4 prose-li:text-gray-600
-        prose-table:overflow-hidden prose-table:rounded-lg prose-table:shadow-sm
-        prose-th:bg-[#182b33] prose-th:text-white prose-th:font-semibold prose-th:px-4 prose-th:py-3
-        prose-td:px-4 prose-td:py-3 prose-td:border-b prose-td:border-gray-100
-        prose-tr:even:bg-gray-50
-        prose-blockquote:border-l-4 prose-blockquote:border-[#dd1828] prose-blockquote:bg-gray-50 prose-blockquote:py-2 prose-blockquote:px-4 prose-blockquote:rounded-r-lg
-        prose-code:bg-gray-100 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:text-[#dd1828] prose-code:before:content-none prose-code:after:content-none
-        prose-hr:border-gray-200
-      "
-    >
-      <div
-        dangerouslySetInnerHTML={{ __html: parseMarkdown(article.content) }}
-      />
-    </motion.article>
+    <div className="space-y-8">
+      {/* Article content */}
+      <motion.article
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.3 }}
+        className="prose prose-lg max-w-none"
+      >
+        <div
+          className="article-content"
+          dangerouslySetInnerHTML={{ __html: parseMarkdown(article.content) }}
+        />
+      </motion.article>
+
+      {/* Sources section */}
+      {article.sources && article.sources.length > 0 && (
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.5 }}
+          className="mt-12 pt-8 border-t-2 border-gray-200"
+        >
+          <h3 className="text-lg font-bold text-[#182b33] mb-4 flex items-center gap-2">
+            <ExternalLink className="w-5 h-5 text-[#dd1828]" />
+            {t('sources')}
+          </h3>
+          <ul className="space-y-2">
+            {article.sources.map((source, index) => (
+              <li key={index} className="flex items-start gap-2">
+                <span className="text-[#dd1828] font-semibold">{index + 1}.</span>
+                <a
+                  href={source.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-600 hover:text-[#dd1828] transition-colors underline underline-offset-2"
+                >
+                  {source.title}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </motion.div>
+      )}
+
+      {/* Styles for article content */}
+      <style jsx global>{`
+        .article-content h2 {
+          font-size: 1.75rem;
+          font-weight: 700;
+          color: #182b33;
+          margin-top: 2.5rem;
+          margin-bottom: 1rem;
+          padding-bottom: 0.5rem;
+          border-bottom: 2px solid #f3f4f6;
+        }
+
+        .article-content h3 {
+          font-size: 1.35rem;
+          font-weight: 600;
+          color: #182b33;
+          margin-top: 2rem;
+          margin-bottom: 0.75rem;
+        }
+
+        .article-content p {
+          color: #4b5563;
+          line-height: 1.8;
+          margin-bottom: 1.25rem;
+        }
+
+        .article-content strong {
+          color: #182b33;
+          font-weight: 600;
+        }
+
+        .article-content a {
+          color: #dd1828;
+          text-decoration: underline;
+          text-underline-offset: 2px;
+        }
+
+        .article-content a:hover {
+          color: #a01020;
+        }
+
+        .article-content ul {
+          margin: 1.5rem 0;
+          padding-left: 1.5rem;
+        }
+
+        .article-content ul li {
+          color: #4b5563;
+          margin-bottom: 0.5rem;
+          position: relative;
+          padding-left: 0.5rem;
+        }
+
+        .article-content ul li::marker {
+          color: #dd1828;
+        }
+
+        .article-content table {
+          width: 100%;
+          margin: 2rem 0;
+          border-collapse: collapse;
+          border-radius: 0.5rem;
+          overflow: hidden;
+          box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .article-content thead {
+          background: #182b33;
+        }
+
+        .article-content th {
+          color: white;
+          font-weight: 600;
+          padding: 0.875rem 1rem;
+          text-align: left;
+        }
+
+        .article-content td {
+          padding: 0.875rem 1rem;
+          border-bottom: 1px solid #e5e7eb;
+          color: #4b5563;
+        }
+
+        .article-content tr:nth-child(even) {
+          background: #f9fafb;
+        }
+
+        .article-content tr:last-child td {
+          border-bottom: none;
+        }
+
+        .article-content hr {
+          margin: 2rem 0;
+          border: none;
+          border-top: 2px solid #e5e7eb;
+        }
+
+        .article-content blockquote {
+          margin: 1.5rem 0;
+          padding: 1rem 1.5rem;
+          border-left: 4px solid #dd1828;
+          background: #f9fafb;
+          border-radius: 0 0.5rem 0.5rem 0;
+          font-style: italic;
+          color: #4b5563;
+        }
+      `}</style>
+    </div>
   );
 }
 
-// Simple markdown parser (without react-markdown dependency)
+// Robust markdown parser
 function parseMarkdown(content: string): string {
-  return content
+  let html = content.trim();
+
+  // Split into lines for processing
+  const lines = html.split('\n');
+  const processedLines: string[] = [];
+  let inList = false;
+  let inTable = false;
+  let tableRows: string[] = [];
+
+  for (let i = 0; i < lines.length; i++) {
+    let line = lines[i];
+
+    // Skip empty lines but close lists
+    if (line.trim() === '') {
+      if (inList) {
+        processedLines.push('</ul>');
+        inList = false;
+      }
+      if (inTable) {
+        processedLines.push(processTable(tableRows));
+        tableRows = [];
+        inTable = false;
+      }
+      processedLines.push('');
+      continue;
+    }
+
     // Headers
-    .replace(/^### (.*)$/gm, '<h3>$1</h3>')
-    .replace(/^## (.*)$/gm, '<h2>$1</h2>')
-    .replace(/^# (.*)$/gm, '<h1>$1</h1>')
+    if (line.match(/^### /)) {
+      if (inList) { processedLines.push('</ul>'); inList = false; }
+      processedLines.push(`<h3>${line.replace(/^### /, '')}</h3>`);
+      continue;
+    }
+    if (line.match(/^## /)) {
+      if (inList) { processedLines.push('</ul>'); inList = false; }
+      processedLines.push(`<h2>${line.replace(/^## /, '')}</h2>`);
+      continue;
+    }
+    if (line.match(/^# /)) {
+      if (inList) { processedLines.push('</ul>'); inList = false; }
+      processedLines.push(`<h1>${line.replace(/^# /, '')}</h1>`);
+      continue;
+    }
+
+    // Horizontal rule
+    if (line.trim() === '---') {
+      if (inList) { processedLines.push('</ul>'); inList = false; }
+      processedLines.push('<hr />');
+      continue;
+    }
+
+    // Tables
+    if (line.trim().startsWith('|') && line.trim().endsWith('|')) {
+      if (inList) { processedLines.push('</ul>'); inList = false; }
+      inTable = true;
+      tableRows.push(line);
+      continue;
+    } else if (inTable) {
+      processedLines.push(processTable(tableRows));
+      tableRows = [];
+      inTable = false;
+    }
+
+    // List items
+    if (line.match(/^- /)) {
+      if (!inList) {
+        processedLines.push('<ul>');
+        inList = true;
+      }
+      const itemContent = processInlineMarkdown(line.replace(/^- /, ''));
+      processedLines.push(`<li>${itemContent}</li>`);
+      continue;
+    }
+
+    // Close list if we're in one and this isn't a list item
+    if (inList) {
+      processedLines.push('</ul>');
+      inList = false;
+    }
+
+    // Regular paragraph
+    const paragraphContent = processInlineMarkdown(line);
+    if (paragraphContent.trim()) {
+      processedLines.push(`<p>${paragraphContent}</p>`);
+    }
+  }
+
+  // Close any open lists
+  if (inList) {
+    processedLines.push('</ul>');
+  }
+  if (inTable) {
+    processedLines.push(processTable(tableRows));
+  }
+
+  return processedLines.join('\n');
+}
+
+// Process inline markdown (bold, italic, links)
+function processInlineMarkdown(text: string): string {
+  return text
     // Bold
-    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+    .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
     // Italic
-    .replace(/\*(.*?)\*/g, '<em>$1</em>')
+    .replace(/\*([^*]+)\*/g, '<em>$1</em>')
     // Links
-    .replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>')
-    // Unordered lists
-    .replace(/^- (.*)$/gm, '<li>$1</li>')
-    .replace(/(<li>.*<\/li>\n?)+/g, '<ul>$&</ul>')
-    // Tables (basic support)
-    .replace(/\|(.+)\|/g, (match) => {
-      const cells = match.split('|').filter(cell => cell.trim());
-      if (cells.every(cell => cell.trim().match(/^[-:]+$/))) {
-        return ''; // Skip separator row
-      }
-      const isHeader = cells.some(cell => cell.includes('---'));
-      if (!isHeader && cells.length > 0) {
-        const tag = 'td';
-        const row = cells.map(cell => `<${tag}>${cell.trim()}</${tag}>`).join('');
-        return `<tr>${row}</tr>`;
-      }
-      return match;
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>')
+    // Inline code
+    .replace(/`([^`]+)`/g, '<code>$1</code>');
+}
+
+// Process markdown table
+function processTable(rows: string[]): string {
+  if (rows.length < 2) return '';
+
+  const headerRow = rows[0];
+  const dataRows = rows.slice(2); // Skip header and separator
+
+  const headers = headerRow
+    .split('|')
+    .filter(cell => cell.trim())
+    .map(cell => `<th>${cell.trim()}</th>`)
+    .join('');
+
+  const bodyRows = dataRows
+    .map(row => {
+      const cells = row
+        .split('|')
+        .filter(cell => cell.trim())
+        .map(cell => `<td>${processInlineMarkdown(cell.trim())}</td>`)
+        .join('');
+      return `<tr>${cells}</tr>`;
     })
-    // Horizontal rules
-    .replace(/^---$/gm, '<hr />')
-    // Paragraphs (wrap loose text)
-    .replace(/^(?!<[h|u|o|l|t|b|p|d])(.*[^\n])$/gm, '<p>$1</p>')
-    // Clean up empty paragraphs
-    .replace(/<p><\/p>/g, '')
-    .replace(/<p>\s*<\/p>/g, '')
-    // Fix nested p tags
-    .replace(/<p><(h[1-6]|ul|ol|table|blockquote)/g, '<$1')
-    .replace(/<\/(h[1-6]|ul|ol|table|blockquote)><\/p>/g, '</$1>');
+    .join('');
+
+  return `<table><thead><tr>${headers}</tr></thead><tbody>${bodyRows}</tbody></table>`;
 }
