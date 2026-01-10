@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl';
 import { Smartphone, Star, Download } from 'lucide-react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import { PASSENGER_APP_URLS } from '@/lib/constants';
 
 interface DownloadAppCTAProps {
   headline?: string;
@@ -99,7 +100,9 @@ export function DownloadAppCTA({ headline, subheadline, playStoreUrl, appStoreUr
               className="flex flex-col sm:flex-row gap-4 pt-4"
             >
               <a
-                href={playStoreUrl || '#'}
+                href={playStoreUrl || PASSENGER_APP_URLS.android}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group inline-flex items-center justify-center gap-3 px-6 py-4 bg-[#dd1828] text-white rounded-xl font-semibold hover:bg-[#182b33] transition-all hover:scale-105 shadow-lg"
               >
                 <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
@@ -112,7 +115,9 @@ export function DownloadAppCTA({ headline, subheadline, playStoreUrl, appStoreUr
               </a>
 
               <a
-                href={appStoreUrl || '#'}
+                href={appStoreUrl || PASSENGER_APP_URLS.ios}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group inline-flex items-center justify-center gap-3 px-6 py-4 bg-white border-2 border-[#182b33] text-[#182b33] rounded-xl font-semibold hover:bg-[#182b33] hover:text-white transition-all hover:scale-105 shadow-lg"
               >
                 <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">

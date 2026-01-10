@@ -5,6 +5,7 @@ import { Star, Download, Smartphone, Apple, Play } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useLocale } from 'next-intl';
+import { PASSENGER_APP_URLS } from '@/lib/constants';
 
 // Phone mockup component
 function PhoneMockup({
@@ -199,7 +200,7 @@ export function AppPreview() {
                 >
                     {/* App Store */}
                     <motion.a
-                        href="https://apps.apple.com/app/etaxi"
+                        href={PASSENGER_APP_URLS.ios}
                         target="_blank"
                         rel="noopener noreferrer"
                         whileHover={{ scale: 1.05 }}
@@ -215,7 +216,7 @@ export function AppPreview() {
 
                     {/* Google Play */}
                     <motion.a
-                        href="https://play.google.com/store/apps/details?id=cl.etaxi"
+                        href={PASSENGER_APP_URLS.android}
                         target="_blank"
                         rel="noopener noreferrer"
                         whileHover={{ scale: 1.05 }}

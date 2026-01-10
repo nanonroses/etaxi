@@ -1,13 +1,13 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { FileCheck, Car, CheckCircle } from 'lucide-react';
+import { FileCheck, Car, CheckCircle, User, FileText } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export function DriverRequirements() {
   const t = useTranslations('driverPage.requirements');
 
-  const legalRequirements = [
+  const driverRequirements = [
     {
       title: t('legal.req1.title'),
       description: t('legal.req1.description'),
@@ -23,6 +23,10 @@ export function DriverRequirements() {
     {
       title: t('legal.req4.title'),
       description: t('legal.req4.description'),
+    },
+    {
+      title: t('legal.req5.title'),
+      description: t('legal.req5.description'),
     },
   ];
 
@@ -42,6 +46,33 @@ export function DriverRequirements() {
     {
       title: t('vehicle.req4.title'),
       description: t('vehicle.req4.description'),
+    },
+    {
+      title: t('vehicle.req5.title'),
+      description: t('vehicle.req5.description'),
+    },
+    {
+      title: t('vehicle.req6.title'),
+      description: t('vehicle.req6.description'),
+    },
+  ];
+
+  const docsRequirements = [
+    {
+      title: t('docs.req1.title'),
+      description: t('docs.req1.description'),
+    },
+    {
+      title: t('docs.req2.title'),
+      description: t('docs.req2.description'),
+    },
+    {
+      title: t('docs.req3.title'),
+      description: t('docs.req3.description'),
+    },
+    {
+      title: t('docs.req4.title'),
+      description: t('docs.req4.description'),
     },
   ];
 
@@ -64,7 +95,7 @@ export function DriverRequirements() {
         </div>
 
         <div className="space-y-8">
-          {/* Legal Requirements */}
+          {/* Driver Requirements */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -74,13 +105,13 @@ export function DriverRequirements() {
           >
             <div className="bg-gradient-to-r from-[#dd1828] to-[#182b33] p-6 text-white">
               <div className="flex items-center gap-3">
-                <FileCheck className="w-8 h-8" />
+                <User className="w-8 h-8" />
                 <h3 className="text-2xl font-bold">{t('legal.title')}</h3>
               </div>
             </div>
             <div className="p-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {legalRequirements.map((req, index) => (
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {driverRequirements.map((req, index) => (
                   <div key={index} className="flex items-start gap-3">
                     <div className="flex-shrink-0 w-6 h-6 rounded-full bg-[#dd1828]/10 flex items-center justify-center mt-1">
                       <CheckCircle className="w-4 h-4 text-[#dd1828]" />
@@ -110,11 +141,42 @@ export function DriverRequirements() {
               </div>
             </div>
             <div className="p-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {vehicleRequirements.map((req, index) => (
                   <div key={index} className="flex items-start gap-3">
                     <div className="flex-shrink-0 w-6 h-6 rounded-full bg-[#182b33]/10 flex items-center justify-center mt-1">
                       <CheckCircle className="w-4 h-4 text-[#182b33]" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-[#182b33] mb-1">{req.title}</h4>
+                      <p className="text-sm text-[#596065]">{req.description}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Documentation Requirements */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2, ease: 'easeOut' }}
+            className="bg-white rounded-2xl shadow-xl overflow-hidden border-2 border-[#fff500]/30 hover:border-[#dd1828] transition-colors duration-300"
+          >
+            <div className="bg-gradient-to-r from-[#fff500] to-[#dd1828] p-6 text-[#182b33]">
+              <div className="flex items-center gap-3">
+                <FileText className="w-8 h-8" />
+                <h3 className="text-2xl font-bold">{t('docs.title')}</h3>
+              </div>
+            </div>
+            <div className="p-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {docsRequirements.map((req, index) => (
+                  <div key={index} className="flex items-start gap-3">
+                    <div className="flex-shrink-0 w-6 h-6 rounded-full bg-[#fff500]/20 flex items-center justify-center mt-1">
+                      <CheckCircle className="w-4 h-4 text-[#dd1828]" />
                     </div>
                     <div>
                       <h4 className="font-semibold text-[#182b33] mb-1">{req.title}</h4>
@@ -131,7 +193,7 @@ export function DriverRequirements() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.2, ease: 'easeOut' }}
+            transition={{ duration: 0.5, delay: 0.3, ease: 'easeOut' }}
             className="bg-white rounded-2xl shadow-lg p-6 border-2 border-[#596065]/20 hover:border-[#dd1828] transition-colors duration-300"
           >
             <h3 className="text-xl font-bold text-[#182b33] mb-4 flex items-center gap-2">

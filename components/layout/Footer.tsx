@@ -22,6 +22,7 @@ import {
   Mail,
   Phone
 } from 'lucide-react';
+import { PASSENGER_APP_URLS } from '@/lib/constants';
 
 export function Footer() {
   const t = useTranslations('footer');
@@ -98,11 +99,13 @@ export function Footer() {
           </div>
 
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#fff500]/10 border border-[#fff500]/30 mb-6">
-            <Shield className="w-4 h-4 text-[#fff500]" />
-            <span className="text-sm font-semibold text-[#fff500]">
-              {locale === 'es' ? '100% Regulado - Ley 21.553' : '100% Regulated - Law 21.553'}
-            </span>
+          <div className="block mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#fff500]/10 border border-[#fff500]/30">
+              <Shield className="w-4 h-4 text-[#fff500]" />
+              <span className="text-sm font-semibold text-[#fff500]">
+                {locale === 'es' ? '100% Regulado - Ley 21.553' : '100% Regulated - Law 21.553'}
+              </span>
+            </div>
           </div>
 
           {/* Tagline */}
@@ -322,20 +325,24 @@ export function Footer() {
             {locale === 'es' ? 'Disponible en iOS y Android' : 'Available on iOS and Android'}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href={`/${locale}/descargar-app`}
+            <a
+              href={PASSENGER_APP_URLS.ios}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#182b33] text-white rounded-lg font-semibold hover:bg-[#030c13] transition-all duration-300 hover:scale-105 shadow-lg"
             >
               <Apple className="w-5 h-5" />
               App Store
-            </Link>
-            <Link
-              href={`/${locale}/descargar-app`}
+            </a>
+            <a
+              href={PASSENGER_APP_URLS.android}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#182b33] text-white rounded-lg font-semibold hover:bg-[#030c13] transition-all duration-300 hover:scale-105 shadow-lg"
             >
               <PlayCircle className="w-5 h-5" />
               Google Play
-            </Link>
+            </a>
           </div>
         </motion.div>
 

@@ -931,43 +931,74 @@
     },
     "requirements": {
       "title": "Requisitos según Normativa Chilena",
-      "subtitle": "Para conducir con ETAXI debes cumplir la legislación vigente",
+      "subtitle": "Para conducir con ETAXI debes cumplir la legislación vigente del Ministerio de Transportes",
       "legal": {
-        "title": "Documentación Legal Obligatoria",
+        "title": "Requisitos del Conductor",
         "req1": {
-          "title": "Licencia Profesional Clase A1",
+          "title": "Licencia Profesional A1, A2 o A3",
           "description": "Licencia de conducir profesional vigente según Ley de Tránsito (Ley 18.290)"
         },
         "req2": {
-          "title": "Registro Nacional de Servicios",
-          "description": "Inscripción en el Registro Nacional de Servicios de Transporte Remunerado de Pasajeros"
+          "title": "Edad Mínima 20 Años",
+          "description": "Debes tener al menos 20 años de edad para operar como conductor de taxi"
         },
         "req3": {
-          "title": "Permiso Municipal de Circulación",
-          "description": "Autorización municipal vigente para prestar servicios de taxi en tu comuna"
+          "title": "Curso en Escuela de Conductores",
+          "description": "Curso aprobado en escuela de conductores profesionales autorizada"
         },
         "req4": {
-          "title": "Certificado de Antecedentes",
-          "description": "Sin anotaciones vigentes en el Registro de Inhabilidades para trabajar con menores"
+          "title": "Cédula de Identidad Vigente",
+          "description": "Documento de identidad válido y vigente"
+        },
+        "req5": {
+          "title": "Residencia Regional",
+          "description": "Debes residir en la región donde operarás como conductor"
         }
       },
       "vehicle": {
         "title": "Requisitos del Vehículo",
         "req1": {
-          "title": "Inscripción como Taxi",
-          "description": "Vehículo inscrito en el Registro de Taxis del municipio correspondiente"
+          "title": "Cilindrada Mínima 1.4 Litros",
+          "description": "Motor con cilindrada mínima de 1.400 cc (actualizado 2024)"
         },
         "req2": {
-          "title": "Revisión Técnica Vigente",
-          "description": "Revisión técnica y de gases al día según normativa del Ministerio de Transportes"
+          "title": "Antigüedad Máxima 3 Años",
+          "description": "El vehículo no debe superar los 3 años de antigüedad al momento de la inscripción inicial"
         },
         "req3": {
-          "title": "Seguro Obligatorio (SOAP)",
-          "description": "Seguro Obligatorio de Accidentes Personales vigente"
+          "title": "Carrocería 4 Puertas",
+          "description": "Vehículo con carrocería de 4 puertas (taxis básicos y turismo)"
         },
         "req4": {
-          "title": "Taxímetro Homologado",
-          "description": "Taxímetro certificado y sellado por el Servicio de Impuestos Internos (SII)"
+          "title": "Pintura Reglamentaria",
+          "description": "Taxi básico: techo amarillo y carrocería negra. Taxi ejecutivo: sin pintura especial"
+        },
+        "req5": {
+          "title": "Revisión Técnica Vigente",
+          "description": "Certificado de Revisión Técnica al día según normativa del Ministerio de Transportes"
+        },
+        "req6": {
+          "title": "Certificado de Anotaciones",
+          "description": "Certificado de Anotaciones Vigentes en el Registro de Vehículos Motorizados"
+        }
+      },
+      "docs": {
+        "title": "Documentación Obligatoria",
+        "req1": {
+          "title": "Inscripción RNSTP",
+          "description": "Autorización del Ministerio de Transportes inscrito en el Registro Nacional de Servicios de Transporte de Pasajeros"
+        },
+        "req2": {
+          "title": "Seguro SOAP Taxi",
+          "description": "Seguro Obligatorio de Accidentes Personales para taxi, renovado anualmente"
+        },
+        "req3": {
+          "title": "Permiso de Circulación",
+          "description": "Permiso de circulación vigente emitido por la municipalidad correspondiente"
+        },
+        "req4": {
+          "title": "Seguro Complementario",
+          "description": "Seguro complementario para transporte remunerado de pasajeros"
         }
       },
       "optional": {
@@ -1097,7 +1128,7 @@
       },
       "benefit2": {
         "title": "Tarifa Justa y Transparente",
-        "description": "Pagás la tarifa oficial fija. Sin aumentos dinámicos, sin sorpresas en horas punta. El precio que ves es el precio que pagás."
+        "description": "Pagas la tarifa oficial fija. Sin aumentos dinámicos, sin sorpresas en horas punta. El precio que ves es el precio que pagas."
       },
       "benefit3": {
         "title": "Seguridad en Cada Viaje",
@@ -1105,7 +1136,7 @@
       },
       "benefit4": {
         "title": "Tracking en Tiempo Real",
-        "description": "Seguí la ubicación de tu taxi antes y durante el viaje. Compartí tu ruta con contactos de confianza para mayor tranquilidad."
+        "description": "Sigue la ubicación de tu taxi antes y durante el viaje. Comparte tu ruta con contactos de confianza para mayor tranquilidad."
       },
       "benefit5": {
         "title": "Cumplimiento Legal Total",
@@ -1113,7 +1144,7 @@
       },
       "benefit6": {
         "title": "Disponible 24/7",
-        "description": "Solicitá tu taxi cuando lo necesités, día o noche. Cobertura en las principales ciudades de Chile, todos los días del año."
+        "description": "Solicita tu taxi cuando lo necesites, día o noche. Cobertura en las principales ciudades de Chile, todos los días del año."
       }
     },
     "howToUse": {
@@ -1121,39 +1152,39 @@
       "subtitle": "Solicitar tu taxi legal nunca fue tan fácil",
       "step1": {
         "number": "1",
-        "title": "Descargá la App",
-        "description": "Disponible gratis en App Store y Google Play. Registrate con tu número de teléfono en menos de 1 minuto.",
-        "detail": "Sin costo de suscripción. Solo pagás por los viajes que realizás."
+        "title": "Descarga la App",
+        "description": "Disponible gratis en App Store y Google Play. Regístrate con tu número de teléfono en menos de 1 minuto.",
+        "detail": "Sin costo de suscripción. Solo pagas por los viajes que realizas."
       },
       "step2": {
         "number": "2",
-        "title": "Indicá Origen y Destino",
-        "description": "La app detecta tu ubicación automáticamente. Ingresá tu destino o seleccioná uno de tus lugares frecuentes.",
-        "detail": "Guardá tus direcciones favoritas para viajes más rápidos."
+        "title": "Indica Origen y Destino",
+        "description": "La app detecta tu ubicación automáticamente. Ingresa tu destino o selecciona uno de tus lugares frecuentes.",
+        "detail": "Guarda tus direcciones favoritas para viajes más rápidos."
       },
       "step3": {
         "number": "3",
-        "title": "Confirmá tu Solicitud",
-        "description": "Revisá los detalles del viaje y la tarifa estimada. La app te conecta automáticamente con el taxi legal más cercano.",
+        "title": "Confirma tu Solicitud",
+        "description": "Revisa los detalles del viaje y la tarifa estimada. La app te conecta automáticamente con el taxi legal más cercano.",
         "detail": "Ves los datos del conductor y la patente del vehículo antes de que llegue."
       },
       "step4": {
         "number": "4",
-        "title": "Seguí tu Taxi en Vivo",
-        "description": "Mirá en tiempo real dónde está tu taxi y cuánto falta para que llegue. Recibís notificaciones cuando esté cerca.",
-        "detail": "Compartí tu viaje con familiares o amigos para mayor seguridad."
+        "title": "Sigue tu Taxi en Vivo",
+        "description": "Mira en tiempo real dónde está tu taxi y cuánto falta para que llegue. Recibes notificaciones cuando esté cerca.",
+        "detail": "Comparte tu viaje con familiares o amigos para mayor seguridad."
       },
       "step5": {
         "number": "5",
-        "title": "Viajá Seguro",
-        "description": "Durante el viaje tenés trazabilidad completa, botón de pánico y soporte 24/7. Todo queda registrado.",
+        "title": "Viaja Seguro",
+        "description": "Durante el viaje tienes trazabilidad completa, botón de pánico y soporte 24/7. Todo queda registrado.",
         "detail": "Acceso directo a emergencias con tu ubicación compartida automáticamente."
       },
       "step6": {
         "number": "6",
-        "title": "Calificá tu Experiencia",
-        "description": "Al finalizar, calificá al conductor y dejá un comentario. Ayudás a mejorar el servicio para todos.",
-        "detail": "Accedé a tu historial completo de viajes cuando quieras."
+        "title": "Califica tu Experiencia",
+        "description": "Al finalizar, califica al conductor y deja un comentario. Ayudas a mejorar el servicio para todos.",
+        "detail": "Accede a tu historial completo de viajes cuando quieras."
       }
     },
     "comparison": {
@@ -1204,15 +1235,15 @@
     },
     "useCases": {
       "title": "ETAXI para cada situación",
-      "subtitle": "Viajes seguros cuando más los necesitás",
+      "subtitle": "Viajes seguros cuando más los necesitas",
       "case1": {
         "title": "Viajes Nocturnos",
-        "description": "Volvé seguro a casa después de salir de noche. Trazabilidad completa, conductor verificado y botón de pánico siempre disponible.",
+        "description": "Vuelve seguro a casa después de salir de noche. Trazabilidad completa, conductor verificado y botón de pánico siempre disponible.",
         "icon": "moon"
       },
       "case2": {
         "title": "Traslados al Aeropuerto",
-        "description": "Llegá a tiempo sin preocupaciones. Conductores profesionales que conocen las mejores rutas. Espacio para equipaje garantizado.",
+        "description": "Llega a tiempo sin preocupaciones. Conductores profesionales que conocen las mejores rutas. Espacio para equipaje garantizado.",
         "icon": "plane"
       },
       "case3": {
@@ -1222,12 +1253,12 @@
       },
       "case4": {
         "title": "Con Familia",
-        "description": "Viajá tranquilo con tus hijos o adultos mayores. Conductores de confianza, vehículos seguros y tracking compartido con familiares.",
+        "description": "Viaja tranquilo con tus hijos o adultos mayores. Conductores de confianza, vehículos seguros y tracking compartido con familiares.",
         "icon": "users"
       },
       "case5": {
         "title": "Emergencias Médicas",
-        "description": "Cuando necesitás llegar rápido a un centro de salud. Conductores profesionales que priorizan tu urgencia de forma segura.",
+        "description": "Cuando necesitas llegar rápido a un centro de salud. Conductores profesionales que priorizan tu urgencia de forma segura.",
         "icon": "heart"
       },
       "case6": {
@@ -1241,27 +1272,27 @@
       "subtitle": "Diseñada para que tu experiencia sea simple y segura",
       "feature1": {
         "title": "Solicitud Instantánea",
-        "description": "Pedí tu taxi en segundos. La app detecta tu ubicación y te conecta con el taxi legal más cercano."
+        "description": "Pide tu taxi en segundos. La app detecta tu ubicación y te conecta con el taxi legal más cercano."
       },
       "feature2": {
         "title": "Historial de Viajes",
-        "description": "Accedé a todos tus viajes anteriores con detalles completos: conductor, ruta, calificación y recibos."
+        "description": "Accede a todos tus viajes anteriores con detalles completos: conductor, ruta, calificación y recibos."
       },
       "feature3": {
         "title": "Lugares Favoritos",
-        "description": "Guardá tus direcciones frecuentes (casa, trabajo, gym) para solicitudes más rápidas."
+        "description": "Guarda tus direcciones frecuentes (casa, trabajo, gym) para solicitudes más rápidas."
       },
       "feature4": {
         "title": "Compartir Viaje",
-        "description": "Enviá tu ubicación en tiempo real a contactos de confianza. Ellos pueden seguir tu viaje completo."
+        "description": "Envía tu ubicación en tiempo real a contactos de confianza. Ellos pueden seguir tu viaje completo."
       },
       "feature5": {
         "title": "Calificaciones",
-        "description": "Calificá cada viaje y ayudá a mantener la calidad del servicio. Leé opiniones de otros pasajeros."
+        "description": "Califica cada viaje y ayuda a mantener la calidad del servicio. Lee opiniones de otros pasajeros."
       },
       "feature6": {
         "title": "Soporte Integrado",
-        "description": "Contacto directo con atención al cliente desde la app. Resolvé dudas o reportá problemas al instante."
+        "description": "Contacto directo con atención al cliente desde la app. Resuelve dudas o reporta problemas al instante."
       }
     },
     "safety": {
@@ -1320,11 +1351,11 @@
       "title": "Preguntas Frecuentes",
       "q1": {
         "question": "¿ETAXI está disponible en mi ciudad?",
-        "answer": "ETAXI está disponible en las principales ciudades de Chile y seguimos expandiéndonos. Descargá la app para ver si hay cobertura en tu zona. Si no, pronto llegaremos."
+        "answer": "ETAXI está disponible en las principales ciudades de Chile y seguimos expandiéndonos. Descarga la app para ver si hay cobertura en tu zona. Si no, pronto llegaremos."
       },
       "q2": {
         "question": "¿Cuánto cuesta usar ETAXI?",
-        "answer": "Descargar y registrarse es 100% gratis. Solo pagás la tarifa oficial del viaje, sin costo de suscripción ni cargos ocultos. La tarifa es fija y transparente."
+        "answer": "Descargar y registrarse es 100% gratis. Solo pagas la tarifa oficial del viaje, sin costo de suscripción ni cargos ocultos. La tarifa es fija y transparente."
       },
       "q3": {
         "question": "¿Cómo se calcula la tarifa?",
@@ -1336,15 +1367,15 @@
       },
       "q5": {
         "question": "¿Puedo solicitar un taxi para otra persona?",
-        "answer": "Sí, podés solicitar un taxi para un familiar o amigo ingresando la dirección de recogida correspondiente. Ideal para ayudar a adultos mayores o enviar taxis a otras personas."
+        "answer": "Sí, puedes solicitar un taxi para un familiar o amigo ingresando la dirección de recogida correspondiente. Ideal para ayudar a adultos mayores o enviar taxis a otras personas."
       },
       "q6": {
         "question": "¿Qué pasa si tengo un problema durante el viaje?",
-        "answer": "Tenés varias opciones: usar el botón de pánico para emergencias, contactar a soporte 24/7 desde la app o reportar el problema después del viaje. Toda queja se investiga."
+        "answer": "Tienes varias opciones: usar el botón de pánico para emergencias, contactar a soporte 24/7 desde la app o reportar el problema después del viaje. Toda queja se investiga."
       },
       "q7": {
         "question": "¿Puedo cancelar un viaje solicitado?",
-        "answer": "Sí, podés cancelar antes de que el conductor llegue. La app te indicará las condiciones de cancelación. Te pedimos hacerlo solo cuando sea necesario para no afectar a los conductores."
+        "answer": "Sí, puedes cancelar antes de que el conductor llegue. La app te indicará las condiciones de cancelación. Te pedimos hacerlo solo cuando sea necesario para no afectar a los conductores."
       },
       "q8": {
         "question": "¿Cómo sé que el conductor es confiable?",
@@ -1352,11 +1383,11 @@
       }
     },
     "cta": {
-      "title": "Descargá ETAXI y Empezá a Viajar Legal",
-      "subtitle": "Más de 25,000 pasajeros ya confían en nosotros. Unite a la comunidad de usuarios que eligen seguridad, legalidad y transparencia.",
+      "title": "Descarga ETAXI y Empieza a Viajar Legal",
+      "subtitle": "Más de 25,000 pasajeros ya confían en nosotros. Únete a la comunidad de usuarios que eligen seguridad, legalidad y transparencia.",
       "button": "Descargar App Ahora",
       "available": "Disponible para iOS y Android",
-      "note": "Sin costo de descarga. Sin suscripciones. Solo pagás por tus viajes."
+      "note": "Sin costo de descarga. Sin suscripciones. Solo pagas por tus viajes."
     }
   },
   "howItWorksPage": {
@@ -1395,7 +1426,7 @@
       "step5": {
         "number": "5",
         "title": "Viaja Seguro",
-        "description": "Durante el viaje tenés acceso al botón de pánico, trazabilidad completa y soporte 24/7. Todo queda registrado para tu seguridad.",
+        "description": "Durante el viaje tienes acceso al botón de pánico, trazabilidad completa y soporte 24/7. Todo queda registrado para tu seguridad.",
         "icon": "shield"
       },
       "step6": {
@@ -1591,7 +1622,7 @@
         "button": "Descargar App ETAXI"
       },
       "driver": {
-        "title": "¿Sos conductor profesional?",
+        "title": "¿Eres conductor profesional?",
         "description": "Únete a la plataforma que respeta tu trabajo y te da acceso a más pasajeros",
         "button": "Registrarme como Conductor"
       }
