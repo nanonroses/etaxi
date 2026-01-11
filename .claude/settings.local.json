@@ -19,7 +19,18 @@
       "Bash(cat:*)",
       "Bash(node -e:*)",
       "Bash(DATABASE_URL=\"file:./dev.db\" npx tsx:*)",
-      "Bash(find:*)"
+      "Bash(find:*)",
+      "Bash(powershell:*)",
+      "Bash(npm run dev)",
+      "Skill(webapp-testing)",
+      "Bash(python:*)",
+      "Bash(pip install:*)",
+      "Bash(playwright install:*)",
+      "mcp__plugin_context7_context7__resolve-library-id",
+      "mcp__plugin_context7_context7__get-library-docs",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "WebSearch"
     ],
     "deny": [],
     "ask": []
