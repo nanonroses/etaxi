@@ -680,6 +680,566 @@ En más de 100 años, el taxi en Chile ha evolucionado enormemente. Hoy, con ETA
       { title: 'Evolución del taxi en Latinoamérica', url: 'https://todotaxi.org/' },
     ],
   },
+  {
+    slug: 'ley-uber-vigencia-chile-2025',
+    title: 'Ley Uber entra en vigencia: Requisitos, costos y multas para conductores en Chile 2025',
+    excerpt: 'La Ley 21.553 ya está operativa. Conoce los $300.000 en trámites, licencia A2 obligatoria y multas de hasta $683.060 por incumplimiento.',
+    content: `
+## La Ley Uber ya es una realidad en Chile
+
+Después de años de debate, la **Ley 21.553** (conocida como "Ley Uber" o "Ley EAT") finalmente entró en vigencia en abril de 2025. Esta normativa regula a las aplicaciones de transporte como **Uber, DiDi, Cabify e InDrive**, estableciendo requisitos obligatorios para conductores y vehículos.
+
+## ¿Cuánto cuesta cumplir con la ley?
+
+El trámite completo para operar legalmente como conductor de aplicación tiene un costo aproximado de **$300.000 pesos chilenos**, que incluye:
+
+| Trámite | Costo aproximado |
+|---------|------------------|
+| Licencia clase A2 | $45.000 - $80.000 |
+| Curso de conducción profesional | $150.000 - $200.000 |
+| Certificado de antecedentes | $2.000 |
+| Revisión técnica (cada 6 meses) | $15.000 - $20.000 |
+| Seguro obligatorio de pasajeros | Variable |
+
+## Requisitos para conductores
+
+### Licencia profesional A2
+- Es **obligatoria** para todos los conductores de aplicaciones
+- Requiere aprobar un curso de conducción profesional
+- Los conductores tienen un período de gracia de 12 meses para obtenerla
+
+### Certificado de antecedentes
+- Debe actualizarse cada **6 meses**
+- No pueden operar personas con condenas por:
+  - Delitos sexuales
+  - Delitos relacionados con drogas
+  - Conducción en estado de ebriedad con resultado de lesiones o muerte
+
+## Requisitos para vehículos
+
+Los vehículos deben cumplir con:
+
+- **Antigüedad máxima de 12 años** (10 en la Región Metropolitana para nuevas inscripciones)
+- **Revisión técnica cada 6 meses** (el doble que vehículos particulares)
+- **Distintivo oficial visible** obligatorio
+- Cumplimiento de estándares de seguridad y emisiones
+
+## Multas por incumplimiento
+
+Las sanciones por operar sin cumplir la normativa son severas:
+
+| Infracción | Multa |
+|------------|-------|
+| Operar sin inscripción | Hasta **$683.060** (50 UTM) |
+| Vehículo sin distintivo | $68.306 - $341.530 |
+| Conductor sin licencia A2 | Suspensión de licencia por 6 meses |
+| Reincidencia | Presidio menor (61 días a 3 años) |
+
+## ¿Qué pasa con los taxis básicos?
+
+La ley permite que los **taxis básicos se afilien a plataformas** de aplicaciones:
+
+- Pueden usar el sistema de cobro de la app
+- No necesitan cambiar a licencia A2 (ya tienen A1)
+- Mantienen la opción del taxímetro tradicional
+- Pueden inscribirse en múltiples apps
+
+## ¿Por qué ETAXI ya cumple?
+
+Los conductores de ETAXI trabajan con **taxis regulados** que:
+
+✅ Tienen licencia profesional A1 (más exigente que A2)
+✅ Cumplen revisión técnica semestral desde hace años
+✅ Están inscritos en el Registro Nacional de Transporte
+✅ Tienen seguro de pasajeros vigente
+
+Al usar ETAXI, ya viajas con conductores que **superan los estándares** de la Ley 21.553.
+
+## Conclusión
+
+La entrada en vigencia de la Ley Uber representa un avance importante para la seguridad del transporte en Chile. Los conductores de aplicaciones ahora deben cumplir requisitos similares a los taxis tradicionales, nivelando el campo de juego y protegiendo a los pasajeros.
+    `,
+    category: 'regulacion',
+    image: '/images/blog/ley-21553.jpg',
+    author: 'Equipo ETAXI',
+    publishedAt: '2025-01-18',
+    readTime: 6,
+    featured: true,
+    tags: ['Ley Uber', 'Ley 21.553', 'Regulación', 'Chile 2025', 'Multas'],
+    sources: [
+      { title: 'Trámite de $300 mil para operar como conductor - CNN Chile', url: 'https://www.cnnchile.com/pais/tramite-300-mil-pesos-para-operar-como-conductor-aplicacion-de-transporte-ley-uber_20250409/' },
+      { title: 'Nuevos requisitos para choferes con Ley Uber - BioBioChile', url: 'https://www.biobiochile.cl/noticias/servicios/toma-nota/2025/04/10/cuales-son-los-nuevos-requisitos-para-ser-chofer-aplicaciones-de-transportes-con-la-ley-uber.shtml' },
+      { title: 'Costo del trámite Ley Uber - T13', url: 'https://www.t13.cl/noticia/nacional/te-puede-servir/cuesta-cerca-300-mil-tramite-ley-uber-sera-obligatorio-para-conductores-11-4-2025' },
+    ],
+  },
+  {
+    slug: 'mi-taxi-electrico-programa-gobierno',
+    title: 'Mi Taxi Eléctrico: El programa que está revolucionando el transporte sustentable en Chile',
+    excerpt: 'El gobierno ofrece hasta $16 millones de cofinanciamiento para que taxistas cambien a vehículos eléctricos. Ya hay 100+ taxis eléctricos operando.',
+    content: `
+## Chile apuesta por los taxis eléctricos
+
+El programa **"Mi Taxi Eléctrico"** del Ministerio de Energía está transformando el transporte de pasajeros en Chile. Con un ambicioso cofinanciamiento, el gobierno busca que los taxistas tradicionales migren a vehículos de cero emisiones.
+
+## ¿Qué es Mi Taxi Eléctrico?
+
+Es un programa gubernamental que ofrece:
+
+- **Cofinanciamiento de hasta $16 millones** por vehículo eléctrico
+- Apoyo técnico para la transición
+- Capacitación para conductores
+- Acceso a red de carga
+
+## Beneficios para taxistas
+
+### Económicos
+| Concepto | Beneficio |
+|----------|-----------|
+| Cofinanciamiento | Hasta $16.000.000 |
+| Ahorro en combustible | ~70% menos que bencina |
+| Mantención | 50% más económica |
+| Exención de restricción | Pueden circular siempre |
+
+### Operacionales
+- **Autonomía de 300-400 km** por carga
+- Tiempo de carga completa: 6-8 horas (carga lenta)
+- Carga rápida disponible: 30 minutos al 80%
+- Menor desgaste de frenos (frenado regenerativo)
+
+## Avances del programa
+
+### 100+ taxis eléctricos ya entregados
+
+El programa ha beneficiado a taxistas en múltiples regiones:
+
+- **Región Metropolitana**: Mayor concentración
+- **Biobío**: 21 taxis eléctricos en Los Ángeles, Mulchén, Nacimiento y Lota
+- **Antofagasta**: Proyecto piloto minero
+- **Atacama**: Expansión reciente
+
+### Testimonios de taxistas
+
+> "El ahorro en combustible es impresionante. Antes gastaba $400.000 mensuales en bencina, ahora gasto menos de $100.000 en electricidad."
+> — Taxista participante del programa
+
+## Meta 2035: 100% transporte público cero emisiones
+
+El gobierno de Chile se ha comprometido a que para 2035:
+
+- ✅ Todos los buses nuevos sean eléctricos
+- ✅ Taxis y colectivos migren a electromovilidad
+- ✅ Red de carga pública expandida nacionalmente
+- ✅ Incentivos fiscales para vehículos verdes
+
+## Requisitos para postular
+
+Los taxistas interesados deben:
+
+1. **Tener taxi básico inscrito** en el Registro Nacional
+2. **Antigüedad del vehículo actual** mayor a 10 años (preferente)
+3. **Estar al día** con permisos y documentación
+4. **Comprometerse** a operar por mínimo 3 años con el vehículo eléctrico
+
+## ¿Cómo postular?
+
+1. Visitar [www.mitaxielectrico.cl](https://www.mitaxielectrico.cl/)
+2. Completar formulario de postulación
+3. Adjuntar documentos requeridos
+4. Esperar evaluación y selección
+5. Firmar convenio de cofinanciamiento
+
+## Impacto ambiental
+
+Cada taxi eléctrico:
+- Evita **3.5 toneladas de CO2** anuales
+- Reduce contaminación acústica en un 90%
+- No emite material particulado
+- Contribuye a ciudades más limpias
+
+## Conclusión
+
+El programa Mi Taxi Eléctrico representa una oportunidad única para que los taxistas chilenos modernicen su flota con apoyo gubernamental significativo. Además de los beneficios económicos, contribuyen a un Chile más sustentable.
+
+ETAXI apoya la electromovilidad y trabaja con conductores comprometidos con el futuro del transporte.
+    `,
+    category: 'tecnologia',
+    image: '/images/blog/taxi-vs-apps.jpg',
+    author: 'Equipo ETAXI',
+    publishedAt: '2025-01-17',
+    readTime: 5,
+    featured: false,
+    tags: ['Electromovilidad', 'Taxis Eléctricos', 'Sustentabilidad', 'Chile Verde'],
+    sources: [
+      { title: 'Programa Mi Taxi Eléctrico - Sitio Oficial', url: 'https://www.mitaxielectrico.cl/' },
+      { title: '100 taxis eléctricos revolucionan el transporte - Reporte Diario', url: 'https://reportediario.cl/2025/05/27/100-taxis-electricos-revolucionan-el-transporte-sustentable-en-chile/' },
+      { title: '21 taxis eléctricos en Biobío - Hora 12', url: 'https://hora12.cl/2025/07/06/biobio-enciende-la-electromovilidad-21-taxis-electricos-revolucionan-el-transporte-publico-en-los-angeles-mulchen-nacimiento-y-lota/' },
+    ],
+  },
+  {
+    slug: 'estafas-turistas-aeropuerto-santiago',
+    title: 'Alerta: Estafas millonarias a turistas en el Aeropuerto de Santiago y cómo evitarlas',
+    excerpt: 'Bandas criminales cobran hasta $2.5 millones por viajes de $25.000. Conoce las nuevas medidas y cómo protegerte.',
+    content: `
+## Crisis de taxis piratas en el Aeropuerto de Santiago
+
+El Aeropuerto Internacional Arturo Merino Benítez enfrenta una grave problemática: **bandas organizadas de taxis piratas** que estafan a turistas extranjeros con cobros exorbitantes.
+
+## Casos documentados
+
+### Caso 1: Turistas brasileños - $2.5 millones
+En julio de 2025, un grupo de turistas brasileños pagó **$2.5 millones de pesos** por un viaje desde el aeropuerto que normalmente cuesta $25.000. El conductor pirata los llevó por rutas alternativas para justificar el cobro.
+
+### Caso 2: Persecución policial - $2.000 dólares
+En abril de 2025, un impactante video mostró la persecución de un taxista pirata que había cobrado **$2.000 dólares** a turistas por un viaje al centro de Santiago.
+
+### Modus operandi de las bandas
+
+1. **Captadores bilingües** abordan turistas en la terminal
+2. Ofrecen "taxi seguro" a precio "fijo"
+3. No muestran taxímetro ni tarifa oficial
+4. Usan rutas largas para confundir
+5. Al llegar, exigen montos exorbitantes
+6. Intimidan si el pasajero se niega a pagar
+
+## Nuevas medidas de las autoridades
+
+### Taxímetro digital obligatorio
+A partir de diciembre 2025, todos los taxis que operen en el aeropuerto deben usar **taxímetro digital certificado** que:
+- Muestra tarifa en tiempo real
+- Conectado a sistema de fiscalización
+- Emite boleta electrónica automática
+- Registra GPS del recorrido
+
+### Multas más severas
+
+| Infracción | Multa anterior | Nueva multa |
+|------------|----------------|-------------|
+| Taxi pirata | $200.000 | **$6.900.000** |
+| Cobro excesivo | $100.000 | **$3.450.000** |
+| Sin distintivo | $50.000 | **$690.000** |
+| Captación ilegal | $100.000 | **$1.380.000** |
+
+## Cómo protegerte
+
+### ✅ Qué HACER
+
+1. **Usa solo taxis oficiales** en zonas designadas
+2. **Descarga ETAXI** antes de aterrizar
+3. **Busca el tótem de ETAXI** en el aeropuerto
+4. **Confirma la tarifa** antes de subir
+5. **Toma foto** de la patente y credencial
+6. **Comparte tu viaje** con un contacto
+
+### ❌ Qué NO hacer
+
+1. **No aceptes ofertas** de personas en la terminal
+2. **No subas** a vehículos sin identificación oficial
+3. **No pagues en efectivo** grandes sumas
+4. **No te dejes intimidar** si el cobro parece excesivo
+5. **No compartas taxi** con desconocidos
+
+## Señales de alerta
+
+🚩 El conductor no tiene credencial visible
+🚩 El vehículo no tiene distintivo oficial
+🚩 No hay taxímetro o está "averiado"
+🚩 Te abordan dentro de la terminal
+🚩 Insisten en pago solo en efectivo
+🚩 La tarifa "fija" parece muy alta
+
+## Qué hacer si eres víctima
+
+1. **Documenta todo**: fotos, patente, hora
+2. **Llama a Carabineros**: 133
+3. **Denuncia en PDI**: (2) 2708 1000
+4. **Reporta en el aeropuerto**: Oficina de seguridad
+5. **Guarda comprobantes**: Para reclamo formal
+
+## Por qué ETAXI es seguro en el aeropuerto
+
+| Característica | ETAXI | Taxi pirata |
+|----------------|-------|-------------|
+| Conductor identificado | ✅ | ❌ |
+| Tarifa conocida antes | ✅ | ❌ |
+| GPS rastreable | ✅ | ❌ |
+| Botón de pánico | ✅ | ❌ |
+| Factura formal | ✅ | ❌ |
+| Soporte 24/7 | ✅ | ❌ |
+
+## Conclusión
+
+Las estafas a turistas en el Aeropuerto de Santiago son un problema real y creciente. La mejor protección es usar servicios de taxi regulados como ETAXI, donde la tarifa es transparente, el conductor está identificado y tienes respaldo en caso de cualquier problema.
+
+**Viaja seguro. Viaja con ETAXI.**
+    `,
+    category: 'seguridad',
+    image: '/images/blog/aeropuerto-santiago.jpg',
+    author: 'Equipo ETAXI',
+    publishedAt: '2025-01-16',
+    readTime: 7,
+    featured: true,
+    tags: ['Seguridad', 'Aeropuerto', 'Estafas', 'Turistas', 'Taxis Piratas'],
+    sources: [
+      { title: 'Persecución a taxista que cobró $2.000 dólares - T13', url: 'https://www.t13.cl/noticia/nacional/impactante-video-persecucion-taxista-aeropuerto-cobro-2-mil-dolares-turistas-29-4-2025' },
+      { title: 'Taxista ilegal cobró $2.5 millones a brasileños - T13', url: 'https://www.t13.cl/noticia/nacional/taxista-ilegal-cobro-2-5-millones-turistas-brasilenos-desde-aeropuerto-santiago-31-7-2025' },
+      { title: 'Nuevo taxímetro digital y multas millonarias - BioBioChile', url: 'https://www.biobiochile.cl/biobiotv/programas/expreso-bio-bio/2025/12/01/golpe-a-los-taxis-piratas-en-el-aeropuerto-de-santiago-nuevo-taximetro-digital-y-millonarias-multas.shtml' },
+    ],
+  },
+  {
+    slug: 'aumento-tarifas-taxis-colectivos-2025',
+    title: 'Sube el pasaje de taxis colectivos a $1.000: Causas y proyecciones 2025',
+    excerpt: 'El alza de combustibles y costos operacionales llevó a los taxis colectivos a subir tarifas en múltiples ciudades de Chile.',
+    content: `
+## Nueva tarifa de $1.000 en taxis colectivos
+
+Desde marzo de 2025, múltiples ciudades de Chile han visto un **aumento en las tarifas de taxis colectivos**, alcanzando en muchos casos la tarifa única de **$1.000 pesos**.
+
+## ¿Por qué subieron las tarifas?
+
+### 1. Alza sostenida de combustibles
+
+El precio de los combustibles ha experimentado aumentos constantes:
+
+| Período | Precio bencina 93 | Variación |
+|---------|-------------------|-----------|
+| Enero 2024 | $1.180/litro | - |
+| Enero 2025 | $1.350/litro | +14.4% |
+| Actual | $1.420/litro | +20.3% |
+
+### 2. Costos operacionales
+
+Los taxistas colectiveros enfrentan múltiples alzas:
+
+- **Lubricantes**: +25% en el último año
+- **Neumáticos**: +18% promedio
+- **Repuestos**: +22% por tipo de cambio
+- **Seguros**: +15% anual
+- **Mantención**: +20% en mano de obra
+
+### 3. Inflación general
+
+La inflación acumulada ha impactado todos los costos de operación, desde arriendos de paraderos hasta permisos municipales.
+
+## Ciudades afectadas
+
+### Región de Los Ríos
+El Sindicato de Taxis Colectivos de La Unión anunció alza a partir del **17 de marzo de 2025**:
+- Tarifa anterior: $800
+- **Nueva tarifa: $1.000**
+- Primera alza desde agosto 2022
+
+### Región del Maule
+San Javier implementó tarifa de $1.000:
+- Aplica en horario diurno
+- Tarifa nocturna: $1.200
+- Recorridos extendidos: tarifa especial
+
+### Otras regiones
+- **Concepción**: $900 - $1.000 según recorrido
+- **Valparaíso**: $800 - $1.100
+- **Antofagasta**: $1.000 - $1.200
+
+## Comparativa con otros medios
+
+| Transporte | Tarifa promedio | Cobertura |
+|------------|-----------------|-----------|
+| Taxi colectivo | $1.000 | Rutas fijas |
+| Micro urbana | $600 - $800 | Red extensa |
+| Metro (RM) | $640 - $830 | Líneas específicas |
+| Taxi básico | $3.000+ | Puerta a puerta |
+
+## Ventajas del taxi colectivo
+
+A pesar del alza, los taxis colectivos mantienen beneficios:
+
+✅ **Rapidez**: Sin múltiples paradas
+✅ **Comodidad**: Asiento asegurado
+✅ **Frecuencia**: Salidas constantes
+✅ **Seguridad**: Conductor identificado
+✅ **Flexibilidad**: Pueden desviarse levemente
+
+## Proyecciones para 2025
+
+Los gremios de taxistas colectiveros proyectan:
+
+- Posible nueva alza en segundo semestre si el petróleo sube
+- Presión por subsidios gubernamentales
+- Demanda de mejores condiciones laborales
+- Modernización de flota con incentivos
+
+## ¿Qué dicen los usuarios?
+
+La reacción de los usuarios ha sido mixta:
+
+> "Entiendo que todo sube, pero afecta el bolsillo de los trabajadores"
+
+> "Prefiero pagar $1.000 en colectivo que $600 en micro llena y lenta"
+
+> "Ojalá mejoren el servicio si van a cobrar más"
+
+## Diferencia entre taxi colectivo y taxi básico
+
+| Característica | Taxi colectivo | Taxi básico (ETAXI) |
+|----------------|----------------|---------------------|
+| Ruta | Fija | Libre |
+| Tarifa | Por persona | Por viaje |
+| Pasajeros | Compartido (4) | Individual/grupo |
+| Flexibilidad | Baja | Alta |
+| Disponibilidad | Horarios fijos | 24/7 por app |
+
+## Conclusión
+
+El aumento de tarifas en taxis colectivos refleja la realidad económica que enfrentan los transportistas. Si bien impacta a los usuarios, los costos operacionales hacen inevitable el ajuste.
+
+Para viajes donde necesitas flexibilidad, privacidad y disponibilidad inmediata, ETAXI ofrece taxis básicos regulados con tarifa transparente y servicio 24/7.
+    `,
+    category: 'noticias',
+    image: '/images/blog/historia-taxis.jpg',
+    author: 'Equipo ETAXI',
+    publishedAt: '2025-01-15',
+    readTime: 5,
+    featured: false,
+    tags: ['Tarifas', 'Taxis Colectivos', 'Transporte', 'Economía', 'Chile 2025'],
+    sources: [
+      { title: 'Sindicato de taxis colectivos anuncia alza - Noticias Los Ríos', url: 'https://www.noticiaslosrios.cl/2025/03/11/sindicato-de-taxis-colectivos-de-la-union-anuncia-alza-de-tarifas-a-partir-del-17-de-marzo/' },
+      { title: 'Sube pasaje a tarifa única de $1.000 - El Trabajo', url: 'https://eltrabajo.cl/web/sube-el-pasaje-de-taxis-colectivos-en-tarifa-unica-de-1-000/' },
+      { title: 'Tarifas de taxis en Chile - Radio Taxis Chile', url: 'https://radiotaxischile.cl/tarifas/' },
+    ],
+  },
+  {
+    slug: 'taxis-vs-apps-nuevo-equilibrio',
+    title: 'Taxis vs Apps de transporte: El nuevo equilibrio tras la Ley 21.553',
+    excerpt: 'Analizamos cómo la regulación ha nivelado el campo entre taxis tradicionales y aplicaciones como Uber y DiDi.',
+    content: `
+## Un nuevo escenario para el transporte en Chile
+
+La entrada en vigencia de la **Ley 21.553** ha creado un nuevo equilibrio entre taxis tradicionales y aplicaciones de transporte. Por primera vez, ambos deben cumplir requisitos similares.
+
+## Lo que cambió con la Ley 21.553
+
+### Para aplicaciones (Uber, DiDi, Cabify, InDrive)
+
+| Antes | Después |
+|-------|---------|
+| Sin regulación formal | Registro obligatorio |
+| Licencia clase B | Licencia A2 profesional |
+| Revisión técnica anual | Cada 6 meses |
+| Sin distintivo | Distintivo obligatorio |
+| Sin control de antecedentes | Control cada 6 meses |
+
+### Para taxis básicos
+
+| Antes | Después |
+|-------|---------|
+| Solo taxímetro | Pueden usar apps |
+| Trabajo independiente | Pueden afiliarse a plataformas |
+| Tarifa oficial fija | Tarifa de app opcional |
+| Solo una modalidad | Flexibilidad de operación |
+
+## Comparativa de requisitos actuales
+
+| Requisito | Taxis básicos | Apps de transporte |
+|-----------|---------------|-------------------|
+| Licencia | A1 (más exigente) | A2 |
+| Revisión técnica | Cada 6 meses | Cada 6 meses |
+| Antigüedad vehículo | 12 años máx | 12 años máx |
+| Seguro pasajeros | Obligatorio | Obligatorio |
+| Registro MTT | Sí | Sí |
+| Antecedentes | Cada 6 meses | Cada 6 meses |
+
+## Comparativa de seguridad
+
+### Taxis regulados (ETAXI)
+✅ Décadas de experiencia regulada
+✅ Conductores profesionales de carrera
+✅ Historial de cumplimiento verificable
+✅ Trazabilidad completa
+✅ Botón de pánico integrado
+✅ Grabación de respaldo
+
+### Apps de transporte
+⚠️ Regulación reciente (2025)
+⚠️ Conductores ocasionales posibles
+⚠️ Período de adaptación en curso
+✅ GPS en tiempo real
+✅ Calificaciones de usuarios
+✅ Soporte en app
+
+## Comparativa de precios
+
+| Escenario | Taxi regulado | Apps |
+|-----------|---------------|------|
+| Horario normal | Tarifa fija | Base + km |
+| Horario peak | **Sin cambio** | +50% a +200% |
+| Lluvia/eventos | **Sin cambio** | Surge pricing |
+| Aeropuerto | Tarifa por zona | Variable |
+| Factura formal | **Siempre** | A veces |
+
+## ¿Cuándo elegir cada opción?
+
+### Elige taxi regulado (ETAXI) si:
+
+1. **Necesitas factura** para tu empresa
+2. Viajas al **aeropuerto** y quieres tarifa fija
+3. Es **hora peak** y no quieres pagar de más
+4. Valoras la **experiencia profesional** del conductor
+5. Requieres **servicio corporativo** recurrente
+6. Priorizas **máxima seguridad** verificada
+
+### Considera apps si:
+
+1. Es horario de baja demanda
+2. Estás en zona con poca cobertura de taxis
+3. Ya tienes la app instalada y créditos
+4. No necesitas factura formal
+
+## La integración: Taxis en apps
+
+Una novedad interesante es que los **taxis básicos pueden afiliarse a apps**:
+
+- Usan el sistema de cobro de la aplicación
+- El pasajero debe aceptar la modalidad
+- Pueden mantener el taxímetro como alternativa
+- Operan en múltiples plataformas simultáneamente
+
+## Restricciones para conductores de apps
+
+La ley establece limitaciones importantes:
+
+- Solo pueden operar en la **región donde están inscritos**
+- No pueden operar en comunas diferentes sin autorización
+- Deben respetar el tipo de servicio inscrito
+- Penalizaciones por operar fuera de zona
+
+## El futuro del transporte en Chile
+
+### Tendencias que veremos:
+
+1. **Mayor profesionalización** de conductores de apps
+2. **Integración** entre taxis y plataformas
+3. **Electromovilidad** en ambos segmentos
+4. **Mejora en seguridad** generalizada
+5. **Competencia por servicio**, no solo precio
+
+## Conclusión
+
+La Ley 21.553 ha creado un campo de juego más equilibrado. Los usuarios ahora pueden elegir basándose en preferencias de servicio más que en diferencias regulatorias.
+
+Los **taxis regulados** mantienen ventajas clave: experiencia, tarifas predecibles, facturación formal y décadas de cumplimiento. Con ETAXI, accedes a lo mejor del taxi tradicional con la comodidad de la tecnología moderna.
+    `,
+    category: 'guias',
+    image: '/images/blog/taxi-vs-apps.jpg',
+    author: 'Equipo ETAXI',
+    publishedAt: '2025-01-14',
+    readTime: 8,
+    featured: false,
+    tags: ['Comparativa', 'Regulación', 'Uber', 'DiDi', 'Taxis', 'Ley 21.553'],
+    sources: [
+      { title: 'Taxis vs Apps: ¿Cuál es más barato y seguro? - Infobae', url: 'https://www.infobae.com/economia/2025/03/07/taxis-vs-apps-de-movilidad-cual-es-el-servicio-mas-barato-y-seguro-para-moverse-por-la-ciudad/' },
+      { title: 'Chile regula apps con Ley Uber - Redimin', url: 'https://www.redimin.cl/chile-regula-apps-de-transporte-con-la-ley-uber-impacto-inminente-en-taxistas-y-empresas-digitales/' },
+      { title: 'Multas Uber en Chile - Autofact', url: 'https://www.autofact.cl/blog/mi-auto/infracciones/multa-uber-chile' },
+    ],
+  },
 ];
 
 // Artículos en Inglés
@@ -1116,6 +1676,566 @@ In over 100 years, the taxi in Chile has evolved enormously. Today, with ETAXI, 
       { title: 'History of Public Transport in Chile - Memory of Chile', url: 'https://www.memoriachilena.gob.cl/602/w3-article-3502.html' },
       { title: 'Taxi Evolution in Latin America - CEPAL', url: 'https://www.cepal.org/es/publicaciones' },
       { title: 'Urban Transport History Santiago - Museo Histórico Nacional', url: 'https://www.museohistoriconacional.gob.cl/' },
+    ],
+  },
+  {
+    slug: 'uber-law-chile-2025',
+    title: 'Uber Law Takes Effect: Requirements, Costs and Fines for Drivers in Chile 2025',
+    excerpt: 'Law 21.553 is now operational. Learn about the $300,000 CLP in procedures, mandatory A2 license, and fines up to $683,060 for non-compliance.',
+    content: `
+## The Uber Law is Now a Reality in Chile
+
+After years of debate, **Law 21.553** (known as the "Uber Law" or "EAT Law") finally came into effect in April 2025. This regulation governs transport applications like **Uber, DiDi, Cabify, and InDrive**, establishing mandatory requirements for drivers and vehicles.
+
+## How Much Does Compliance Cost?
+
+The complete process to operate legally as an app driver costs approximately **$300,000 Chilean pesos**, which includes:
+
+| Procedure | Approximate Cost |
+|-----------|------------------|
+| Class A2 license | $45,000 - $80,000 |
+| Professional driving course | $150,000 - $200,000 |
+| Background certificate | $2,000 |
+| Technical inspection (every 6 months) | $15,000 - $20,000 |
+| Mandatory passenger insurance | Variable |
+
+## Requirements for Drivers
+
+### Professional A2 License
+- **Mandatory** for all app drivers
+- Requires passing a professional driving course
+- Drivers have a 12-month grace period to obtain it
+
+### Background Certificate
+- Must be updated every **6 months**
+- Cannot operate with convictions for:
+  - Sexual crimes
+  - Drug-related offenses
+  - Drunk driving resulting in injuries or death
+
+## Vehicle Requirements
+
+Vehicles must comply with:
+
+- **Maximum age of 12 years** (10 in the Metropolitan Region for new registrations)
+- **Technical inspection every 6 months** (twice as often as private vehicles)
+- **Visible official badge** mandatory
+- Compliance with safety and emissions standards
+
+## Fines for Non-Compliance
+
+Penalties for operating without meeting regulations are severe:
+
+| Infraction | Fine |
+|------------|------|
+| Operating without registration | Up to **$683,060** (50 UTM) |
+| Vehicle without badge | $68,306 - $341,530 |
+| Driver without A2 license | 6-month license suspension |
+| Repeat offense | Minor imprisonment (61 days to 3 years) |
+
+## What About Basic Taxis?
+
+The law allows **basic taxis to join app platforms**:
+
+- They can use the app's payment system
+- They don't need to change to A2 license (they already have A1)
+- They keep the option of traditional taximeter
+- They can register with multiple apps
+
+## Why Does ETAXI Already Comply?
+
+ETAXI drivers work with **regulated taxis** that:
+
+✅ Have professional A1 license (more demanding than A2)
+✅ Have been complying with semi-annual technical inspection for years
+✅ Are registered in the National Transport Registry
+✅ Have valid passenger insurance
+
+By using ETAXI, you're already traveling with drivers who **exceed Law 21.553 standards**.
+
+## Conclusion
+
+The Uber Law coming into effect represents an important advance for transport safety in Chile. App drivers must now meet requirements similar to traditional taxis, leveling the playing field and protecting passengers.
+    `,
+    category: 'regulacion',
+    image: '/images/blog/ley-21553.jpg',
+    author: 'ETAXI Team',
+    publishedAt: '2025-01-18',
+    readTime: 6,
+    featured: true,
+    tags: ['Uber Law', 'Law 21.553', 'Regulation', 'Chile 2025', 'Fines'],
+    sources: [
+      { title: '$300k procedure to operate as a driver - CNN Chile', url: 'https://www.cnnchile.com/pais/tramite-300-mil-pesos-para-operar-como-conductor-aplicacion-de-transporte-ley-uber_20250409/' },
+      { title: 'New requirements for drivers with Uber Law - BioBioChile', url: 'https://www.biobiochile.cl/noticias/servicios/toma-nota/2025/04/10/cuales-son-los-nuevos-requisitos-para-ser-chofer-aplicaciones-de-transportes-con-la-ley-uber.shtml' },
+      { title: 'Uber Law procedure cost - T13', url: 'https://www.t13.cl/noticia/nacional/te-puede-servir/cuesta-cerca-300-mil-tramite-ley-uber-sera-obligatorio-para-conductores-11-4-2025' },
+    ],
+  },
+  {
+    slug: 'electric-taxi-program-government',
+    title: 'My Electric Taxi: The Program Revolutionizing Sustainable Transport in Chile',
+    excerpt: 'The government offers up to $16 million in co-financing for taxi drivers to switch to electric vehicles. Already 100+ electric taxis operating.',
+    content: `
+## Chile Bets on Electric Taxis
+
+The **"Mi Taxi Eléctrico"** (My Electric Taxi) program from the Ministry of Energy is transforming passenger transport in Chile. With ambitious co-financing, the government aims to help traditional taxi drivers migrate to zero-emission vehicles.
+
+## What is Mi Taxi Eléctrico?
+
+It's a government program that offers:
+
+- **Co-financing of up to $16 million CLP** per electric vehicle
+- Technical support for the transition
+- Driver training
+- Access to charging network
+
+## Benefits for Taxi Drivers
+
+### Economic
+| Concept | Benefit |
+|---------|---------|
+| Co-financing | Up to $16,000,000 CLP |
+| Fuel savings | ~70% less than gasoline |
+| Maintenance | 50% cheaper |
+| Restriction exemption | Can circulate always |
+
+### Operational
+- **Range of 300-400 km** per charge
+- Full charge time: 6-8 hours (slow charge)
+- Fast charge available: 30 minutes to 80%
+- Less brake wear (regenerative braking)
+
+## Program Progress
+
+### 100+ Electric Taxis Already Delivered
+
+The program has benefited taxi drivers in multiple regions:
+
+- **Metropolitan Region**: Highest concentration
+- **Biobío**: 21 electric taxis in Los Ángeles, Mulchén, Nacimiento, and Lota
+- **Antofagasta**: Mining pilot project
+- **Atacama**: Recent expansion
+
+### Taxi Driver Testimonials
+
+> "The fuel savings are impressive. I used to spend $400,000 monthly on gasoline, now I spend less than $100,000 on electricity."
+> — Program participant taxi driver
+
+## 2035 Goal: 100% Zero-Emission Public Transport
+
+The Chilean government has committed that by 2035:
+
+- ✅ All new buses will be electric
+- ✅ Taxis and collective taxis migrate to electromobility
+- ✅ Public charging network expanded nationally
+- ✅ Tax incentives for green vehicles
+
+## Requirements to Apply
+
+Interested taxi drivers must:
+
+1. **Have a registered basic taxi** in the National Registry
+2. **Current vehicle age** greater than 10 years (preferred)
+3. **Be up to date** with permits and documentation
+4. **Commit** to operate for minimum 3 years with the electric vehicle
+
+## How to Apply?
+
+1. Visit [www.mitaxielectrico.cl](https://www.mitaxielectrico.cl/)
+2. Complete application form
+3. Attach required documents
+4. Wait for evaluation and selection
+5. Sign co-financing agreement
+
+## Environmental Impact
+
+Each electric taxi:
+- Avoids **3.5 tons of CO2** annually
+- Reduces noise pollution by 90%
+- Emits no particulate matter
+- Contributes to cleaner cities
+
+## Conclusion
+
+The Mi Taxi Eléctrico program represents a unique opportunity for Chilean taxi drivers to modernize their fleet with significant government support. In addition to economic benefits, they contribute to a more sustainable Chile.
+
+ETAXI supports electromobility and works with drivers committed to the future of transport.
+    `,
+    category: 'tecnologia',
+    image: '/images/blog/taxi-vs-apps.jpg',
+    author: 'ETAXI Team',
+    publishedAt: '2025-01-17',
+    readTime: 5,
+    featured: false,
+    tags: ['Electromobility', 'Electric Taxis', 'Sustainability', 'Green Chile'],
+    sources: [
+      { title: 'Mi Taxi Eléctrico Program - Official Site', url: 'https://www.mitaxielectrico.cl/' },
+      { title: '100 electric taxis revolutionize transport - Reporte Diario', url: 'https://reportediario.cl/2025/05/27/100-taxis-electricos-revolucionan-el-transporte-sustentable-en-chile/' },
+      { title: '21 electric taxis in Biobío - Hora 12', url: 'https://hora12.cl/2025/07/06/biobio-enciende-la-electromovilidad-21-taxis-electricos-revolucionan-el-transporte-publico-en-los-angeles-mulchen-nacimiento-y-lota/' },
+    ],
+  },
+  {
+    slug: 'tourist-scams-santiago-airport',
+    title: 'Alert: Million-Peso Scams Against Tourists at Santiago Airport and How to Avoid Them',
+    excerpt: 'Criminal gangs charge up to $2.5 million for $25,000 trips. Learn about new measures and how to protect yourself.',
+    content: `
+## Pirate Taxi Crisis at Santiago Airport
+
+Arturo Merino Benítez International Airport faces a serious problem: **organized pirate taxi gangs** that scam foreign tourists with exorbitant charges.
+
+## Documented Cases
+
+### Case 1: Brazilian Tourists - $2.5 Million CLP
+In July 2025, a group of Brazilian tourists paid **$2.5 million pesos** for a trip from the airport that normally costs $25,000. The pirate driver took them on alternative routes to justify the charge.
+
+### Case 2: Police Chase - $2,000 USD
+In April 2025, a shocking video showed the chase of a pirate taxi driver who had charged **$2,000 dollars** to tourists for a trip to downtown Santiago.
+
+### Gang Modus Operandi
+
+1. **Bilingual recruiters** approach tourists in the terminal
+2. Offer "safe taxi" at a "fixed" price
+3. Don't show taximeter or official rate
+4. Use long routes to confuse
+5. Upon arrival, demand exorbitant amounts
+6. Intimidate if passenger refuses to pay
+
+## New Authority Measures
+
+### Mandatory Digital Taximeter
+Starting December 2025, all taxis operating at the airport must use a **certified digital taximeter** that:
+- Shows fare in real-time
+- Connected to oversight system
+- Issues automatic electronic receipt
+- Records GPS route
+
+### More Severe Fines
+
+| Infraction | Previous Fine | New Fine |
+|------------|---------------|----------|
+| Pirate taxi | $200,000 | **$6,900,000** |
+| Excessive charge | $100,000 | **$3,450,000** |
+| No badge | $50,000 | **$690,000** |
+| Illegal solicitation | $100,000 | **$1,380,000** |
+
+## How to Protect Yourself
+
+### ✅ What TO DO
+
+1. **Use only official taxis** in designated areas
+2. **Download ETAXI** before landing
+3. **Look for the ETAXI totem** at the airport
+4. **Confirm the fare** before getting in
+5. **Take a photo** of the license plate and credential
+6. **Share your trip** with a contact
+
+### ❌ What NOT to Do
+
+1. **Don't accept offers** from people in the terminal
+2. **Don't get in** vehicles without official identification
+3. **Don't pay large sums** in cash
+4. **Don't be intimidated** if the charge seems excessive
+5. **Don't share a taxi** with strangers
+
+## Warning Signs
+
+🚩 Driver has no visible credential
+🚩 Vehicle has no official badge
+🚩 No taximeter or it's "broken"
+🚩 They approach you inside the terminal
+🚩 They insist on cash-only payment
+🚩 The "fixed" fare seems very high
+
+## What to Do If You're a Victim
+
+1. **Document everything**: photos, license plate, time
+2. **Call Carabineros**: 133
+3. **Report to PDI**: (2) 2708 1000
+4. **Report at the airport**: Security office
+5. **Keep receipts**: For formal complaint
+
+## Why ETAXI is Safe at the Airport
+
+| Feature | ETAXI | Pirate Taxi |
+|---------|-------|-------------|
+| Identified driver | ✅ | ❌ |
+| Known fare beforehand | ✅ | ❌ |
+| Trackable GPS | ✅ | ❌ |
+| Panic button | ✅ | ❌ |
+| Formal invoice | ✅ | ❌ |
+| 24/7 Support | ✅ | ❌ |
+
+## Conclusion
+
+Tourist scams at Santiago Airport are a real and growing problem. The best protection is to use regulated taxi services like ETAXI, where the fare is transparent, the driver is identified, and you have support in case of any problem.
+
+**Travel safe. Travel with ETAXI.**
+    `,
+    category: 'seguridad',
+    image: '/images/blog/aeropuerto-santiago.jpg',
+    author: 'ETAXI Team',
+    publishedAt: '2025-01-16',
+    readTime: 7,
+    featured: true,
+    tags: ['Safety', 'Airport', 'Scams', 'Tourists', 'Pirate Taxis'],
+    sources: [
+      { title: 'Chase of taxi driver who charged $2,000 dollars - T13', url: 'https://www.t13.cl/noticia/nacional/impactante-video-persecucion-taxista-aeropuerto-cobro-2-mil-dolares-turistas-29-4-2025' },
+      { title: 'Illegal taxi driver charged $2.5 million to Brazilians - T13', url: 'https://www.t13.cl/noticia/nacional/taxista-ilegal-cobro-2-5-millones-turistas-brasilenos-desde-aeropuerto-santiago-31-7-2025' },
+      { title: 'New digital taximeter and million-peso fines - BioBioChile', url: 'https://www.biobiochile.cl/biobiotv/programas/expreso-bio-bio/2025/12/01/golpe-a-los-taxis-piratas-en-el-aeropuerto-de-santiago-nuevo-taximetro-digital-y-millonarias-multas.shtml' },
+    ],
+  },
+  {
+    slug: 'taxi-fare-increase-2025',
+    title: 'Collective Taxi Fare Rises to $1,000: Causes and 2025 Projections',
+    excerpt: 'Rising fuel costs and operational expenses led collective taxis to raise fares in multiple Chilean cities.',
+    content: `
+## New $1,000 Fare for Collective Taxis
+
+Since March 2025, multiple cities in Chile have seen an **increase in collective taxi fares**, reaching in many cases the flat fare of **$1,000 pesos**.
+
+## Why Did Fares Increase?
+
+### 1. Sustained Fuel Price Increases
+
+Fuel prices have experienced constant increases:
+
+| Period | Gasoline 93 Price | Variation |
+|--------|-------------------|-----------|
+| January 2024 | $1,180/liter | - |
+| January 2025 | $1,350/liter | +14.4% |
+| Current | $1,420/liter | +20.3% |
+
+### 2. Operational Costs
+
+Collective taxi drivers face multiple increases:
+
+- **Lubricants**: +25% in the last year
+- **Tires**: +18% average
+- **Spare parts**: +22% due to exchange rate
+- **Insurance**: +15% annually
+- **Maintenance**: +20% in labor
+
+### 3. General Inflation
+
+Accumulated inflation has impacted all operational costs, from terminal rentals to municipal permits.
+
+## Affected Cities
+
+### Los Ríos Region
+The Collective Taxi Union of La Unión announced an increase starting **March 17, 2025**:
+- Previous fare: $800
+- **New fare: $1,000**
+- First increase since August 2022
+
+### Maule Region
+San Javier implemented $1,000 fare:
+- Applies during daytime hours
+- Nighttime fare: $1,200
+- Extended routes: special fare
+
+### Other Regions
+- **Concepción**: $900 - $1,000 depending on route
+- **Valparaíso**: $800 - $1,100
+- **Antofagasta**: $1,000 - $1,200
+
+## Comparison with Other Transportation
+
+| Transport | Average Fare | Coverage |
+|-----------|--------------|----------|
+| Collective taxi | $1,000 | Fixed routes |
+| Urban bus | $600 - $800 | Extensive network |
+| Metro (RM) | $640 - $830 | Specific lines |
+| Basic taxi | $3,000+ | Door to door |
+
+## Advantages of Collective Taxis
+
+Despite the increase, collective taxis maintain benefits:
+
+✅ **Speed**: No multiple stops
+✅ **Comfort**: Guaranteed seat
+✅ **Frequency**: Constant departures
+✅ **Safety**: Identified driver
+✅ **Flexibility**: Can deviate slightly
+
+## 2025 Projections
+
+Collective taxi driver unions project:
+
+- Possible new increase in second semester if oil prices rise
+- Pressure for government subsidies
+- Demand for better working conditions
+- Fleet modernization with incentives
+
+## What Do Users Say?
+
+User reaction has been mixed:
+
+> "I understand everything goes up, but it affects workers' pockets"
+
+> "I'd rather pay $1,000 in a colectivo than $600 on a crowded, slow bus"
+
+> "Hopefully they improve service if they're going to charge more"
+
+## Difference Between Collective Taxi and Basic Taxi
+
+| Feature | Collective Taxi | Basic Taxi (ETAXI) |
+|---------|-----------------|-------------------|
+| Route | Fixed | Free |
+| Fare | Per person | Per trip |
+| Passengers | Shared (4) | Individual/group |
+| Flexibility | Low | High |
+| Availability | Fixed hours | 24/7 by app |
+
+## Conclusion
+
+The fare increase in collective taxis reflects the economic reality facing transporters. While it impacts users, operational costs make the adjustment inevitable.
+
+For trips where you need flexibility, privacy, and immediate availability, ETAXI offers regulated basic taxis with transparent fares and 24/7 service.
+    `,
+    category: 'noticias',
+    image: '/images/blog/historia-taxis.jpg',
+    author: 'ETAXI Team',
+    publishedAt: '2025-01-15',
+    readTime: 5,
+    featured: false,
+    tags: ['Fares', 'Collective Taxis', 'Transport', 'Economy', 'Chile 2025'],
+    sources: [
+      { title: 'Collective taxi union announces increase - Noticias Los Ríos', url: 'https://www.noticiaslosrios.cl/2025/03/11/sindicato-de-taxis-colectivos-de-la-union-anuncia-alza-de-tarifas-a-partir-del-17-de-marzo/' },
+      { title: 'Fare rises to flat rate of $1,000 - El Trabajo', url: 'https://eltrabajo.cl/web/sube-el-pasaje-de-taxis-colectivos-en-tarifa-unica-de-1-000/' },
+      { title: 'Taxi fares in Chile - Radio Taxis Chile', url: 'https://radiotaxischile.cl/tarifas/' },
+    ],
+  },
+  {
+    slug: 'taxis-vs-apps-new-balance',
+    title: 'Taxis vs Transport Apps: The New Balance After Law 21.553',
+    excerpt: 'We analyze how regulation has leveled the field between traditional taxis and apps like Uber and DiDi.',
+    content: `
+## A New Scenario for Transport in Chile
+
+The implementation of **Law 21.553** has created a new balance between traditional taxis and transport applications. For the first time, both must meet similar requirements.
+
+## What Changed with Law 21.553
+
+### For Apps (Uber, DiDi, Cabify, InDrive)
+
+| Before | After |
+|--------|-------|
+| No formal regulation | Mandatory registration |
+| Class B license | Professional A2 license |
+| Annual technical inspection | Every 6 months |
+| No badge | Mandatory badge |
+| No background checks | Checks every 6 months |
+
+### For Basic Taxis
+
+| Before | After |
+|--------|-------|
+| Taximeter only | Can use apps |
+| Independent work | Can join platforms |
+| Official fixed fare | Optional app fare |
+| Single mode only | Operational flexibility |
+
+## Current Requirements Comparison
+
+| Requirement | Basic Taxis | Transport Apps |
+|-------------|-------------|----------------|
+| License | A1 (more demanding) | A2 |
+| Technical inspection | Every 6 months | Every 6 months |
+| Vehicle age | Max 12 years | Max 12 years |
+| Passenger insurance | Mandatory | Mandatory |
+| MTT Registration | Yes | Yes |
+| Background checks | Every 6 months | Every 6 months |
+
+## Safety Comparison
+
+### Regulated Taxis (ETAXI)
+✅ Decades of regulated experience
+✅ Career professional drivers
+✅ Verifiable compliance history
+✅ Complete traceability
+✅ Integrated panic button
+✅ Backup recording
+
+### Transport Apps
+⚠️ Recent regulation (2025)
+⚠️ Possible occasional drivers
+⚠️ Adaptation period in progress
+✅ Real-time GPS
+✅ User ratings
+✅ In-app support
+
+## Price Comparison
+
+| Scenario | Regulated Taxi | Apps |
+|----------|----------------|------|
+| Normal hours | Fixed fare | Base + km |
+| Peak hours | **No change** | +50% to +200% |
+| Rain/events | **No change** | Surge pricing |
+| Airport | Zone fare | Variable |
+| Formal invoice | **Always** | Sometimes |
+
+## When to Choose Each Option?
+
+### Choose Regulated Taxi (ETAXI) if:
+
+1. You **need an invoice** for your company
+2. You're traveling to the **airport** and want a fixed fare
+3. It's **peak hour** and you don't want to pay extra
+4. You value the driver's **professional experience**
+5. You require recurring **corporate service**
+6. You prioritize **maximum verified security**
+
+### Consider Apps if:
+
+1. It's low-demand hours
+2. You're in an area with low taxi coverage
+3. You already have the app installed and credits
+4. You don't need a formal invoice
+
+## The Integration: Taxis in Apps
+
+An interesting development is that **basic taxis can join apps**:
+
+- They use the application's payment system
+- The passenger must accept the mode
+- They can keep the taximeter as an alternative
+- They operate on multiple platforms simultaneously
+
+## Restrictions for App Drivers
+
+The law establishes important limitations:
+
+- Can only operate in the **region where they're registered**
+- Cannot operate in different communes without authorization
+- Must respect the type of service registered
+- Penalties for operating outside the zone
+
+## The Future of Transport in Chile
+
+### Trends We'll See:
+
+1. **Greater professionalization** of app drivers
+2. **Integration** between taxis and platforms
+3. **Electromobility** in both segments
+4. **Improved safety** overall
+5. **Competition for service**, not just price
+
+## Conclusion
+
+Law 21.553 has created a more level playing field. Users can now choose based on service preferences rather than regulatory differences.
+
+**Regulated taxis** maintain key advantages: experience, predictable fares, formal invoicing, and decades of compliance. With ETAXI, you access the best of traditional taxi service with the convenience of modern technology.
+    `,
+    category: 'guias',
+    image: '/images/blog/taxi-vs-apps.jpg',
+    author: 'ETAXI Team',
+    publishedAt: '2025-01-14',
+    readTime: 8,
+    featured: false,
+    tags: ['Comparison', 'Regulation', 'Uber', 'DiDi', 'Taxis', 'Law 21.553'],
+    sources: [
+      { title: 'Taxis vs Apps: Which is cheaper and safer? - Infobae', url: 'https://www.infobae.com/economia/2025/03/07/taxis-vs-apps-de-movilidad-cual-es-el-servicio-mas-barato-y-seguro-para-moverse-por-la-ciudad/' },
+      { title: 'Chile regulates apps with Uber Law - Redimin', url: 'https://www.redimin.cl/chile-regula-apps-de-transporte-con-la-ley-uber-impacto-inminente-en-taxistas-y-empresas-digitales/' },
+      { title: 'Uber fines in Chile - Autofact', url: 'https://www.autofact.cl/blog/mi-auto/infracciones/multa-uber-chile' },
     ],
   },
 ];
