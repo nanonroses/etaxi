@@ -72,6 +72,7 @@ ${formData.message}`;
               name="name"
               type="text"
               required
+              autoComplete="name"
               value={formData.name}
               onChange={handleChange}
               placeholder={t('name')}
@@ -90,6 +91,8 @@ ${formData.message}`;
               name="email"
               type="email"
               required
+              autoComplete="email"
+              spellCheck={false}
               value={formData.email}
               onChange={handleChange}
               placeholder={t('email')}
@@ -107,6 +110,8 @@ ${formData.message}`;
               id="phone"
               name="phone"
               type="tel"
+              autoComplete="tel"
+              inputMode="tel"
               value={formData.phone}
               onChange={handleChange}
               placeholder={t('phone')}

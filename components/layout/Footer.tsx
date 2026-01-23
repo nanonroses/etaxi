@@ -101,7 +101,7 @@ export function Footer() {
           {/* Badge */}
           <div className="block mb-6">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#fff500]/10 border border-[#fff500]/30">
-              <Shield className="w-4 h-4 text-[#fff500]" />
+              <Shield className="w-4 h-4 text-[#fff500]" aria-hidden="true" />
               <span className="text-sm font-semibold text-[#fff500]">
                 {locale === 'es' ? '100% Regulado - Ley 21.553' : '100% Regulated - Law 21.553'}
               </span>
@@ -127,7 +127,7 @@ export function Footer() {
                   className="flex items-center gap-2"
                 >
                   <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#dd1828] to-[#182b33] flex items-center justify-center">
-                    <Icon className="w-4 h-4 text-white" />
+                    <Icon className="w-4 h-4 text-white" aria-hidden="true" />
                   </div>
                   <div className="text-left">
                     <div className="text-sm font-bold text-white">{stat.value}</div>
@@ -150,7 +150,7 @@ export function Footer() {
           >
             <div className="flex items-center gap-2 mb-4">
               <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#fff500] to-[#dd1828] flex items-center justify-center shadow-lg">
-                <Smartphone className="w-5 h-5 text-[#182b33]" />
+                <Smartphone className="w-5 h-5 text-[#182b33]" aria-hidden="true" />
               </div>
               <h4 className="text-base font-bold text-white">
                 {locale === 'es' ? 'Servicios' : 'Services'}
@@ -180,7 +180,7 @@ export function Footer() {
           >
             <div className="flex items-center gap-2 mb-4">
               <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#dd1828] to-[#182b33] flex items-center justify-center shadow-lg">
-                <Building2 className="w-5 h-5 text-white" />
+                <Building2 className="w-5 h-5 text-white" aria-hidden="true" />
               </div>
               <h4 className="text-base font-bold text-white">
                 {locale === 'es' ? 'Empresa' : 'Company'}
@@ -210,7 +210,7 @@ export function Footer() {
           >
             <div className="flex items-center gap-2 mb-4">
               <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#182b33] to-[#030c13] flex items-center justify-center shadow-lg border border-white/20">
-                <Headphones className="w-5 h-5 text-white" />
+                <Headphones className="w-5 h-5 text-white" aria-hidden="true" />
               </div>
               <h4 className="text-base font-bold text-white">
                 {locale === 'es' ? 'Contacto' : 'Contact'}
@@ -233,7 +233,7 @@ export function Footer() {
                   href="mailto:contacto@etaxichile.cl"
                   className="group flex items-center gap-2 text-sm text-white/70 hover:text-[#fff500] transition-all duration-300"
                 >
-                  <Mail className="w-3.5 h-3.5 flex-shrink-0" />
+                  <Mail className="w-3.5 h-3.5 flex-shrink-0" aria-hidden="true" />
                   <span className="group-hover:translate-x-1 transition-transform duration-300">contacto@etaxichile.cl</span>
                 </a>
               </li>
@@ -244,7 +244,7 @@ export function Footer() {
                   rel="noopener noreferrer"
                   className="group flex items-center gap-2 text-sm text-white/70 hover:text-green-400 transition-all duration-300"
                 >
-                  <Phone className="w-3.5 h-3.5 flex-shrink-0" />
+                  <Phone className="w-3.5 h-3.5 flex-shrink-0" aria-hidden="true" />
                   <span className="group-hover:translate-x-1 transition-transform duration-300">+56 9 6211 6017</span>
                 </a>
               </li>
@@ -260,7 +260,7 @@ export function Footer() {
           >
             <div className="flex items-center gap-2 mb-4">
               <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#596065] to-[#182b33] flex items-center justify-center shadow-lg">
-                <Scale className="w-5 h-5 text-white" />
+                <Scale className="w-5 h-5 text-white" aria-hidden="true" />
               </div>
               <h4 className="text-base font-bold text-white">Legal</h4>
             </div>
@@ -329,18 +329,20 @@ export function Footer() {
               href={PASSENGER_APP_URLS.ios}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Descargar ETAXI en App Store"
               className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#182b33] text-white rounded-lg font-semibold hover:bg-[#030c13] transition-all duration-300 hover:scale-105 shadow-lg"
             >
-              <Apple className="w-5 h-5" />
+              <Apple className="w-5 h-5" aria-hidden="true" />
               App Store
             </a>
             <a
               href={PASSENGER_APP_URLS.android}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Descargar ETAXI en Google Play"
               className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#182b33] text-white rounded-lg font-semibold hover:bg-[#030c13] transition-all duration-300 hover:scale-105 shadow-lg"
             >
-              <PlayCircle className="w-5 h-5" />
+              <PlayCircle className="w-5 h-5" aria-hidden="true" />
               Google Play
             </a>
           </div>
@@ -357,8 +359,8 @@ export function Footer() {
             className="flex flex-col items-center gap-4"
           >
             <div className="flex items-center gap-2 text-sm text-white/60">
-              <Shield className="w-4 h-4 text-[#fff500]" />
-              <span>© {currentYear} ETAXI - {locale === 'es' ? 'Todos los derechos reservados' : 'All rights reserved'}</span>
+              <Shield className="w-4 h-4 text-[#fff500]" aria-hidden="true" />
+              <span suppressHydrationWarning>© {currentYear} ETAXI - {locale === 'es' ? 'Todos los derechos reservados' : 'All rights reserved'}</span>
             </div>
             <p className="text-xs text-white/40 text-center max-w-2xl">
               {locale === 'es'

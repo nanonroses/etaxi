@@ -18,14 +18,25 @@ const CATEGORY_COLORS: Record<string, string> = {
 
 const DEFAULT_CATEGORY_COLOR = 'bg-gray-100 text-gray-700 border-gray-200';
 
-// Pure function hoisted outside component
-function formatArticleDate(dateString: string, locale: string): string {
-  const date = new Date(dateString);
-  return date.toLocaleDateString(locale === 'es' ? 'es-CL' : 'en-US', {
+// Create date formatters using Intl.DateTimeFormat for better i18n support
+const dateFormatters: Record<string, Intl.DateTimeFormat> = {
+  es: new Intl.DateTimeFormat('es-CL', {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
-  });
+  }),
+  en: new Intl.DateTimeFormat('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  }),
+};
+
+// Pure function hoisted outside component
+function formatArticleDate(dateString: string, locale: string): string {
+  const date = new Date(dateString);
+  const formatter = dateFormatters[locale] || dateFormatters.es;
+  return formatter.format(date);
 }
 
 interface BlogCardProps {
@@ -90,18 +101,18 @@ export function BlogCard({ article, featured = false, index = 0 }: BlogCardProps
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-4 text-sm text-gray-500">
                     <div className="flex items-center gap-1">
-                      <Calendar className="w-4 h-4" />
+                      <Calendar className="w-4 h-4" aria-hidden="true" />
                       <span>{formattedDate}</span>
                     </div>
                     <div className="flex items-center gap-1">
-                      <Clock className="w-4 h-4" />
+                      <Clock className="w-4 h-4" aria-hidden="true" />
                       <span>{article.readTime} min</span>
                     </div>
                   </div>
 
                   <div className="flex items-center gap-2 text-[#dd1828] font-semibold group-hover:gap-3 transition-all">
                     <span>{t('readMore')}</span>
-                    <ArrowRight className="w-4 h-4" />
+                    <ArrowRight className="w-4 h-4" aria-hidden="true" />
                   </div>
                 </div>
               </div>
@@ -151,16 +162,16 @@ export function BlogCard({ article, featured = false, index = 0 }: BlogCardProps
             <div className="flex items-center justify-between pt-4 border-t border-gray-100">
               <div className="flex items-center gap-3 text-xs text-gray-500">
                 <div className="flex items-center gap-1">
-                  <Calendar className="w-3.5 h-3.5" />
+                  <Calendar className="w-3.5 h-3.5" aria-hidden="true" />
                   <span>{formattedDate}</span>
                 </div>
                 <div className="flex items-center gap-1">
-                  <Clock className="w-3.5 h-3.5" />
+                  <Clock className="w-3.5 h-3.5" aria-hidden="true" />
                   <span>{article.readTime} min</span>
                 </div>
               </div>
 
-              <ArrowRight className="w-4 h-4 text-[#dd1828] opacity-0 group-hover:opacity-100 transform translate-x-0 group-hover:translate-x-1 transition-all" />
+              <ArrowRight className="w-4 h-4 text-[#dd1828] opacity-0 group-hover:opacity-100 transform translate-x-0 group-hover:translate-x-1 transition-all" aria-hidden="true" />
             </div>
           </div>
         </div>

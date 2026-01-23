@@ -106,3 +106,52 @@ body {
 .animate-pulse-slow {
   animation: pulse-slow 3s ease-in-out infinite;
 }
+
+/* Respect user preference for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .animate-gradient,
+  .animate-gradient-slow,
+  .animate-pulse-slow,
+  .animate-pulse,
+  .animate-ping {
+    animation: none !important;
+  }
+}
+
+/* Touch optimization for mobile */
+button,
+a,
+[role="button"],
+input[type="submit"],
+input[type="button"] {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Better touch targets on touch devices */
+@media (pointer: coarse) {
+  button,
+  a,
+  [role="button"] {
+    min-height: 44px;
+  }
+}
+
+/* Better typography for headings */
+h1, h2, h3 {
+  text-wrap: balance;
+}
+
+/* Tabular numbers for statistics */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}

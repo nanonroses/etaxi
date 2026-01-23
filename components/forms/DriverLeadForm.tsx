@@ -76,6 +76,7 @@ ${formData.notes || 'Sin notas'}`;
               name="fullName"
               type="text"
               required
+              autoComplete="name"
               value={formData.fullName}
               onChange={handleChange}
               placeholder={t('fullNamePlaceholder')}
@@ -96,6 +97,8 @@ ${formData.notes || 'Sin notas'}`;
               name="phone"
               type="tel"
               required
+              autoComplete="tel"
+              inputMode="tel"
               value={formData.phone}
               onChange={handleChange}
               placeholder={t('phonePlaceholder')}
@@ -115,6 +118,8 @@ ${formData.notes || 'Sin notas'}`;
               id="email"
               name="email"
               type="email"
+              autoComplete="email"
+              spellCheck={false}
               value={formData.email}
               onChange={handleChange}
               placeholder={t('emailPlaceholder')}
@@ -134,6 +139,7 @@ ${formData.notes || 'Sin notas'}`;
               id="city"
               name="city"
               type="text"
+              autoComplete="address-level2"
               value={formData.city}
               onChange={handleChange}
               placeholder={t('cityPlaceholder')}

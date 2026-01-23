@@ -23,12 +23,13 @@ export function LanguageSelector() {
         <button
           key={loc}
           onClick={() => handleLocaleChange(loc)}
-          className={`px-3 py-1 text-sm font-medium rounded transition-colors ${
+          className={`px-3 py-1 text-sm font-medium rounded transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[hsl(var(--ring))] focus-visible:ring-offset-2 ${
             locale === loc
               ? 'bg-[hsl(var(--primary))] text-[hsl(var(--primary-foreground))]'
               : 'text-[hsl(var(--foreground))] hover:bg-[hsl(var(--muted))]'
           }`}
           aria-label={`Switch to ${loc.toUpperCase()}`}
+          aria-current={locale === loc ? 'true' : undefined}
         >
           {loc.toUpperCase()}
         </button>

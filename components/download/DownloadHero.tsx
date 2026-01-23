@@ -60,7 +60,7 @@ export function DownloadHero() {
               >
                 {/* Button shine effect */}
                 <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/30 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700" />
-                <Smartphone className="w-5 h-5 mr-2 relative z-10" />
+                <Smartphone className="w-5 h-5 mr-2 relative z-10" aria-hidden="true" />
                 <span className="relative z-10">Descargar Ahora</span>
               </a>
               <a
@@ -97,8 +97,10 @@ export function DownloadHero() {
                   <div className="aspect-[9/16] rounded-[2rem] bg-gradient-to-br from-[#F8D347] to-[#F8D347]/70 flex items-center justify-center relative overflow-hidden">
                     <Image
                       src="/images/placeholders/Screen Etaxi Chile.webp"
-                      alt="ETAXI App - Pantalla"
+                      alt="ETAXI App - Pantalla principal mostrando opciones de viaje"
                       fill
+                      sizes="300px"
+                      loading="lazy"
                       className="object-cover rounded-[2rem] transition-transform duration-500 group-hover:scale-105"
                     />
 

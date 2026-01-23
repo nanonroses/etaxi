@@ -59,7 +59,7 @@ export function HeroSection({ title, subtitle, primaryCta, secondaryCta }: HeroS
               transition={{ duration: 0.5, delay: 0.2 }}
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20"
             >
-              <Shield className="w-4 h-4 text-[#fff500]" />
+              <Shield className="w-4 h-4 text-[#fff500]" aria-hidden="true" />
               <span className="text-sm font-medium">100% Taxis Regulados - Ley 21.553</span>
             </m.div>
 
@@ -107,11 +107,11 @@ export function HeroSection({ title, subtitle, primaryCta, secondaryCta }: HeroS
               className="flex items-center gap-6 pt-6 text-sm text-white/80"
             >
               <div className="flex items-center gap-2">
-                <CheckCircle className="w-5 h-5 text-green-400" />
+                <CheckCircle className="w-5 h-5 text-green-400" aria-hidden="true" />
                 <span>Seguridad Certificada</span>
               </div>
               <div className="flex items-center gap-2">
-                <CheckCircle className="w-5 h-5 text-green-400" />
+                <CheckCircle className="w-5 h-5 text-green-400" aria-hidden="true" />
                 <span>Tarifas Transparentes</span>
               </div>
             </m.div>
@@ -131,8 +131,9 @@ export function HeroSection({ title, subtitle, primaryCta, secondaryCta }: HeroS
                 <div className="w-full h-full bg-gradient-to-br from-white/10 to-white/5 rounded-2xl flex items-center justify-center overflow-hidden relative">
                   <Image
                     src="/images/placeholders/eTaxi Multiplataforma.webp"
-                    alt="ETAXI - Plataforma Multiplataforma"
+                    alt="ETAXI - Aplicación disponible en múltiples dispositivos"
                     fill
+                    sizes="(max-width: 1024px) 100vw, 50vw"
                     className="object-contain"
                     priority
                   />
@@ -145,7 +146,7 @@ export function HeroSection({ title, subtitle, primaryCta, secondaryCta }: HeroS
                 transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
                 className="absolute -top-8 -right-8 bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/20"
               >
-                <Shield className="w-12 h-12 text-[#fff500]" />
+                <Shield className="w-12 h-12 text-[#fff500]" aria-hidden="true" />
               </m.div>
             </div>
           </m.div>
@@ -169,7 +170,7 @@ export function HeroSection({ title, subtitle, primaryCta, secondaryCta }: HeroS
                 className="text-center space-y-2"
               >
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-white/10 backdrop-blur-sm mb-2">
-                  <Icon className="w-6 h-6 text-white" />
+                  <Icon className="w-6 h-6 text-white" aria-hidden="true" />
                 </div>
                 <div className="text-3xl md:text-4xl font-bold text-white">
                   {stat.value}

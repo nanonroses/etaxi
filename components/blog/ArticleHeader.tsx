@@ -17,13 +17,16 @@ export function ArticleHeader({ article }: ArticleHeaderProps) {
 
   const categoryLabel = categoryLabels[locale as 'es' | 'en']?.[article.category] || article.category;
 
+  // Use Intl.DateTimeFormat for better i18n support
+  const dateFormatter = new Intl.DateTimeFormat(locale === 'es' ? 'es-CL' : 'en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
+
   const formatDate = (dateString: string) => {
     const date = new Date(dateString);
-    return date.toLocaleDateString(locale === 'es' ? 'es-CL' : 'en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric',
-    });
+    return dateFormatter.format(date);
   };
 
   const getCategoryColor = (category: string) => {
@@ -73,7 +76,7 @@ export function ArticleHeader({ article }: ArticleHeaderProps) {
             href={`/${locale}/blog`}
             className="inline-flex items-center gap-2 text-gray-400 hover:text-white transition-colors"
           >
-            <ArrowLeft className="w-4 h-4" />
+            <ArrowLeft className="w-4 h-4" aria-hidden="true" />
             <span>{t('backToBlog')}</span>
           </Link>
         </m.div>
@@ -105,7 +108,7 @@ export function ArticleHeader({ article }: ArticleHeaderProps) {
             {/* Author */}
             <div className="flex items-center gap-2">
               <div className="w-10 h-10 rounded-full bg-[#dd1828] flex items-center justify-center">
-                <User className="w-5 h-5 text-white" />
+                <User className="w-5 h-5 text-white" aria-hidden="true" />
               </div>
               <div>
                 <p className="text-white font-medium">{article.author}</p>
@@ -115,13 +118,13 @@ export function ArticleHeader({ article }: ArticleHeaderProps) {
 
             {/* Date */}
             <div className="flex items-center gap-2 text-gray-300">
-              <Calendar className="w-5 h-5" />
+              <Calendar className="w-5 h-5" aria-hidden="true" />
               <span>{formatDate(article.publishedAt)}</span>
             </div>
 
             {/* Read time */}
             <div className="flex items-center gap-2 text-gray-300">
-              <Clock className="w-5 h-5" />
+              <Clock className="w-5 h-5" aria-hidden="true" />
               <span>{article.readTime} {t('minRead')}</span>
             </div>
 
@@ -130,9 +133,10 @@ export function ArticleHeader({ article }: ArticleHeaderProps) {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={handleShare}
-              className="ml-auto flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors"
+              aria-label={t('share')}
+              className="ml-auto flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#182b33]"
             >
-              <Share2 className="w-4 h-4" />
+              <Share2 className="w-4 h-4" aria-hidden="true" />
               <span className="hidden sm:inline">{t('share')}</span>
             </m.button>
           </div>
