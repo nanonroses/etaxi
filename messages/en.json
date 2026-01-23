@@ -9,6 +9,7 @@
     "airport": "Airport",
     "drivers": "Drivers",
     "driverInfo": "Driver Info",
+    "installationGuide": "Installation Guide",
     "howItWorksDrivers": "How It Works",
     "driverSafety": "Safety",
     "security": "Security",
@@ -1115,5 +1116,229 @@
       "learnMore": "How It Works"
     },
     "sources": "Sources"
+  },
+  "driverOnboarding": {
+    "hero": {
+      "badge": "Installation Guide",
+      "title": "Set Up Your ETAXI App in Minutes",
+      "subtitle": "Follow this step-by-step visual guide to properly install and configure the ETAXI driver app on your phone."
+    },
+    "features": {
+      "time": {
+        "title": "10 minutes",
+        "description": "Complete setup"
+      },
+      "android": {
+        "title": "Android",
+        "description": "Available on Play Store"
+      },
+      "steps": {
+        "title": "37 steps",
+        "description": "Complete guide"
+      },
+      "visual": {
+        "title": "Visual",
+        "description": "With real screenshots"
+      }
+    },
+    "phases": {
+      "descarga": {
+        "title": "Download",
+        "description": "Find and install ETAXI from Google Play Store"
+      },
+      "acceso": {
+        "title": "Login",
+        "description": "Sign in with your driver credentials"
+      },
+      "configuracion": {
+        "title": "Setup",
+        "description": "Configure your work mode and vehicle"
+      },
+      "permisos": {
+        "title": "Permissions",
+        "description": "Grant the necessary permissions for the app to work"
+      },
+      "funciones": {
+        "title": "Features",
+        "description": "Learn all the app features"
+      }
+    },
+    "steps": {
+      "01": {
+        "title": "Search ETAXI in Play Store",
+        "description": "Open Google Play Store and search for 'ETAXI'. Select the official ETAXI driver app."
+      },
+      "02": {
+        "title": "Welcome Screen",
+        "description": "When you open the app, you'll see the welcome screen. Tap 'Get Started' to begin the setup process."
+      },
+      "03": {
+        "title": "Login Form",
+        "description": "The login form will appear. Here you'll enter your driver credentials."
+      },
+      "04": {
+        "title": "Enter Credentials",
+        "description": "Enter your username and password provided by ETAXI. Then tap 'Sign In'."
+      },
+      "05": {
+        "title": "Select Work Mode",
+        "description": "Choose your preferred work mode: individual or associated with a union/company."
+      },
+      "06": {
+        "title": "Select Vehicle",
+        "description": "Select the vehicle you'll be working with. If you have multiple, choose the one for today."
+      },
+      "07": {
+        "title": "Enable Biometrics",
+        "description": "You'll be asked if you want to enable biometric login (fingerprint or face) for faster and more secure access."
+      },
+      "08": {
+        "title": "Permissions Notice",
+        "description": "The app will inform you about the required permissions for proper operation. It's important to grant them all."
+      },
+      "09": {
+        "title": "Camera Permission",
+        "description": "Allow camera access. It's used for taking vehicle photos and trip security recording."
+      },
+      "10": {
+        "title": "Microphone Permission",
+        "description": "Allow audio recording. It's used for security recording during trips."
+      },
+      "11": {
+        "title": "Notifications Permission",
+        "description": "Allow notifications to receive alerts for new trips and important messages."
+      },
+      "12": {
+        "title": "Phone Calls Permission",
+        "description": "Allow phone calls to contact passengers directly when needed."
+      },
+      "13": {
+        "title": "Files Permission",
+        "description": "Allow file access to store recordings and necessary documents."
+      },
+      "14": {
+        "title": "Location Notice",
+        "description": "The app will explain why it needs access to your location. It's essential for receiving trips."
+      },
+      "15": {
+        "title": "Location Options",
+        "description": "Select 'Allow all the time' for the app to work properly even in the background."
+      },
+      "16": {
+        "title": "Background Location",
+        "description": "Confirm that the app can access your location in the background to keep receiving trips."
+      },
+      "17": {
+        "title": "App Info",
+        "description": "Access the app settings from System Settings to verify permissions."
+      },
+      "18": {
+        "title": "Always Allow Location",
+        "description": "In permission settings, make sure location is set to 'Allow always'."
+      },
+      "19": {
+        "title": "Verify Permissions",
+        "description": "Check that all permissions are properly configured in the app's permissions section."
+      },
+      "20": {
+        "title": "Other Permissions",
+        "description": "Verify and configure additional permissions needed for optimal operation."
+      },
+      "21": {
+        "title": "Shortcuts",
+        "description": "Allow the app to create shortcuts for quick access to important features."
+      },
+      "22": {
+        "title": "Main Screen - Permissions",
+        "description": "If you see pending permission notices on the main screen, configure them from the indicated button."
+      },
+      "23": {
+        "title": "Battery Optimization",
+        "description": "Set the app as 'Unrestricted' in battery optimization to prevent it from closing in the background."
+      },
+      "24": {
+        "title": "Mode Access",
+        "description": "Configure mode access for the app to function completely."
+      },
+      "25": {
+        "title": "Confirm Mode Access",
+        "description": "Confirm the dialog to allow the app to access the necessary mode configurations."
+      },
+      "26": {
+        "title": "Busy Status",
+        "description": "When you're on a trip, the screen will show 'Busy' status with current service details."
+      },
+      "27": {
+        "title": "Available Status",
+        "description": "In 'Available' status the app will search for nearby trips. Make sure to be in this view to receive requests."
+      },
+      "28": {
+        "title": "Message Inbox",
+        "description": "Access your messages and communications. Here you'll receive important notices from ETAXI."
+      },
+      "29": {
+        "title": "Scheduled Services",
+        "description": "View trips that have been assigned to you in advance."
+      },
+      "30": {
+        "title": "History and Earnings",
+        "description": "Check your trip history and daily, weekly, or monthly earnings summary."
+      },
+      "31": {
+        "title": "Profile Menu",
+        "description": "Access the side menu to view your profile, settings, and additional options."
+      },
+      "32": {
+        "title": "Map View",
+        "description": "The map shows your current location and available trips in your coverage area."
+      },
+      "33": {
+        "title": "General Preferences",
+        "description": "Configure your work preferences: trip types, preferred zones, and more."
+      },
+      "34": {
+        "title": "Referral System",
+        "description": "Invite other drivers to ETAXI and earn benefits for each referral that joins."
+      },
+      "35": {
+        "title": "Report Incident",
+        "description": "If you have any problem during a trip, use this form to report it quickly."
+      },
+      "36": {
+        "title": "GPS Solutions",
+        "description": "If you're having GPS issues, access this menu for help and solutions."
+      },
+      "37": {
+        "title": "Detailed GPS Help",
+        "description": "Complete guide to solve common GPS problems and improve location accuracy."
+      }
+    },
+    "navigation": {
+      "prev": "Previous",
+      "next": "Next",
+      "stepOf": "Step [current] of [total]"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "q1": {
+        "question": "What do I do if I don't have my credentials?",
+        "answer": "If you don't have credentials yet, you need to complete the driver registration process with ETAXI. Contact the support team or visit our drivers page for more information."
+      },
+      "q2": {
+        "question": "Why does the app need so many permissions?",
+        "answer": "Each permission has a specific function: location is for assigning nearby trips, camera and microphone for security recording, notifications for alerting you of new trips. All are necessary for proper operation."
+      },
+      "q3": {
+        "question": "What do I do if the app doesn't receive trips?",
+        "answer": "Verify that: 1) You're in 'Available' status, 2) GPS is active with good signal, 3) Location is set to 'Allow always', 4) Battery optimization isn't restricting the app."
+      },
+      "moreHelp": "Need more help? Visit our Help section"
+    },
+    "cta": {
+      "title": "Ready to get started?",
+      "subtitle": "Download the app and start receiving trips today",
+      "download": "Download ETAXI",
+      "contact": "Contact Support"
+    }
   }
 }

@@ -9,6 +9,7 @@
     "airport": "Aeropuerto",
     "drivers": "Conductores",
     "driverInfo": "Info Conductores",
+    "installationGuide": "Guía de Instalación",
     "howItWorksDrivers": "Cómo Funciona",
     "driverSafety": "Seguridad",
     "security": "Seguridad",
@@ -2081,5 +2082,229 @@
       "learnMore": "Cómo Funciona"
     },
     "sources": "Fuentes"
+  },
+  "driverOnboarding": {
+    "hero": {
+      "badge": "Guía de Instalación",
+      "title": "Configura tu App ETAXI en Minutos",
+      "subtitle": "Sigue esta guía visual paso a paso para instalar y configurar correctamente la aplicación de conductor ETAXI en tu celular."
+    },
+    "features": {
+      "time": {
+        "title": "10 minutos",
+        "description": "Configuración completa"
+      },
+      "android": {
+        "title": "Android",
+        "description": "Disponible en Play Store"
+      },
+      "steps": {
+        "title": "37 pasos",
+        "description": "Guía completa"
+      },
+      "visual": {
+        "title": "Visual",
+        "description": "Con capturas reales"
+      }
+    },
+    "phases": {
+      "descarga": {
+        "title": "Descarga",
+        "description": "Busca e instala ETAXI desde Google Play Store"
+      },
+      "acceso": {
+        "title": "Acceso",
+        "description": "Inicia sesión con tus credenciales de conductor"
+      },
+      "configuracion": {
+        "title": "Configuración",
+        "description": "Configura tu modo de trabajo y vehículo"
+      },
+      "permisos": {
+        "title": "Permisos",
+        "description": "Otorga los permisos necesarios para el funcionamiento"
+      },
+      "funciones": {
+        "title": "Funciones",
+        "description": "Conoce todas las funciones de la aplicación"
+      }
+    },
+    "steps": {
+      "01": {
+        "title": "Buscar ETAXI en Play Store",
+        "description": "Abre Google Play Store y busca 'ETAXI'. Selecciona la app oficial de ETAXI para conductores."
+      },
+      "02": {
+        "title": "Pantalla de Bienvenida",
+        "description": "Al abrir la app verás la pantalla de bienvenida. Pulsa 'Comenzar' para iniciar el proceso de configuración."
+      },
+      "03": {
+        "title": "Formulario de Login",
+        "description": "Se mostrará el formulario de inicio de sesión. Aquí ingresarás tus credenciales de conductor."
+      },
+      "04": {
+        "title": "Ingresar Credenciales",
+        "description": "Introduce tu usuario y contraseña proporcionados por ETAXI. Luego pulsa 'Ingresar'."
+      },
+      "05": {
+        "title": "Seleccionar Modo de Trabajo",
+        "description": "Elige tu modo de trabajo preferido: individual o asociado a un gremio/empresa."
+      },
+      "06": {
+        "title": "Seleccionar Vehículo",
+        "description": "Selecciona el vehículo con el que trabajarás. Si tienes varios, elige el que usarás hoy."
+      },
+      "07": {
+        "title": "Activar Biometría",
+        "description": "Se te preguntará si deseas activar el inicio de sesión biométrico (huella o rostro) para mayor seguridad y rapidez."
+      },
+      "08": {
+        "title": "Aviso de Permisos",
+        "description": "La app te informará sobre los permisos necesarios para funcionar correctamente. Es importante otorgarlos todos."
+      },
+      "09": {
+        "title": "Permiso de Cámara",
+        "description": "Permite el acceso a la cámara. Se usa para tomar fotos del vehículo y grabación de seguridad del viaje."
+      },
+      "10": {
+        "title": "Permiso de Micrófono",
+        "description": "Permite grabar audio. Se utiliza para la grabación de seguridad durante los viajes."
+      },
+      "11": {
+        "title": "Permiso de Notificaciones",
+        "description": "Permite las notificaciones para recibir alertas de nuevos viajes y mensajes importantes."
+      },
+      "12": {
+        "title": "Permiso de Llamadas",
+        "description": "Permite realizar llamadas para contactar directamente con los pasajeros cuando sea necesario."
+      },
+      "13": {
+        "title": "Permiso de Archivos",
+        "description": "Permite el acceso a archivos para almacenar grabaciones y documentos necesarios."
+      },
+      "14": {
+        "title": "Aviso de Ubicación",
+        "description": "La app te explicará por qué necesita acceso a tu ubicación. Es esencial para recibir viajes."
+      },
+      "15": {
+        "title": "Opciones de Ubicación",
+        "description": "Selecciona 'Permitir todo el tiempo' para que la app funcione correctamente incluso en segundo plano."
+      },
+      "16": {
+        "title": "Ubicación en Segundo Plano",
+        "description": "Confirma que la app puede acceder a tu ubicación en segundo plano para seguir recibiendo viajes."
+      },
+      "17": {
+        "title": "Información de la App",
+        "description": "Accede a la configuración de la app desde Ajustes del sistema para verificar los permisos."
+      },
+      "18": {
+        "title": "Permitir Ubicación Siempre",
+        "description": "En la configuración de permisos, asegúrate de que la ubicación esté configurada como 'Permitir siempre'."
+      },
+      "19": {
+        "title": "Verificar Permisos",
+        "description": "Revisa que todos los permisos estén correctamente configurados en la sección de permisos de la app."
+      },
+      "20": {
+        "title": "Otros Permisos",
+        "description": "Verifica y configura los permisos adicionales necesarios para el funcionamiento óptimo."
+      },
+      "21": {
+        "title": "Accesos Directos",
+        "description": "Permite que la app cree accesos directos para facilitar el acceso rápido a funciones importantes."
+      },
+      "22": {
+        "title": "Pantalla Principal - Permisos",
+        "description": "Si ves avisos de permisos pendientes en la pantalla principal, configúralos desde el botón indicado."
+      },
+      "23": {
+        "title": "Optimización de Batería",
+        "description": "Configura la app como 'Sin restricciones' en optimización de batería para evitar que se cierre en segundo plano."
+      },
+      "24": {
+        "title": "Acceso a Modos",
+        "description": "Configura el acceso a los modos de la app para un funcionamiento completo."
+      },
+      "25": {
+        "title": "Confirmar Acceso a Modos",
+        "description": "Confirma el diálogo para permitir que la app acceda a las configuraciones de modo necesarias."
+      },
+      "26": {
+        "title": "Estado Ocupado",
+        "description": "Cuando estés en un viaje, la pantalla mostrará el estado 'Ocupado' con los detalles del servicio actual."
+      },
+      "27": {
+        "title": "Estado Libre",
+        "description": "En estado 'Libre' la app buscará viajes cercanos. Asegúrate de estar en esta vista para recibir solicitudes."
+      },
+      "28": {
+        "title": "Bandeja de Mensajes",
+        "description": "Accede a tus mensajes y comunicaciones. Aquí recibirás avisos importantes de ETAXI."
+      },
+      "29": {
+        "title": "Servicios Programados",
+        "description": "Visualiza los viajes programados que tienes asignados con anticipación."
+      },
+      "30": {
+        "title": "Historial y Recaudación",
+        "description": "Consulta tu historial de viajes y el resumen de recaudación diaria, semanal o mensual."
+      },
+      "31": {
+        "title": "Menú de Perfil",
+        "description": "Accede al menú lateral para ver tu perfil, configuraciones y opciones adicionales."
+      },
+      "32": {
+        "title": "Vista del Mapa",
+        "description": "El mapa muestra tu ubicación actual y los viajes disponibles en tu zona de cobertura."
+      },
+      "33": {
+        "title": "Preferencias Generales",
+        "description": "Configura tus preferencias de trabajo: tipos de viaje, zonas preferidas y más."
+      },
+      "34": {
+        "title": "Sistema de Referidos",
+        "description": "Invita a otros conductores a ETAXI y obtén beneficios por cada referido que se una."
+      },
+      "35": {
+        "title": "Reportar Incidencia",
+        "description": "Si tienes algún problema durante un viaje, usa este formulario para reportarlo rápidamente."
+      },
+      "36": {
+        "title": "Solución de GPS",
+        "description": "Si tienes problemas con el GPS, accede a este menú para obtener ayuda y soluciones."
+      },
+      "37": {
+        "title": "Ayuda GPS Detallada",
+        "description": "Guía completa para solucionar problemas comunes de GPS y mejorar la precisión de ubicación."
+      }
+    },
+    "navigation": {
+      "prev": "Anterior",
+      "next": "Siguiente",
+      "stepOf": "Paso [current] de [total]"
+    },
+    "faq": {
+      "title": "Preguntas Frecuentes",
+      "q1": {
+        "question": "¿Qué hago si no tengo mis credenciales?",
+        "answer": "Si aún no tienes credenciales, debes completar el proceso de registro como conductor en ETAXI. Contacta al equipo de soporte o visita nuestra página de conductores para más información."
+      },
+      "q2": {
+        "question": "¿Por qué la app necesita tantos permisos?",
+        "answer": "Cada permiso tiene una función específica: la ubicación es para asignarte viajes cercanos, la cámara y micrófono para la grabación de seguridad, las notificaciones para alertarte de nuevos viajes. Todos son necesarios para el funcionamiento correcto."
+      },
+      "q3": {
+        "question": "¿Qué hago si la app no recibe viajes?",
+        "answer": "Verifica que: 1) Estés en estado 'Libre', 2) El GPS esté activo y con buena señal, 3) La ubicación esté configurada como 'Permitir siempre', 4) La optimización de batería no esté restringiendo la app."
+      },
+      "moreHelp": "¿Necesitas más ayuda? Visita nuestra sección de Ayuda"
+    },
+    "cta": {
+      "title": "¿Listo para comenzar?",
+      "subtitle": "Descarga la app y empieza a recibir viajes hoy mismo",
+      "download": "Descargar ETAXI",
+      "contact": "Contactar Soporte"
+    }
   }
 }

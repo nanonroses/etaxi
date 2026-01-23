@@ -37,6 +37,7 @@ export function Navbar() {
       label: t('drivers'),
       items: [
         { href: `/${locale}/conductores`, label: t('driverInfo') },
+        { href: `/${locale}/conductores/guia-instalacion`, label: t('installationGuide') },
       ],
     },
     business: {

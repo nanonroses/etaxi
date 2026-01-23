@@ -11,6 +11,7 @@ import { EnterpriseProcess } from '@/components/business/EnterpriseProcess';
 import { GuildProcess } from '@/components/business/GuildProcess';
 import { B2BCTA, DualCTA } from '@/components/business/B2BCTA';
 import { StructuredData } from '@/components/seo/StructuredData';
+import { InteractiveImageAccordion } from '@/components/ui/interactive-image-accordion';
 import { Building2, Calendar, Shield } from 'lucide-react';
 import Link from 'next/link';
 import type { Metadata } from 'next';
@@ -72,7 +73,7 @@ export default function EmpresasGremiosPage() {
         {/* Hero Section */}
         <section className="w-full py-12 md:py-20 bg-gradient-to-br from-[#030c13] via-[#182b33] to-[#030c13] text-white relative overflow-hidden animate-gradient">
           {/* Background decorative elements */}
-          <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0 opacity-10 pointer-events-none">
             <div className="absolute top-20 left-20 w-64 h-64 rounded-full bg-[#fff500] blur-3xl" />
             <div className="absolute bottom-20 right-20 w-64 h-64 rounded-full bg-[#fff500] blur-3xl" />
           </div>
@@ -121,6 +122,14 @@ export default function EmpresasGremiosPage() {
               </div>
             </div>
           </div>
+
+          {/* Interactive Solutions Accordion */}
+          <InteractiveImageAccordion
+            title="Solución Integral para tu Empresa"
+            subtitle="Cuando contratas ETAXI para tu empresa o gremio, recibes un ecosistema completo de herramientas diseñadas para digitalizar y optimizar tu operación de transporte."
+            ctaText="Solicitar Demo"
+            ctaHref="#contact"
+          />
         </section>
 
         {/* Enterprise Benefits Section */}

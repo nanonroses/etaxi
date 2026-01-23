@@ -54,6 +54,12 @@ export const seoConfig = {
       'Si eres conductor de taxi regulado, conoce cómo integrarte a ETAXI y trabajar dentro de la normativa vigente.',
     keywords: 'conductor taxi, trabajo taxi, taxi regulado conductor, Ley 21.553 conductor',
   },
+  guiaInstalacion: {
+    title: 'Guía de Instalación App Conductor ETAXI — Paso a Paso',
+    description:
+      'Aprende a instalar y configurar la app de conductor ETAXI. Guía visual completa con todos los pasos y permisos necesarios.',
+    keywords: 'instalar ETAXI conductor, configurar app taxi, tutorial ETAXI, permisos app conductor',
+  },
   ayuda: {
     title: 'Ayuda y Reclamos ETAXI — Soporte 24/7',
     description:
