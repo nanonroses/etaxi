@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { Shield, DollarSign, TrendingUp, Headphones, Users, Lock } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 
 export function DriverBenefits() {
   const t = useTranslations('driverPage.benefits');
@@ -62,7 +62,7 @@ export function DriverBenefits() {
           {benefits.map((benefit, index) => {
             const Icon = benefit.icon;
             return (
-              <motion.div
+              <m.div
                 key={index}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -84,7 +84,7 @@ export function DriverBenefits() {
                     {benefit.description}
                   </p>
                 </div>
-              </motion.div>
+              </m.div>
             );
           })}
         </div>

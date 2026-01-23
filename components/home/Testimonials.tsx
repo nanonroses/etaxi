@@ -2,14 +2,23 @@
 
 import { useTranslations } from 'next-intl';
 import { Quote, Star, ChevronLeft, ChevronRight, User } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { useState } from 'react';
+import { m, AnimatePresence } from 'framer-motion';
+import { useState, useMemo, useCallback } from 'react';
+
+// Hoisted outside component to avoid recreation on each render
+const STATS = [
+  { value: '4.8/5.0', label: 'Rating Promedio' },
+  { value: '50,000+', label: 'Viajes Completados' },
+  { value: '98%', label: 'Satisfacción' },
+  { value: '500+', label: 'Conductores Activos' },
+] as const;
 
 export function Testimonials() {
   const t = useTranslations('testimonials');
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const testimonials = [
+  // Memoize testimonials array to prevent recreation on each render
+  const testimonials = useMemo(() => [
     {
       name: t('items.passenger1.name'),
       role: t('items.passenger1.role'),
@@ -31,15 +40,22 @@ export function Testimonials() {
       rating: 5,
       verified: true,
     },
-  ];
+  ], [t]);
 
-  const next = () => {
+  // Stable callbacks with useCallback
+  const next = useCallback(() => {
     setCurrentIndex((prev) => (prev + 1) % testimonials.length);
-  };
+  }, [testimonials.length]);
 
-  const previous = () => {
+  const previous = useCallback(() => {
     setCurrentIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
-  };
+  }, [testimonials.length]);
+
+  const goToIndex = useCallback((index: number) => {
+    setCurrentIndex(index);
+  }, []);
+
+  const currentTestimonial = testimonials[currentIndex];
 
   return (
     <section className="w-full py-24 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
@@ -48,7 +64,7 @@ export function Testimonials() {
       <div className="absolute bottom-20 right-20 w-80 h-80 bg-[#182b33]/5 rounded-full blur-3xl" />
 
       <div className="container relative mx-auto max-w-6xl px-4">
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -56,7 +72,7 @@ export function Testimonials() {
           className="text-center mb-16"
         >
           {/* Badge */}
-          <motion.div
+          <m.div
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
@@ -65,7 +81,7 @@ export function Testimonials() {
           >
             <Quote className="w-4 h-4" />
             <span className="text-sm">Testimonios Verificados</span>
-          </motion.div>
+          </m.div>
 
           <h2 className="text-4xl md:text-5xl font-bold text-[#182b33] mb-4">
             {t('title')}
@@ -73,7 +89,7 @@ export function Testimonials() {
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Lo que dicen nuestros usuarios y conductores
           </p>
-        </motion.div>
+        </m.div>
 
         {/* Carousel Container */}
         <div className="relative max-w-4xl mx-auto">
@@ -97,7 +113,7 @@ export function Testimonials() {
           {/* Testimonial Cards */}
           <div className="relative min-h-[480px] md:min-h-[420px]">
             <AnimatePresence mode="wait">
-              <motion.div
+              <m.div
                 key={currentIndex}
                 initial={{ opacity: 0, x: 100 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -119,10 +135,10 @@ export function Testimonials() {
 
                     {/* Rating */}
                     <div className="flex items-center gap-2 mb-6">
-                      {[...Array(testimonials[currentIndex].rating)].map((_, i) => (
+                      {[...Array(currentTestimonial.rating)].map((_, i) => (
                         <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
                       ))}
-                      {testimonials[currentIndex].verified && (
+                      {currentTestimonial.verified && (
                         <span className="ml-2 text-xs px-3 py-1 rounded-full bg-green-100 text-green-700 font-medium">
                           ✓ Viaje Verificado
                         </span>
@@ -132,7 +148,7 @@ export function Testimonials() {
                     {/* Testimonial Text */}
                     <blockquote className="flex-1 mb-8">
                       <p className="text-xl md:text-2xl text-gray-700 leading-relaxed italic">
-                        "{testimonials[currentIndex].text}"
+                        "{currentTestimonial.text}"
                       </p>
                     </blockquote>
 
@@ -143,16 +159,16 @@ export function Testimonials() {
                       </div>
                       <div>
                         <p className="font-bold text-lg text-[#182b33]">
-                          {testimonials[currentIndex].name}
+                          {currentTestimonial.name}
                         </p>
                         <p className="text-sm text-gray-500">
-                          {testimonials[currentIndex].role}
+                          {currentTestimonial.role}
                         </p>
                       </div>
                     </div>
                   </div>
                 </div>
-              </motion.div>
+              </m.div>
             </AnimatePresence>
           </div>
 
@@ -161,7 +177,7 @@ export function Testimonials() {
             {testimonials.map((_, index) => (
               <button
                 key={index}
-                onClick={() => setCurrentIndex(index)}
+                onClick={() => goToIndex(index)}
                 className={`transition-all ${
                   index === currentIndex
                     ? 'w-8 h-3 bg-gradient-to-r from-[#dd1828] to-[#182b33] rounded-full'
@@ -174,20 +190,15 @@ export function Testimonials() {
         </div>
 
         {/* Bottom Stats */}
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.6 }}
           className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-20 pt-12 border-t border-gray-200"
         >
-          {[
-            { value: '4.8/5.0', label: 'Rating Promedio' },
-            { value: '50,000+', label: 'Viajes Completados' },
-            { value: '98%', label: 'Satisfacción' },
-            { value: '500+', label: 'Conductores Activos' },
-          ].map((stat, index) => (
-            <motion.div
+          {STATS.map((stat, index) => (
+            <m.div
               key={index}
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -201,9 +212,9 @@ export function Testimonials() {
               <div className="text-sm text-gray-600">
                 {stat.label}
               </div>
-            </motion.div>
+            </m.div>
           ))}
-        </motion.div>
+        </m.div>
       </div>
     </section>
   );

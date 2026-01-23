@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { Smartphone, Star, Download } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import Image from 'next/image';
 import { PASSENGER_APP_URLS } from '@/lib/constants';
 
@@ -28,7 +28,7 @@ export function DownloadAppCTA({ headline, subheadline, playStoreUrl, appStoreUr
       <div className="container relative mx-auto max-w-6xl px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left: Content */}
-          <motion.div
+          <m.div
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -36,7 +36,7 @@ export function DownloadAppCTA({ headline, subheadline, playStoreUrl, appStoreUr
             className="space-y-8"
           >
             {/* Badge */}
-            <motion.div
+            <m.div
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
@@ -45,7 +45,7 @@ export function DownloadAppCTA({ headline, subheadline, playStoreUrl, appStoreUr
             >
               <Download className="w-4 h-4" />
               <span className="text-sm">Descarga Gratis</span>
-            </motion.div>
+            </m.div>
 
             {/* Title */}
             <div>
@@ -65,7 +65,7 @@ export function DownloadAppCTA({ headline, subheadline, playStoreUrl, appStoreUr
                 'Seguimiento en tiempo real',
                 'Historial completo de viajes',
               ].map((feature, index) => (
-                <motion.div
+                <m.div
                   key={index}
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
@@ -87,12 +87,12 @@ export function DownloadAppCTA({ headline, subheadline, playStoreUrl, appStoreUr
                     </svg>
                   </div>
                   <span className="text-gray-700">{feature}</span>
-                </motion.div>
+                </m.div>
               ))}
             </div>
 
             {/* Store Buttons */}
-            <motion.div
+            <m.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -128,10 +128,10 @@ export function DownloadAppCTA({ headline, subheadline, playStoreUrl, appStoreUr
                   <div className="text-base font-bold">App Store</div>
                 </div>
               </a>
-            </motion.div>
+            </m.div>
 
             {/* Rating */}
-            <motion.div
+            <m.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
@@ -144,11 +144,11 @@ export function DownloadAppCTA({ headline, subheadline, playStoreUrl, appStoreUr
                 ))}
               </div>
               <span className="text-gray-600">4.8 / 5.0 - Más de 50,000 descargas</span>
-            </motion.div>
-          </motion.div>
+            </m.div>
+          </m.div>
 
           {/* Right: Phone Mockup */}
-          <motion.div
+          <m.div
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -172,7 +172,7 @@ export function DownloadAppCTA({ headline, subheadline, playStoreUrl, appStoreUr
                 </div>
 
                 {/* Floating badges */}
-                <motion.div
+                <m.div
                   animate={{ y: [0, -15, 0] }}
                   transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
                   className="absolute -top-6 -right-6 bg-white rounded-2xl shadow-xl p-4 border border-gray-100"
@@ -184,10 +184,10 @@ export function DownloadAppCTA({ headline, subheadline, playStoreUrl, appStoreUr
                       <div className="text-xs text-gray-500">Rating</div>
                     </div>
                   </div>
-                </motion.div>
+                </m.div>
               </div>
             </div>
-          </motion.div>
+          </m.div>
         </div>
       </div>
     </section>

@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 
 interface OnboardingStepProps {
   image: string;
@@ -19,7 +19,7 @@ export function OnboardingStep({
   totalSteps,
 }: OnboardingStepProps) {
   return (
-    <motion.div
+    <m.div
       initial={{ opacity: 0, scale: 0.95 }}
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, scale: 0.95 }}
@@ -48,6 +48,6 @@ export function OnboardingStep({
         <h3 className="text-xl font-bold text-[#182b33] mb-2">{title}</h3>
         <p className="text-sm text-[#596065] leading-relaxed">{description}</p>
       </div>
-    </motion.div>
+    </m.div>
   );
 }

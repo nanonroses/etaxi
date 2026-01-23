@@ -1,11 +1,32 @@
 'use client';
 
-import { motion } from 'framer-motion';
-import { Calendar, Clock, ArrowRight, User } from 'lucide-react';
+import { m } from 'framer-motion';
+import { Calendar, Clock, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 import { useLocale, useTranslations } from 'next-intl';
 import type { BlogArticle } from '@/lib/blog-data';
 import { categoryLabels } from '@/lib/blog-data';
+
+// Hoisted outside component to avoid recreation on each render
+const CATEGORY_COLORS: Record<string, string> = {
+  regulacion: 'bg-blue-100 text-blue-700 border-blue-200',
+  seguridad: 'bg-green-100 text-green-700 border-green-200',
+  tecnologia: 'bg-purple-100 text-purple-700 border-purple-200',
+  noticias: 'bg-orange-100 text-orange-700 border-orange-200',
+  guias: 'bg-[#dd1828]/10 text-[#dd1828] border-[#dd1828]/20',
+} as const;
+
+const DEFAULT_CATEGORY_COLOR = 'bg-gray-100 text-gray-700 border-gray-200';
+
+// Pure function hoisted outside component
+function formatArticleDate(dateString: string, locale: string): string {
+  const date = new Date(dateString);
+  return date.toLocaleDateString(locale === 'es' ? 'es-CL' : 'en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
+}
 
 interface BlogCardProps {
   article: BlogArticle;
@@ -18,30 +39,12 @@ export function BlogCard({ article, featured = false, index = 0 }: BlogCardProps
   const t = useTranslations('blog');
 
   const categoryLabel = categoryLabels[locale as 'es' | 'en']?.[article.category] || article.category;
-
-  const formatDate = (dateString: string) => {
-    const date = new Date(dateString);
-    return date.toLocaleDateString(locale === 'es' ? 'es-CL' : 'en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric',
-    });
-  };
-
-  const getCategoryColor = (category: string) => {
-    const colors: Record<string, string> = {
-      regulacion: 'bg-blue-100 text-blue-700 border-blue-200',
-      seguridad: 'bg-green-100 text-green-700 border-green-200',
-      tecnologia: 'bg-purple-100 text-purple-700 border-purple-200',
-      noticias: 'bg-orange-100 text-orange-700 border-orange-200',
-      guias: 'bg-[#dd1828]/10 text-[#dd1828] border-[#dd1828]/20',
-    };
-    return colors[category] || 'bg-gray-100 text-gray-700 border-gray-200';
-  };
+  const categoryColor = CATEGORY_COLORS[article.category] || DEFAULT_CATEGORY_COLOR;
+  const formattedDate = formatArticleDate(article.publishedAt, locale);
 
   if (featured) {
     return (
-      <motion.article
+      <m.article
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -57,7 +60,7 @@ export function BlogCard({ article, featured = false, index = 0 }: BlogCardProps
 
                 {/* Category badge */}
                 <div className="absolute top-4 left-4">
-                  <span className={`px-3 py-1 rounded-full text-xs font-semibold border ${getCategoryColor(article.category)}`}>
+                  <span className={`px-3 py-1 rounded-full text-xs font-semibold border ${categoryColor}`}>
                     {categoryLabel}
                   </span>
                 </div>
@@ -88,7 +91,7 @@ export function BlogCard({ article, featured = false, index = 0 }: BlogCardProps
                   <div className="flex items-center gap-4 text-sm text-gray-500">
                     <div className="flex items-center gap-1">
                       <Calendar className="w-4 h-4" />
-                      <span>{formatDate(article.publishedAt)}</span>
+                      <span>{formattedDate}</span>
                     </div>
                     <div className="flex items-center gap-1">
                       <Clock className="w-4 h-4" />
@@ -105,12 +108,12 @@ export function BlogCard({ article, featured = false, index = 0 }: BlogCardProps
             </div>
           </div>
         </Link>
-      </motion.article>
+      </m.article>
     );
   }
 
   return (
-    <motion.article
+    <m.article
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
@@ -125,7 +128,7 @@ export function BlogCard({ article, featured = false, index = 0 }: BlogCardProps
 
             {/* Category badge */}
             <div className="absolute top-3 left-3">
-              <span className={`px-2.5 py-1 rounded-full text-xs font-semibold border ${getCategoryColor(article.category)}`}>
+              <span className={`px-2.5 py-1 rounded-full text-xs font-semibold border ${categoryColor}`}>
                 {categoryLabel}
               </span>
             </div>
@@ -149,7 +152,7 @@ export function BlogCard({ article, featured = false, index = 0 }: BlogCardProps
               <div className="flex items-center gap-3 text-xs text-gray-500">
                 <div className="flex items-center gap-1">
                   <Calendar className="w-3.5 h-3.5" />
-                  <span>{formatDate(article.publishedAt)}</span>
+                  <span>{formattedDate}</span>
                 </div>
                 <div className="flex items-center gap-1">
                   <Clock className="w-3.5 h-3.5" />
@@ -162,6 +165,6 @@ export function BlogCard({ article, featured = false, index = 0 }: BlogCardProps
           </div>
         </div>
       </Link>
-    </motion.article>
+    </m.article>
   );
 }

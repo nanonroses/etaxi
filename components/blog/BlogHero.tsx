@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { BookOpen, TrendingUp, Shield, Newspaper } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 
@@ -35,14 +35,14 @@ export function BlogHero() {
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           className="text-center"
         >
           {/* Badge */}
-          <motion.div
+          <m.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.2 }}
@@ -50,7 +50,7 @@ export function BlogHero() {
           >
             <Newspaper className="w-4 h-4 text-[#dd1828]" />
             <span className="text-sm font-medium text-white">{t('hero.badge')}</span>
-          </motion.div>
+          </m.div>
 
           {/* Title */}
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
@@ -66,14 +66,14 @@ export function BlogHero() {
           </p>
 
           {/* Stats */}
-          <motion.div
+          <m.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
             className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto"
           >
             {stats.map((stat, index) => (
-              <motion.div
+              <m.div
                 key={index}
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -83,10 +83,10 @@ export function BlogHero() {
                 <stat.icon className="w-6 h-6 text-[#fff500] mb-2" />
                 <span className="text-2xl font-bold text-white">{stat.value}</span>
                 <span className="text-sm text-gray-400">{stat.label}</span>
-              </motion.div>
+              </m.div>
             ))}
-          </motion.div>
-        </motion.div>
+          </m.div>
+        </m.div>
       </div>
 
       {/* Bottom wave */}

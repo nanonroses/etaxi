@@ -50,10 +50,12 @@ export const metadata: Metadata = {
 };
 
 export default async function Home() {
-  // Fetch data from Sanity CMS
-  const homeData = await getHomePage();
-  const siteSettings = await getSiteSettings();
-  const appDownload = await getAppDownload();
+  // Fetch data from Sanity CMS in parallel (eliminates waterfall)
+  const [homeData, siteSettings, appDownload] = await Promise.all([
+    getHomePage(),
+    getSiteSettings(),
+    getAppDownload(),
+  ]);
 
   return (
     <div className="flex min-h-screen flex-col">

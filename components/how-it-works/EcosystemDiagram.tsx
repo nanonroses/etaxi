@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { User, Smartphone, Car, Shield, Check, ArrowRight } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 
 export function EcosystemDiagram() {
   const t = useTranslations('howItWorksPage.ecosystem');
@@ -57,7 +57,7 @@ export function EcosystemDiagram() {
           <div className="flex items-center gap-8">
             {/* Passenger */}
             <ActorCard {...actors[0]} index={0} />
-            <motion.div
+            <m.div
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
@@ -65,7 +65,7 @@ export function EcosystemDiagram() {
               className="flex-shrink-0"
             >
               <ArrowRight className="w-10 h-10 text-[#fff500] animate-pulse-slow" />
-            </motion.div>
+            </m.div>
           </div>
 
           {/* Platform (top right) */}
@@ -76,7 +76,7 @@ export function EcosystemDiagram() {
           <ActorCard {...actors[2]} index={2} />
 
           <div className="flex items-center gap-8">
-            <motion.div
+            <m.div
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
@@ -84,7 +84,7 @@ export function EcosystemDiagram() {
               className="flex-shrink-0"
             >
               <ArrowRight className="w-10 h-10 text-[#fff500] transform rotate-180 animate-pulse-slow" />
-            </motion.div>
+            </m.div>
             {/* Authority */}
             <ActorCard {...actors[3]} index={3} />
           </div>
@@ -96,7 +96,7 @@ export function EcosystemDiagram() {
             <div key={index}>
               <ActorCard {...actor} index={index} />
               {index < actors.length - 1 && (
-                <motion.div
+                <m.div
                   initial={{ opacity: 0, y: -10 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
@@ -104,7 +104,7 @@ export function EcosystemDiagram() {
                   className="flex justify-center my-4"
                 >
                   <ArrowRight className="w-8 h-8 text-[#fff500] transform rotate-90 animate-pulse-slow" />
-                </motion.div>
+                </m.div>
               )}
             </div>
           ))}
@@ -134,7 +134,7 @@ interface ActorCardProps {
 
 function ActorCard({ title, icon: Icon, items, color, bgColor, index }: ActorCardProps) {
   return (
-    <motion.div
+    <m.div
       initial={{ opacity: 0, scale: 0.95 }}
       whileInView={{ opacity: 1, scale: 1 }}
       viewport={{ once: true }}
@@ -162,6 +162,6 @@ function ActorCard({ title, icon: Icon, items, color, bgColor, index }: ActorCar
           </li>
         ))}
       </ul>
-    </motion.div>
+    </m.div>
   );
 }

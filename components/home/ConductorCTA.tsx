@@ -4,7 +4,7 @@ import { useTranslations, useLocale } from 'next-intl';
 import { Button } from '@/components/ui/button';
 import { Check, Car, TrendingUp, Shield, Award } from 'lucide-react';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 
 export function ConductorCTA() {
   const t = useTranslations('conductorCta');
@@ -42,7 +42,7 @@ export function ConductorCTA() {
       <div className="container relative mx-auto max-w-6xl px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left: Visual Element */}
-          <motion.div
+          <m.div
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
@@ -53,13 +53,13 @@ export function ConductorCTA() {
               {/* Main circle */}
               <div className="w-96 h-96 rounded-full bg-white/5 backdrop-blur-sm border border-white/10 flex items-center justify-center shadow-2xl">
                 <div className="w-80 h-80 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center">
-                  <motion.div
+                  <m.div
                     animate={{ rotate: 360 }}
                     transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
                     className="w-64 h-64 rounded-full bg-gradient-to-br from-[#fff500]/30 to-transparent flex items-center justify-center"
                   >
                     <Car className="w-32 h-32 text-white" />
-                  </motion.div>
+                  </m.div>
                 </div>
               </div>
 
@@ -73,7 +73,7 @@ export function ConductorCTA() {
                 ];
 
                 return (
-                  <motion.div
+                  <m.div
                     key={index}
                     initial={{ opacity: 0, scale: 0 }}
                     whileInView={{ opacity: 1, scale: 1 }}
@@ -92,14 +92,14 @@ export function ConductorCTA() {
                         <div className="text-sm font-bold text-[#182b33]">{benefit.value}</div>
                       </div>
                     </div>
-                  </motion.div>
+                  </m.div>
                 );
               })}
             </div>
-          </motion.div>
+          </m.div>
 
           {/* Right: Content */}
-          <motion.div
+          <m.div
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -107,7 +107,7 @@ export function ConductorCTA() {
             className="space-y-8 text-white"
           >
             {/* Badge */}
-            <motion.div
+            <m.div
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
@@ -116,7 +116,7 @@ export function ConductorCTA() {
             >
               <Car className="w-4 h-4 text-[#fff500]" />
               <span className="text-sm font-medium">Únete a ETAXI</span>
-            </motion.div>
+            </m.div>
 
             {/* Title */}
             <div>
@@ -133,7 +133,7 @@ export function ConductorCTA() {
               {features.map((feature, index) => {
                 const Icon = feature.icon;
                 return (
-                  <motion.div
+                  <m.div
                     key={index}
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
@@ -145,13 +145,13 @@ export function ConductorCTA() {
                       <Icon className="w-5 h-5 text-[#fff500]" />
                     </div>
                     <span className="text-lg text-white/90">{feature.text}</span>
-                  </motion.div>
+                  </m.div>
                 );
               })}
             </div>
 
             {/* CTA Button */}
-            <motion.div
+            <m.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -170,10 +170,10 @@ export function ConductorCTA() {
               <p className="text-sm text-white/70 mt-4">
                 Sin costos iniciales. Empieza a ganar hoy.
               </p>
-            </motion.div>
+            </m.div>
 
             {/* Trust badge */}
-            <motion.div
+            <m.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
@@ -182,8 +182,8 @@ export function ConductorCTA() {
             >
               <Shield className="w-5 h-5 text-green-400" />
               <span>Más de 500 conductores confían en ETAXI</span>
-            </motion.div>
-          </motion.div>
+            </m.div>
+          </m.div>
         </div>
       </div>
     </section>

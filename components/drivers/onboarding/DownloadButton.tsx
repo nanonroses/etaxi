@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { Play } from 'lucide-react';
 
 interface DownloadButtonProps {
@@ -13,7 +13,7 @@ export function DownloadButton({
   className = '',
 }: DownloadButtonProps) {
   return (
-    <motion.a
+    <m.a
       href="https://play.google.com/store/apps/details?id=com.liberty.driver.etaxichile"
       target="_blank"
       rel="noopener noreferrer"
@@ -30,6 +30,6 @@ export function DownloadButton({
         </p>
         <p className="text-sm font-bold leading-tight">Google Play</p>
       </div>
-    </motion.a>
+    </m.a>
   );
 }

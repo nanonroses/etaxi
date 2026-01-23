@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { Users, TrendingUp, Star, DollarSign } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 
 export function DriverStats() {
   const t = useTranslations('driverPage.stats');
@@ -45,7 +45,7 @@ export function DriverStats() {
           {stats.map((stat, index) => {
             const Icon = stat.icon;
             return (
-              <motion.div
+              <m.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -62,7 +62,7 @@ export function DriverStats() {
                 <div className="text-sm md:text-base text-[#596065]">
                   {stat.label}
                 </div>
-              </motion.div>
+              </m.div>
             );
           })}
         </div>

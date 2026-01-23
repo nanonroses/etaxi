@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { Plane, ArrowRight, Clock, Shield, MapPin } from 'lucide-react';
 import Link from 'next/link';
 import { useLocale } from 'next-intl';
@@ -12,38 +12,38 @@ export function AirportCTA() {
         <section className="w-full py-16 bg-gradient-to-br from-[#182b33] via-[#030c13] to-[#182b33] relative overflow-hidden">
             {/* Animated Background */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                <motion.div
+                <m.div
                     animate={{ y: [0, -15, 0], opacity: [0.05, 0.1, 0.05] }}
                     transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
                     className="absolute top-10 left-[10%] w-72 h-72 rounded-full bg-[#fff500] blur-[120px]"
                 />
-                <motion.div
+                <m.div
                     animate={{ y: [0, 15, 0], opacity: [0.05, 0.08, 0.05] }}
                     transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut', delay: 2 }}
                     className="absolute bottom-10 right-[10%] w-72 h-72 rounded-full bg-[#dd1828] blur-[120px]"
                 />
 
                 {/* Floating planes */}
-                <motion.div
+                <m.div
                     animate={{ x: [-50, 600], y: [80, 20] }}
                     transition={{ duration: 15, repeat: Infinity, ease: 'linear' }}
                     className="absolute top-1/4 opacity-5"
                 >
                     <Plane className="w-16 h-16 text-white rotate-45" />
-                </motion.div>
-                <motion.div
+                </m.div>
+                <m.div
                     animate={{ x: [700, -50], y: [30, 60] }}
                     transition={{ duration: 18, repeat: Infinity, ease: 'linear', delay: 5 }}
                     className="absolute bottom-1/4 opacity-5"
                 >
                     <Plane className="w-12 h-12 text-white -rotate-45 scale-x-[-1]" />
-                </motion.div>
+                </m.div>
             </div>
 
             <div className="container mx-auto max-w-[1200px] px-4 relative z-10">
                 <div className="grid lg:grid-cols-2 gap-8 items-center">
                     {/* Left Content */}
-                    <motion.div
+                    <m.div
                         initial={{ opacity: 0, x: -30 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
@@ -51,7 +51,7 @@ export function AirportCTA() {
                         className="text-center lg:text-left"
                     >
                         {/* Badge */}
-                        <motion.div
+                        <m.div
                             initial={{ opacity: 0, y: 10 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
@@ -60,7 +60,7 @@ export function AirportCTA() {
                         >
                             <Plane className="w-4 h-4 text-[#fff500]" />
                             <span className="text-sm font-bold text-[#fff500]">Servicio Aeropuerto SCL</span>
-                        </motion.div>
+                        </m.div>
 
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
                             ¿Llegas o Sales del{' '}
@@ -81,7 +81,7 @@ export function AirportCTA() {
                                 { icon: Shield, text: '100% Seguro' },
                                 { icon: MapPin, text: 'Counter Oficial' },
                             ].map((item, index) => (
-                                <motion.div
+                                <m.div
                                     key={index}
                                     initial={{ opacity: 0, y: 10 }}
                                     whileInView={{ opacity: 1, y: 0 }}
@@ -91,12 +91,12 @@ export function AirportCTA() {
                                 >
                                     <item.icon className="w-4 h-4 text-[#fff500]" />
                                     <span className="text-sm text-white/90 font-medium">{item.text}</span>
-                                </motion.div>
+                                </m.div>
                             ))}
                         </div>
 
                         {/* CTA Button */}
-                        <motion.div
+                        <m.div
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                         >
@@ -108,11 +108,11 @@ export function AirportCTA() {
                                 Ver Servicio Aeropuerto
                                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                             </Link>
-                        </motion.div>
-                    </motion.div>
+                        </m.div>
+                    </m.div>
 
                     {/* Right Visual - Terminal Card */}
-                    <motion.div
+                    <m.div
                         initial={{ opacity: 0, x: 30 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
@@ -127,13 +127,13 @@ export function AirportCTA() {
                             <div className="relative bg-white/10 backdrop-blur-xl rounded-3xl border border-white/20 p-6 shadow-2xl">
                                 {/* Header */}
                                 <div className="flex items-center gap-4 mb-6">
-                                    <motion.div
+                                    <m.div
                                         animate={{ rotate: [0, 10, -10, 0] }}
                                         transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
                                         className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#dd1828] to-[#fff500] flex items-center justify-center shadow-lg"
                                     >
                                         <Plane className="w-7 h-7 text-white" />
-                                    </motion.div>
+                                    </m.div>
                                     <div>
                                         <p className="text-[#fff500] text-xs font-bold uppercase tracking-wider">ETAXI</p>
                                         <p className="text-white text-lg font-semibold">Aeropuerto SCL</p>
@@ -174,7 +174,7 @@ export function AirportCTA() {
                                 </div>
                             </div>
                         </div>
-                    </motion.div>
+                    </m.div>
                 </div>
             </div>
         </section>

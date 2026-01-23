@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { FileCheck, DollarSign, MapPin, Shield } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 
 export function WhyItWorks() {
   const t = useTranslations('howItWorksPage.benefits');
@@ -56,7 +56,7 @@ export function WhyItWorks() {
           {benefits.map((benefit, index) => {
             const Icon = benefit.icon;
             return (
-              <motion.div
+              <m.div
                 key={index}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -78,7 +78,7 @@ export function WhyItWorks() {
                 <p className="text-[#596065] leading-relaxed text-sm">
                   {benefit.description}
                 </p>
-              </motion.div>
+              </m.div>
             );
           })}
         </div>

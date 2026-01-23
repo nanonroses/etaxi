@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { FileCheck, Car, CheckCircle, User, FileText } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 
 export function DriverRequirements() {
   const t = useTranslations('driverPage.requirements');
@@ -96,7 +96,7 @@ export function DriverRequirements() {
 
         <div className="space-y-8">
           {/* Driver Requirements */}
-          <motion.div
+          <m.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -124,10 +124,10 @@ export function DriverRequirements() {
                 ))}
               </div>
             </div>
-          </motion.div>
+          </m.div>
 
           {/* Vehicle Requirements */}
-          <motion.div
+          <m.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -155,10 +155,10 @@ export function DriverRequirements() {
                 ))}
               </div>
             </div>
-          </motion.div>
+          </m.div>
 
           {/* Documentation Requirements */}
-          <motion.div
+          <m.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -186,10 +186,10 @@ export function DriverRequirements() {
                 ))}
               </div>
             </div>
-          </motion.div>
+          </m.div>
 
           {/* Optional Requirements */}
-          <motion.div
+          <m.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -208,11 +208,11 @@ export function DriverRequirements() {
                 </li>
               ))}
             </ul>
-          </motion.div>
+          </m.div>
         </div>
 
         {/* Legal Notice */}
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -222,7 +222,7 @@ export function DriverRequirements() {
           <p className="text-sm text-[#182b33]">
             <span className="font-semibold">Nota Legal:</span> Todos los requisitos están basados en la Ley 21.553 sobre Modernización del Transporte Remunerado de Pasajeros y el Decreto Supremo 212. Es responsabilidad del conductor mantener su documentación vigente.
           </p>
-        </motion.div>
+        </m.div>
       </div>
     </section>
   );

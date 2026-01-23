@@ -4,7 +4,7 @@ import { useTranslations } from 'next-intl';
 import { Download, Car } from 'lucide-react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 
 export function DualCTA() {
   const t = useTranslations('howItWorksPage.cta');
@@ -20,7 +20,7 @@ export function DualCTA() {
       <div className="container mx-auto max-w-[1200px] px-4 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Passenger CTA */}
-          <motion.div
+          <m.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -54,10 +54,10 @@ export function DualCTA() {
                 </Button>
               </Link>
             </div>
-          </motion.div>
+          </m.div>
 
           {/* Driver CTA */}
-          <motion.div
+          <m.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -91,7 +91,7 @@ export function DualCTA() {
                 </Button>
               </Link>
             </div>
-          </motion.div>
+          </m.div>
         </div>
       </div>
     </section>

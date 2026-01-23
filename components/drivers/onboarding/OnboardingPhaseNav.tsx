@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import {
   Download,
   LogIn,
@@ -45,7 +45,7 @@ export function OnboardingPhaseNav({
           const isActive = activePhase === phase.id;
 
           return (
-            <motion.button
+            <m.button
               key={phase.id}
               onClick={() => onPhaseChange(phase.id)}
               whileHover={{ scale: 1.02 }}
@@ -81,7 +81,7 @@ export function OnboardingPhaseNav({
                   {phase.stepsCount} pasos
                 </p>
               </div>
-            </motion.button>
+            </m.button>
           );
         })}
       </div>

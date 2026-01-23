@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { ClipboardCheck, FileSearch, GraduationCap, Rocket } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 
 export function OnboardingProcess() {
   const t = useTranslations('driverPage.onboarding');
@@ -63,7 +63,7 @@ export function OnboardingProcess() {
             {steps.map((step, index) => {
               const Icon = step.icon;
               return (
-                <motion.div
+                <m.div
                   key={index}
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -91,7 +91,7 @@ export function OnboardingProcess() {
                       {step.description}
                     </p>
                   </div>
-                </motion.div>
+                </m.div>
               );
             })}
           </div>
@@ -102,7 +102,7 @@ export function OnboardingProcess() {
           {steps.map((step, index) => {
             const Icon = step.icon;
             return (
-              <motion.div
+              <m.div
                 key={index}
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -137,7 +137,7 @@ export function OnboardingProcess() {
                     </p>
                   </div>
                 </div>
-              </motion.div>
+              </m.div>
             );
           })}
         </div>

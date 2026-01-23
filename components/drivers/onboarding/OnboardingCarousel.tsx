@@ -1,8 +1,8 @@
 'use client';
 
-import { useState, useCallback, useEffect } from 'react';
+import { useState, useCallback, useEffect, useRef } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { m, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import Image from 'next/image';
 import { OnboardingProgress } from './OnboardingProgress';
@@ -55,21 +55,28 @@ export function OnboardingCarousel({ translations }: OnboardingCarouselProps) {
     }
   }, [selectedIndex, activeSteps.length, scrollTo]);
 
-  const onSelect = useCallback(() => {
+  // Use ref to store the latest onSelect callback to avoid re-subscriptions
+  const onSelectRef = useRef<(() => void) | undefined>(undefined);
+  onSelectRef.current = () => {
     if (!emblaApi) return;
     setSelectedIndex(emblaApi.selectedScrollSnap());
-  }, [emblaApi]);
+  };
 
   useEffect(() => {
     if (!emblaApi) return;
-    onSelect();
-    emblaApi.on('select', onSelect);
-    emblaApi.on('reInit', onSelect);
+
+    // Stable handler that reads from ref
+    const handleSelect = () => onSelectRef.current?.();
+
+    handleSelect();
+    emblaApi.on('select', handleSelect);
+    emblaApi.on('reInit', handleSelect);
+
     return () => {
-      emblaApi.off('select', onSelect);
-      emblaApi.off('reInit', onSelect);
+      emblaApi.off('select', handleSelect);
+      emblaApi.off('reInit', handleSelect);
     };
-  }, [emblaApi, onSelect]);
+  }, [emblaApi]); // Only depends on emblaApi, not onSelect
 
   // Reset carousel when phase changes
   useEffect(() => {
@@ -79,9 +86,9 @@ export function OnboardingCarousel({ translations }: OnboardingCarouselProps) {
     }
   }, [activePhaseId, emblaApi]);
 
-  const handlePhaseChange = (phaseId: string) => {
+  const handlePhaseChange = useCallback((phaseId: string) => {
     setActivePhaseId(phaseId);
-  };
+  }, []);
 
   const getStepTranslation = (stepKey: string) => {
     const stepNum = stepKey.replace('step-', '');
@@ -121,7 +128,7 @@ export function OnboardingCarousel({ translations }: OnboardingCarouselProps) {
 
       {/* Phase Description */}
       <AnimatePresence mode="wait">
-        <motion.div
+        <m.div
           key={activePhaseId}
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -134,7 +141,7 @@ export function OnboardingCarousel({ translations }: OnboardingCarouselProps) {
           <p className="text-[#596065]">
             {getPhaseTranslation(activePhase).description}
           </p>
-        </motion.div>
+        </m.div>
       </AnimatePresence>
 
       {/* Carousel */}
@@ -168,7 +175,7 @@ export function OnboardingCarousel({ translations }: OnboardingCarouselProps) {
                   key={step.id}
                   className="flex-[0_0_100%] min-w-0 md:flex-[0_0_50%] lg:flex-[0_0_33.33%] px-2"
                 >
-                  <motion.div
+                  <m.div
                     initial={{ opacity: 0, scale: 0.9 }}
                     animate={{
                       opacity: index === selectedIndex ? 1 : 0.5,
@@ -212,7 +219,7 @@ export function OnboardingCarousel({ translations }: OnboardingCarouselProps) {
                       {/* Mute switch (left) */}
                       <div className="absolute -left-[3px] top-[50px] w-[3px] h-[16px] bg-gradient-to-l from-zinc-600 to-zinc-800 rounded-l-sm shadow-md" />
                     </div>
-                  </motion.div>
+                  </m.div>
                 </div>
               );
             })}
@@ -227,7 +234,7 @@ export function OnboardingCarousel({ translations }: OnboardingCarouselProps) {
 
       {/* Step Info */}
       <AnimatePresence mode="wait">
-        <motion.div
+        <m.div
           key={`${activePhaseId}-${safeSelectedIndex}`}
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -256,7 +263,7 @@ export function OnboardingCarousel({ translations }: OnboardingCarouselProps) {
           <p className="text-[#596065] leading-relaxed">
             {currentStepTranslation.description}
           </p>
-        </motion.div>
+        </m.div>
       </AnimatePresence>
 
       {/* Progress */}

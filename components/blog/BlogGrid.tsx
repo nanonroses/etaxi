@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { BlogCard } from './BlogCard';
 import type { BlogArticle } from '@/lib/blog-data';
@@ -16,7 +16,7 @@ export function BlogGrid({ articles, showFeatured = true }: BlogGridProps) {
 
   if (articles.length === 0) {
     return (
-      <motion.div
+      <m.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         className="text-center py-16"
@@ -28,7 +28,7 @@ export function BlogGrid({ articles, showFeatured = true }: BlogGridProps) {
         <p className="text-gray-500">
           {t('noArticles.description')}
         </p>
-      </motion.div>
+      </m.div>
     );
   }
 
@@ -42,7 +42,7 @@ export function BlogGrid({ articles, showFeatured = true }: BlogGridProps) {
       {/* Featured articles */}
       {featuredArticles.length > 0 && (
         <div className="space-y-6">
-          <motion.h2
+          <m.h2
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -50,7 +50,7 @@ export function BlogGrid({ articles, showFeatured = true }: BlogGridProps) {
           >
             <span className="w-1.5 h-8 bg-[#dd1828] rounded-full" />
             {t('featuredArticles')}
-          </motion.h2>
+          </m.h2>
 
           <div className="grid md:grid-cols-2 gap-6">
             {featuredArticles.map((article, index) => (
@@ -69,7 +69,7 @@ export function BlogGrid({ articles, showFeatured = true }: BlogGridProps) {
       {regularArticles.length > 0 && (
         <div className="space-y-6">
           {showFeatured && featuredArticles.length > 0 && (
-            <motion.h2
+            <m.h2
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -77,7 +77,7 @@ export function BlogGrid({ articles, showFeatured = true }: BlogGridProps) {
             >
               <span className="w-1.5 h-8 bg-[#fff500] rounded-full" />
               {t('allArticles')}
-            </motion.h2>
+            </m.h2>
           )}
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">

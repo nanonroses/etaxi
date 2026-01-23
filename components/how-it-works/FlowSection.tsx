@@ -1,7 +1,7 @@
 'use client';
 
 import { Download, MapPin, Check, Eye, Shield, Star, Clipboard, FileCheck, GraduationCap, Power, Bell, CheckCircle, Phone, FileText, Settings, Users, Activity, BarChart } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 
 const iconMap = {
   download: Download,
@@ -61,7 +61,7 @@ export function FlowSection({ title, subtitle, steps, bgColor = 'bg-white', acce
 
       <div className="container mx-auto max-w-[1200px] px-4 relative z-10">
         {/* Header with enhanced styling */}
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -79,13 +79,13 @@ export function FlowSection({ title, subtitle, steps, bgColor = 'bg-white', acce
           <p className={`text-lg md:text-xl max-w-3xl mx-auto leading-relaxed ${isDarkBg ? 'text-white/80' : 'text-[#596065]'}`}>
             {subtitle}
           </p>
-        </motion.div>
+        </m.div>
 
         {/* Timeline Layout */}
         <div className="relative">
           {/* Vertical Timeline Line - Desktop */}
           <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-1 -translate-x-1/2">
-            <motion.div
+            <m.div
               initial={{ height: 0 }}
               whileInView={{ height: '100%' }}
               viewport={{ once: true }}
@@ -103,7 +103,7 @@ export function FlowSection({ title, subtitle, steps, bgColor = 'bg-white', acce
               const numberTextColor = isDarkBg ? 'text-[#030c13]' : 'text-white';
 
               return (
-                <motion.div
+                <m.div
                   key={index}
                   initial={{ opacity: 0, x: isEven ? -50 : 50 }}
                   whileInView={{ opacity: 1, x: 0 }}
@@ -148,7 +148,7 @@ export function FlowSection({ title, subtitle, steps, bgColor = 'bg-white', acce
 
                   {/* Timeline Node - Desktop Only */}
                   <div className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20">
-                    <motion.div
+                    <m.div
                       initial={{ scale: 0 }}
                       whileInView={{ scale: 1 }}
                       viewport={{ once: true }}
@@ -158,7 +158,7 @@ export function FlowSection({ title, subtitle, steps, bgColor = 'bg-white', acce
                       <span className={`text-2xl font-bold ${numberTextColor}`}>
                         {step.number}
                       </span>
-                    </motion.div>
+                    </m.div>
                   </div>
 
                   {/* Mobile Number Badge */}
@@ -169,14 +169,14 @@ export function FlowSection({ title, subtitle, steps, bgColor = 'bg-white', acce
                       </span>
                     </div>
                   </div>
-                </motion.div>
+                </m.div>
               );
             })}
           </div>
         </div>
 
         {/* Summary Stats */}
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -189,7 +189,7 @@ export function FlowSection({ title, subtitle, steps, bgColor = 'bg-white', acce
             { number: '100%', label: 'Digital' },
             { number: '24/7', label: 'Disponible' },
           ].map((stat, index) => (
-            <motion.div
+            <m.div
               key={index}
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -203,9 +203,9 @@ export function FlowSection({ title, subtitle, steps, bgColor = 'bg-white', acce
               <div className={`text-sm font-medium ${isDarkBg ? 'text-white/70' : 'text-[#596065]'}`}>
                 {stat.label}
               </div>
-            </motion.div>
+            </m.div>
           ))}
-        </motion.div>
+        </m.div>
       </div>
     </section>
   );

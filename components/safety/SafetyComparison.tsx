@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { Check, X, Shield, AlertTriangle, Sparkles } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 
 export function SafetyComparison() {
   const t = useTranslations('safetyPage.safetyComparison');
@@ -39,12 +39,12 @@ export function SafetyComparison() {
     <section className="w-full py-24 bg-gradient-to-b from-white via-[#f8f9fa] to-white relative overflow-hidden">
       {/* Decorative background */}
       <div className="absolute inset-0 pointer-events-none">
-        <motion.div
+        <m.div
           animate={{ rotate: 360 }}
           transition={{ duration: 100, repeat: Infinity, ease: 'linear' }}
           className="absolute -top-40 -right-40 w-80 h-80 border border-[#dd1828]/10 rounded-full"
         />
-        <motion.div
+        <m.div
           animate={{ rotate: -360 }}
           transition={{ duration: 80, repeat: Infinity, ease: 'linear' }}
           className="absolute -bottom-40 -left-40 w-96 h-96 border border-green-500/10 rounded-full"
@@ -53,14 +53,14 @@ export function SafetyComparison() {
 
       <div className="container mx-auto max-w-[1200px] px-4 relative z-10">
         {/* Header */}
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <motion.div
+          <m.div
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
@@ -69,7 +69,7 @@ export function SafetyComparison() {
           >
             <Sparkles className="w-4 h-4 text-[#dd1828]" />
             <span className="text-sm font-bold text-[#dd1828]">Comparativa Visual</span>
-          </motion.div>
+          </m.div>
 
           <h2 className="text-4xl md:text-5xl font-bold text-[#0C1A2B] mb-4">
             {t('title')}
@@ -77,12 +77,12 @@ export function SafetyComparison() {
           <p className="text-lg md:text-xl text-[#596065] max-w-2xl mx-auto">
             {t('subtitle')}
           </p>
-        </motion.div>
+        </m.div>
 
         {/* Desktop Comparison - Modern Card Layout */}
         <div className="hidden md:grid md:grid-cols-2 gap-8 mb-12">
           {/* ETAXI Card */}
-          <motion.div
+          <m.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -95,13 +95,13 @@ export function SafetyComparison() {
 
               {/* Header */}
               <div className="flex items-center gap-4 mb-8 relative z-10">
-                <motion.div
+                <m.div
                   animate={{ scale: [1, 1.1, 1] }}
                   transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
                   className="w-16 h-16 rounded-2xl bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center shadow-lg"
                 >
                   <Shield className="w-8 h-8 text-white" />
-                </motion.div>
+                </m.div>
                 <div>
                   <h3 className="text-2xl font-bold text-[#0C1A2B]">ETAXI</h3>
                   <p className="text-sm text-green-600 font-semibold">100% Legal y Seguro</p>
@@ -111,7 +111,7 @@ export function SafetyComparison() {
               {/* Features */}
               <div className="space-y-4">
                 {features.map((feature, index) => (
-                  <motion.div
+                  <m.div
                     key={index}
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
@@ -120,23 +120,23 @@ export function SafetyComparison() {
                     className="bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300 border border-green-100 hover:border-green-300 group"
                   >
                     <div className="flex items-start gap-3">
-                      <motion.div
+                      <m.div
                         whileHover={{ scale: 1.2, rotate: 10 }}
                         className="flex-shrink-0 w-8 h-8 rounded-full bg-green-500 flex items-center justify-center mt-0.5 shadow-md"
                       >
                         <Check className="w-5 h-5 text-white" />
-                      </motion.div>
+                      </m.div>
                       <div>
                         <h4 className="font-bold text-[#0C1A2B] text-sm mb-1">{feature.title}</h4>
                         <p className="text-sm text-green-700">{feature.etaxi}</p>
                       </div>
                     </div>
-                  </motion.div>
+                  </m.div>
                 ))}
               </div>
 
               {/* Score */}
-              <motion.div
+              <m.div
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
@@ -145,12 +145,12 @@ export function SafetyComparison() {
               >
                 <span className="text-white font-bold text-2xl">5/5</span>
                 <span className="text-white/80 text-sm">Puntuación de Seguridad</span>
-              </motion.div>
+              </m.div>
             </div>
-          </motion.div>
+          </m.div>
 
           {/* Others Card */}
-          <motion.div
+          <m.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -163,13 +163,13 @@ export function SafetyComparison() {
 
               {/* Header */}
               <div className="flex items-center gap-4 mb-8 relative z-10">
-                <motion.div
+                <m.div
                   animate={{ rotate: [-5, 5, -5] }}
                   transition={{ duration: 1, repeat: Infinity, ease: 'easeInOut' }}
                   className="w-16 h-16 rounded-2xl bg-gradient-to-br from-red-500 to-orange-600 flex items-center justify-center shadow-lg"
                 >
                   <AlertTriangle className="w-8 h-8 text-white" />
-                </motion.div>
+                </m.div>
                 <div>
                   <h3 className="text-2xl font-bold text-[#0C1A2B]">Apps No Reguladas</h3>
                   <p className="text-sm text-red-600 font-semibold">Riesgos de Seguridad</p>
@@ -179,7 +179,7 @@ export function SafetyComparison() {
               {/* Features */}
               <div className="space-y-4">
                 {features.map((feature, index) => (
-                  <motion.div
+                  <m.div
                     key={index}
                     initial={{ opacity: 0, x: 20 }}
                     whileInView={{ opacity: 1, x: 0 }}
@@ -196,12 +196,12 @@ export function SafetyComparison() {
                         <p className="text-sm text-red-700">{feature.others}</p>
                       </div>
                     </div>
-                  </motion.div>
+                  </m.div>
                 ))}
               </div>
 
               {/* Score */}
-              <motion.div
+              <m.div
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
@@ -210,15 +210,15 @@ export function SafetyComparison() {
               >
                 <span className="text-white font-bold text-2xl">0/5</span>
                 <span className="text-white/80 text-sm">Puntuación de Seguridad</span>
-              </motion.div>
+              </m.div>
             </div>
-          </motion.div>
+          </m.div>
         </div>
 
         {/* Mobile Cards */}
         <div className="md:hidden space-y-6">
           {features.map((feature, index) => (
-            <motion.div
+            <m.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -265,19 +265,19 @@ export function SafetyComparison() {
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </m.div>
           ))}
         </div>
 
         {/* Bottom CTA */}
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.4 }}
           className="mt-16 text-center"
         >
-          <motion.div
+          <m.div
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-[#dd1828] to-[#ff4444] rounded-full shadow-xl cursor-pointer group"
@@ -286,8 +286,8 @@ export function SafetyComparison() {
             <span className="text-white font-bold text-lg">
               La seguridad no es negociable. Elige ETAXI.
             </span>
-          </motion.div>
-        </motion.div>
+          </m.div>
+        </m.div>
       </div>
     </section>
   );

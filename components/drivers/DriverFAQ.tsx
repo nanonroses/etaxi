@@ -3,7 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { HelpCircle } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 
 export function DriverFAQ() {
   const t = useTranslations('driverPage.faq');
@@ -45,7 +45,7 @@ export function DriverFAQ() {
     <section className="w-full py-20 bg-white">
       <div className="container mx-auto max-w-[900px] px-4">
         <div className="text-center mb-16">
-          <motion.div
+          <m.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -57,12 +57,12 @@ export function DriverFAQ() {
             <h2 className="text-3xl md:text-4xl font-bold text-[#182b33] mb-4">
               {t('title')}
             </h2>
-          </motion.div>
+          </m.div>
         </div>
 
         <div className="space-y-4">
           {faqs.map((faq, index) => (
-            <motion.div
+            <m.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -84,7 +84,7 @@ export function DriverFAQ() {
                   </p>
                 </CardContent>
               </Card>
-            </motion.div>
+            </m.div>
           ))}
         </div>
       </div>

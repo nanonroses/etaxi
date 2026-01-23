@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { Smartphone, Server, Zap, MapPin, Lock, LayoutDashboard } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 
 export function TechStack() {
   const t = useTranslations('howItWorksPage.techStack');
@@ -70,7 +70,7 @@ export function TechStack() {
           {features.map((feature, index) => {
             const Icon = feature.icon;
             return (
-              <motion.div
+              <m.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -90,7 +90,7 @@ export function TechStack() {
                 <p className="text-white/70 leading-relaxed text-sm">
                   {feature.description}
                 </p>
-              </motion.div>
+              </m.div>
             );
           })}
         </div>

@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { Star, Download, Smartphone, Apple, Play } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -24,7 +24,7 @@ function PhoneMockup({
     zIndex?: number;
 }) {
     return (
-        <motion.div
+        <m.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -71,7 +71,7 @@ function PhoneMockup({
 
             {/* Subtle reflection highlight on frame */}
             <div className="absolute top-2 left-4 right-4 h-8 bg-gradient-to-b from-white/30 to-transparent rounded-t-[2rem] pointer-events-none" />
-        </motion.div>
+        </m.div>
     );
 }
 
@@ -98,12 +98,12 @@ export function AppPreview() {
         <section className="w-full py-24 bg-gradient-to-br from-[#182b33] via-[#030c13] to-[#182b33] relative overflow-hidden">
             {/* Animated background */}
             <div className="absolute inset-0 pointer-events-none">
-                <motion.div
+                <m.div
                     animate={{ y: [0, -20, 0], opacity: [0.05, 0.1, 0.05] }}
                     transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
                     className="absolute top-20 left-[20%] w-80 h-80 rounded-full bg-[#dd1828] blur-[150px]"
                 />
-                <motion.div
+                <m.div
                     animate={{ y: [0, 20, 0], opacity: [0.05, 0.08, 0.05] }}
                     transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut', delay: 2 }}
                     className="absolute bottom-20 right-[20%] w-80 h-80 rounded-full bg-[#fff500] blur-[150px]"
@@ -112,14 +112,14 @@ export function AppPreview() {
 
             <div className="container mx-auto max-w-[1200px] px-4 relative z-10">
                 {/* Header */}
-                <motion.div
+                <m.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
                     className="text-center mb-16"
                 >
-                    <motion.div
+                    <m.div
                         initial={{ opacity: 0, scale: 0.9 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
@@ -128,7 +128,7 @@ export function AppPreview() {
                     >
                         <Smartphone className="w-4 h-4 text-[#fff500]" />
                         <span className="text-sm font-bold text-[#fff500]">Disponible Gratis</span>
-                    </motion.div>
+                    </m.div>
 
                     <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
                         Conoce la App{' '}
@@ -151,7 +151,7 @@ export function AppPreview() {
                         <span className="text-white font-medium">4.8</span>
                         <span className="text-white/60 text-sm">• +10,000 descargas</span>
                     </div>
-                </motion.div>
+                </m.div>
 
                 {/* Phone Showcase */}
                 <div className="flex justify-center items-center gap-4 md:gap-8 mb-16">
@@ -191,7 +191,7 @@ export function AppPreview() {
                 </div>
 
                 {/* Download Buttons */}
-                <motion.div
+                <m.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
@@ -199,7 +199,7 @@ export function AppPreview() {
                     className="flex flex-col sm:flex-row gap-4 justify-center items-center"
                 >
                     {/* App Store */}
-                    <motion.a
+                    <m.a
                         href={PASSENGER_APP_URLS.ios}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -212,10 +212,10 @@ export function AppPreview() {
                             <p className="text-[10px] text-gray-500 uppercase tracking-wide">Descargar en</p>
                             <p className="text-lg font-bold text-[#182b33] -mt-1">App Store</p>
                         </div>
-                    </motion.a>
+                    </m.a>
 
                     {/* Google Play */}
-                    <motion.a
+                    <m.a
                         href={PASSENGER_APP_URLS.android}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -228,11 +228,11 @@ export function AppPreview() {
                             <p className="text-[10px] text-gray-500 uppercase tracking-wide">Disponible en</p>
                             <p className="text-lg font-bold text-[#182b33] -mt-1">Google Play</p>
                         </div>
-                    </motion.a>
-                </motion.div>
+                    </m.a>
+                </m.div>
 
                 {/* Features row - improved with check icons */}
-                <motion.div
+                <m.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
@@ -245,7 +245,7 @@ export function AppPreview() {
                         'Seguimiento en tiempo real',
                         'Historial completo de viajes',
                     ].map((feature, index) => (
-                        <motion.div
+                        <m.div
                             key={index}
                             initial={{ opacity: 0, y: 10 }}
                             whileInView={{ opacity: 1, y: 0 }}
@@ -267,9 +267,9 @@ export function AppPreview() {
                                 </svg>
                             </div>
                             <span className="text-white/80 text-sm">{feature}</span>
-                        </motion.div>
+                        </m.div>
                     ))}
-                </motion.div>
+                </m.div>
             </div>
         </section>
     );

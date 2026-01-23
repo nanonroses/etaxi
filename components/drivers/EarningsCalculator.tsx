@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { Clock, TrendingUp, DollarSign } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 
 export function EarningsCalculator() {
   const t = useTranslations('driverPage.earnings');
@@ -50,7 +50,7 @@ export function EarningsCalculator() {
           {scenarios.map((scenario, index) => {
             const Icon = scenario.icon;
             return (
-              <motion.div
+              <m.div
                 key={index}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -97,13 +97,13 @@ export function EarningsCalculator() {
                     </span>
                   </div>
                 </div>
-              </motion.div>
+              </m.div>
             );
           })}
         </div>
 
         {/* Disclaimer */}
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -113,7 +113,7 @@ export function EarningsCalculator() {
           <p className="text-sm text-[#182b33]">
             {t('note')}
           </p>
-        </motion.div>
+        </m.div>
       </div>
     </section>
   );

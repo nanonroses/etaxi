@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { ExternalLink } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import type { BlogArticle } from '@/lib/blog-data';
@@ -15,7 +15,7 @@ export function ArticleContent({ article }: ArticleContentProps) {
   return (
     <div className="space-y-8">
       {/* Article content */}
-      <motion.article
+      <m.article
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3 }}
@@ -25,11 +25,11 @@ export function ArticleContent({ article }: ArticleContentProps) {
           className="article-content"
           dangerouslySetInnerHTML={{ __html: parseMarkdown(article.content) }}
         />
-      </motion.article>
+      </m.article>
 
       {/* Sources section */}
       {article.sources && article.sources.length > 0 && (
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5 }}
@@ -54,7 +54,7 @@ export function ArticleContent({ article }: ArticleContentProps) {
               </li>
             ))}
           </ul>
-        </motion.div>
+        </m.div>
       )}
 
       {/* Styles for article content */}

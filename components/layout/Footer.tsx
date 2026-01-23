@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useTranslations, useLocale } from 'next-intl';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import {
   Smartphone,
   Building2,
@@ -83,7 +83,7 @@ export function Footer() {
 
       <div className="container mx-auto max-w-[1200px] px-4 py-16 relative z-10">
         {/* Header Section */}
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -118,7 +118,7 @@ export function Footer() {
             {stats.map((stat, index) => {
               const Icon = stat.icon;
               return (
-                <motion.div
+                <m.div
                   key={index}
                   initial={{ opacity: 0, scale: 0.9 }}
                   whileInView={{ opacity: 1, scale: 1 }}
@@ -133,16 +133,16 @@ export function Footer() {
                     <div className="text-sm font-bold text-white">{stat.value}</div>
                     <div className="text-xs text-white/60">{stat.label}</div>
                   </div>
-                </motion.div>
+                </m.div>
               );
             })}
           </div>
-        </motion.div>
+        </m.div>
 
         {/* Links Grid */}
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4 mb-12">
           {/* Services */}
-          <motion.div
+          <m.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -169,10 +169,10 @@ export function Footer() {
                 </li>
               ))}
             </ul>
-          </motion.div>
+          </m.div>
 
           {/* Company */}
-          <motion.div
+          <m.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -199,10 +199,10 @@ export function Footer() {
                 </li>
               ))}
             </ul>
-          </motion.div>
+          </m.div>
 
           {/* Support & Contact */}
-          <motion.div
+          <m.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -249,10 +249,10 @@ export function Footer() {
                 </a>
               </li>
             </ul>
-          </motion.div>
+          </m.div>
 
           {/* Legal */}
-          <motion.div
+          <m.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -277,11 +277,11 @@ export function Footer() {
                 </li>
               ))}
             </ul>
-          </motion.div>
+          </m.div>
         </div>
 
         {/* Social Links */}
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -308,10 +308,10 @@ export function Footer() {
               );
             })}
           </div>
-        </motion.div>
+        </m.div>
 
         {/* CTA Download */}
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -344,12 +344,12 @@ export function Footer() {
               Google Play
             </a>
           </div>
-        </motion.div>
+        </m.div>
 
         {/* Bottom Section */}
         <div className="border-t border-white/10 pt-8">
           {/* Copyright */}
-          <motion.div
+          <m.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
@@ -365,7 +365,7 @@ export function Footer() {
                 ? 'ETAXI es una plataforma 100% regulada bajo la Ley 21.553 de Chile. Todos nuestros conductores están certificados y cumplen con la normativa vigente.'
                 : 'ETAXI is a 100% regulated platform under Chilean Law 21.553. All our drivers are certified and comply with current regulations.'}
             </p>
-          </motion.div>
+          </m.div>
         </div>
       </div>
     </footer>

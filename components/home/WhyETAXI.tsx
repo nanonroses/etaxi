@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { Check, AlertTriangle, Shield, Award } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 
 export function WhyETAXI() {
   const t = useTranslations('whyEtaxi');
@@ -47,14 +47,14 @@ export function WhyETAXI() {
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#182b33]/5 rounded-full blur-3xl" />
 
       <div className="container relative mx-auto max-w-[1100px] px-4">
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <motion.div
+          <m.div
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
@@ -63,7 +63,7 @@ export function WhyETAXI() {
           >
             <Shield className="w-4 h-4" />
             <span className="text-sm">La diferencia ETAXI</span>
-          </motion.div>
+          </m.div>
 
           <h2 className="text-4xl md:text-5xl font-bold text-[#182b33] mb-4">
             {t('title')}
@@ -71,14 +71,14 @@ export function WhyETAXI() {
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             {t('subtitle')}
           </p>
-        </motion.div>
+        </m.div>
 
         {/* Comparison Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {comparisons.slice(0, 3).map((comparison, index) => {
             const Icon = comparison.icon;
             return (
-              <motion.div
+              <m.div
                 key={index}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -114,13 +114,13 @@ export function WhyETAXI() {
                     </p>
                   </div>
                 </div>
-              </motion.div>
+              </m.div>
             );
           })}
         </div>
 
         {/* Full-width comparison table for remaining items */}
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -147,7 +147,7 @@ export function WhyETAXI() {
 
           {/* Comparison Rows */}
           {comparisons.slice(3).map((comparison, index) => (
-            <motion.div
+            <m.div
               key={index}
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -180,12 +180,12 @@ export function WhyETAXI() {
                   </p>
                 </div>
               </div>
-            </motion.div>
+            </m.div>
           ))}
-        </motion.div>
+        </m.div>
 
         {/* Bottom CTA */}
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -195,7 +195,7 @@ export function WhyETAXI() {
           <p className="text-lg text-gray-600">
             <span className="font-semibold text-[#182b33]">ETAXI:</span> Taxis 100% legales, regulados y seguros
           </p>
-        </motion.div>
+        </m.div>
       </div>
     </section>
   );

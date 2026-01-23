@@ -1,6 +1,7 @@
 export { BlogHero } from './BlogHero';
 export { BlogCard } from './BlogCard';
 export { BlogCategories } from './BlogCategories';
+export { BlogContent } from './BlogContent';
 export { BlogGrid } from './BlogGrid';
 export { ArticleHeader } from './ArticleHeader';
 export { ArticleContent } from './ArticleContent';

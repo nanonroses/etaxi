@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 
 interface OnboardingProgressProps {
   current: number;
@@ -19,7 +19,7 @@ export function OnboardingProgress({
     <div className="w-full max-w-md mx-auto">
       {/* Progress bar */}
       <div className="relative h-2 bg-gray-200 rounded-full overflow-hidden">
-        <motion.div
+        <m.div
           className="absolute left-0 top-0 h-full rounded-full"
           style={{ backgroundColor: phaseColor }}
           initial={{ width: 0 }}

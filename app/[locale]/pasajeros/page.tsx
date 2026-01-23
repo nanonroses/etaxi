@@ -15,7 +15,7 @@ import { PassengerCTA } from '@/components/passengers/PassengerCTA';
 import { StructuredData } from '@/components/seo/StructuredData';
 import { Smartphone } from 'lucide-react';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 
 export default function PasajerosPage() {
   const t = useTranslations('passengerPage');
@@ -51,7 +51,7 @@ export default function PasajerosPage() {
           <div className="container mx-auto max-w-[1200px] px-4 relative z-10">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               {/* Left: Text content */}
-              <motion.div
+              <m.div
                 initial={{ opacity: 0, y: 24 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, ease: 'easeOut' }}
@@ -87,10 +87,10 @@ export default function PasajerosPage() {
                     {t('hero.cta2')}
                   </a>
                 </div>
-              </motion.div>
+              </m.div>
 
               {/* Right: Visual element */}
-              <motion.div
+              <m.div
                 initial={{ opacity: 0, x: 40 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 0.2, ease: 'easeOut' }}
@@ -105,7 +105,7 @@ export default function PasajerosPage() {
                     <Smartphone className="w-32 h-32 text-[#182b33]" />
                   </div>
                 </div>
-              </motion.div>
+              </m.div>
             </div>
           </div>
         </section>

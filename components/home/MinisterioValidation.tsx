@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { Shield, CheckCircle, FileCheck, Award, Scale, Building2 } from 'lucide-react';
 import Link from 'next/link';
 import { useLocale } from 'next-intl';
@@ -42,7 +42,7 @@ export function MinisterioValidation() {
             <div className="container mx-auto max-w-[1200px] px-4 relative z-10">
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                     {/* Left - Badge/Seal */}
-                    <motion.div
+                    <m.div
                         initial={{ opacity: 0, x: -30 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
@@ -51,7 +51,7 @@ export function MinisterioValidation() {
                     >
                         <div className="relative">
                             {/* Glowing effect */}
-                            <motion.div
+                            <m.div
                                 animate={{ scale: [1, 1.05, 1], opacity: [0.3, 0.5, 0.3] }}
                                 transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
                                 className="absolute -inset-8 bg-gradient-to-br from-[#dd1828]/20 to-[#182b33]/20 rounded-full blur-2xl"
@@ -65,12 +65,12 @@ export function MinisterioValidation() {
 
                                 {/* Content */}
                                 <div className="relative w-48 h-48 md:w-56 md:h-56 flex flex-col items-center justify-center text-center">
-                                    <motion.div
+                                    <m.div
                                         animate={{ rotate: [0, 5, -5, 0] }}
                                         transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
                                     >
                                         <Shield className="w-16 h-16 md:w-20 md:h-20 text-[#fff500] mb-3" />
-                                    </motion.div>
+                                    </m.div>
 
                                     <p className="text-[#fff500] text-xs font-bold uppercase tracking-widest mb-1">
                                         Validado por
@@ -86,7 +86,7 @@ export function MinisterioValidation() {
                                     </p>
 
                                     {/* Verified badge */}
-                                    <motion.div
+                                    <m.div
                                         initial={{ scale: 0 }}
                                         whileInView={{ scale: 1 }}
                                         viewport={{ once: true }}
@@ -94,21 +94,21 @@ export function MinisterioValidation() {
                                         className="absolute -bottom-2 -right-2 w-14 h-14 bg-green-500 rounded-full flex items-center justify-center shadow-lg border-4 border-white"
                                     >
                                         <CheckCircle className="w-8 h-8 text-white" />
-                                    </motion.div>
+                                    </m.div>
                                 </div>
                             </div>
                         </div>
-                    </motion.div>
+                    </m.div>
 
                     {/* Right - Content */}
-                    <motion.div
+                    <m.div
                         initial={{ opacity: 0, x: 30 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.2 }}
                         className="text-center lg:text-left"
                     >
-                        <motion.div
+                        <m.div
                             initial={{ opacity: 0, y: 10 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
@@ -117,7 +117,7 @@ export function MinisterioValidation() {
                         >
                             <CheckCircle className="w-4 h-4 text-green-600" />
                             <span className="text-sm font-bold text-green-700">100% Legal y Regulado</span>
-                        </motion.div>
+                        </m.div>
 
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#182b33] mb-4">
                             La <span className="text-[#dd1828]">Única</span> Plataforma{' '}
@@ -133,7 +133,7 @@ export function MinisterioValidation() {
                         {/* Validation grid */}
                         <div className="grid grid-cols-2 gap-4 mb-8">
                             {validations.map((item, index) => (
-                                <motion.div
+                                <m.div
                                     key={index}
                                     initial={{ opacity: 0, y: 20 }}
                                     whileInView={{ opacity: 1, y: 0 }}
@@ -150,12 +150,12 @@ export function MinisterioValidation() {
                                             <p className="text-[#596065] text-xs leading-relaxed">{item.description}</p>
                                         </div>
                                     </div>
-                                </motion.div>
+                                </m.div>
                             ))}
                         </div>
 
                         {/* CTA */}
-                        <motion.div
+                        <m.div
                             whileHover={{ scale: 1.02 }}
                             whileTap={{ scale: 0.98 }}
                         >
@@ -166,8 +166,8 @@ export function MinisterioValidation() {
                                 <FileCheck className="w-5 h-5" />
                                 Ver Cumplimiento Legal
                             </Link>
-                        </motion.div>
-                    </motion.div>
+                        </m.div>
+                    </m.div>
                 </div>
             </div>
         </section>

@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { Calendar, Clock, User, ArrowLeft, Share2, Bookmark } from 'lucide-react';
 import Link from 'next/link';
 import { useLocale, useTranslations } from 'next-intl';
@@ -64,7 +64,7 @@ export function ArticleHeader({ article }: ArticleHeaderProps) {
 
       <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Back button */}
-        <motion.div
+        <m.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           className="mb-8"
@@ -76,9 +76,9 @@ export function ArticleHeader({ article }: ArticleHeaderProps) {
             <ArrowLeft className="w-4 h-4" />
             <span>{t('backToBlog')}</span>
           </Link>
-        </motion.div>
+        </m.div>
 
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -126,7 +126,7 @@ export function ArticleHeader({ article }: ArticleHeaderProps) {
             </div>
 
             {/* Share button */}
-            <motion.button
+            <m.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={handleShare}
@@ -134,7 +134,7 @@ export function ArticleHeader({ article }: ArticleHeaderProps) {
             >
               <Share2 className="w-4 h-4" />
               <span className="hidden sm:inline">{t('share')}</span>
-            </motion.button>
+            </m.button>
           </div>
 
           {/* Tags */}
@@ -148,7 +148,7 @@ export function ArticleHeader({ article }: ArticleHeaderProps) {
               </span>
             ))}
           </div>
-        </motion.div>
+        </m.div>
       </div>
 
       {/* Bottom wave */}

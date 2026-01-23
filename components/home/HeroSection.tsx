@@ -3,7 +3,7 @@
 import { useTranslations, useLocale } from 'next-intl';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { Shield, CheckCircle, Car, Users } from 'lucide-react';
 import Image from 'next/image';
 
@@ -46,14 +46,14 @@ export function HeroSection({ title, subtitle, primaryCta, secondaryCta }: HeroS
       <div className="container relative mx-auto max-w-7xl px-4 py-20 pb-32 md:pb-40 z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[70vh]">
           {/* Left Content */}
-          <motion.div
+          <m.div
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: 'easeOut' }}
             className="space-y-8 text-white z-10"
           >
             {/* Badge */}
-            <motion.div
+            <m.div
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.2 }}
@@ -61,7 +61,7 @@ export function HeroSection({ title, subtitle, primaryCta, secondaryCta }: HeroS
             >
               <Shield className="w-4 h-4 text-[#fff500]" />
               <span className="text-sm font-medium">100% Taxis Regulados - Ley 21.553</span>
-            </motion.div>
+            </m.div>
 
             {/* Title */}
             <div className="space-y-4">
@@ -74,7 +74,7 @@ export function HeroSection({ title, subtitle, primaryCta, secondaryCta }: HeroS
             </div>
 
             {/* CTA Buttons */}
-            <motion.div
+            <m.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
@@ -97,10 +97,10 @@ export function HeroSection({ title, subtitle, primaryCta, secondaryCta }: HeroS
                   {secondaryCtaLabel}
                 </Button>
               </Link>
-            </motion.div>
+            </m.div>
 
             {/* Trust indicators */}
-            <motion.div
+            <m.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.6 }}
@@ -114,11 +114,11 @@ export function HeroSection({ title, subtitle, primaryCta, secondaryCta }: HeroS
                 <CheckCircle className="w-5 h-5 text-green-400" />
                 <span>Tarifas Transparentes</span>
               </div>
-            </motion.div>
-          </motion.div>
+            </m.div>
+          </m.div>
 
           {/* Right - Illustration/Image placeholder */}
-          <motion.div
+          <m.div
             initial={{ opacity: 0, x: 60 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: 'easeOut', delay: 0.3 }}
@@ -140,19 +140,19 @@ export function HeroSection({ title, subtitle, primaryCta, secondaryCta }: HeroS
               </div>
 
               {/* Floating elements */}
-              <motion.div
+              <m.div
                 animate={{ y: [0, -20, 0] }}
                 transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
                 className="absolute -top-8 -right-8 bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/20"
               >
                 <Shield className="w-12 h-12 text-[#fff500]" />
-              </motion.div>
+              </m.div>
             </div>
-          </motion.div>
+          </m.div>
         </div>
 
         {/* Stats Section */}
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.8 }}
@@ -161,7 +161,7 @@ export function HeroSection({ title, subtitle, primaryCta, secondaryCta }: HeroS
           {stats.map((stat, index) => {
             const Icon = stat.icon;
             return (
-              <motion.div
+              <m.div
                 key={index}
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -177,10 +177,10 @@ export function HeroSection({ title, subtitle, primaryCta, secondaryCta }: HeroS
                 <div className="text-sm text-white/70">
                   {stat.label}
                 </div>
-              </motion.div>
+              </m.div>
             );
           })}
-        </motion.div>
+        </m.div>
       </div>
 
       {/* Bottom curve */}

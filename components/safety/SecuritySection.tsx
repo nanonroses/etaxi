@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import {
   CheckCircle, Shield, IdCard, FileCheck, GraduationCap,
   Building, Wrench, Gauge, ShieldCheck, MapPin, Share2,
@@ -68,12 +68,12 @@ export function SecuritySection({ title, subtitle, requirements, bgColor = 'bg-w
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {darkBg ? (
           <>
-            <motion.div
+            <m.div
               animate={{ scale: [1, 1.2, 1], opacity: [0.05, 0.1, 0.05] }}
               transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
               className="absolute top-20 right-10 w-80 h-80 rounded-full bg-[#fff500] blur-[120px]"
             />
-            <motion.div
+            <m.div
               animate={{ scale: [1, 1.1, 1], opacity: [0.05, 0.08, 0.05] }}
               transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut', delay: 2 }}
               className="absolute bottom-20 left-10 w-80 h-80 rounded-full bg-[#dd1828] blur-[120px]"
@@ -81,12 +81,12 @@ export function SecuritySection({ title, subtitle, requirements, bgColor = 'bg-w
           </>
         ) : (
           <>
-            <motion.div
+            <m.div
               animate={{ scale: [1, 1.2, 1], opacity: [0.03, 0.06, 0.03] }}
               transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
               className="absolute top-20 right-10 w-80 h-80 rounded-full bg-[#dd1828] blur-[100px]"
             />
-            <motion.div
+            <m.div
               animate={{ scale: [1, 1.1, 1], opacity: [0.03, 0.05, 0.03] }}
               transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut', delay: 2 }}
               className="absolute bottom-20 left-10 w-80 h-80 rounded-full bg-[#182b33] blur-[100px]"
@@ -97,7 +97,7 @@ export function SecuritySection({ title, subtitle, requirements, bgColor = 'bg-w
 
       <div className="container mx-auto max-w-[1200px] px-4 relative z-10">
         {/* Header with animation */}
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -105,7 +105,7 @@ export function SecuritySection({ title, subtitle, requirements, bgColor = 'bg-w
           className="text-center mb-20"
         >
           {/* Badge */}
-          <motion.div
+          <m.div
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
@@ -116,7 +116,7 @@ export function SecuritySection({ title, subtitle, requirements, bgColor = 'bg-w
             <span className={`text-sm font-bold ${darkBg ? 'text-[#fff500]' : 'text-[#dd1828]'}`}>
               Garantía de Seguridad
             </span>
-          </motion.div>
+          </m.div>
 
           <h2 className={`text-4xl md:text-5xl font-bold ${titleColor} mb-6`}>
             {title}
@@ -124,7 +124,7 @@ export function SecuritySection({ title, subtitle, requirements, bgColor = 'bg-w
           <p className={`text-lg md:text-xl ${subtitleColor} max-w-3xl mx-auto leading-relaxed`}>
             {subtitle}
           </p>
-        </motion.div>
+        </m.div>
 
         {/* Requirements Grid with staggered animation */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -133,7 +133,7 @@ export function SecuritySection({ title, subtitle, requirements, bgColor = 'bg-w
             const isEven = index % 2 === 0;
 
             return (
-              <motion.div
+              <m.div
                 key={index}
                 initial={{ opacity: 0, x: isEven ? -30 : 30 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -156,25 +156,25 @@ export function SecuritySection({ title, subtitle, requirements, bgColor = 'bg-w
 
                   <div className="flex items-start gap-5 relative z-10">
                     {/* Icon Container */}
-                    <motion.div
+                    <m.div
                       whileHover={{ scale: 1.1, rotate: 5 }}
                       transition={{ type: 'spring', stiffness: 300 }}
                       className={`w-18 h-18 rounded-2xl bg-gradient-to-br ${accentColor} flex items-center justify-center shadow-xl flex-shrink-0 p-4`}
                     >
                       <Icon className="w-9 h-9 text-white" />
-                    </motion.div>
+                    </m.div>
 
                     {/* Content */}
                     <div className="flex-1">
                       <div className="flex items-start gap-2 mb-3">
-                        <motion.div
+                        <m.div
                           initial={{ scale: 0 }}
                           whileInView={{ scale: 1 }}
                           viewport={{ once: true }}
                           transition={{ delay: index * 0.1 + 0.3, type: 'spring', stiffness: 300 }}
                         >
                           <CheckCircle className={`w-6 h-6 ${darkBg ? 'text-[#fff500]' : 'text-green-500'} flex-shrink-0 mt-0.5`} />
-                        </motion.div>
+                        </m.div>
                         <h3 className={`text-xl font-bold ${darkBg ? 'text-white' : 'text-[#0C1A2B]'}`}>
                           {req.title}
                         </h3>
@@ -186,7 +186,7 @@ export function SecuritySection({ title, subtitle, requirements, bgColor = 'bg-w
                       {/* Progress bar decoration */}
                       <div className="mt-4">
                         <div className={`h-1 rounded-full ${darkBg ? 'bg-white/10' : 'bg-gray-200'} overflow-hidden`}>
-                          <motion.div
+                          <m.div
                             initial={{ width: 0 }}
                             whileInView={{ width: '100%' }}
                             viewport={{ once: true }}
@@ -198,13 +198,13 @@ export function SecuritySection({ title, subtitle, requirements, bgColor = 'bg-w
                     </div>
                   </div>
                 </div>
-              </motion.div>
+              </m.div>
             );
           })}
         </div>
 
         {/* Stats Row */}
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -217,7 +217,7 @@ export function SecuritySection({ title, subtitle, requirements, bgColor = 'bg-w
             { number: '+10K', label: 'Viajes Seguros' },
             { number: '4.9★', label: 'Calificación' },
           ].map((stat, index) => (
-            <motion.div
+            <m.div
               key={index}
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -232,9 +232,9 @@ export function SecuritySection({ title, subtitle, requirements, bgColor = 'bg-w
               <div className={`text-sm font-medium ${darkBg ? 'text-white/60' : 'text-[#596065]'}`}>
                 {stat.label}
               </div>
-            </motion.div>
+            </m.div>
           ))}
-        </motion.div>
+        </m.div>
       </div>
     </section>
   );

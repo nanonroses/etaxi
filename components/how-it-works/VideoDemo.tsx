@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { Check } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 
 export function VideoDemo() {
   const t = useTranslations('howItWorksPage.videoDemo');
@@ -28,7 +28,7 @@ export function VideoDemo() {
         </div>
 
         {/* Video Container */}
-        <motion.div
+        <m.div
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
@@ -46,12 +46,12 @@ export function VideoDemo() {
               className="absolute inset-0 w-full h-full"
             />
           </div>
-        </motion.div>
+        </m.div>
 
         {/* Features List */}
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-4">
           {features.map((feature, index) => (
-            <motion.div
+            <m.div
               key={index}
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -63,7 +63,7 @@ export function VideoDemo() {
                 <Check className="w-5 h-5 text-[#dd1828] group-hover:text-white transition-colors duration-300" />
               </div>
               <span className="text-[#182b33] font-medium">{feature}</span>
-            </motion.div>
+            </m.div>
           ))}
         </div>
       </div>

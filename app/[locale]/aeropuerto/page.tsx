@@ -3,7 +3,7 @@
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
-import { motion, useMotionValue, useTransform, animate } from 'framer-motion';
+import { m, useMotionValue, useTransform, animate } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import {
     Plane,
@@ -162,38 +162,38 @@ export default function AeropuertoPage() {
                 <section className="relative w-full overflow-hidden bg-gradient-to-br from-[#182b33] via-[#030c13] to-[#182b33] py-20 md:py-32 text-white">
                     {/* Animated background elements */}
                     <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                        <motion.div
+                        <m.div
                             animate={{ y: [0, -20, 0], opacity: [0.1, 0.2, 0.1] }}
                             transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
                             className="absolute top-20 left-[10%] w-96 h-96 rounded-full bg-[#fff500] blur-[180px]"
                         />
-                        <motion.div
+                        <m.div
                             animate={{ y: [0, 20, 0], opacity: [0.1, 0.15, 0.1] }}
                             transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut', delay: 2 }}
                             className="absolute bottom-20 right-[10%] w-96 h-96 rounded-full bg-[#dd1828] blur-[180px]"
                         />
 
                         {/* Floating plane */}
-                        <motion.div
+                        <m.div
                             animate={{ x: [-100, 800], y: [100, -50] }}
                             transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
                             className="absolute top-1/4 opacity-10"
                         >
                             <Plane className="w-20 h-20 text-white rotate-45" />
-                        </motion.div>
+                        </m.div>
                     </div>
 
                     <div className="container mx-auto max-w-[1200px] px-4 relative z-10">
                         <div className="grid lg:grid-cols-2 gap-12 items-center">
                             {/* Left Content */}
-                            <motion.div
+                            <m.div
                                 initial={{ opacity: 0, x: -50 }}
                                 animate={{ opacity: 1, x: 0 }}
                                 transition={{ duration: 0.7, ease: 'easeOut' }}
                                 className="text-center lg:text-left space-y-8"
                             >
                                 {/* Badge */}
-                                <motion.div
+                                <m.div
                                     initial={{ opacity: 0, y: 20 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.5, delay: 0.2 }}
@@ -203,7 +203,7 @@ export default function AeropuertoPage() {
                                     <span className="text-sm font-bold text-[#fff500] tracking-wide">
                                         Aeropuerto SCL Santiago
                                     </span>
-                                </motion.div>
+                                </m.div>
 
                                 {/* Title */}
                                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
@@ -223,7 +223,7 @@ export default function AeropuertoPage() {
 
                                 {/* CTA Buttons */}
                                 <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                                    <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                                    <m.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                                         <Link
                                             href={`/${locale}/descargar-app`}
                                             className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#dd1828] text-white font-bold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 group"
@@ -232,8 +232,8 @@ export default function AeropuertoPage() {
                                             Descargar App
                                             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                                         </Link>
-                                    </motion.div>
-                                    <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                                    </m.div>
+                                    <m.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                                         <Link
                                             href={`/${locale}/contacto`}
                                             className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 text-white font-bold rounded-full border-2 border-white/30 hover:bg-white/20 transition-all duration-300"
@@ -241,7 +241,7 @@ export default function AeropuertoPage() {
                                             <Phone className="w-5 h-5" />
                                             Contactar
                                         </Link>
-                                    </motion.div>
+                                    </m.div>
                                 </div>
 
                                 {/* Trust indicators */}
@@ -251,7 +251,7 @@ export default function AeropuertoPage() {
                                         { icon: Star, text: '4.9 Estrellas' },
                                         { icon: Users, text: '+50K Viajes' },
                                     ].map((item, index) => (
-                                        <motion.div
+                                        <m.div
                                             key={index}
                                             initial={{ opacity: 0, y: 20 }}
                                             animate={{ opacity: 1, y: 0 }}
@@ -260,13 +260,13 @@ export default function AeropuertoPage() {
                                         >
                                             <item.icon className="w-5 h-5 text-[#fff500]" />
                                             <span className="text-sm font-medium">{item.text}</span>
-                                        </motion.div>
+                                        </m.div>
                                     ))}
                                 </div>
-                            </motion.div>
+                            </m.div>
 
                             {/* Right Visual - Airport Card */}
-                            <motion.div
+                            <m.div
                                 initial={{ opacity: 0, x: 50 }}
                                 animate={{ opacity: 1, x: 0 }}
                                 transition={{ duration: 0.7, delay: 0.3, ease: 'easeOut' }}
@@ -328,7 +328,7 @@ export default function AeropuertoPage() {
                                         </div>
                                     </div>
                                 </div>
-                            </motion.div>
+                            </m.div>
                         </div>
                     </div>
                 </section>
@@ -347,7 +347,7 @@ export default function AeropuertoPage() {
                                 { value: 4.9, suffix: '★', label: 'Calificación', icon: Star },
                                 { value: 100, suffix: '%', label: 'Legal y Seguro', icon: Shield },
                             ].map((stat, index) => (
-                                <motion.div
+                                <m.div
                                     key={index}
                                     initial={{ opacity: 0, y: 20 }}
                                     whileInView={{ opacity: 1, y: 0 }}
@@ -360,7 +360,7 @@ export default function AeropuertoPage() {
                                         <AnimatedCounter target={stat.value} suffix={stat.suffix} />
                                     </div>
                                     <div className="text-white/80 text-sm font-medium">{stat.label}</div>
-                                </motion.div>
+                                </m.div>
                             ))}
                         </div>
                     </div>
@@ -372,7 +372,7 @@ export default function AeropuertoPage() {
                     <div className="absolute bottom-20 left-10 w-80 h-80 rounded-full bg-[#fff500]/5 blur-[100px]" />
 
                     <div className="container mx-auto max-w-[1200px] px-4 relative z-10">
-                        <motion.div
+                        <m.div
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
@@ -389,11 +389,11 @@ export default function AeropuertoPage() {
                             <p className="text-lg text-[#596065] max-w-2xl mx-auto">
                                 Tecnología de punta y atención humana para tu comodidad. Elige cómo contratar tu traslado.
                             </p>
-                        </motion.div>
+                        </m.div>
 
                         <div className="grid lg:grid-cols-2 gap-12 items-center">
                             {/* Totem Visualization */}
-                            <motion.div
+                            <m.div
                                 initial={{ opacity: 0, x: -50 }}
                                 whileInView={{ opacity: 1, x: 0 }}
                                 viewport={{ once: true }}
@@ -426,33 +426,33 @@ export default function AeropuertoPage() {
 
                                             {/* Content */}
                                             <div className="relative p-4 space-y-3">
-                                                <motion.div
+                                                <m.div
                                                     animate={{ opacity: [0.5, 1, 0.5] }}
                                                     transition={{ duration: 2, repeat: Infinity }}
                                                     className="text-center py-6"
                                                 >
                                                     <QrCode className="w-20 h-20 text-white/80 mx-auto" />
                                                     <p className="text-white/60 text-xs mt-2">Escanea para reservar</p>
-                                                </motion.div>
+                                                </m.div>
 
                                                 <div className="space-y-2">
-                                                    <motion.div
+                                                    <m.div
                                                         whileHover={{ scale: 1.02 }}
                                                         className="bg-[#dd1828] text-white text-center py-3 rounded-xl text-sm font-bold cursor-pointer"
                                                     >
                                                         SOLICITAR TAXI
-                                                    </motion.div>
-                                                    <motion.div
+                                                    </m.div>
+                                                    <m.div
                                                         whileHover={{ scale: 1.02 }}
                                                         className="bg-white/10 text-white text-center py-3 rounded-xl text-sm cursor-pointer"
                                                     >
                                                         Ver Tarifas
-                                                    </motion.div>
+                                                    </m.div>
                                                 </div>
                                             </div>
 
                                             {/* Animated scan line */}
-                                            <motion.div
+                                            <m.div
                                                 animate={{ y: [0, 400, 0] }}
                                                 transition={{ duration: 3, repeat: Infinity, ease: 'linear' }}
                                                 className="absolute left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-[#fff500] to-transparent opacity-50"
@@ -473,7 +473,7 @@ export default function AeropuertoPage() {
                                 {/* Features around totem */}
                                 <div className="absolute top-1/2 -translate-y-1/2 -left-4 md:left-0 space-y-4">
                                     {totemFeatures.slice(0, 2).map((feature, index) => (
-                                        <motion.div
+                                        <m.div
                                             key={index}
                                             initial={{ opacity: 0, x: -20 }}
                                             whileInView={{ opacity: 1, x: 0 }}
@@ -483,12 +483,12 @@ export default function AeropuertoPage() {
                                         >
                                             <feature.icon className="w-4 h-4 text-[#dd1828]" />
                                             <span className="text-xs font-medium text-[#182b33]">{feature.label}</span>
-                                        </motion.div>
+                                        </m.div>
                                     ))}
                                 </div>
                                 <div className="absolute top-1/2 -translate-y-1/2 -right-4 md:right-0 space-y-4">
                                     {totemFeatures.slice(2).map((feature, index) => (
-                                        <motion.div
+                                        <m.div
                                             key={index}
                                             initial={{ opacity: 0, x: 20 }}
                                             whileInView={{ opacity: 1, x: 0 }}
@@ -498,16 +498,16 @@ export default function AeropuertoPage() {
                                         >
                                             <feature.icon className="w-4 h-4 text-[#dd1828]" />
                                             <span className="text-xs font-medium text-[#182b33]">{feature.label}</span>
-                                        </motion.div>
+                                        </m.div>
                                     ))}
                                 </div>
 
                                 <p className="text-center mt-8 text-[#182b33] font-bold text-lg">Tótem Digital Interactivo</p>
                                 <p className="text-center text-[#596065] text-sm">Autoservicio 24/7 en el terminal</p>
-                            </motion.div>
+                            </m.div>
 
                             {/* Counter Visualization */}
-                            <motion.div
+                            <m.div
                                 initial={{ opacity: 0, x: 50 }}
                                 whileInView={{ opacity: 1, x: 0 }}
                                 viewport={{ once: true }}
@@ -529,13 +529,13 @@ export default function AeropuertoPage() {
                                         <div className="bg-white/10 backdrop-blur rounded-2xl p-6 border border-white/20">
                                             {/* Agent avatar area */}
                                             <div className="flex items-center gap-4 mb-6">
-                                                <motion.div
+                                                <m.div
                                                     animate={{ scale: [1, 1.05, 1] }}
                                                     transition={{ duration: 2, repeat: Infinity }}
                                                     className="w-20 h-20 rounded-full bg-gradient-to-br from-[#dd1828] to-[#fff500] flex items-center justify-center shadow-lg"
                                                 >
                                                     <UserCheck className="w-10 h-10 text-white" />
-                                                </motion.div>
+                                                </m.div>
                                                 <div>
                                                     <p className="text-white font-bold text-lg">Personal ETAXI</p>
                                                     <p className="text-white/60 text-sm">Atención Presencial</p>
@@ -549,7 +549,7 @@ export default function AeropuertoPage() {
                                             {/* Info cards */}
                                             <div className="grid grid-cols-2 gap-3">
                                                 {counterFeatures.map((feature, index) => (
-                                                    <motion.div
+                                                    <m.div
                                                         key={index}
                                                         initial={{ opacity: 0, scale: 0.9 }}
                                                         whileInView={{ opacity: 1, scale: 1 }}
@@ -559,7 +559,7 @@ export default function AeropuertoPage() {
                                                     >
                                                         <feature.icon className="w-6 h-6 text-[#fff500] mx-auto mb-1" />
                                                         <p className="text-white/80 text-[10px]">{feature.label}</p>
-                                                    </motion.div>
+                                                    </m.div>
                                                 ))}
                                             </div>
 
@@ -577,7 +577,7 @@ export default function AeropuertoPage() {
 
                                 <p className="text-center mt-8 text-[#182b33] font-bold text-lg">Counter Presencial</p>
                                 <p className="text-center text-[#596065] text-sm">Atención personalizada de expertos</p>
-                            </motion.div>
+                            </m.div>
                         </div>
                     </div>
                 </section>
@@ -587,7 +587,7 @@ export default function AeropuertoPage() {
                     <div className="absolute top-20 right-10 w-80 h-80 rounded-full bg-[#dd1828]/5 blur-[100px]" />
 
                     <div className="container mx-auto max-w-[1200px] px-4 relative z-10">
-                        <motion.div
+                        <m.div
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
@@ -604,11 +604,11 @@ export default function AeropuertoPage() {
                             <p className="text-lg text-[#596065] max-w-2xl mx-auto">
                                 Múltiples canales de atención para tu comodidad. Evita fraudes y viaja seguro con ETAXI.
                             </p>
-                        </motion.div>
+                        </m.div>
 
                         <div className="grid md:grid-cols-3 gap-8">
                             {services.map((service, index) => (
-                                <motion.div
+                                <m.div
                                     key={index}
                                     initial={{ opacity: 0, y: 30 }}
                                     whileInView={{ opacity: 1, y: 0 }}
@@ -617,17 +617,17 @@ export default function AeropuertoPage() {
                                     whileHover={{ y: -10 }}
                                     className="bg-gradient-to-b from-white to-gray-50 rounded-3xl p-8 shadow-xl border-2 border-gray-100 hover:border-[#dd1828] transition-all duration-300 group"
                                 >
-                                    <motion.div
+                                    <m.div
                                         whileHover={{ scale: 1.1, rotate: 5 }}
                                         className={`w-20 h-20 rounded-2xl bg-gradient-to-br ${service.color} flex items-center justify-center shadow-lg mb-6`}
                                     >
                                         <service.icon className="w-10 h-10 text-white" />
-                                    </motion.div>
+                                    </m.div>
                                     <h3 className="text-2xl font-bold text-[#182b33] mb-3">{service.title}</h3>
                                     <p className="text-[#596065] leading-relaxed">{service.description}</p>
 
                                     <div className="mt-6 h-1 rounded-full bg-gray-200 overflow-hidden">
-                                        <motion.div
+                                        <m.div
                                             initial={{ width: 0 }}
                                             whileInView={{ width: '100%' }}
                                             viewport={{ once: true }}
@@ -635,7 +635,7 @@ export default function AeropuertoPage() {
                                             className={`h-full rounded-full bg-gradient-to-r ${service.color}`}
                                         />
                                     </div>
-                                </motion.div>
+                                </m.div>
                             ))}
                         </div>
                     </div>
@@ -644,7 +644,7 @@ export default function AeropuertoPage() {
                 {/* How It Works */}
                 <section className="w-full py-24 bg-gradient-to-br from-[#030c13] to-[#182b33] relative overflow-hidden">
                     <div className="absolute inset-0 opacity-10">
-                        <motion.div
+                        <m.div
                             animate={{ rotate: 360 }}
                             transition={{ duration: 100, repeat: Infinity, ease: 'linear' }}
                             className="absolute top-20 left-20 w-96 h-96 border border-[#fff500] rounded-full"
@@ -652,7 +652,7 @@ export default function AeropuertoPage() {
                     </div>
 
                     <div className="container mx-auto max-w-[1200px] px-4 relative z-10">
-                        <motion.div
+                        <m.div
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
@@ -669,11 +669,11 @@ export default function AeropuertoPage() {
                             <p className="text-lg text-white/80 max-w-2xl mx-auto">
                                 4 pasos simples para tu traslado seguro desde o hacia el aeropuerto.
                             </p>
-                        </motion.div>
+                        </m.div>
 
                         <div className="grid md:grid-cols-4 gap-6">
                             {howItWorks.map((step, index) => (
-                                <motion.div
+                                <m.div
                                     key={index}
                                     initial={{ opacity: 0, y: 30 }}
                                     whileInView={{ opacity: 1, y: 0 }}
@@ -687,16 +687,16 @@ export default function AeropuertoPage() {
                                     )}
 
                                     <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:border-[#fff500]/50 transition-colors relative">
-                                        <motion.div
+                                        <m.div
                                             whileHover={{ scale: 1.1 }}
                                             className="w-16 h-16 rounded-full bg-gradient-to-br from-[#fff500] to-[#dd1828] flex items-center justify-center text-2xl font-bold text-[#182b33] shadow-lg mx-auto mb-4"
                                         >
                                             {step.step}
-                                        </motion.div>
+                                        </m.div>
                                         <h3 className="text-xl font-bold text-white mb-2 text-center">{step.title}</h3>
                                         <p className="text-white/70 text-sm text-center">{step.description}</p>
                                     </div>
-                                </motion.div>
+                                </m.div>
                             ))}
                         </div>
                     </div>
@@ -705,7 +705,7 @@ export default function AeropuertoPage() {
                 {/* Benefits Grid */}
                 <section className="w-full py-24 bg-white">
                     <div className="container mx-auto max-w-[1200px] px-4">
-                        <motion.div
+                        <m.div
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
@@ -722,11 +722,11 @@ export default function AeropuertoPage() {
                             <p className="text-lg text-[#596065] max-w-2xl mx-auto">
                                 ETAXI es la opción oficial y segura para traslados al aeropuerto.
                             </p>
-                        </motion.div>
+                        </m.div>
 
                         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                             {benefits.map((benefit, index) => (
-                                <motion.div
+                                <m.div
                                     key={index}
                                     initial={{ opacity: 0, scale: 0.95 }}
                                     whileInView={{ opacity: 1, scale: 1 }}
@@ -744,7 +744,7 @@ export default function AeropuertoPage() {
                                             <p className="text-[#596065] text-sm leading-relaxed">{benefit.description}</p>
                                         </div>
                                     </div>
-                                </motion.div>
+                                </m.div>
                             ))}
                         </div>
                     </div>
@@ -758,7 +758,7 @@ export default function AeropuertoPage() {
                     </div>
 
                     <div className="container mx-auto max-w-[900px] px-4 text-center relative z-10">
-                        <motion.div
+                        <m.div
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
@@ -772,7 +772,7 @@ export default function AeropuertoPage() {
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                                <m.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                                     <Link
                                         href={`/${locale}/descargar-app`}
                                         className="inline-flex items-center justify-center gap-2 px-10 py-5 bg-white text-[#dd1828] font-bold text-lg rounded-full shadow-xl hover:shadow-2xl transition-all duration-300"
@@ -780,13 +780,13 @@ export default function AeropuertoPage() {
                                         <Smartphone className="w-6 h-6" />
                                         Descargar App Gratis
                                     </Link>
-                                </motion.div>
+                                </m.div>
                             </div>
 
                             <p className="mt-8 text-white/60 text-sm">
                                 Encuéntranos en el Terminal Nacional e Internacional del Aeropuerto de Santiago
                             </p>
-                        </motion.div>
+                        </m.div>
                     </div>
                 </section>
             </main>

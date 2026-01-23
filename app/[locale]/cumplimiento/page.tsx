@@ -11,7 +11,7 @@ import {
   Building, Users, FileText, TrendingUp, Award
 } from 'lucide-react';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 
 export default function CumplimientoPage() {
   const t = useTranslations('complianceRegulatoryPage');
@@ -127,7 +127,7 @@ export default function CumplimientoPage() {
           </div>
 
           <div className="container mx-auto max-w-[1200px] px-4 relative z-10">
-            <motion.div
+            <m.div
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, ease: 'easeOut' }}
@@ -171,7 +171,7 @@ export default function CumplimientoPage() {
                   </Button>
                 </Link>
               </div>
-            </motion.div>
+            </m.div>
           </div>
         </section>
 
@@ -196,7 +196,7 @@ export default function CumplimientoPage() {
                   ? { gradient: 'from-[#dd1828] to-[#182b33]', bg: 'bg-[#dd1828]/5', border: 'border-[#dd1828]/20' }
                   : { gradient: 'from-[#182b33] to-[#030c13]', bg: 'bg-[#182b33]/5', border: 'border-[#182b33]/20' };
                 return (
-                  <motion.div
+                  <m.div
                     key={index}
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -233,7 +233,7 @@ export default function CumplimientoPage() {
                         </ul>
                       </CardContent>
                     </Card>
-                  </motion.div>
+                  </m.div>
                 );
               })}
             </div>
@@ -256,7 +256,7 @@ export default function CumplimientoPage() {
             {/* What ETAXI Does / Doesn't Do */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
               {/* Does */}
-              <motion.div
+              <m.div
                 initial={{ opacity: 0, x: -30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, margin: '-50px' }}
@@ -290,10 +290,10 @@ export default function CumplimientoPage() {
                     </ul>
                   </CardContent>
                 </Card>
-              </motion.div>
+              </m.div>
 
               {/* Doesn't Do */}
-              <motion.div
+              <m.div
                 initial={{ opacity: 0, x: 30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, margin: '-50px' }}
@@ -327,11 +327,11 @@ export default function CumplimientoPage() {
                     </ul>
                   </CardContent>
                 </Card>
-              </motion.div>
+              </m.div>
             </div>
 
             {/* Responsibility Table */}
-            <motion.div
+            <m.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-50px' }}
@@ -373,7 +373,7 @@ export default function CumplimientoPage() {
                   </tbody>
                 </table>
               </div>
-            </motion.div>
+            </m.div>
           </div>
         </section>
 
@@ -395,7 +395,7 @@ export default function CumplimientoPage() {
               {risks.map((risk, index) => {
                 const Icon = risk.icon;
                 return (
-                  <motion.div
+                  <m.div
                     key={index}
                     initial={{ opacity: 0, x: -30 }}
                     whileInView={{ opacity: 1, x: 0 }}
@@ -414,13 +414,13 @@ export default function CumplimientoPage() {
                         </div>
                       </CardContent>
                     </Card>
-                  </motion.div>
+                  </m.div>
                 );
               })}
             </div>
 
             {/* Counterpoint */}
-            <motion.div
+            <m.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-50px' }}
@@ -443,7 +443,7 @@ export default function CumplimientoPage() {
                   </div>
                 </CardContent>
               </Card>
-            </motion.div>
+            </m.div>
           </div>
         </section>
 
@@ -472,7 +472,7 @@ export default function CumplimientoPage() {
                 ];
                 const colorScheme = colors[index % colors.length];
                 return (
-                  <motion.div
+                  <m.div
                     key={index}
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -496,7 +496,7 @@ export default function CumplimientoPage() {
                         </div>
                       </CardHeader>
                     </Card>
-                  </motion.div>
+                  </m.div>
                 );
               })}
             </div>
@@ -506,7 +506,7 @@ export default function CumplimientoPage() {
         {/* Disclaimer Section */}
         <section className="w-full py-16 bg-gray-100">
           <div className="container mx-auto max-w-[900px] px-4">
-            <motion.div
+            <m.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-50px' }}
@@ -531,7 +531,7 @@ export default function CumplimientoPage() {
                   </p>
                 </CardContent>
               </Card>
-            </motion.div>
+            </m.div>
           </div>
         </section>
 
@@ -547,7 +547,7 @@ export default function CumplimientoPage() {
           </div>
 
           <div className="container mx-auto max-w-4xl px-4 text-center relative z-10">
-            <motion.div
+            <m.div
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -578,7 +578,7 @@ export default function CumplimientoPage() {
                   </Button>
                 </Link>
               </div>
-            </motion.div>
+            </m.div>
           </div>
         </section>
       </main>

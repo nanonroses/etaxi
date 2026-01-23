@@ -4,7 +4,7 @@ import { useTranslations, useLocale } from 'next-intl';
 import { Button } from '@/components/ui/button';
 import { Shield, Video, AlertCircle, MapPin, UserCheck, Headphones } from 'lucide-react';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 
 interface SafetyFeaturesProps {
   intro?: string;
@@ -51,7 +51,7 @@ export function SafetyFeatures({ intro }: SafetyFeaturesProps) {
       </div>
 
       <div className="container relative mx-auto max-w-5xl px-4">
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -59,7 +59,7 @@ export function SafetyFeatures({ intro }: SafetyFeaturesProps) {
           className="text-center mb-16"
         >
           {/* Badge */}
-          <motion.div
+          <m.div
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
@@ -68,7 +68,7 @@ export function SafetyFeatures({ intro }: SafetyFeaturesProps) {
           >
             <Shield className="w-4 h-4" />
             <span className="text-sm">Tecnología de Seguridad Avanzada</span>
-          </motion.div>
+          </m.div>
 
           <h2 className="text-4xl md:text-5xl font-bold text-[#182b33] mb-4">
             {t('title')}
@@ -76,14 +76,14 @@ export function SafetyFeatures({ intro }: SafetyFeaturesProps) {
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Sistema integral de protección para conductores y pasajeros
           </p>
-        </motion.div>
+        </m.div>
 
         {/* Features Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
           {features.map((feature, index) => {
             const Icon = feature.icon;
             return (
-              <motion.div
+              <m.div
                 key={index}
                 initial={{ opacity: 0, x: index % 2 === 0 ? -40 : 40 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -94,13 +94,13 @@ export function SafetyFeatures({ intro }: SafetyFeaturesProps) {
                 <div className="h-full bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-[#dd1828]/20">
                   <div className="flex items-start gap-4">
                     {/* Icon */}
-                    <motion.div
+                    <m.div
                       whileHover={{ scale: 1.1, rotate: 5 }}
                       transition={{ duration: 0.3 }}
                       className="flex-shrink-0 w-12 h-12 rounded-lg bg-gradient-to-br from-[#dd1828] to-[#182b33] flex items-center justify-center shadow-lg group-hover:shadow-[#dd1828]/50"
                     >
                       <Icon className="w-6 h-6 text-white" />
-                    </motion.div>
+                    </m.div>
 
                     {/* Content */}
                     <div className="flex-1">
@@ -113,13 +113,13 @@ export function SafetyFeatures({ intro }: SafetyFeaturesProps) {
                     </div>
                   </div>
                 </div>
-              </motion.div>
+              </m.div>
             );
           })}
         </div>
 
         {/* Stats Section */}
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -140,10 +140,10 @@ export function SafetyFeatures({ intro }: SafetyFeaturesProps) {
               <div className="text-sm opacity-90">Soporte Activo</div>
             </div>
           </div>
-        </motion.div>
+        </m.div>
 
         {/* CTA */}
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -162,7 +162,7 @@ export function SafetyFeatures({ intro }: SafetyFeaturesProps) {
               {t('learnMore')} →
             </Button>
           </Link>
-        </motion.div>
+        </m.div>
       </div>
     </section>
   );
