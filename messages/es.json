@@ -132,7 +132,7 @@
       "driver1": {
         "name": "Roberto Silva",
         "role": "Conductor profesional",
-        "text": "Llevo 15 años como taxista y ETAXI es la única plataforma que realmente respeta nuestro trabajo profesional."
+        "text": "Llevo 15 años como taxista y ETAXI es la plataforma especializada en taxi profesional que realmente respeta nuestro trabajo."
       }
     }
   },
@@ -616,7 +616,7 @@
     "hero": {
       "badge": "Soluciones B2B y Gremiales",
       "title": "Soluciones de Transporte Corporativo y para Gremios",
-      "subtitle": "Digitaliza tu operación de movilidad con la única plataforma 100% legal que cumple Ley 21.553. Trazabilidad completa, gestión centralizada y reportes en tiempo real.",
+      "subtitle": "Digitaliza tu operación de movilidad con una plataforma 100% legal y certificada que cumple Ley 21.553. Trazabilidad completa, gestión centralizada y reportes en tiempo real.",
       "ctaDemo": "Solicitar Demo",
       "ctaMeeting": "Agendar Reunión"
     },

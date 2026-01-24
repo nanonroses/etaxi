@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'ETAXI Empresas y Gremios - Soluciones B2B de Transporte Regulado',
-    description: 'Digitaliza tu operación con la única plataforma 100% legal. Trazabilidad, reportes y gestión centralizada.',
+    description: 'Pioneros en certificación legal. Digitaliza tu operación con trazabilidad, reportes y gestión centralizada.',
     url: 'https://www.etaxi.cl/empresas-gremios',
     siteName: 'ETAXI',
     type: 'website',

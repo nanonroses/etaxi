@@ -120,9 +120,9 @@ export function MinisterioValidation() {
                         </m.div>
 
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#182b33] mb-4">
-                            La <span className="text-[#dd1828]">Única</span> Plataforma{' '}
+                            <span className="text-[#dd1828]">Pioneros</span> en Certificación{' '}
                             <span className="bg-gradient-to-r from-[#dd1828] to-[#182b33] bg-clip-text text-transparent">
-                                Certificada
+                                Legal
                             </span>
                         </h2>
 
