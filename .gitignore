@@ -46,3 +46,12 @@ next-env.d.ts
 
 # design assets and prompts (local only)
 /design
+
+# internal documentation (not for production)
+/_internal-docs
+
+# playwright MCP screenshots
+.playwright-mcp/
+
+# Windows null device artifact
+nul
