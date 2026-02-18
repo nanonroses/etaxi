@@ -6,9 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "cf-build": "opennextjs-cloudflare build"
   },
   "dependencies": {
+    "@opennextjs/cloudflare": "^1.16.5",
     "@sanity/client": "^7.12.1",
     "@sanity/image-url": "^1.2.0",
     "@sanity/vision": "^4.15.0",
@@ -35,6 +39,7 @@
     "eslint": "^9",
     "eslint-config-next": "^16.1.1",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "wrangler": "^4.66.0"
   }
 }
