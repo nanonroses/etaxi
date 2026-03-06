@@ -12,7 +12,6 @@ interface BlogContentProps {
 export function BlogContent({ articles }: BlogContentProps) {
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
 
-  // Memoize filtered articles to avoid recalculation on every render
   const filteredArticles = useMemo(() => {
     if (!activeCategory) return articles;
     return articles.filter((article) => article.category === activeCategory);
@@ -23,6 +22,7 @@ export function BlogContent({ articles }: BlogContentProps) {
       <BlogCategories
         activeCategory={activeCategory}
         onCategoryChange={setActiveCategory}
+        articles={articles}
       />
 
       <BlogGrid

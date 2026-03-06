@@ -1240,6 +1240,348 @@ Los **taxis regulados** mantienen ventajas clave: experiencia, tarifas predecibl
       { title: 'Multas Uber en Chile - Autofact', url: 'https://www.autofact.cl/blog/mi-auto/infracciones/multa-uber-chile' },
     ],
   },
+  {
+    slug: 'ley-uber-registro-digital-crisis-2026',
+    title: 'La Ley Uber sin registro digital: Por qué ETAXI opera sin esta incertidumbre',
+    excerpt: 'La licitación del registro electrónico clave para implementar la Ley 21.553 quedó desierta dos veces. Mientras las apps esperan una plataforma que no existe, los taxis regulados ya cumplen.',
+    content: `
+## El nudo de la Ley Uber: el registro que no llega
+
+La **Ley 21.553** fue aprobada en 2023 y su reglamento validado en 2025, pero hay un problema concreto: el registro electrónico nacional obligatorio para inscribir conductores y empresas de aplicaciones **no existe todavía**.
+
+La licitación para construir esta plataforma quedó **desierta dos veces**: la única oferta recibida fue declarada inadmisible por no cumplir requisitos técnicos mínimos. Recién en febrero de 2026 el Ministerio de Transportes adjudicó el desarrollo a la empresa **Arkhotech SpA**, con un contrato de 24 meses y presupuesto de $734 millones.
+
+## ¿Qué significa esto en la práctica?
+
+Mientras el registro no esté operativo, ninguna empresa de aplicación de transporte puede inscribirse formalmente. Y sin inscripción, operar puede ser considerado una infracción.
+
+Los gremios de conductores advierten que si la ley entra en vigencia sin la plataforma lista, más del **80% de los conductores de aplicaciones podrían quedar fuera de operación** — no por no querer cumplir, sino porque no hay dónde registrarse.
+
+## El riesgo real: el "apagón" de apps
+
+Tanto los gremios de conductores como la alianza de plataformas han pedido que la implementación definitiva quede a cargo del **próximo gobierno** (que asume el 11 de marzo de 2026).
+
+En la práctica, la Ley Uber operativa no se espera antes de **fines de 2027**.
+
+## Por qué ETAXI no tiene este problema
+
+Los taxis que operan con ETAXI son **taxis básicos regulados**, inscritos en el Registro Nacional de Transporte de Pasajeros desde hace años. No necesitan esperar ningún registro digital nuevo, porque ya están formalizados bajo normativa vigente.
+
+| Situación | Conductor de app | Taxista ETAXI |
+|-----------|-----------------|---------------|
+| Registro obligatorio | Pendiente de plataforma | Ya inscrito en MTT |
+| Riesgo de "apagón" | Alto | Ninguno |
+| Cumplimiento Ley 21.553 | En implementación | Superado desde antes |
+| Licencia profesional | A2 (nueva exigencia) | A1 (siempre tuvo) |
+
+## La ventaja del cumplimiento previo
+
+La crisis del registro digital revela una diferencia estructural: las aplicaciones de transporte construyeron su base de usuarios antes de la regulación. Ahora deben adaptarse a un sistema que aún no existe.
+
+Los taxistas inscritos en ETAXI hicieron lo contrario: operaron desde siempre dentro del marco legal. La regulación no es un desafío para ellos — es su forma habitual de trabajo.
+
+## Para conductores de taxi: una oportunidad concreta
+
+Si eres taxista y aún no usas ETAXI, este contexto es relevante:
+
+1. Tu inscripción en el MTT ya cumple más que cualquier requisito de la Ley 21.553
+2. Puedes operar con ETAXI sin esperar nuevas plataformas ni reglamentos pendientes
+3. Accedes a más viajes con tecnología moderna, sin renunciar a tu estatus regulado
+
+## Conclusión
+
+La crisis del registro digital refleja los desafíos de regular un mercado que creció sin marco legal. Para los conductores y pasajeros de ETAXI, este problema no existe: operamos con el marco legal que ya existe, que ya funciona, y que ya te protege.
+    `,
+    category: 'regulacion',
+    image: '/images/blog/ley-21553.jpg',
+    author: 'Equipo ETAXI',
+    publishedAt: '2026-02-25',
+    readTime: 6,
+    featured: true,
+    tags: ['Ley 21.553', 'Ley Uber', 'Registro Digital', 'Chile 2026', 'Conductores'],
+    sources: [
+      { title: 'Freno a la Ley Uber: licitación del registro electrónico quedó desierta - Radio U. Chile', url: 'https://radio.uchile.cl/2026/01/10/freno-a-la-ley-uber-declaran-desierta-la-licitacion-del-registro-electronico-clave-para-su-implementacion/' },
+      { title: 'Ley Uber se retrasa y su implementación quedará para el próximo Gobierno - El Mostrador', url: 'https://www.elmostrador.cl/noticias/pais/2026/01/23/ley-uber-se-retrasa-y-su-implementacion-quedara-para-el-proximo-gobierno/' },
+      { title: 'Temor en conductores: incierto inicio podría forzar un apagón - BioBioChile', url: 'https://www.biobiochile.cl/noticias/nacional/chile/2026/02/21/temor-en-conductores-incierto-inicio-de-la-ley-uber-podria-forzar-un-apagon-de-las-aplicaciones.shtml' },
+      { title: 'Nueva adjudicación del registro Ley Uber - BioBioChile', url: 'https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/02/09/sera-esta-la-vencida-gobierno-logra-nueva-adjudicacion-que-permitiria-poner-en-marcha-la-ley-uber.shtml' },
+    ],
+  },
+  {
+    slug: 'uber-zonas-alerta-conductores-chile',
+    title: 'Uber lanza "Zonas de Alerta" en Chile: lo que revela sobre el modelo del taxi regulado',
+    excerpt: 'La nueva función notifica a conductores sobre zonas de riesgo antes de aceptar un viaje. Una reflexión sobre por qué en ETAXI la seguridad es estructura, no un parche.',
+    content: `
+## La nueva herramienta: "Zonas de Alerta"
+
+En febrero de 2026, Uber lanzó una función llamada **"Zonas de Alerta"**, disponible inicialmente en Rancagua, que notifica a conductores sobre áreas con indicadores de riesgo antes de aceptar un viaje.
+
+La herramienta se suma a otras iniciativas de seguridad lanzadas en Chile:
+
+- Verificación de identidad para pagos en efectivo (escaneo de cédula + selfie)
+- Sistema de machine learning para detectar solicitudes "potencialmente más riesgosas"
+- Control de antecedentes de conductores cada 6 meses (requisito Ley 21.553)
+
+## Lo que estas medidas revelan
+
+El lanzamiento de herramientas reactivas de seguridad es positivo para el mercado. Y también deja ver algo relevante: cuando el modelo base no parte de conductores profesionales regulados, la seguridad debe construirse en capas — mediante tecnología que compensa lo que la estructura no garantiza desde el origen.
+
+Esto contrasta con el modelo del taxi regulado:
+
+| Aspecto | Apps de transporte | Taxi regulado ETAXI |
+|---------|-------------------|---------------------|
+| Base de conductores | Conductores particulares | Profesionales de carrera |
+| Enfoque de seguridad | Tecnología reactiva | Estructura regulatoria preventiva |
+| Verificación | Según Ley 21.553 (en implementación) | Décadas de cumplimiento previo |
+| Respaldo ante incidente | Protocolo interno de app | MTT + marco legal vigente |
+
+## El taxi regulado: seguridad como diseño, no como complemento
+
+En ETAXI, la seguridad no es una función adicional — es la razón de ser del modelo. Los conductores son taxistas con licencia profesional A1, inscritos en el MTT, con revisión técnica semestral y antecedentes verificados desde el primer día de operación.
+
+No necesitamos capas de alerta reactiva porque:
+
+- Cada conductor pasa por validación formal antes de operar
+- Los vehículos están revisados y registrados
+- El viaje tiene trazabilidad completa desde el origen hasta el destino
+- En caso de incidente, hay un marco legal y un registro formal que actúa
+
+## Para pasajeros: qué significa elegir un taxi regulado
+
+Cuando pides un viaje con ETAXI:
+
+1. **El conductor ya está inscrito** en el Registro Nacional de Transporte
+2. **El vehículo tiene revisión técnica vigente** — no depende de que "pase"
+3. **Hay un botón de pánico** conectado a central
+4. **El viaje queda registrado** con datos reales verificables
+
+## Conclusión
+
+Las innovaciones de seguridad tecnológica son bienvenidas en la industria. Y cuando el taxi regulado incorpora tecnología — como hace ETAXI —, no suma capas para compensar, sino que potencia una base que ya es sólida. El resultado: el viaje más seguro disponible en Chile.
+    `,
+    category: 'seguridad',
+    image: '/images/blog/seguridad-pasajeros.jpg',
+    author: 'Equipo ETAXI',
+    publishedAt: '2026-02-10',
+    readTime: 5,
+    featured: false,
+    tags: ['Seguridad', 'Conductores', 'Chile 2026', 'Trazabilidad', 'Taxi Regulado'],
+    sources: [
+      { title: 'Uber lanza Zonas de Alerta en Rancagua - Mediabanco', url: 'https://www.mediabanco.com/uber-lanza-zonas-de-alerta-en-rancagua-para-reforzar-la-seguridad-de-los-socios-conductores/' },
+      { title: 'Uber presenta nuevas herramientas de seguridad - Uber Newsroom', url: 'https://www.uber.com/es-CL/newsroom/uber-presenta-nuevas-herramientas-de-seguridad-para-socios-conductores/' },
+    ],
+  },
+  {
+    slug: 'indrive-tercera-app-chile-pasajeros',
+    title: 'InDrive crece con 900.000 descargas en Chile: qué debes saber como pasajero',
+    excerpt: 'La app de "tú pones el precio" se consolida como tercera más descargada. Analizamos su modelo y por qué la tarifa oficial del taxi regulado sigue siendo la más transparente.',
+    content: `
+## El crecimiento de InDrive en Chile
+
+**InDrive** cerró 2025 como la tercera aplicación de viajes más descargada en Chile, con casi **900.000 descargas** durante el año. A nivel global, es la segunda app de transporte más descargada del mundo — por cuarto año consecutivo.
+
+Presente en Chile desde 2018, la plataforma opera en 15 de las 16 regiones del país y tiene planes de convertirse en una **superapp**, sumando servicios financieros a su oferta de transporte.
+
+## ¿Cómo funciona el modelo de InDrive?
+
+La propuesta de InDrive es diferente a otras apps: el **pasajero propone una tarifa**, y los conductores disponibles pueden aceptarla, rechazarla o contraofertar. Esto puede parecer atractivo, pero tiene implicaciones prácticas:
+
+- La tarifa final depende de la negociación, no de una referencia objetiva
+- En horas de alta demanda, los conductores tienden a rechazar tarifas bajas
+- La transparencia del precio final es menor que en modelos de tarifa oficial
+- La verificación de conductores está sujeta a la Ley 21.553, aún sin implementación completa
+
+## La diferencia del taxi regulado: tarifa conocida antes del viaje
+
+En ETAXI, la tarifa es **oficial y conocida antes de confirmar el viaje**. No hay negociación, no hay precio dinámico, no hay variaciones por hora del día.
+
+| Aspecto | Modelo "tú pones el precio" | Taxi regulado ETAXI |
+|---------|----------------------------|---------------------|
+| Tarifa | Negociada entre partes | Oficial y predecible |
+| Horario peak | Conductores pueden rechazar | Sin cambio de tarifa |
+| Transparencia | Variable | Alta — antes de aceptar |
+| Factura formal | No siempre disponible | Siempre disponible |
+
+## El crecimiento del mercado es una oportunidad
+
+Que más personas usen aplicaciones de transporte refleja que el mercado se digitaliza — y esto presiona a todos los actores para ofrecer mejores estándares de seguridad y servicio.
+
+Para los taxistas regulados en ETAXI, este contexto es una oportunidad real. Muchos pasajeros llegan desde otras apps buscando mayor seguridad y trazabilidad, tarifa predecible sin sorpresas, factura formal para uso corporativo, y conductores profesionales con trayectoria.
+
+## Para conductores de taxi: lo que significa este mercado
+
+El crecimiento de múltiples aplicaciones también beneficia a los taxistas inscritos. Bajo la Ley 21.553, los **taxis básicos pueden afiliarse a varias apps simultáneamente**. Unirse a ETAXI no excluye otras opciones — amplía el acceso a más pasajeros.
+
+Con ETAXI, además, el conductor no compite con algoritmos de negociación: opera con tarifa oficial, lo que le da estabilidad de ingresos y una propuesta clara al pasajero.
+
+## Conclusión
+
+El crecimiento de InDrive muestra que el mercado de transporte digital en Chile es amplio y dinámico. En ese contexto, el taxi regulado sigue siendo la opción que ofrece lo que ningún modelo de negociación puede garantizar: seguridad estructural, tarifa oficial y cumplimiento normativo sin depender de plataformas pendientes.
+    `,
+    category: 'noticias',
+    image: '/images/blog/taxi-vs-apps.jpg',
+    author: 'Equipo ETAXI',
+    publishedAt: '2026-02-15',
+    readTime: 5,
+    featured: false,
+    tags: ['Mercado', 'Tarifas', 'Chile 2026', 'Apps Transporte', 'Pasajeros'],
+    sources: [
+      { title: 'inDrive tercera app más descargada en Chile 2025 - G5Noticias', url: 'https://g5noticias.cl/2026/02/06/indrive-se-consolida-como-la-tercera-app-de-viajes-mas-descargada-en-chile-durante-2025/' },
+      { title: 'InDrive dará créditos y servicios financieros - Expansion.mx', url: 'https://expansion.mx/tecnologia/2026/03/05/indrive-dara-creditos-servicios-financieros-competir-didi' },
+    ],
+  },
+  {
+    slug: 'nuevo-gobierno-ley-uber-transporte-chile-2026',
+    title: 'Nuevo gobierno y Ley Uber: qué esperar para el transporte en Chile desde marzo 2026',
+    excerpt: 'El futuro ministro de Transportes pidió no activar la Ley 21.553 antes del cambio de mando. Analizamos qué significa esto para conductores, apps y taxis regulados.',
+    content: `
+## Un cambio de gobierno con la Ley Uber sin resolver
+
+Chile estrena nueva administración el **11 de marzo de 2026**, y uno de los temas pendientes más importantes en materia de transporte es la implementación de la **Ley 21.553**.
+
+El futuro Ministro de Transportes y Telecomunicaciones, **Louis de Grange**, fue explícito: pidió al gobierno saliente que no avanzara en la activación de la ley antes del cambio de mando, argumentando que una implementación apresurada podría afectar el empleo y la calidad del servicio.
+
+## El estado actual de la Ley 21.553
+
+A marzo de 2026, la situación es la siguiente:
+
+- La ley fue aprobada en **2023** y su reglamento validado en **2025**
+- El registro electrónico fue adjudicado en **febrero 2026** (Arkhotech SpA)
+- El desarrollo del sistema tomará **24 meses** y costará $734 millones
+- La implementación real no se espera antes de **fines de 2027**
+
+Esto significa que durante la próxima administración, el transporte por aplicaciones operará en un **estado regulatorio transitorio**: la ley existe, pero el mecanismo para aplicarla aún no está listo.
+
+## ¿Qué puede cambiar con el nuevo gobierno?
+
+El nuevo ejecutivo tendrá varias decisiones por tomar:
+
+1. **Ritmo de implementación**: puede priorizar o ajustar el proceso
+2. **Fiscalización en terreno**: definir cuántos recursos destinar a hacer cumplir la normativa
+3. **Estándares de seguridad**: podría proponer ajustes al reglamento existente
+4. **Electromovilidad**: el programa "Mi Taxi Eléctrico" podría ampliarse o modificarse
+
+## Lo que no cambia: el cumplimiento del taxi regulado
+
+Independiente del gobierno de turno, los taxistas que operan con ETAXI **no enfrentan ninguna incertidumbre regulatoria**. Su cumplimiento es anterior y superior a lo que la Ley 21.553 exige:
+
+| Requisito Ley 21.553 | Conductor de app | Taxista ETAXI |
+|---------------------|-----------------|----------------|
+| Licencia profesional | A2 (nueva exigencia) | A1 (siempre tuvo) |
+| Revisión técnica | Cada 6 meses (nuevo) | Cada 6 meses (siempre) |
+| Inscripción en registro | Pendiente de plataforma | Ya inscrito en MTT |
+| Verificación de antecedentes | Cada 6 meses | Verificados |
+
+## Para conductores: estabilidad en medio de la incertidumbre
+
+Si eres taxista, el cambio de gobierno no cambia tu situación operacional. Pero sí abre una oportunidad: **más pasajeros buscarán opciones de transporte regulado** mientras las apps navegan el período de transición.
+
+Unirse a ETAXI ahora significa:
+
+- Acceder a más viajes con tecnología moderna
+- Mantener tu estatus de conductor regulado como diferenciador real
+- Cobrar tarifa oficial sin depender de algoritmos de precio dinámico
+
+## Conclusión
+
+El nuevo gobierno chileno recibe un desafío concreto: implementar la Ley 21.553 de forma ordenada y sin cortar el servicio a cientos de miles de pasajeros. Para los taxistas regulados y sus pasajeros, este período de transición refuerza por qué el modelo de ETAXI — que opera dentro del marco legal vigente sin depender de nuevas plataformas — sigue siendo la opción más estable del mercado.
+    `,
+    category: 'regulacion',
+    image: '/images/blog/ley-21553.jpg',
+    author: 'Equipo ETAXI',
+    publishedAt: '2026-03-05',
+    readTime: 6,
+    featured: false,
+    tags: ['Ley 21.553', 'Nuevo Gobierno', 'Chile 2026', 'Conductores', 'Transporte'],
+    sources: [
+      { title: '¿En qué está la Ley Uber en Chile? - Sabes.cl', url: 'https://sabes.cl/2026/03/03/en-que-esta-la-ley-uber-en-chile-y-por-que-el-futuro-ministro-de-transportes-pidio-no-implementarla-antes-del-11-de-marzo/' },
+      { title: 'Transportes confirma retraso en Ley Uber - BioBioChile', url: 'https://www.biobiochile.cl/noticias/nacional/chile/2026/01/23/transportes-confirma-retraso-en-ley-uber-y-puesta-en-marcha-quedara-para-el-proximo-gobierno.shtml' },
+      { title: 'Ley Uber: aplicaciones critican retraso - La Tercera', url: 'https://www.latercera.com/nacional/noticia/ley-uber-aplicaciones-de-transporte-critican-retraso-y-piden-que-implementacion-quede-para-el-proximo-gobierno/' },
+    ],
+  },
+  {
+    slug: 'alza-transporte-publico-santiago-taxi-2026',
+    title: 'Alza del transporte público en Santiago 2026: cuándo el taxi regulado es la opción más inteligente',
+    excerpt: 'Desde el 22 de febrero, Metro y buses RED subieron tarifas. Analizamos en qué trayectos un taxi regulado compite directamente con el transporte público.',
+    content: `
+## Las nuevas tarifas del transporte público en Santiago
+
+Desde el **22 de febrero de 2026**, el sistema de transporte público de Santiago registra un alza de $25 en la tarifa adulto, aprobada por el Panel de Expertos:
+
+| Medio | Tarifa anterior | Nueva tarifa |
+|-------|-----------------|--------------|
+| Buses RED adulto | $770 | **$795** |
+| Metro hora valle | $790 | **$815** |
+| Metro hora baja | $728 | **$753** |
+| Adulto mayor | $383 | **$390** |
+
+El alza fue justificada por inflación del 3,5%, dólar promedio de $952 y aumento del 6,7% en costos laborales del sector.
+
+## ¿Cuándo conviene un taxi regulado?
+
+Con estas nuevas tarifas, el taxi regulado se vuelve más competitivo para situaciones específicas:
+
+### Grupos de 3 o más personas
+
+Si viajas con familia o colegas, el costo por persona en taxi regulado puede ser igual o menor al transporte público:
+
+- 3 personas en micro: $795 × 3 = **$2.385**
+- Taxi regulado trayecto corto (~3 km): desde $2.000 (dividido: ~**$667 por persona**)
+
+### Trayectos nocturnos
+
+Después de las 22:00, el transporte público reduce frecuencia drásticamente. Un taxi regulado ofrece disponibilidad inmediata, trazabilidad completa y sin trasbordos.
+
+### Urgencias y horarios críticos
+
+Cuando el tiempo importa más que el precio, el taxi regulado garantiza llegada directa sin depender de frecuencias de buses o metro.
+
+### Pasajeros con movilidad reducida o equipaje
+
+El costo adicional vs. transporte público se justifica en comodidad, accesibilidad y facilidad de carga.
+
+## Comparativa real de costos
+
+Supongamos un trayecto de La Reina al centro de Santiago:
+
+| Opción | Costo aprox. | Tiempo | Trazabilidad |
+|--------|-------------|--------|--------------|
+| Metro + micro | ~$1.590 | 45-60 min | No |
+| Solo metro | ~$815-1.630 | 35-45 min | No |
+| Taxi regulado ETAXI | ~$4.000-6.000 | 25-35 min | Completa |
+| Taxi con 3 personas | ~$1.500-2.000 c/u | 25-35 min | Completa |
+
+## La ecuación completa: no solo precio
+
+Al evaluar el transporte, el precio es un factor entre varios:
+
+1. **Tiempo**: el taxi va directo, sin trasbordos ni espera de frecuencia
+2. **Seguridad**: trazabilidad completa vs. anonimato del transporte masivo
+3. **Factura**: el taxi regulado entrega comprobante — clave para empresas con viáticos deducibles
+4. **Comodidad**: especialmente en lluvia, frío o con carga
+
+## Para conductores: el contexto del mercado
+
+El alza del transporte público abre una oportunidad para los taxistas regulados. Más pasajeros harán el cálculo costo-beneficio y elegirán el taxi cuando la diferencia de precio se reduce — especialmente en grupos, trayectos nocturnos y viajes corporativos.
+
+Con ETAXI, accedes a esos pasajeros con tecnología moderna y tarifa oficial.
+
+## Conclusión
+
+El alza del transporte público no convierte al taxi regulado en la opción más barata siempre — lo convierte en la opción **más inteligente para situaciones específicas**. En un mercado donde las apps tienen precios dinámicos y el transporte público sube tarifas, la tarifa fija y predecible del taxi regulado tiene cada vez más valor.
+    `,
+    category: 'noticias',
+    image: '/images/blog/historia-taxis.jpg',
+    author: 'Equipo ETAXI',
+    publishedAt: '2026-02-28',
+    readTime: 5,
+    featured: false,
+    tags: ['Tarifas', 'Santiago', 'Metro', 'Transporte Público', 'Chile 2026'],
+    sources: [
+      { title: 'Sube precio del transporte público en Santiago - T13', url: 'https://www.t13.cl/amp/noticia/nacional/sube-precio-del-transporte-publico-santiago-estas-seran-las-nuevas-tarifas-buse-20-2-2026' },
+      { title: 'Nueva alza del pasaje en el transporte público - Concierto', url: 'https://www.concierto.cl/2026/02/nueva-alza-del-pasaje-en-el-transporte-publico-cuanto-sube-la-tarifa-y-desde-cuando-rige' },
+      { title: 'Alza del transporte público: nuevas tarifas - La Tercera', url: 'https://www.latercera.com/servicios/noticia/alza-del-transporte-publico-cual-es-el-nuevo-valor-de-los-pasajes-en-metro-y-buses-red/AMVQ4GN3XBH2XIZ6JB243MRT64/' },
+    ],
+  },
 ];
 
 // Artículos en Inglés
@@ -2236,6 +2578,328 @@ Law 21.553 has created a more level playing field. Users can now choose based on
       { title: 'Taxis vs Apps: Which is cheaper and safer? - Infobae', url: 'https://www.infobae.com/economia/2025/03/07/taxis-vs-apps-de-movilidad-cual-es-el-servicio-mas-barato-y-seguro-para-moverse-por-la-ciudad/' },
       { title: 'Chile regulates apps with Uber Law - Redimin', url: 'https://www.redimin.cl/chile-regula-apps-de-transporte-con-la-ley-uber-impacto-inminente-en-taxistas-y-empresas-digitales/' },
       { title: 'Uber fines in Chile - Autofact', url: 'https://www.autofact.cl/blog/mi-auto/infracciones/multa-uber-chile' },
+    ],
+  },
+  {
+    slug: 'uber-law-digital-registry-crisis-2026',
+    title: 'Uber Law Without a Digital Registry: Why ETAXI Operates Without This Uncertainty',
+    excerpt: 'The tender for the electronic registry required to implement Law 21.553 failed twice. While apps await a platform that doesn\'t exist, regulated taxis already comply.',
+    content: `
+## The Core Problem: The Registry That Doesn't Exist
+
+**Law 21.553** was passed in 2023 and its regulations validated in 2025 — but there's a concrete problem: the mandatory national electronic registry to register drivers and transport app companies **doesn't exist yet**.
+
+The tender to build this platform failed twice: the only offer received was deemed inadmissible for not meeting minimum technical requirements. Only in February 2026 did the Ministry of Transport award the development to **Arkhotech SpA**, with a 24-month contract and a $734 million budget.
+
+## What Does This Mean in Practice?
+
+While the registry is not operational, no transport app company can formally register. And without registration, operating may be considered a violation.
+
+Driver unions warn that if the law enters into force without the platform ready, more than **80% of app drivers could be forced to stop operating** — not for refusing to comply, but because there's nowhere to register.
+
+## Why ETAXI Doesn't Have This Problem
+
+The taxis operating with ETAXI are **regulated basic taxis**, already enrolled in the National Passenger Transport Registry for years. They don't need to wait for any new digital registry, because they're already formalized under current regulations.
+
+| Situation | App Driver | ETAXI Taxi Driver |
+|-----------|------------|-------------------|
+| Mandatory registry | Awaiting platform | Already registered with MTT |
+| Risk of service shutdown | High | None |
+| Law 21.553 compliance | In implementation | Exceeded from the start |
+| Professional license | A2 (new requirement) | A1 (always had it) |
+
+## The Advantage of Prior Compliance
+
+The digital registry crisis reveals a structural difference: transport apps built their user base before regulation. Now they must adapt to a system that doesn't exist yet.
+
+Taxi drivers registered with ETAXI did the opposite: they operated within the legal framework from day one. Regulation isn't a challenge for them — it's their normal way of working.
+
+## For Taxi Drivers: A Concrete Opportunity
+
+If you're a taxi driver not yet using ETAXI, this context matters:
+
+1. Your MTT registration already exceeds any requirement under Law 21.553
+2. You can operate with ETAXI without waiting for new platforms or pending regulations
+3. You gain access to more rides with modern technology, without giving up your regulated status
+
+## Conclusion
+
+The digital registry crisis reflects the challenges of regulating a market that grew without a legal framework. For ETAXI drivers and passengers, this problem simply doesn't exist: we operate under the existing legal framework — one that already works and already protects you.
+    `,
+    category: 'regulacion',
+    image: '/images/blog/ley-21553.jpg',
+    author: 'ETAXI Team',
+    publishedAt: '2026-02-25',
+    readTime: 6,
+    featured: true,
+    tags: ['Law 21.553', 'Uber Law', 'Digital Registry', 'Chile 2026', 'Drivers'],
+    sources: [
+      { title: 'Uber Law electronic registry tender declared empty - Radio U. Chile', url: 'https://radio.uchile.cl/2026/01/10/freno-a-la-ley-uber-declaran-desierta-la-licitacion-del-registro-electronico-clave-para-su-implementacion/' },
+      { title: 'Uber Law delayed, implementation left for next government - El Mostrador', url: 'https://www.elmostrador.cl/noticias/pais/2026/01/23/ley-uber-se-retrasa-y-su-implementacion-quedara-para-el-proximo-gobierno/' },
+      { title: 'Drivers fear app shutdown due to uncertain Uber Law start - BioBioChile', url: 'https://www.biobiochile.cl/noticias/nacional/chile/2026/02/21/temor-en-conductores-incierto-inicio-de-la-ley-uber-podria-forzar-un-apagon-de-las-aplicaciones.shtml' },
+    ],
+  },
+  {
+    slug: 'uber-alert-zones-drivers-chile',
+    title: 'Uber Launches "Alert Zones" in Chile: What It Reveals About the Regulated Taxi Model',
+    excerpt: 'The new feature notifies drivers about risk areas before accepting a ride. A reflection on why ETAXI\'s safety is structural, not a patch.',
+    content: `
+## The New Tool: "Alert Zones"
+
+In February 2026, Uber launched a feature called **"Alert Zones"**, initially available in Rancagua, which notifies drivers about areas with risk indicators before accepting a ride.
+
+The tool joins other safety initiatives launched in Chile:
+
+- Identity verification for cash payments (ID scan + selfie)
+- Machine learning system to detect "potentially riskier" ride requests
+- Background checks for drivers every 6 months (Law 21.553 requirement)
+
+## What These Measures Reveal
+
+The launch of reactive safety tools is positive for the industry. It also reveals something important: when the base model doesn't start from professionally regulated drivers, safety must be built in layers — through technology that compensates for what the structure doesn't guarantee from the start.
+
+This contrasts with the regulated taxi model:
+
+| Aspect | Transport Apps | ETAXI Regulated Taxi |
+|--------|----------------|----------------------|
+| Driver base | Occasional drivers | Career professionals |
+| Safety approach | Reactive technology | Preventive regulatory structure |
+| Verification | Per Law 21.553 (in implementation) | Decades of prior compliance |
+| Incident response | In-app protocol | MTT + active legal framework |
+
+## The Regulated Taxi: Safety by Design, Not by Patch
+
+At ETAXI, safety isn't an added feature — it's the reason for the model's existence. Drivers are taxi drivers with an A1 professional license, registered with the MTT, with semi-annual technical inspections and verified backgrounds from their first day of operation.
+
+When you travel with ETAXI:
+
+1. **The driver is already registered** in the National Transport Registry
+2. **The vehicle has a current technical inspection** — not dependent on "passing"
+3. **There's a panic button** connected to a 24/7 center
+4. **The ride is fully recorded** with verifiable real data
+
+## Conclusion
+
+Technological safety innovations are welcome in the industry. When regulated taxis incorporate technology — as ETAXI does — they don't add layers to compensate; they enhance an already solid foundation. The result: the safest ride available in Chile.
+    `,
+    category: 'seguridad',
+    image: '/images/blog/seguridad-pasajeros.jpg',
+    author: 'ETAXI Team',
+    publishedAt: '2026-02-10',
+    readTime: 5,
+    featured: false,
+    tags: ['Safety', 'Drivers', 'Chile 2026', 'Traceability', 'Regulated Taxi'],
+    sources: [
+      { title: 'Uber launches Alert Zones in Rancagua - Mediabanco', url: 'https://www.mediabanco.com/uber-lanza-zonas-de-alerta-en-rancagua-para-reforzar-la-seguridad-de-los-socios-conductores/' },
+      { title: 'Uber presents new safety tools - Uber Newsroom', url: 'https://www.uber.com/es-CL/newsroom/uber-presenta-nuevas-herramientas-de-seguridad-para-socios-conductores/' },
+    ],
+  },
+  {
+    slug: 'indrive-third-app-chile-passengers',
+    title: 'InDrive Grows with 900,000 Downloads in Chile: What Passengers Need to Know',
+    excerpt: 'The "you set the price" app consolidates as the third most downloaded. We analyze its model and why the regulated taxi\'s official fare remains the most transparent.',
+    content: `
+## InDrive's Growth in Chile
+
+**InDrive** closed 2025 as the third most downloaded travel app in Chile, with nearly **900,000 downloads** during the year. Globally, it's the second most downloaded transport app in the world — for the fourth consecutive year.
+
+Present in Chile since 2018, the platform operates in 15 of the country's 16 regions and has plans to become a **superapp**, adding financial services to its transport offering.
+
+## How InDrive's Model Works
+
+InDrive's proposal is different from other apps: the **passenger proposes a fare**, and available drivers can accept, reject, or counter-offer. This may seem attractive, but has practical implications:
+
+- The final fare depends on negotiation, not an objective reference
+- During peak hours, drivers tend to reject lower fares
+- Final price transparency is lower than in fixed-fare models
+- Driver verification is subject to Law 21.553, still without full implementation
+
+## The Regulated Taxi Difference: Fare Known Before the Ride
+
+At ETAXI, the fare is **official and known before confirming the ride**. No negotiation, no surge pricing, no variations by time of day.
+
+| Aspect | "You Set the Price" Model | ETAXI Regulated Taxi |
+|--------|--------------------------|----------------------|
+| Fare | Negotiated between parties | Official and predictable |
+| Peak hours | Drivers may reject low fares | No fare change |
+| Transparency | Variable | High — before accepting |
+| Formal invoice | Not always available | Always available |
+
+## Market Growth Is an Opportunity
+
+More people using transport apps reflects a digitalizing market — and this pressures all players to offer better safety and service standards.
+
+For regulated taxi drivers in ETAXI, this context is a real opportunity. Many passengers come from other apps looking for greater security and traceability, predictable fares without surprises, formal invoices for corporate use, and professional drivers with experience.
+
+## For Taxi Drivers: What This Market Means
+
+The growth of multiple applications also benefits registered taxi drivers. Under Law 21.553, **basic taxis can affiliate with multiple apps simultaneously**. Joining ETAXI doesn't exclude other options — it expands access to more passengers.
+
+With ETAXI, drivers don't compete with price-negotiation algorithms: they operate with an official fare, providing income stability and a clear professional value to passengers.
+
+## Conclusion
+
+InDrive's growth shows that Chile's digital transport market is broad and dynamic. In that context, the regulated taxi remains the option that offers what no negotiation model can guarantee: structural safety, an official fare, and regulatory compliance without depending on pending implementations.
+    `,
+    category: 'noticias',
+    image: '/images/blog/taxi-vs-apps.jpg',
+    author: 'ETAXI Team',
+    publishedAt: '2026-02-15',
+    readTime: 5,
+    featured: false,
+    tags: ['Market', 'Fares', 'Chile 2026', 'Transport Apps', 'Passengers'],
+    sources: [
+      { title: 'InDrive consolidates as third most downloaded app in Chile 2025 - G5Noticias', url: 'https://g5noticias.cl/2026/02/06/indrive-se-consolida-como-la-tercera-app-de-viajes-mas-descargada-en-chile-durante-2025/' },
+      { title: 'InDrive to offer credits and financial services - Expansion.mx', url: 'https://expansion.mx/tecnologia/2026/03/05/indrive-dara-creditos-servicios-financieros-competir-didi' },
+    ],
+  },
+  {
+    slug: 'new-government-uber-law-transport-chile-2026',
+    title: 'New Government and Uber Law: What to Expect for Transport in Chile from March 2026',
+    excerpt: 'The incoming Transport Minister asked not to activate Law 21.553 before the change of government. We analyze what this means for drivers, apps, and regulated taxis.',
+    content: `
+## A Change of Government With Uber Law Unresolved
+
+Chile starts a new administration on **March 11, 2026**, and one of the most important pending transport issues is the implementation of **Law 21.553**.
+
+The incoming Minister of Transport, **Louis de Grange**, was explicit: he asked the outgoing government not to advance in activating the law before the change of administration, arguing that a rushed implementation could affect employment and service quality.
+
+## The Current State of Law 21.553
+
+As of March 2026:
+
+- The law was passed in **2023** and its regulations validated in **2025**
+- The electronic registry was awarded in **February 2026** (to Arkhotech SpA)
+- Development will take **24 months** and cost $734 million
+- Real implementation is not expected before **late 2027**
+
+This means that during the next administration, transport apps will operate in a **transitional regulatory state**: the law exists, but the mechanism to enforce it isn't ready.
+
+## What the New Government May Change
+
+The new executive will face several decisions:
+
+1. **Implementation pace**: can prioritize or adjust the process
+2. **Field enforcement**: define how many resources to dedicate to enforcing the regulation
+3. **Safety standards**: may propose adjustments to existing regulations
+4. **Electromobility**: the "Mi Taxi Eléctrico" program may be expanded or modified
+
+## What Doesn't Change: Regulated Taxi Compliance
+
+Regardless of the government in power, taxi drivers operating with ETAXI **face no regulatory uncertainty**. Their compliance predates and exceeds what Law 21.553 requires:
+
+| Law 21.553 Requirement | App Driver | ETAXI Taxi Driver |
+|------------------------|------------|-------------------|
+| Professional license | A2 (new requirement) | A1 (always had it) |
+| Technical inspection | Every 6 months (new) | Every 6 months (always) |
+| Registry enrollment | Awaiting platform | Already registered with MTT |
+| Background verification | Every 6 months | Verified |
+
+## For Drivers: Stability in Uncertainty
+
+If you're a taxi driver, the change of government doesn't change your operational situation. But it opens an opportunity: **more passengers will seek regulated transport options** while apps navigate the transition period.
+
+Joining ETAXI now means accessing more rides with modern technology, maintaining your regulated driver status as a real differentiator, and charging an official fare without depending on dynamic pricing algorithms.
+
+## Conclusion
+
+The new Chilean government receives a concrete challenge: implement Law 21.553 in an orderly way without cutting service for hundreds of thousands of passengers. For regulated taxi drivers and their passengers, this transition period reinforces why the ETAXI model — operating within the existing legal framework without depending on new platforms — remains the most stable option in the market.
+    `,
+    category: 'regulacion',
+    image: '/images/blog/ley-21553.jpg',
+    author: 'ETAXI Team',
+    publishedAt: '2026-03-05',
+    readTime: 6,
+    featured: false,
+    tags: ['Law 21.553', 'New Government', 'Chile 2026', 'Drivers', 'Transport'],
+    sources: [
+      { title: 'What\'s happening with Chile\'s Uber Law? - Sabes.cl', url: 'https://sabes.cl/2026/03/03/en-que-esta-la-ley-uber-en-chile-y-por-que-el-futuro-ministro-de-transportes-pidio-no-implementarla-antes-del-11-de-marzo/' },
+      { title: 'Transport Ministry confirms Uber Law delay - BioBioChile', url: 'https://www.biobiochile.cl/noticias/nacional/chile/2026/01/23/transportes-confirma-retraso-en-ley-uber-y-puesta-en-marcha-quedara-para-el-proximo-gobierno.shtml' },
+      { title: 'Uber Law: apps criticize delay - La Tercera', url: 'https://www.latercera.com/nacional/noticia/ley-uber-aplicaciones-de-transporte-critican-retraso-y-piden-que-implementacion-quede-para-el-proximo-gobierno/' },
+    ],
+  },
+  {
+    slug: 'public-transport-fare-hike-santiago-2026',
+    title: 'Santiago Public Transport Fare Hike 2026: When the Regulated Taxi Is the Smarter Option',
+    excerpt: 'Since February 22, Metro and RED buses raised fares. We analyze when a regulated taxi directly competes with public transport.',
+    content: `
+## New Public Transport Fares in Santiago
+
+Since **February 22, 2026**, Santiago's public transport system registered a $25 increase in the adult fare, approved by the Expert Panel:
+
+| Mode | Previous Fare | New Fare |
+|------|---------------|----------|
+| RED buses (adult) | $770 | **$795** |
+| Metro off-peak | $790 | **$815** |
+| Metro low hour | $728 | **$753** |
+| Senior citizen | $383 | **$390** |
+
+The increase was justified by 3.5% inflation, an average dollar rate of $952, and a 6.7% increase in sector labor costs.
+
+## When Does a Regulated Taxi Make Sense?
+
+With these new fares, the regulated taxi becomes more competitive for specific situations:
+
+### Groups of 3 or More People
+
+If you're traveling with family or colleagues, the per-person cost in a regulated taxi can equal or beat public transport:
+
+- 3 people on a bus: $795 × 3 = **$2,385**
+- Regulated taxi for a short trip (~3 km): from $2,000 (split: ~**$667 per person**)
+
+### Nighttime Travel
+
+After 10:00 PM, public transport frequency drops dramatically. A regulated taxi offers immediate availability, full traceability, and no transfers.
+
+### Time-Critical Trips
+
+When time matters more than price, a regulated taxi guarantees direct arrival without depending on bus or metro schedules.
+
+### Passengers with Reduced Mobility or Luggage
+
+The additional cost vs. public transport is justified by comfort, accessibility, and ease of loading.
+
+## Real Cost Comparison
+
+Consider a trip from La Reina to downtown Santiago:
+
+| Option | Approx. Cost | Time | Traceability |
+|--------|-------------|------|--------------|
+| Metro + bus | ~$1,590 | 45-60 min | No |
+| Metro only | ~$815-1,630 | 35-45 min | No |
+| ETAXI regulated taxi | ~$4,000-6,000 | 25-35 min | Full |
+| Taxi with 3 people | ~$1,500-2,000 each | 25-35 min | Full |
+
+## The Full Equation: Not Just Price
+
+When evaluating transport, price is one factor among several:
+
+1. **Time**: the taxi goes direct, no transfers or frequency waiting
+2. **Safety**: full traceability vs. anonymity of mass transit
+3. **Invoice**: the regulated taxi issues a receipt — key for companies with deductible travel expenses
+4. **Comfort**: especially in rain, cold, or with luggage
+
+## For Drivers: Market Context
+
+The public transport fare hike opens an opportunity for regulated taxi drivers. More passengers will do the cost-benefit calculation and choose the taxi when the price difference narrows — especially for groups, nighttime trips, and corporate travel.
+
+With ETAXI, you access those passengers with modern technology and an official fare.
+
+## Conclusion
+
+The public transport fare hike doesn't make the regulated taxi the cheapest option every time — it makes it the **smartest option for specific situations**. In a market where apps have dynamic pricing and public transport raises fares, the fixed and predictable fare of the regulated taxi has more value every day.
+    `,
+    category: 'noticias',
+    image: '/images/blog/historia-taxis.jpg',
+    author: 'ETAXI Team',
+    publishedAt: '2026-02-28',
+    readTime: 5,
+    featured: false,
+    tags: ['Fares', 'Santiago', 'Metro', 'Public Transport', 'Chile 2026'],
+    sources: [
+      { title: 'Public transport prices rise in Santiago - T13', url: 'https://www.t13.cl/amp/noticia/nacional/sube-precio-del-transporte-publico-santiago-estas-seran-las-nuevas-tarifas-buse-20-2-2026' },
+      { title: 'New public transport fare hike - Concierto', url: 'https://www.concierto.cl/2026/02/nueva-alza-del-pasaje-en-el-transporte-publico-cuanto-sube-la-tarifa-y-desde-cuando-rige' },
+      { title: 'Public transport fare hike: new rates - La Tercera', url: 'https://www.latercera.com/servicios/noticia/alza-del-transporte-publico-cual-es-el-nuevo-valor-de-los-pasajes-en-metro-y-buses-red/AMVQ4GN3XBH2XIZ6JB243MRT64/' },
     ],
   },
 ];
