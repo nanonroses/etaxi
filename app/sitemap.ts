@@ -25,10 +25,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const sitemap: MetadataRoute.Sitemap = [];
 
   // Generate entries for each locale and route
+  // For the default locale (es), no prefix is used (localePrefix: 'as-needed')
   locales.forEach((locale) => {
+    const localePath = locale === 'es' ? '' : `/${locale}`;
     routes.forEach((route) => {
       sitemap.push({
-        url: `${baseUrl}/${locale}${route.path}`,
+        url: `${baseUrl}${localePath}${route.path}`,
         lastModified: new Date(),
         changeFrequency: route.changeFrequency,
         priority: route.priority,

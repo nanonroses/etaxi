@@ -8,6 +8,16 @@ const nextConfig: NextConfig = {
   turbopack: {
     root: __dirname,
   },
+  /* Redirects for legacy URLs */
+  async redirects() {
+    return [
+      {
+        source: '/acerca',
+        destination: '/',
+        permanent: true,
+      },
+    ];
+  },
   /* Security Headers */
   async headers() {
     return [
