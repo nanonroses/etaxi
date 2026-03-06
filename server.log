@@ -1,0 +1,122 @@
+
+> etaxi@0.1.0 dev
+> next dev
+
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+   ▲ Next.js 16.0.3 (Turbopack)
+   - Local:         http://localhost:3000
+   - Network:       http://172.29.240.1:3000
+   - Environments: .env.local
+
+ ✓ Starting...
+ ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+ ✓ Ready in 1535ms
+C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\node_modules_aa8f646e._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\[root-of-the-server]__29009b0b._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\[turbopack]_runtime.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+ ⨯ Error: `projectId` can only contain only a-z, 0-9 and dashes
+    at module evaluation (C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\[root-of-the-server]__29009b0b._.js:637:250)
+    at instantiateModule (C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+    at getOrInstantiateModuleFromParent (C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+    at Context.esmImport [as i] (C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+    at module evaluation (C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\[root-of-the-server]__29009b0b._.js:663:149) {
+  type: 'Error',
+  page: '/es'
+}
+ GET / 500 in 5.0s (compile: 4.7s, proxy.ts: 103ms, render: 200ms)
+C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\node_modules_aa8f646e._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\[root-of-the-server]__29009b0b._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\[turbopack]_runtime.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+ ⨯ Error: `projectId` can only contain only a-z, 0-9 and dashes
+    at module evaluation (C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\[root-of-the-server]__29009b0b._.js:637:250)
+    at instantiateModule (C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+    at getOrInstantiateModuleFromParent (C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+    at Context.esmImport [as i] (C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+    at module evaluation (C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\[root-of-the-server]__29009b0b._.js:663:149) {
+  type: 'Error',
+  page: '/es'
+}
+ GET / 500 in 652ms (compile: 630ms, proxy.ts: 12ms, render: 10ms)
+C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\node_modules_aa8f646e._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\[root-of-the-server]__29009b0b._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\[turbopack]_runtime.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+ ⨯ Error: `projectId` can only contain only a-z, 0-9 and dashes
+    at module evaluation (C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\[root-of-the-server]__29009b0b._.js:637:250)
+    at instantiateModule (C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+    at getOrInstantiateModuleFromParent (C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+    at Context.esmImport [as i] (C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+    at module evaluation (C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\[root-of-the-server]__29009b0b._.js:663:149) {
+  type: 'Error',
+  page: '/es'
+}
+ GET / 500 in 574ms (compile: 557ms, proxy.ts: 8ms, render: 9ms)
+C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\node_modules_aa8f646e._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\[root-of-the-server]__29009b0b._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\[turbopack]_runtime.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+ ⨯ Error: `projectId` can only contain only a-z, 0-9 and dashes
+    at module evaluation (C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\[root-of-the-server]__29009b0b._.js:637:250)
+    at instantiateModule (C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+    at getOrInstantiateModuleFromParent (C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+    at Context.esmImport [as i] (C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+    at module evaluation (C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\[root-of-the-server]__29009b0b._.js:663:149) {
+  type: 'Error',
+  page: '/es'
+}
+ GET / 500 in 607ms (compile: 595ms, proxy.ts: 5ms, render: 7ms)
+C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\node_modules_aa8f646e._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\[root-of-the-server]__29009b0b._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\[turbopack]_runtime.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+ ⨯ Error: `projectId` can only contain only a-z, 0-9 and dashes
+    at module evaluation (C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\[root-of-the-server]__29009b0b._.js:637:250)
+    at instantiateModule (C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+    at getOrInstantiateModuleFromParent (C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+    at Context.esmImport [as i] (C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+    at module evaluation (C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\[root-of-the-server]__29009b0b._.js:663:149) {
+  type: 'Error',
+  page: '/es'
+}
+ GET / 500 in 577ms (compile: 563ms, proxy.ts: 5ms, render: 9ms)
+
+[8300:0103/193319.265:ERROR:electron\shell\common\node_bindings.cc:427] Most NODE_OPTIONs are not supported in packaged apps. See documentation for more details.
+[8300:0103/193319.265:ERROR:electron\shell\common\node_bindings.cc:427] Most NODE_OPTIONs are not supported in packaged apps. See documentation for more details.
+C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\node_modules_aa8f646e._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\[root-of-the-server]__29009b0b._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\[turbopack]_runtime.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+ ⨯ Error: `projectId` can only contain only a-z, 0-9 and dashes
+    at module evaluation (C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\[root-of-the-server]__29009b0b._.js:637:250)
+    at instantiateModule (C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+    at getOrInstantiateModuleFromParent (C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+    at Context.esmImport [as i] (C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+    at module evaluation (C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\[root-of-the-server]__29009b0b._.js:663:149) {
+  type: 'Error',
+  page: '/es'
+}
+ GET / 500 in 792ms (compile: 777ms, proxy.ts: 7ms, render: 8ms)
+C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\node_modules_aa8f646e._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\[root-of-the-server]__29009b0b._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\[turbopack]_runtime.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+ ⨯ Error: `projectId` can only contain only a-z, 0-9 and dashes
+    at module evaluation (C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\[root-of-the-server]__29009b0b._.js:637:250)
+    at instantiateModule (C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+    at getOrInstantiateModuleFromParent (C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+    at Context.esmImport [as i] (C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+    at module evaluation (C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\[root-of-the-server]__29009b0b._.js:663:149) {
+  type: 'Error',
+  page: '/es'
+}
+ GET / 500 in 869ms (compile: 853ms, proxy.ts: 7ms, render: 9ms)
+C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\node_modules_aa8f646e._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\[root-of-the-server]__29009b0b._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\[turbopack]_runtime.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+ ⨯ Error: `projectId` can only contain only a-z, 0-9 and dashes
+    at module evaluation (C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\[root-of-the-server]__29009b0b._.js:637:250)
+    at instantiateModule (C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+    at getOrInstantiateModuleFromParent (C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+    at Context.esmImport [as i] (C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+    at module evaluation (C:\Users\nanon\OneDrive\Documentos\GitHub\etaxi\.next\dev\server\chunks\ssr\[root-of-the-server]__29009b0b._.js:663:149) {
+  type: 'Error',
+  page: '/es'
+}
+ GET / 500 in 682ms (compile: 668ms, proxy.ts: 7ms, render: 7ms)
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[?25h

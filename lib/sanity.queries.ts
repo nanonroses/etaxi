@@ -1,3 +1,4 @@
+import { cache } from 'react';
 import { client } from './sanity.client';
 
 // Types para los documentos de Sanity
@@ -94,8 +95,11 @@ export interface DriverPage {
   ctaButton?: string;
 }
 
-// Queries
-export async function getSiteSettings(): Promise<SiteSettings | null> {
+// Queries with React.cache() for per-request deduplication
+// This ensures multiple components calling the same query in one request
+// only make a single Sanity API call
+
+export const getSiteSettings = cache(async (): Promise<SiteSettings | null> => {
   if (!client) return null;
 
   try {
@@ -105,9 +109,9 @@ export async function getSiteSettings(): Promise<SiteSettings | null> {
     console.error('Error fetching site settings:', error);
     return null;
   }
-}
+});
 
-export async function getAppDownload(): Promise<AppDownload | null> {
+export const getAppDownload = cache(async (): Promise<AppDownload | null> => {
   if (!client) return null;
 
   try {
@@ -117,9 +121,9 @@ export async function getAppDownload(): Promise<AppDownload | null> {
     console.error('Error fetching app download:', error);
     return null;
   }
-}
+});
 
-export async function getHomePage(): Promise<HomePage | null> {
+export const getHomePage = cache(async (): Promise<HomePage | null> => {
   if (!client) return null;
 
   try {
@@ -129,9 +133,9 @@ export async function getHomePage(): Promise<HomePage | null> {
     console.error('Error fetching home page:', error);
     return null;
   }
-}
+});
 
-export async function getSafetyPage(): Promise<SafetyPage | null> {
+export const getSafetyPage = cache(async (): Promise<SafetyPage | null> => {
   if (!client) return null;
 
   try {
@@ -141,9 +145,9 @@ export async function getSafetyPage(): Promise<SafetyPage | null> {
     console.error('Error fetching safety page:', error);
     return null;
   }
-}
+});
 
-export async function getCompliancePage(): Promise<CompliancePage | null> {
+export const getCompliancePage = cache(async (): Promise<CompliancePage | null> => {
   if (!client) return null;
 
   try {
@@ -153,9 +157,9 @@ export async function getCompliancePage(): Promise<CompliancePage | null> {
     console.error('Error fetching compliance page:', error);
     return null;
   }
-}
+});
 
-export async function getBusinessPage(): Promise<BusinessPage | null> {
+export const getBusinessPage = cache(async (): Promise<BusinessPage | null> => {
   if (!client) return null;
 
   try {
@@ -165,9 +169,9 @@ export async function getBusinessPage(): Promise<BusinessPage | null> {
     console.error('Error fetching business page:', error);
     return null;
   }
-}
+});
 
-export async function getDriverPage(): Promise<DriverPage | null> {
+export const getDriverPage = cache(async (): Promise<DriverPage | null> => {
   if (!client) return null;
 
   try {
@@ -177,4 +181,4 @@ export async function getDriverPage(): Promise<DriverPage | null> {
     console.error('Error fetching driver page:', error);
     return null;
   }
-}
+});

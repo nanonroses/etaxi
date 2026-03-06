@@ -2,6 +2,9 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { locales } from '@/i18n';
+import { GoogleAnalytics } from '@/components/analytics/GoogleAnalytics';
+import { MetaPixel } from '@/components/analytics/MetaPixel';
+import { MotionProvider } from '@/lib/lazy-motion';
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -26,11 +29,15 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale}>
-      <body className="antialiased">
-        <NextIntlClientProvider messages={messages}>
-          {children}
-        </NextIntlClientProvider>
+    <html lang={locale} suppressHydrationWarning>
+      <body className="antialiased" suppressHydrationWarning>
+        <MotionProvider>
+          <NextIntlClientProvider messages={messages}>
+            {children}
+          </NextIntlClientProvider>
+        </MotionProvider>
+        <GoogleAnalytics />
+        <MetaPixel />
       </body>
     </html>
   );

@@ -1,0 +1,46 @@
+# OG Image Placeholder
+
+Para completar la configuración de OpenGraph, necesitas crear una imagen og-image.jpg con las siguientes especificaciones:
+
+## Especificaciones Requeridas:
+- **Dimensiones:** 1200x630 px (ratio 1.91:1)
+- **Formato:** JPG o PNG
+- **Tamaño máximo:** 8MB (recomendado < 300KB)
+- **Nombre:** og-image.jpg
+
+## Contenido Sugerido:
+- Logo ETAXI
+- Tagline: "Taxis 100% Legales y Regulados en Chile"
+- Colores corporativos: #0C1A2B (azul oscuro), #F8D347 (amarillo)
+- Fondo limpio y profesional
+
+## Herramientas para Crear:
+1. **Canva:** https://www.canva.com/ (plantillas Open Graph)
+2. **Figma:** https://www.figma.com/ (diseño personalizado)
+3. **OG Image Generator:** https://og-image.vercel.app/
+
+## Instalación:
+1. Crear imagen con las especificaciones arriba
+2. Guardar como: `public/og-image.jpg`
+3. Verificar en metadata: `app/[locale]/page.tsx:36`
+
+## Verificación:
+```bash
+# Test local
+curl http://localhost:3000/og-image.jpg
+
+# Test producción
+curl https://www.etaxi.cl/og-image.jpg
+
+# Verificar metadata
+curl -s https://www.etaxi.cl | grep "og:image"
+```
+
+## Preview:
+- Facebook Sharing Debugger: https://developers.facebook.com/tools/debug/
+- Twitter Card Validator: https://cards-dev.twitter.com/validator
+- LinkedIn Post Inspector: https://www.linkedin.com/post-inspector/
+
+---
+**Prioridad:** MEDIA (recomendado antes de marketing)
+**Impacto:** Mejora compartidos en redes sociales

@@ -12,6 +12,8 @@ export default createMiddleware({
 });
 
 export const config = {
-  // Match only internationalized pathnames
-  matcher: ['/', '/(es|en)/:path*']
+  // Match all pathnames except static files
+  matcher: [
+    '/((?!_next|_vercel|.*\\..*).*)'
+  ]
 };

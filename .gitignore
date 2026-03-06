@@ -32,10 +32,30 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+!.env.local.example
+!.env.production
 
 # vercel
 .vercel
 
+# cloudflare
+.open-next
+.dev.vars
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+/lib/generated/prisma
+
+# design assets and prompts (local only)
+/design
+
+# internal documentation (not for production)
+/_internal-docs
+
+# playwright MCP screenshots
+.playwright-mcp/
+
+# Windows null device artifact
+nul

@@ -36,6 +36,12 @@ export const seoConfig = {
       'ETAXI opera con taxis regulados, alineados con la Ley 21.553 y el Decreto 212, explicado en lenguaje simple.',
     keywords: 'Ley 21.553, Decreto 212, cumplimiento normativo, taxi regulado Chile',
   },
+  cumplimientoNormativo: {
+    title: 'Cumplimiento Normativo para Empresas y Gremios | ETAXI',
+    description:
+      'ETAXI se alinea con Ley 21.553 y DS 212 para ofrecer una plataforma que ayuda a empresas y gremios a operar taxis regulados con orden, trazabilidad y reducción de riesgo regulatorio.',
+    keywords: 'cumplimiento normativo transporte, Ley 21.553, plataforma taxis regulados, DS 212, compliance transporte Chile, empresas transporte regulado',
+  },
   empresasGremios: {
     title: 'ETAXI para empresas y gremios — Transporte regulado',
     description:
@@ -48,6 +54,12 @@ export const seoConfig = {
       'Si eres conductor de taxi regulado, conoce cómo integrarte a ETAXI y trabajar dentro de la normativa vigente.',
     keywords: 'conductor taxi, trabajo taxi, taxi regulado conductor, Ley 21.553 conductor',
   },
+  guiaInstalacion: {
+    title: 'Guía de Instalación App Conductor ETAXI — Paso a Paso',
+    description:
+      'Aprende a instalar y configurar la app de conductor ETAXI. Guía visual completa con todos los pasos y permisos necesarios.',
+    keywords: 'instalar ETAXI conductor, configurar app taxi, tutorial ETAXI, permisos app conductor',
+  },
   ayuda: {
     title: 'Ayuda y Reclamos ETAXI — Soporte 24/7',
     description:
@@ -59,6 +71,12 @@ export const seoConfig = {
     description:
       'Comunícate con ETAXI para consultas, soporte o información comercial. Estamos disponibles para ayudarte.',
     keywords: 'contacto ETAXI, soporte ETAXI, consultas taxi regulado',
+  },
+  blog: {
+    title: 'Blog ETAXI — Noticias y Guías de Transporte en Chile',
+    description:
+      'Mantente informado sobre regulación, seguridad y novedades del transporte de pasajeros en Chile. Artículos sobre Ley 21.553, taxis regulados y más.',
+    keywords: 'blog taxi Chile, noticias transporte, Ley 21.553, Ley Uber Chile, seguridad pasajeros',
   },
 } as const;
 
