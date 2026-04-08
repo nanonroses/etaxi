@@ -1582,6 +1582,249 @@ El alza del transporte público no convierte al taxi regulado en la opción más
       { title: 'Alza del transporte público: nuevas tarifas - La Tercera', url: 'https://www.latercera.com/servicios/noticia/alza-del-transporte-publico-cual-es-el-nuevo-valor-de-los-pasajes-en-metro-y-buses-red/AMVQ4GN3XBH2XIZ6JB243MRT64/' },
     ],
   },
+  {
+    slug: 'gobierno-posterga-reglamento-ley-uber-2026',
+    title: 'Gobierno posterga reglamento de la Ley Uber y deja implementación al próximo gobierno',
+    excerpt: 'El Ejecutivo decidió no publicar el reglamento de la Ley 21.553 antes del cambio de mando, dejando la regulación de apps de transporte en manos de las nuevas autoridades.',
+    content: `
+## Postergación del reglamento
+
+El Gobierno de Gabriel Boric decidió **postergar la publicación del reglamento** que regulará a las Empresas de Aplicaciones de Transporte (EAT), más conocida como "Ley Uber". El reglamento había sido tomado de razón por la Contraloría General de la República durante 2025, pero su implementación quedó pendiente.
+
+## ¿Por qué se postergó?
+
+El futuro ministro de Transportes del nuevo gobierno pidió expresamente **no implementar la ley antes del 11 de marzo** (fecha del cambio de mando). Las razones principales fueron:
+
+- **Dificultades técnicas**: La plataforma tecnológica necesaria para el Registro Nacional de conductores y vehículos no estaba lista
+- **Incertidumbre regulatoria**: El reglamento contenía restricciones que generaban debate en la industria
+- **Transición de gobierno**: Se consideró prudente dejar la decisión a las nuevas autoridades
+
+## ¿Qué significa para conductores y usuarios?
+
+Para los **conductores de aplicaciones**, esto significa que:
+
+- Pueden seguir operando bajo las condiciones actuales temporalmente
+- No se exigirá aún la licencia profesional A2 ni el registro formal
+- Las plataformas (Uber, DiDi, Cabify, inDrive) continúan funcionando sin cambios inmediatos
+
+Para los **usuarios**, el servicio se mantiene igual por ahora, pero la falta de regulación implica que no hay garantías formales sobre:
+
+- Verificación de antecedentes de conductores
+- Estándares mínimos de vehículos
+- Seguros obligatorios
+
+## ¿Qué pasa con los taxis?
+
+Los **taxis básicos** ya cuentan con regulación vigente y pueden operar tanto de forma tradicional como afiliados a plataformas tecnológicas como ETAXI. Esta es una ventaja competitiva frente a los conductores de aplicaciones no regulados.
+
+## Próximos pasos
+
+El nuevo gobierno deberá definir los plazos de implementación del reglamento, considerando los ajustes necesarios para equilibrar la oferta de transporte, la seguridad de los usuarios y la viabilidad económica para los conductores.
+`,
+    category: 'regulacion',
+    image: '/images/blog/ley-21553.jpg',
+    author: 'Equipo ETAXI',
+    publishedAt: '2026-03-09',
+    readTime: 5,
+    featured: false,
+    tags: ['Ley Uber', 'Ley 21.553', 'Regulación', 'Gobierno', 'Reglamento', 'Chile 2026'],
+    sources: [
+      { title: 'Gobierno se rinde con la Ley Uber: posterga reglamento - BioBioChile', url: 'https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/03/09/gobierno-se-rinde-con-la-ley-uber-posterga-reglamento-y-deja-implementacion-a-proximas-autoridades.shtml' },
+      { title: '¿En qué está la Ley Uber en Chile? - Sabes.cl', url: 'https://sabes.cl/2026/03/03/en-que-esta-la-ley-uber-en-chile-y-por-que-el-futuro-ministro-de-transportes-pidio-no-implementarla-antes-del-11-de-marzo/' },
+    ],
+  },
+  {
+    slug: 'apps-transporte-medidas-alza-bencinas-2026',
+    title: 'Uber, Cabify y DiDi anuncian medidas ante alza histórica de bencinas en Chile',
+    excerpt: 'Frente al mayor aumento de combustibles en años, las principales apps de transporte activaron planes para proteger a conductores y usuarios con rebajas de comisiones y descuentos.',
+    content: `
+## El bencinazo de marzo 2026
+
+Chile enfrentó un **alza histórica de combustibles** en marzo de 2026, con incrementos de hasta **$370 por litro en bencinas** y **$580 en diésel**, tras los cambios al Mecanismo de Estabilización de Precios de los Combustibles (MEPCO). Este aumento impactó directamente a los conductores de aplicaciones de transporte.
+
+## Medidas de las plataformas
+
+### Uber
+- **Rebaja de comisiones** para conductores
+- **Descuentos para usuarios** en viajes
+- **Incremento de descuentos en bencina** para socios conductores en estaciones Aramco
+- Compromiso de que el alza no se traspase directamente a usuarios ni conductores
+
+### Cabify
+- **Absorción del 100% del alza** en combustibles, asumiendo el costo como empresa
+- **Suplemento de $50 por kilómetro** recorrido en cada viaje para conductores
+- Actualización de beneficios del programa **Cabify Stars** para choferes
+
+### DiDi
+- **Comisión de servicio reducida al 10%** en varias regiones
+- **Descuentos de hasta 25%** en viajes, financiados por la empresa
+- Absorción parcial de los costos adicionales
+
+## ¿Y los taxistas?
+
+El gobierno entregó un **bono de $100.000** para taxistas y colectiveros para enfrentar el alza de combustibles. Sin embargo, el ministro de Transportes **descartó extender este beneficio** a los conductores de aplicaciones.
+
+Esta diferencia resalta una ventaja de los **taxis formalizados**: al estar regulados, tienen acceso a apoyos gubernamentales que los conductores informales no reciben.
+
+## Impacto en las tarifas
+
+A pesar de las medidas, los usuarios pueden esperar:
+
+- **Menor disponibilidad** de conductores en horarios de baja demanda
+- **Tiempos de espera más largos** en zonas alejadas
+- **Tarifas dinámicas más frecuentes** en horas punta
+
+## Consejo ETAXI
+
+Con un taxi básico a través de ETAXI, las tarifas son reguladas por taxímetro y no están sujetas a tarifas dinámicas. Es una opción confiable especialmente en momentos de alta demanda o cuando las apps de transporte suben sus precios.
+`,
+    category: 'noticias',
+    image: '/images/blog/taxi-vs-apps.jpg',
+    author: 'Equipo ETAXI',
+    publishedAt: '2026-03-24',
+    readTime: 6,
+    featured: false,
+    tags: ['Bencinas', 'Uber', 'Cabify', 'DiDi', 'Tarifas', 'Combustibles', 'Chile 2026'],
+    sources: [
+      { title: 'Apps de transporte y el impacto por alza de bencinas - El Dínamo', url: 'https://www.eldinamo.cl/economia/negocios-economia/2026/03/24/apps-de-transportes-y-el-impacto-por-alza-de-bencinas-uber-cabify-y-didi-anuncian-medidas/' },
+      { title: 'Medidas anunciadas por DiDi, Uber y Cabify - BioBioChile', url: 'https://www.biobiochile.cl/noticias/servicios/toma-nota/2026/03/24/para-conductores-y-usuarios-las-medidas-anunciadas-por-didi-uber-y-cabify-por-alza-de-combustibles.shtml' },
+      { title: 'Apps anuncian beneficios tras alza - T13', url: 'https://www.t13.cl/noticia/tendencias/apps-anuncian-beneficios-para-usuarios-conductores-tras-alza-24-3-2026' },
+    ],
+  },
+  {
+    slug: 'ministro-de-grange-cambios-ley-uber-abril-2026',
+    title: 'Ministro De Grange anuncia cambios a la Ley Uber: "El reglamento genera mucho daño"',
+    excerpt: 'El nuevo ministro de Transportes adelantó que modificará el reglamento heredado, alertando que sin cambios el desempleo podría subir de 8,3% a 9,3%.',
+    content: `
+## Anuncio del ministro De Grange
+
+El ministro de Transportes y Telecomunicaciones, **Louis de Grange**, anunció que el Ejecutivo modificará sustancialmente el reglamento de la Ley Uber heredado del gobierno anterior. En sus palabras, el reglamento **"destruía la industria de las aplicaciones"** y **"genera mucho daño"**.
+
+## Principales críticas al reglamento anterior
+
+El ministro identificó problemas graves en el reglamento original:
+
+- **Restricciones innecesarias** de cilindrada mínima (1.400 cc) y antigüedad de vehículos
+- **Reducción del 80-90% de la oferta** de conductores disponibles
+- **Impacto en el empleo**: sin cambios, el desempleo podría subir de **8,3% a 9,3%**
+- Aumento significativo de tarifas para los usuarios
+
+## Cambios anunciados
+
+El ministro adelantó las siguientes modificaciones:
+
+### Requisitos de vehículos (se flexibilizan)
+- **Se elimina** el requisito de cilindrada mínima de 1.400 cc
+- **Se elimina** el límite de antigüedad del vehículo
+- Con estos cambios, el **85% de los conductores** que antes no podían inscribirse ahora podrán hacerlo
+
+### Requisitos que se mantienen
+- **Licencia profesional clase A2** (obligatoria)
+- **Certificado de antecedentes penales** sin delitos sexuales ni de drogas
+- **Revisión técnica cada 6 meses**
+- **SOAP vigente**
+- Inscripción en el **Registro Nacional**
+
+## ¿Qué significa para el transporte en Chile?
+
+Según el ministro, las modificaciones buscan:
+
+- **Mayor oferta** de conductores en todo el país
+- **Mejor cobertura** en zonas rurales y periféricas
+- **Menores tiempos de espera** para los usuarios
+- **Proteger el empleo** de miles de conductores
+
+## Posición de ETAXI
+
+La regulación es positiva cuando protege a los usuarios sin destruir la industria. Los taxis básicos ya cumplen con estándares de seguridad y formalización. Con ETAXI, los pasajeros viajan con conductores verificados y vehículos que pasan revisión técnica periódica, exactamente lo que la ley busca garantizar.
+`,
+    category: 'regulacion',
+    image: '/images/blog/ley-21553.jpg',
+    author: 'Equipo ETAXI',
+    publishedAt: '2026-04-04',
+    readTime: 6,
+    featured: true,
+    tags: ['Ley Uber', 'De Grange', 'Regulación', 'Reglamento', 'Desempleo', 'Chile 2026'],
+    sources: [
+      { title: 'Ministro de Grange anuncia cambios en Ley Uber - BioBioChile', url: 'https://www.biobiochile.cl/noticias/nacional/chile/2026/04/04/ministro-de-grange-anuncia-cambios-en-ley-uber-afirma-que-el-reglamento-genera-mucho-dano.shtml' },
+      { title: 'De Grange: sin cambios, el desempleo puede subir a 9,3% - Cooperativa', url: 'https://www.cooperativa.cl/noticias/pais/transportes/de-grange-sin-cambios-a-la-ley-uber-el-desempleo-puede-subir-a-9-3/2026-04-04/095655.html' },
+      { title: 'Los cambios a la ley Uber que anunció De Grange - El Dínamo', url: 'https://www.eldinamo.cl/pais/2026/04/04/los-cambios-a-la-ley-uber-que-anuncio-el-ministro-de-grange-alerto-impacto-en-tarifas-y-desempleo/' },
+    ],
+  },
+  {
+    slug: 'modificaciones-ley-uber-que-cambia-abril-2026',
+    title: 'Modificaciones a la Ley Uber: ¿Qué cambia, qué se mantiene y qué sigue incierto?',
+    excerpt: 'El Ministerio de Transportes publicó los cambios al reglamento de la Ley 21.553. Eliminan restricciones a vehículos y proyectan hasta 85% más conductores habilitados.',
+    content: `
+## Los cambios oficiales
+
+El Ministerio de Transportes y Telecomunicaciones publicó oficialmente las **modificaciones al reglamento** de la Ley 21.553 (Ley Uber). Los cambios buscan flexibilizar las exigencias sin comprometer la seguridad de los usuarios.
+
+## ¿Qué cambia?
+
+### Requisitos de vehículos (flexibilizados)
+- **Cilindrada mínima**: Se elimina el requisito de 1.400 cc. Ahora no hay exigencia de cilindrada
+- **Antigüedad del vehículo**: Se elimina el límite de años. Vehículos más antiguos podrán operar siempre que pasen la revisión técnica
+- **Resultado**: Hasta un **85% más de conductores** podrán inscribirse en las plataformas
+
+### Acceso a conductores
+- Se modificaron las exigencias para quienes pueden ser conductores, **ampliando el acceso**
+- Se mantiene la obligación de licencia profesional A2
+
+## ¿Qué se mantiene?
+
+La seguridad del usuario sigue siendo prioridad:
+
+- **Licencia profesional clase A2** para todos los conductores
+- **Revisión técnica cada 6 meses** (doble frecuencia vs. vehículos particulares)
+- **SOAP vigente** obligatorio
+- **Certificado de antecedentes**: sin condenas por delitos sexuales, drogas ni conducción en estado de ebriedad
+- **Registro Nacional**: inscripción obligatoria de conductores y vehículos
+- **Distintivo visible** en los vehículos
+
+## ¿Qué sigue incierto?
+
+Varios aspectos aún generan debate:
+
+- **Fecha de entrada en vigencia** definitiva del reglamento modificado
+- **Plataforma tecnológica** del Registro Nacional: aún en desarrollo
+- **Fiscalización**: cómo se controlará el cumplimiento en la práctica
+- **Impacto en tarifas**: si los cambios efectivamente evitarán alzas para los usuarios
+
+## Comparación: antes y después
+
+| Requisito | Reglamento anterior | Reglamento modificado |
+|-----------|---------------------|-----------------------|
+| Cilindrada mínima | 1.400 cc | Sin exigencia |
+| Antigüedad vehículo | Máximo definido | Sin límite (con revisión técnica) |
+| Licencia | A2 profesional | A2 profesional (se mantiene) |
+| Revisión técnica | Cada 6 meses | Cada 6 meses (se mantiene) |
+| Antecedentes | Obligatorio | Obligatorio (se mantiene) |
+| Conductores habilitados | ~15% del total | ~100% del total |
+
+## ¿Qué significa para los taxis?
+
+Los taxis básicos ya cumplen con todos estos requisitos desde hace años. La Ley Uber busca que los conductores de aplicaciones alcancen un nivel similar de formalización y seguridad.
+
+Con **ETAXI**, los pasajeros ya viajan con:
+- Conductores con licencia profesional verificada
+- Vehículos con revisión técnica al día
+- Tarifas reguladas sin cobros dinámicos
+- Validación del Ministerio de Transportes
+`,
+    category: 'regulacion',
+    image: '/images/blog/ley-21553.jpg',
+    author: 'Equipo ETAXI',
+    publishedAt: '2026-04-06',
+    readTime: 7,
+    featured: true,
+    tags: ['Ley Uber', 'Ley 21.553', 'Modificaciones', 'Reglamento', 'Vehículos', 'Conductores', 'Chile 2026'],
+    sources: [
+      { title: 'Transportes publica cambios a la Ley Uber - BioBioChile', url: 'https://www.biobiochile.cl/noticias/nacional/chile/2026/04/04/transportes-publica-cambios-realizados-a-la-ley-uber-aseguran-habra-mayor-oferta-y-mejor-cobertura.shtml' },
+      { title: 'Modificaciones a la Ley Uber: ¿Qué cambia? - T13', url: 'https://www.t13.cl/noticia/nacional/modificaciones-ley-uber-cambia-se-mantiene-sigue-siendo-incierto-5-4-2026' },
+      { title: 'Eliminan requisitos a vehículos, proyectan 85% más conductores - Sabes.cl', url: 'https://sabes.cl/2026/04/06/transportes-modifica-la-ley-uber-eliminan-requisitos-a-vehiculos-y-proyectan-hasta-85-mas-conductores/' },
+    ],
+  },
 ];
 
 // Artículos en Inglés
@@ -2900,6 +3143,249 @@ The public transport fare hike doesn't make the regulated taxi the cheapest opti
       { title: 'Public transport prices rise in Santiago - T13', url: 'https://www.t13.cl/amp/noticia/nacional/sube-precio-del-transporte-publico-santiago-estas-seran-las-nuevas-tarifas-buse-20-2-2026' },
       { title: 'New public transport fare hike - Concierto', url: 'https://www.concierto.cl/2026/02/nueva-alza-del-pasaje-en-el-transporte-publico-cuanto-sube-la-tarifa-y-desde-cuando-rige' },
       { title: 'Public transport fare hike: new rates - La Tercera', url: 'https://www.latercera.com/servicios/noticia/alza-del-transporte-publico-cual-es-el-nuevo-valor-de-los-pasajes-en-metro-y-buses-red/AMVQ4GN3XBH2XIZ6JB243MRT64/' },
+    ],
+  },
+  {
+    slug: 'government-postpones-uber-law-regulations-2026',
+    title: 'Government postpones Uber Law regulations, leaving implementation to next administration',
+    excerpt: 'The outgoing government decided not to publish the Uber Law regulations before the change of power, leaving ride-hailing app regulation to the incoming authorities.',
+    content: `
+## Regulation postponement
+
+The Boric administration decided to **postpone the publication of the regulations** for Transport Application Companies (EAT), better known as the "Uber Law." The regulations had been approved by the Comptroller General during 2025, but their implementation remained pending.
+
+## Why was it postponed?
+
+The incoming Minister of Transport explicitly requested that the law **not be implemented before March 11** (inauguration day). The main reasons were:
+
+- **Technical difficulties**: The technological platform needed for the National Registry of drivers and vehicles was not ready
+- **Regulatory uncertainty**: The regulations contained restrictions that generated debate in the industry
+- **Government transition**: It was considered prudent to leave the decision to the new authorities
+
+## What does this mean for drivers and users?
+
+For **app drivers**, this means:
+
+- They can continue operating under current conditions temporarily
+- Professional A2 license and formal registration are not yet required
+- Platforms (Uber, DiDi, Cabify, inDrive) continue operating without immediate changes
+
+For **users**, the service remains the same for now, but the lack of regulation means there are no formal guarantees regarding:
+
+- Driver background checks
+- Minimum vehicle standards
+- Mandatory insurance
+
+## What about taxis?
+
+**Basic taxis** already have existing regulations and can operate both traditionally and through technology platforms like ETAXI. This gives them a competitive advantage over unregulated app drivers.
+
+## Next steps
+
+The new government will need to define implementation timelines for the regulations, considering the necessary adjustments to balance transport supply, user safety, and economic viability for drivers.
+`,
+    category: 'regulacion',
+    image: '/images/blog/ley-21553.jpg',
+    author: 'ETAXI Team',
+    publishedAt: '2026-03-09',
+    readTime: 5,
+    featured: false,
+    tags: ['Uber Law', 'Law 21.553', 'Regulation', 'Government', 'Chile 2026'],
+    sources: [
+      { title: 'Government gives up on Uber Law: postpones regulation - BioBioChile', url: 'https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/03/09/gobierno-se-rinde-con-la-ley-uber-posterga-reglamento-y-deja-implementacion-a-proximas-autoridades.shtml' },
+      { title: 'What is happening with the Uber Law in Chile? - Sabes.cl', url: 'https://sabes.cl/2026/03/03/en-que-esta-la-ley-uber-en-chile-y-por-que-el-futuro-ministro-de-transportes-pidio-no-implementarla-antes-del-11-de-marzo/' },
+    ],
+  },
+  {
+    slug: 'ride-hailing-apps-fuel-price-hike-measures-2026',
+    title: 'Uber, Cabify and DiDi announce measures amid historic fuel price hike in Chile',
+    excerpt: 'Facing the largest fuel price increase in years, major ride-hailing apps activated plans to protect drivers and users with commission cuts and discounts.',
+    content: `
+## The March 2026 fuel crisis
+
+Chile faced a **historic fuel price increase** in March 2026, with hikes of up to **$370 per liter for gasoline** and **$580 for diesel**, following changes to the Fuel Price Stabilization Mechanism (MEPCO). This increase directly impacted ride-hailing app drivers.
+
+## Platform measures
+
+### Uber
+- **Commission reductions** for drivers
+- **Discounts for users** on rides
+- **Increased fuel discounts** for partner drivers at Aramco stations
+- Commitment that the price hike won't be passed directly to users or drivers
+
+### Cabify
+- **100% absorption of the fuel hike**, taking on the cost as a company
+- **$50 supplement per kilometer** driven on each ride for drivers
+- Updated benefits in the **Cabify Stars** loyalty program for drivers
+
+### DiDi
+- **Service commission reduced to 10%** in several regions
+- **Discounts of up to 25%** on rides, funded by the company
+- Partial absorption of additional costs
+
+## What about taxi drivers?
+
+The government provided a **$100,000 CLP bonus** for taxi and shared-ride drivers to face the fuel hike. However, the Transport Minister **ruled out extending this benefit** to app drivers.
+
+This highlights an advantage of **formalized taxis**: being regulated, they have access to government support that informal drivers don't receive.
+
+## Impact on fares
+
+Despite these measures, users may expect:
+
+- **Lower availability** of drivers during off-peak hours
+- **Longer wait times** in remote areas
+- **More frequent surge pricing** during rush hours
+
+## ETAXI tip
+
+With a basic taxi through ETAXI, fares are regulated by taximeter and are not subject to surge pricing. It's a reliable option especially during high demand or when ride-hailing apps increase their prices.
+`,
+    category: 'noticias',
+    image: '/images/blog/taxi-vs-apps.jpg',
+    author: 'ETAXI Team',
+    publishedAt: '2026-03-24',
+    readTime: 6,
+    featured: false,
+    tags: ['Fuel Prices', 'Uber', 'Cabify', 'DiDi', 'Fares', 'Chile 2026'],
+    sources: [
+      { title: 'Ride-hailing apps and the fuel price hike impact - El Dínamo', url: 'https://www.eldinamo.cl/economia/negocios-economia/2026/03/24/apps-de-transportes-y-el-impacto-por-alza-de-bencinas-uber-cabify-y-didi-anuncian-medidas/' },
+      { title: 'Measures announced by DiDi, Uber and Cabify - BioBioChile', url: 'https://www.biobiochile.cl/noticias/servicios/toma-nota/2026/03/24/para-conductores-y-usuarios-las-medidas-anunciadas-por-didi-uber-y-cabify-por-alza-de-combustibles.shtml' },
+      { title: 'Apps announce benefits after fuel hike - T13', url: 'https://www.t13.cl/noticia/tendencias/apps-anuncian-beneficios-para-usuarios-conductores-tras-alza-24-3-2026' },
+    ],
+  },
+  {
+    slug: 'minister-de-grange-uber-law-changes-april-2026',
+    title: 'Minister De Grange announces Uber Law changes: "The regulation causes great harm"',
+    excerpt: 'The new Transport Minister announced he will modify the inherited regulations, warning that without changes unemployment could rise from 8.3% to 9.3%.',
+    content: `
+## Minister De Grange's announcement
+
+The Minister of Transport and Telecommunications, **Louis de Grange**, announced that the Executive will substantially modify the Uber Law regulations inherited from the previous government. In his words, the regulation **"destroyed the ride-hailing industry"** and **"causes great harm"**.
+
+## Main criticisms of the previous regulation
+
+The minister identified serious problems with the original regulation:
+
+- **Unnecessary restrictions** on minimum engine displacement (1,400 cc) and vehicle age
+- **80-90% reduction** in the supply of available drivers
+- **Employment impact**: without changes, unemployment could rise from **8.3% to 9.3%**
+- Significant fare increases for users
+
+## Announced changes
+
+The minister outlined the following modifications:
+
+### Vehicle requirements (relaxed)
+- **Eliminated**: minimum engine displacement of 1,400 cc
+- **Eliminated**: vehicle age limits
+- With these changes, **85% of drivers** who previously couldn't register will now be eligible
+
+### Requirements that remain
+- **Professional A2 license** (mandatory)
+- **Criminal background check** — no sexual or drug-related offenses
+- **Technical inspection every 6 months**
+- **Valid SOAP insurance**
+- Registration in the **National Registry**
+
+## What does this mean for transport in Chile?
+
+According to the minister, the modifications seek to:
+
+- **Increase supply** of drivers nationwide
+- **Improve coverage** in rural and peripheral areas
+- **Reduce wait times** for users
+- **Protect employment** of thousands of drivers
+
+## ETAXI's position
+
+Regulation is positive when it protects users without destroying the industry. Basic taxis already meet safety and formalization standards. With ETAXI, passengers travel with verified drivers and vehicles that undergo periodic technical inspections — exactly what the law aims to guarantee.
+`,
+    category: 'regulacion',
+    image: '/images/blog/ley-21553.jpg',
+    author: 'ETAXI Team',
+    publishedAt: '2026-04-04',
+    readTime: 6,
+    featured: true,
+    tags: ['Uber Law', 'De Grange', 'Regulation', 'Unemployment', 'Chile 2026'],
+    sources: [
+      { title: 'Minister De Grange announces Uber Law changes - BioBioChile', url: 'https://www.biobiochile.cl/noticias/nacional/chile/2026/04/04/ministro-de-grange-anuncia-cambios-en-ley-uber-afirma-que-el-reglamento-genera-mucho-dano.shtml' },
+      { title: 'De Grange: without changes, unemployment may rise to 9.3% - Cooperativa', url: 'https://www.cooperativa.cl/noticias/pais/transportes/de-grange-sin-cambios-a-la-ley-uber-el-desempleo-puede-subir-a-9-3/2026-04-04/095655.html' },
+      { title: 'Uber Law changes announced by De Grange - El Dínamo', url: 'https://www.eldinamo.cl/pais/2026/04/04/los-cambios-a-la-ley-uber-que-anuncio-el-ministro-de-grange-alerto-impacto-en-tarifas-y-desempleo/' },
+    ],
+  },
+  {
+    slug: 'uber-law-modifications-what-changes-april-2026',
+    title: 'Uber Law modifications: What changes, what stays, and what remains uncertain?',
+    excerpt: 'The Ministry of Transport published changes to the Law 21.553 regulations. Vehicle restrictions eliminated, projecting up to 85% more eligible drivers.',
+    content: `
+## The official changes
+
+The Ministry of Transport and Telecommunications officially published the **modifications to the regulations** of Law 21.553 (Uber Law). The changes aim to make requirements more flexible without compromising user safety.
+
+## What changes?
+
+### Vehicle requirements (relaxed)
+- **Minimum engine displacement**: The 1,400 cc requirement is eliminated. No displacement requirement now
+- **Vehicle age**: The age limit is eliminated. Older vehicles can operate as long as they pass technical inspection
+- **Result**: Up to **85% more drivers** will be able to register on platforms
+
+### Driver access
+- Requirements for who can be a driver were modified, **expanding access**
+- Professional A2 license requirement remains mandatory
+
+## What stays the same?
+
+User safety remains the priority:
+
+- **Professional A2 license** for all drivers
+- **Technical inspection every 6 months** (double the frequency of private vehicles)
+- **Valid SOAP insurance** mandatory
+- **Background check**: no convictions for sexual offenses, drugs, or drunk driving
+- **National Registry**: mandatory registration of drivers and vehicles
+- **Visible badge** on vehicles
+
+## What remains uncertain?
+
+Several aspects are still being debated:
+
+- **Definitive effective date** of the modified regulations
+- **Technological platform** for the National Registry: still under development
+- **Enforcement**: how compliance will be controlled in practice
+- **Impact on fares**: whether changes will effectively prevent increases for users
+
+## Comparison: before and after
+
+| Requirement | Previous regulation | Modified regulation |
+|-------------|---------------------|---------------------|
+| Minimum displacement | 1,400 cc | No requirement |
+| Vehicle age | Maximum defined | No limit (with inspection) |
+| License | Professional A2 | Professional A2 (maintained) |
+| Technical inspection | Every 6 months | Every 6 months (maintained) |
+| Background check | Required | Required (maintained) |
+| Eligible drivers | ~15% of total | ~100% of total |
+
+## What does this mean for taxis?
+
+Basic taxis have already met all these requirements for years. The Uber Law seeks to bring app drivers to a similar level of formalization and safety.
+
+With **ETAXI**, passengers already travel with:
+- Drivers with verified professional licenses
+- Vehicles with up-to-date technical inspections
+- Regulated fares without surge pricing
+- Ministry of Transport validation
+`,
+    category: 'regulacion',
+    image: '/images/blog/ley-21553.jpg',
+    author: 'ETAXI Team',
+    publishedAt: '2026-04-06',
+    readTime: 7,
+    featured: true,
+    tags: ['Uber Law', 'Law 21.553', 'Modifications', 'Regulations', 'Vehicles', 'Drivers', 'Chile 2026'],
+    sources: [
+      { title: 'Transport publishes Uber Law changes - BioBioChile', url: 'https://www.biobiochile.cl/noticias/nacional/chile/2026/04/04/transportes-publica-cambios-realizados-a-la-ley-uber-aseguran-habra-mayor-oferta-y-mejor-cobertura.shtml' },
+      { title: 'Uber Law modifications: What changes? - T13', url: 'https://www.t13.cl/noticia/nacional/modificaciones-ley-uber-cambia-se-mantiene-sigue-siendo-incierto-5-4-2026' },
+      { title: 'Vehicle requirements eliminated, 85% more drivers projected - Sabes.cl', url: 'https://sabes.cl/2026/04/06/transportes-modifica-la-ley-uber-eliminan-requisitos-a-vehiculos-y-proyectan-hasta-85-mas-conductores/' },
     ],
   },
 ];
