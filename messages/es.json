@@ -61,7 +61,23 @@
     "title": "Descarga la app ETAXI",
     "description": "Disponible para iOS y Android",
     "appStore": "Descargar en App Store",
-    "playStore": "Descargar en Google Play"
+    "playStore": "Descargar en Google Play",
+    "badge": "Descarga Gratis",
+    "features": {
+      "booking": "Reserva en segundos",
+      "payment": "Pago seguro integrado",
+      "tracking": "Seguimiento en tiempo real",
+      "history": "Historial completo de viajes"
+    },
+    "storeLabels": {
+      "googlePlay": "Disponible en",
+      "appStore": "Descargar en"
+    },
+    "ratingText": "4.8 / 5.0 - Más de 50,000 descargas",
+    "readyTitle": "¿Listo para empezar?",
+    "readyDescription": "Descarga ETAXI gratis y viaja con la tranquilidad que mereces",
+    "faqBadge": "Preguntas Frecuentes",
+    "faqSubtitle": "Resolvemos tus dudas sobre la aplicación ETAXI"
   },
   "howItWorks": {
     "title": "Cómo funciona",
@@ -167,6 +183,80 @@
     "commitment": {
       "title": "Nuestro Compromiso",
       "description": "ETAXI se compromete a mantener los más altos estándares de cumplimiento legal y transparencia, trabajando solo con profesionales autorizados."
+    }
+  },
+  "ministerioValidation": {
+    "badge": "100% Legal y Regulado",
+    "title1": "Pioneros",
+    "title2": "en Certificación",
+    "title3": "Legal",
+    "description": "ETAXI opera bajo el marco legal chileno, con conductores y vehículos verificados por las autoridades. Tu seguridad está respaldada por la ley.",
+    "seal": {
+      "validatedBy": "Validado por",
+      "ministry1": "Ministerio de",
+      "ministry2": "Transportes",
+      "country": "República de Chile"
+    },
+    "validations": {
+      "law": {
+        "title": "Ley 21.553",
+        "description": "Plataforma registrada según la ley de modernización del transporte"
+      },
+      "decree": {
+        "title": "Decreto 212",
+        "description": "Cumplimiento total del reglamento de transporte de pasajeros"
+      },
+      "registry": {
+        "title": "Registro Nacional",
+        "description": "Conductores inscritos en el Registro Nacional de Servicios"
+      },
+      "permits": {
+        "title": "Permisos Municipales",
+        "description": "Todos los taxis con autorización municipal vigente"
+      }
+    },
+    "cta": "Ver Cumplimiento Legal"
+  },
+  "appPreview": {
+    "badge": "Disponible Gratis",
+    "title": "Conoce la App",
+    "description": "Interfaz intuitiva, fácil de usar y diseñada para tu seguridad. Pide tu taxi en segundos.",
+    "rating": "4.8",
+    "downloads": "+10,000 descargas",
+    "appStore": "Descargar en",
+    "googlePlay": "Disponible en",
+    "screenshots": {
+      "home": "Pantalla principal de ETAXI",
+      "request": "Solicitar taxi en ETAXI",
+      "tracking": "Seguimiento GPS en ETAXI"
+    },
+    "features": {
+      "booking": "Reserva en segundos",
+      "payment": "Pago seguro integrado",
+      "tracking": "Seguimiento en tiempo real",
+      "history": "Historial completo de viajes"
+    }
+  },
+  "airportCta": {
+    "badge": "Servicio Aeropuerto SCL",
+    "title": "¿Llegas o Sales del",
+    "titleHighlight": "Aeropuerto",
+    "description": "Counter oficial ETAXI en el Aeropuerto de Santiago. Transporte seguro, tarifas preferenciales y atención 24/7 para turistas y viajeros.",
+    "features": {
+      "availability": "24/7",
+      "safe": "100% Seguro",
+      "counter": "Counter Oficial"
+    },
+    "cta": "Ver Servicio Aeropuerto",
+    "card": {
+      "title": "Aeropuerto SCL",
+      "terminalLabel": "Terminal",
+      "terminalValue": "Nacional e Internacional",
+      "scheduleLabel": "Horario",
+      "scheduleValue": "24 horas, todos los días",
+      "guaranteeLabel": "Garantía",
+      "guaranteeValue": "Tarifa fija, sin sorpresas",
+      "status": "Counter Disponible"
     }
   },
   "safetyPage": {
@@ -533,7 +623,11 @@
         "question": "¿Puedo cancelar un viaje?",
         "answer": "Sí, puedes cancelar tu solicitud antes de que el conductor llegue. Revisa la política de cancelación en la app para más detalles."
       }
-    }
+    },
+    "readyTitle": "¿Listo para empezar?",
+    "readyDescription": "Descarga ETAXI gratis y viaja con la tranquilidad que mereces",
+    "faqBadge": "Preguntas Frecuentes",
+    "faqSubtitle": "Resolvemos tus dudas sobre la aplicación ETAXI"
   },
   "helpPage": {
     "hero": {
@@ -610,6 +704,143 @@
       "general": "Consulta general",
       "support": "Soporte técnico",
       "business": "Consulta empresarial"
+    }
+  },
+  "airportPage": {
+    "hero": {
+      "badge": "Aeropuerto SCL Santiago",
+      "title1": "Traslados",
+      "titleHighlight": "Aeropuerto",
+      "title2": "Seguros y Confiables",
+      "description": "Counter oficial ETAXI en el Aeropuerto Internacional de Santiago. Transporte moderno, seguro y con tarifas preferenciales para turistas y viajeros.",
+      "ctaApp": "Descargar App",
+      "ctaContact": "Contactar",
+      "trust": {
+        "legal": "100% Legal",
+        "rating": "4.9 Estrellas",
+        "trips": "+50K Viajes"
+      }
+    },
+    "heroCard": {
+      "title": "ETAXI Aeropuerto",
+      "subtitle": "Counter Oficial",
+      "locationLabel": "Ubicación",
+      "locationValue": "Terminal Nacional e Internacional",
+      "scheduleLabel": "Horario",
+      "scheduleValue": "24 horas, 7 días",
+      "serviceApp": "App",
+      "serviceTotem": "Tótem",
+      "serviceCounter": "Counter"
+    },
+    "stats": {
+      "trips": "Viajes Aeropuerto",
+      "availability": "Disponibilidad",
+      "rating": "Calificación",
+      "legal": "Legal y Seguro"
+    },
+    "totemCounter": {
+      "badge": "Puntos de Atención",
+      "title": "Experiencia en el Aeropuerto",
+      "description": "Tecnología de punta y atención humana para tu comodidad. Elige cómo contratar tu traslado.",
+      "totemScreen": {
+        "scanLabel": "Escanea para reservar",
+        "requestButton": "SOLICITAR TAXI",
+        "ratesButton": "Ver Tarifas"
+      },
+      "totemFeatures": {
+        "qr": "Escanea QR",
+        "touch": "Touch Screen",
+        "wifi": "WiFi Gratis",
+        "gps": "GPS Integrado"
+      },
+      "totemTitle": "Tótem Digital Interactivo",
+      "totemSubtitle": "Autoservicio 24/7 en el terminal",
+      "counterSign": "COUNTER OFICIAL ETAXI",
+      "counterAgent": "Personal ETAXI",
+      "counterService": "Atención Presencial",
+      "counterAvailable": "Disponible",
+      "counterFeatures": {
+        "personalized": "Atención Personalizada",
+        "languages": "Español & English",
+        "payment": "Pago Múltiple",
+        "certified": "Personal Certificado"
+      },
+      "counterWait": "Tiempo de espera promedio",
+      "counterTitle": "Counter Presencial",
+      "counterSubtitle": "Atención personalizada de expertos"
+    },
+    "services": {
+      "badge": "3 Formas de Contratar",
+      "title": "Elige Cómo Reservar",
+      "description": "Múltiples canales de atención para tu comodidad. Evita fraudes y viaja seguro con ETAXI.",
+      "app": {
+        "title": "App ETAXI",
+        "description": "Reserva tu traslado desde la comodidad de tu celular, antes o después de aterrizar."
+      },
+      "totem": {
+        "title": "Tótems Interactivos",
+        "description": "Terminales digitales en el aeropuerto para solicitar tu taxi de forma rápida y segura."
+      },
+      "counter": {
+        "title": "Counter Presencial",
+        "description": "Personal ETAXI en el aeropuerto para atención personalizada y evitar fraudes."
+      }
+    },
+    "howItWorks": {
+      "badge": "Proceso Simple",
+      "title": "¿Cómo Funciona?",
+      "description": "4 pasos simples para tu traslado seguro desde o hacia el aeropuerto.",
+      "step1": {
+        "title": "Elige tu Método",
+        "description": "App, Tótem o Counter presencial - tú decides cómo contratar."
+      },
+      "step2": {
+        "title": "Confirma tu Viaje",
+        "description": "Ingresa tu destino y recibe el precio fijo antes de partir."
+      },
+      "step3": {
+        "title": "Espera en Zona Segura",
+        "description": "Te indicamos el punto exacto donde tu conductor te espera."
+      },
+      "step4": {
+        "title": "Viaja Tranquilo",
+        "description": "Disfruta un traslado seguro, cómodo y al mejor precio."
+      }
+    },
+    "benefits": {
+      "badge": "Ventajas ETAXI",
+      "title": "¿Por Qué Elegirnos?",
+      "description": "ETAXI es la opción oficial y segura para traslados al aeropuerto.",
+      "rates": {
+        "title": "Tarifas Preferenciales",
+        "description": "Precios especiales para traslados aeropuerto, sin sorpresas ni cobros extra."
+      },
+      "safe": {
+        "title": "100% Seguro",
+        "description": "Conductores verificados y vehículos autorizados. Tu seguridad es nuestra prioridad."
+      },
+      "available": {
+        "title": "Disponible 24/7",
+        "description": "Servicio las 24 horas, los 7 días de la semana. Cualquier horario de vuelo."
+      },
+      "multilingual": {
+        "title": "Atención Multilingüe",
+        "description": "Personal capacitado para atender turistas en español e inglés."
+      },
+      "fleet": {
+        "title": "Flota Moderna",
+        "description": "Vehículos cómodos, con aire acondicionado y amplio espacio para equipaje."
+      },
+      "support": {
+        "title": "Soporte en Ruta",
+        "description": "Seguimiento GPS en tiempo real y soporte durante todo tu viaje."
+      }
+    },
+    "cta": {
+      "title": "¿Vuelo Próximo?",
+      "description": "Reserva tu traslado ahora y viaja tranquilo. Sin estrés, sin sorpresas, 100% seguro.",
+      "button": "Descargar App Gratis",
+      "footer": "Encuéntranos en el Terminal Nacional e Internacional del Aeropuerto de Santiago"
     }
   },
   "businessPage": {
@@ -868,7 +1099,7 @@
       "subtitle": "Únase a las empresas y gremios que ya confían en ETAXI para gestionar su transporte regulado",
       "demo": "Solicitar Demo Personalizada",
       "meeting": "Agendar Reunión con Ejecutivo",
-      "phone": "Llamar Ahora: +56 9 XXXX XXXX",
+      "phone": "Llamar Ahora: +56 9 6211 6017",
       "trustBadge": "Más de 50 empresas y 20 gremios ya operan con ETAXI"
     },
     "finalCTA": {
@@ -881,6 +1112,35 @@
         "title": "¿Representa un gremio o central?",
         "description": "Modernice su operación sin perder autonomía. Tecnología al servicio de su gremio",
         "button": "Conocer Solución Gremial"
+      }
+    },
+    "accordion": {
+      "badge": "Todo en Uno",
+      "title": "Solución Integral para tu Empresa",
+      "subtitle": "Cuando contratas ETAXI para tu empresa o gremio, recibes un ecosistema completo de herramientas diseñadas para digitalizar y optimizar tu operación de transporte.",
+      "ctaText": "Solicitar Demo",
+      "included": "Incluido",
+      "items": {
+        "app": {
+          "title": "App Móvil",
+          "description": "App iOS y Android con seguimiento GPS en tiempo real"
+        },
+        "fleet": {
+          "title": "Gestión de Flota",
+          "description": "Dashboard web para gestionar conductores, vehículos y turnos"
+        },
+        "monitoring": {
+          "title": "Panel de Monitoreo",
+          "description": "Mapa en vivo con ubicación de toda tu flota 24/7"
+        },
+        "payment": {
+          "title": "Pasarela de Pago",
+          "description": "Integración con Webpay, Flow y tarjetas de crédito"
+        },
+        "accounting": {
+          "title": "Contabilidad",
+          "description": "Facturación electrónica y liquidaciones automáticas"
+        }
       }
     }
   },

@@ -3,31 +3,32 @@
 import { m } from 'framer-motion';
 import { Shield, CheckCircle, FileCheck, Award, Scale, Building2 } from 'lucide-react';
 import Link from 'next/link';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 
 export function MinisterioValidation() {
     const locale = useLocale();
+    const t = useTranslations('ministerioValidation');
 
     const validations = [
         {
             icon: FileCheck,
-            title: 'Ley 21.553',
-            description: 'Plataforma registrada según la ley de modernización del transporte',
+            title: t('validations.law.title'),
+            description: t('validations.law.description'),
         },
         {
             icon: Scale,
-            title: 'Decreto 212',
-            description: 'Cumplimiento total del reglamento de transporte de pasajeros',
+            title: t('validations.decree.title'),
+            description: t('validations.decree.description'),
         },
         {
             icon: Award,
-            title: 'Registro Nacional',
-            description: 'Conductores inscritos en el Registro Nacional de Servicios',
+            title: t('validations.registry.title'),
+            description: t('validations.registry.description'),
         },
         {
             icon: Building2,
-            title: 'Permisos Municipales',
-            description: 'Todos los taxis con autorización municipal vigente',
+            title: t('validations.permits.title'),
+            description: t('validations.permits.description'),
         },
     ];
 
@@ -73,16 +74,16 @@ export function MinisterioValidation() {
                                     </m.div>
 
                                     <p className="text-[#fff500] text-xs font-bold uppercase tracking-widest mb-1">
-                                        Validado por
+                                        {t('seal.validatedBy')}
                                     </p>
                                     <p className="text-white text-sm md:text-base font-bold leading-tight">
-                                        Ministerio de
+                                        {t('seal.ministry1')}
                                     </p>
                                     <p className="text-white text-lg md:text-xl font-bold leading-tight">
-                                        Transportes
+                                        {t('seal.ministry2')}
                                     </p>
                                     <p className="text-white/60 text-xs mt-2">
-                                        República de Chile
+                                        {t('seal.country')}
                                     </p>
 
                                     {/* Verified badge */}
@@ -116,18 +117,18 @@ export function MinisterioValidation() {
                             className="inline-flex items-center gap-2 px-4 py-2 bg-green-100 border border-green-200 rounded-full mb-6"
                         >
                             <CheckCircle className="w-4 h-4 text-green-600" />
-                            <span className="text-sm font-bold text-green-700">100% Legal y Regulado</span>
+                            <span className="text-sm font-bold text-green-700">{t('badge')}</span>
                         </m.div>
 
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#182b33] mb-4">
-                            <span className="text-[#dd1828]">Pioneros</span> en Certificación{' '}
+                            <span className="text-[#dd1828]">{t('title1')}</span> {t('title2')}{' '}
                             <span className="bg-gradient-to-r from-[#dd1828] to-[#182b33] bg-clip-text text-transparent">
-                                Legal
+                                {t('title3')}
                             </span>
                         </h2>
 
                         <p className="text-lg text-[#596065] mb-8 max-w-xl mx-auto lg:mx-0">
-                            ETAXI opera bajo el marco legal chileno, con conductores y vehículos verificados por las autoridades. Tu seguridad está respaldada por la ley.
+                            {t('description')}
                         </p>
 
                         {/* Validation grid */}
@@ -164,7 +165,7 @@ export function MinisterioValidation() {
                                 className="inline-flex items-center gap-2 px-6 py-3 bg-[#182b33] text-white font-bold rounded-full hover:bg-[#0c1a23] transition-colors shadow-lg"
                             >
                                 <FileCheck className="w-5 h-5" />
-                                Ver Cumplimiento Legal
+                                {t('cta')}
                             </Link>
                         </m.div>
                     </m.div>

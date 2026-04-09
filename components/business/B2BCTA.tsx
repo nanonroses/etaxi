@@ -50,7 +50,7 @@ export function B2BCTA() {
           {/* Phone CTA */}
           <div className="mb-8">
             <a
-              href="tel:+56912345678"
+              href="tel:+56962116017"
               className="inline-flex items-center gap-2 text-[#fff500] hover:text-[#fff500]/80 transition-colors font-semibold text-lg"
             >
               <Phone className="w-5 h-5" />

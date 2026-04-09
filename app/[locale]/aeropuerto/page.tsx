@@ -32,7 +32,7 @@ import {
     BadgeCheck
 } from 'lucide-react';
 import Link from 'next/link';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 
 // Animated Counter Component
 function AnimatedCounter({ target, suffix = '' }: { target: number; suffix?: string }) {
@@ -54,24 +54,25 @@ function AnimatedCounter({ target, suffix = '' }: { target: number; suffix?: str
 
 export default function AeropuertoPage() {
     const locale = useLocale();
+    const t = useTranslations('airportPage');
 
     const services = [
         {
             icon: Smartphone,
-            title: 'App ETAXI',
-            description: 'Reserva tu traslado desde la comodidad de tu celular, antes o después de aterrizar.',
+            title: t('services.app.title'),
+            description: t('services.app.description'),
             color: 'from-[#dd1828] to-[#182b33]',
         },
         {
             icon: Monitor,
-            title: 'Tótems Interactivos',
-            description: 'Terminales digitales en el aeropuerto para solicitar tu taxi de forma rápida y segura.',
+            title: t('services.totem.title'),
+            description: t('services.totem.description'),
             color: 'from-[#fff500] to-[#dd1828]',
         },
         {
             icon: UserCheck,
-            title: 'Counter Presencial',
-            description: 'Personal ETAXI en el aeropuerto para atención personalizada y evitar fraudes.',
+            title: t('services.counter.title'),
+            description: t('services.counter.description'),
             color: 'from-[#182b33] to-[#030c13]',
         },
     ];
@@ -79,71 +80,55 @@ export default function AeropuertoPage() {
     const benefits = [
         {
             icon: DollarSign,
-            title: 'Tarifas Preferenciales',
-            description: 'Precios especiales para traslados aeropuerto, sin sorpresas ni cobros extra.',
+            title: t('benefits.rates.title'),
+            description: t('benefits.rates.description'),
         },
         {
             icon: Shield,
-            title: '100% Seguro',
-            description: 'Conductores verificados y vehículos autorizados. Tu seguridad es nuestra prioridad.',
+            title: t('benefits.safe.title'),
+            description: t('benefits.safe.description'),
         },
         {
             icon: Clock,
-            title: 'Disponible 24/7',
-            description: 'Servicio las 24 horas, los 7 días de la semana. Cualquier horario de vuelo.',
+            title: t('benefits.available.title'),
+            description: t('benefits.available.description'),
         },
         {
             icon: Globe,
-            title: 'Atención Multilingüe',
-            description: 'Personal capacitado para atender turistas en español e inglés.',
+            title: t('benefits.multilingual.title'),
+            description: t('benefits.multilingual.description'),
         },
         {
             icon: Car,
-            title: 'Flota Moderna',
-            description: 'Vehículos cómodos, con aire acondicionado y amplio espacio para equipaje.',
+            title: t('benefits.fleet.title'),
+            description: t('benefits.fleet.description'),
         },
         {
             icon: Headphones,
-            title: 'Soporte en Ruta',
-            description: 'Seguimiento GPS en tiempo real y soporte durante todo tu viaje.',
+            title: t('benefits.support.title'),
+            description: t('benefits.support.description'),
         },
     ];
 
-    const howItWorks = [
-        {
-            step: '1',
-            title: 'Elige tu Método',
-            description: 'App, Tótem o Counter presencial - tú decides cómo contratar.',
-        },
-        {
-            step: '2',
-            title: 'Confirma tu Viaje',
-            description: 'Ingresa tu destino y recibe el precio fijo antes de partir.',
-        },
-        {
-            step: '3',
-            title: 'Espera en Zona Segura',
-            description: 'Te indicamos el punto exacto donde tu conductor te espera.',
-        },
-        {
-            step: '4',
-            title: 'Viaja Tranquilo',
-            description: 'Disfruta un traslado seguro, cómodo y al mejor precio.',
-        },
+    const howItWorksSteps = [
+        { step: '1', title: t('howItWorks.step1.title'), description: t('howItWorks.step1.description') },
+        { step: '2', title: t('howItWorks.step2.title'), description: t('howItWorks.step2.description') },
+        { step: '3', title: t('howItWorks.step3.title'), description: t('howItWorks.step3.description') },
+        { step: '4', title: t('howItWorks.step4.title'), description: t('howItWorks.step4.description') },
     ];
 
     const totemFeatures = [
-        { icon: QrCode, label: 'Escanea QR' },
-        { icon: Fingerprint, label: 'Touch Screen' },
-        { icon: Wifi, label: 'WiFi Gratis' },
-        { icon: Navigation, label: 'GPS Integrado' },
+        { icon: QrCode, label: t('totemCounter.totemFeatures.qr') },
+        { icon: Fingerprint, label: t('totemCounter.totemFeatures.touch') },
+        { icon: Wifi, label: t('totemCounter.totemFeatures.wifi') },
+        { icon: Navigation, label: t('totemCounter.totemFeatures.gps') },
     ];
 
     const counterFeatures = [
-        { icon: MessageSquare, label: 'Atención Personalizada' },
-        { icon: Globe, label: 'Español & English' },
-        { icon: Banknote, label: 'Pago Múltiple' },
-        { icon: BadgeCheck, label: 'Personal Certificado' },
+        { icon: MessageSquare, label: t('totemCounter.counterFeatures.personalized') },
+        { icon: Globe, label: t('totemCounter.counterFeatures.languages') },
+        { icon: Banknote, label: t('totemCounter.counterFeatures.payment') },
+        { icon: BadgeCheck, label: t('totemCounter.counterFeatures.certified') },
     ];
 
     return (
@@ -201,24 +186,23 @@ export default function AeropuertoPage() {
                                 >
                                     <Plane className="w-4 h-4 text-[#fff500]" />
                                     <span className="text-sm font-bold text-[#fff500] tracking-wide">
-                                        Aeropuerto SCL Santiago
+                                        {t('hero.badge')}
                                     </span>
                                 </m.div>
 
                                 {/* Title */}
                                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                                    <span className="text-white">Traslados </span>
+                                    <span className="text-white">{t('hero.title1')} </span>
                                     <span className="bg-gradient-to-r from-[#fff500] to-[#dd1828] bg-clip-text text-transparent">
-                                        Aeropuerto
+                                        {t('hero.titleHighlight')}
                                     </span>
                                     <br />
-                                    <span className="text-white">Seguros y Confiables</span>
+                                    <span className="text-white">{t('hero.title2')}</span>
                                 </h1>
 
                                 {/* Subtitle */}
                                 <p className="text-lg md:text-xl text-white/80 leading-relaxed max-w-xl mx-auto lg:mx-0">
-                                    Counter oficial ETAXI en el Aeropuerto Internacional de Santiago.
-                                    Transporte moderno, seguro y con tarifas preferenciales para turistas y viajeros.
+                                    {t('hero.description')}
                                 </p>
 
                                 {/* CTA Buttons */}
@@ -229,7 +213,7 @@ export default function AeropuertoPage() {
                                             className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#dd1828] text-white font-bold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 group"
                                         >
                                             <Smartphone className="w-5 h-5" />
-                                            Descargar App
+                                            {t('hero.ctaApp')}
                                             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                                         </Link>
                                     </m.div>
@@ -239,7 +223,7 @@ export default function AeropuertoPage() {
                                             className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 text-white font-bold rounded-full border-2 border-white/30 hover:bg-white/20 transition-all duration-300"
                                         >
                                             <Phone className="w-5 h-5" />
-                                            Contactar
+                                            {t('hero.ctaContact')}
                                         </Link>
                                     </m.div>
                                 </div>
@@ -247,9 +231,9 @@ export default function AeropuertoPage() {
                                 {/* Trust indicators */}
                                 <div className="flex flex-wrap justify-center lg:justify-start gap-6 pt-4">
                                     {[
-                                        { icon: Shield, text: '100% Legal' },
-                                        { icon: Star, text: '4.9 Estrellas' },
-                                        { icon: Users, text: '+50K Viajes' },
+                                        { icon: Shield, text: t('hero.trust.legal') },
+                                        { icon: Star, text: t('hero.trust.rating') },
+                                        { icon: Users, text: t('hero.trust.trips') },
                                     ].map((item, index) => (
                                         <m.div
                                             key={index}
@@ -284,8 +268,8 @@ export default function AeropuertoPage() {
                                                 <Plane className="w-8 h-8 text-white" />
                                             </div>
                                             <div>
-                                                <p className="text-[#fff500] text-sm font-bold">ETAXI Aeropuerto</p>
-                                                <p className="text-white text-lg font-semibold">Counter Oficial</p>
+                                                <p className="text-[#fff500] text-sm font-bold">{t('heroCard.title')}</p>
+                                                <p className="text-white text-lg font-semibold">{t('heroCard.subtitle')}</p>
                                             </div>
                                         </div>
 
@@ -294,8 +278,8 @@ export default function AeropuertoPage() {
                                             <div className="flex items-center gap-3">
                                                 <MapPin className="w-5 h-5 text-[#fff500]" />
                                                 <div>
-                                                    <p className="text-white/60 text-xs">Ubicación</p>
-                                                    <p className="text-white font-medium">Terminal Nacional e Internacional</p>
+                                                    <p className="text-white/60 text-xs">{t('heroCard.locationLabel')}</p>
+                                                    <p className="text-white font-medium">{t('heroCard.locationValue')}</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -305,8 +289,8 @@ export default function AeropuertoPage() {
                                             <div className="flex items-center gap-3">
                                                 <Clock className="w-5 h-5 text-[#fff500]" />
                                                 <div>
-                                                    <p className="text-white/60 text-xs">Horario</p>
-                                                    <p className="text-white font-medium">24 horas, 7 días</p>
+                                                    <p className="text-white/60 text-xs">{t('heroCard.scheduleLabel')}</p>
+                                                    <p className="text-white font-medium">{t('heroCard.scheduleValue')}</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -315,15 +299,15 @@ export default function AeropuertoPage() {
                                         <div className="flex gap-3 mt-6">
                                             <div className="flex-1 bg-[#dd1828]/20 rounded-xl p-3 text-center">
                                                 <Smartphone className="w-6 h-6 text-[#fff500] mx-auto mb-1" />
-                                                <p className="text-white/80 text-xs">App</p>
+                                                <p className="text-white/80 text-xs">{t('heroCard.serviceApp')}</p>
                                             </div>
                                             <div className="flex-1 bg-[#dd1828]/20 rounded-xl p-3 text-center">
                                                 <Monitor className="w-6 h-6 text-[#fff500] mx-auto mb-1" />
-                                                <p className="text-white/80 text-xs">Tótem</p>
+                                                <p className="text-white/80 text-xs">{t('heroCard.serviceTotem')}</p>
                                             </div>
                                             <div className="flex-1 bg-[#dd1828]/20 rounded-xl p-3 text-center">
                                                 <UserCheck className="w-6 h-6 text-[#fff500] mx-auto mb-1" />
-                                                <p className="text-white/80 text-xs">Counter</p>
+                                                <p className="text-white/80 text-xs">{t('heroCard.serviceCounter')}</p>
                                             </div>
                                         </div>
                                     </div>
@@ -342,10 +326,10 @@ export default function AeropuertoPage() {
                     <div className="container mx-auto max-w-[1200px] px-4 relative z-10">
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
                             {[
-                                { value: 50000, suffix: '+', label: 'Viajes Aeropuerto', icon: Plane },
-                                { value: 24, suffix: '/7', label: 'Disponibilidad', icon: Clock },
-                                { value: 4.9, suffix: '★', label: 'Calificación', icon: Star },
-                                { value: 100, suffix: '%', label: 'Legal y Seguro', icon: Shield },
+                                { value: 50000, suffix: '+', label: t('stats.trips'), icon: Plane },
+                                { value: 24, suffix: '/7', label: t('stats.availability'), icon: Clock },
+                                { value: 4.9, suffix: '★', label: t('stats.rating'), icon: Star },
+                                { value: 100, suffix: '%', label: t('stats.legal'), icon: Shield },
                             ].map((stat, index) => (
                                 <m.div
                                     key={index}
@@ -381,13 +365,13 @@ export default function AeropuertoPage() {
                         >
                             <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#182b33]/10 border border-[#182b33]/20 rounded-full mb-6">
                                 <Monitor className="w-4 h-4 text-[#182b33]" />
-                                <span className="text-sm font-bold text-[#182b33]">Puntos de Atención</span>
+                                <span className="text-sm font-bold text-[#182b33]">{t('totemCounter.badge')}</span>
                             </div>
                             <h2 className="text-4xl md:text-5xl font-bold text-[#182b33] mb-4">
-                                Experiencia en el Aeropuerto
+                                {t('totemCounter.title')}
                             </h2>
                             <p className="text-lg text-[#596065] max-w-2xl mx-auto">
-                                Tecnología de punta y atención humana para tu comodidad. Elige cómo contratar tu traslado.
+                                {t('totemCounter.description')}
                             </p>
                         </m.div>
 
@@ -432,7 +416,7 @@ export default function AeropuertoPage() {
                                                     className="text-center py-6"
                                                 >
                                                     <QrCode className="w-20 h-20 text-white/80 mx-auto" />
-                                                    <p className="text-white/60 text-xs mt-2">Escanea para reservar</p>
+                                                    <p className="text-white/60 text-xs mt-2">{t('totemCounter.totemScreen.scanLabel')}</p>
                                                 </m.div>
 
                                                 <div className="space-y-2">
@@ -440,13 +424,13 @@ export default function AeropuertoPage() {
                                                         whileHover={{ scale: 1.02 }}
                                                         className="bg-[#dd1828] text-white text-center py-3 rounded-xl text-sm font-bold cursor-pointer"
                                                     >
-                                                        SOLICITAR TAXI
+                                                        {t('totemCounter.totemScreen.requestButton')}
                                                     </m.div>
                                                     <m.div
                                                         whileHover={{ scale: 1.02 }}
                                                         className="bg-white/10 text-white text-center py-3 rounded-xl text-sm cursor-pointer"
                                                     >
-                                                        Ver Tarifas
+                                                        {t('totemCounter.totemScreen.ratesButton')}
                                                     </m.div>
                                                 </div>
                                             </div>
@@ -502,8 +486,8 @@ export default function AeropuertoPage() {
                                     ))}
                                 </div>
 
-                                <p className="text-center mt-8 text-[#182b33] font-bold text-lg">Tótem Digital Interactivo</p>
-                                <p className="text-center text-[#596065] text-sm">Autoservicio 24/7 en el terminal</p>
+                                <p className="text-center mt-8 text-[#182b33] font-bold text-lg">{t('totemCounter.totemTitle')}</p>
+                                <p className="text-center text-[#596065] text-sm">{t('totemCounter.totemSubtitle')}</p>
                             </m.div>
 
                             {/* Counter Visualization */}
@@ -521,7 +505,7 @@ export default function AeropuertoPage() {
                                         {/* Top sign */}
                                         <div className="mb-4 text-center">
                                             <div className="inline-block px-6 py-2 bg-gradient-to-r from-[#dd1828] to-[#fff500] rounded-full">
-                                                <span className="text-white font-bold text-sm tracking-wide">COUNTER OFICIAL ETAXI</span>
+                                                <span className="text-white font-bold text-sm tracking-wide">{t('totemCounter.counterSign')}</span>
                                             </div>
                                         </div>
 
@@ -537,11 +521,11 @@ export default function AeropuertoPage() {
                                                     <UserCheck className="w-10 h-10 text-white" />
                                                 </m.div>
                                                 <div>
-                                                    <p className="text-white font-bold text-lg">Personal ETAXI</p>
-                                                    <p className="text-white/60 text-sm">Atención Presencial</p>
+                                                    <p className="text-white font-bold text-lg">{t('totemCounter.counterAgent')}</p>
+                                                    <p className="text-white/60 text-sm">{t('totemCounter.counterService')}</p>
                                                     <div className="flex items-center gap-1 mt-1">
                                                         <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-                                                        <span className="text-green-400 text-xs">Disponible</span>
+                                                        <span className="text-green-400 text-xs">{t('totemCounter.counterAvailable')}</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -565,7 +549,7 @@ export default function AeropuertoPage() {
 
                                             {/* Queue/ticket info */}
                                             <div className="mt-4 bg-[#dd1828]/20 rounded-xl p-4 text-center">
-                                                <p className="text-white/60 text-xs mb-1">Tiempo de espera promedio</p>
+                                                <p className="text-white/60 text-xs mb-1">{t('totemCounter.counterWait')}</p>
                                                 <p className="text-[#fff500] text-2xl font-bold">2-5 min</p>
                                             </div>
                                         </div>
@@ -575,8 +559,8 @@ export default function AeropuertoPage() {
                                     <div className="h-4 bg-gradient-to-r from-[#8B4513] via-[#A0522D] to-[#8B4513] rounded-b shadow-lg" />
                                 </div>
 
-                                <p className="text-center mt-8 text-[#182b33] font-bold text-lg">Counter Presencial</p>
-                                <p className="text-center text-[#596065] text-sm">Atención personalizada de expertos</p>
+                                <p className="text-center mt-8 text-[#182b33] font-bold text-lg">{t('totemCounter.counterTitle')}</p>
+                                <p className="text-center text-[#596065] text-sm">{t('totemCounter.counterSubtitle')}</p>
                             </m.div>
                         </div>
                     </div>
@@ -596,13 +580,13 @@ export default function AeropuertoPage() {
                         >
                             <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#dd1828]/10 border border-[#dd1828]/20 rounded-full mb-6">
                                 <CreditCard className="w-4 h-4 text-[#dd1828]" />
-                                <span className="text-sm font-bold text-[#dd1828]">3 Formas de Contratar</span>
+                                <span className="text-sm font-bold text-[#dd1828]">{t('services.badge')}</span>
                             </div>
                             <h2 className="text-4xl md:text-5xl font-bold text-[#182b33] mb-4">
-                                Elige Cómo Reservar
+                                {t('services.title')}
                             </h2>
                             <p className="text-lg text-[#596065] max-w-2xl mx-auto">
-                                Múltiples canales de atención para tu comodidad. Evita fraudes y viaja seguro con ETAXI.
+                                {t('services.description')}
                             </p>
                         </m.div>
 
@@ -661,18 +645,18 @@ export default function AeropuertoPage() {
                         >
                             <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#fff500]/20 border border-[#fff500]/30 rounded-full mb-6">
                                 <CheckCircle className="w-4 h-4 text-[#fff500]" />
-                                <span className="text-sm font-bold text-[#fff500]">Proceso Simple</span>
+                                <span className="text-sm font-bold text-[#fff500]">{t('howItWorks.badge')}</span>
                             </div>
                             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-                                ¿Cómo Funciona?
+                                {t('howItWorks.title')}
                             </h2>
                             <p className="text-lg text-white/80 max-w-2xl mx-auto">
-                                4 pasos simples para tu traslado seguro desde o hacia el aeropuerto.
+                                {t('howItWorks.description')}
                             </p>
                         </m.div>
 
                         <div className="grid md:grid-cols-4 gap-6">
-                            {howItWorks.map((step, index) => (
+                            {howItWorksSteps.map((step, index) => (
                                 <m.div
                                     key={index}
                                     initial={{ opacity: 0, y: 30 }}
@@ -682,7 +666,7 @@ export default function AeropuertoPage() {
                                     className="relative"
                                 >
                                     {/* Connector line */}
-                                    {index < howItWorks.length - 1 && (
+                                    {index < howItWorksSteps.length - 1 && (
                                         <div className="hidden md:block absolute top-12 left-[60%] w-full h-0.5 bg-gradient-to-r from-[#fff500] to-[#dd1828]" />
                                     )}
 
@@ -714,13 +698,13 @@ export default function AeropuertoPage() {
                         >
                             <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#dd1828]/10 border border-[#dd1828]/20 rounded-full mb-6">
                                 <Star className="w-4 h-4 text-[#dd1828]" />
-                                <span className="text-sm font-bold text-[#dd1828]">Ventajas ETAXI</span>
+                                <span className="text-sm font-bold text-[#dd1828]">{t('benefits.badge')}</span>
                             </div>
                             <h2 className="text-4xl md:text-5xl font-bold text-[#182b33] mb-4">
-                                ¿Por Qué Elegirnos?
+                                {t('benefits.title')}
                             </h2>
                             <p className="text-lg text-[#596065] max-w-2xl mx-auto">
-                                ETAXI es la opción oficial y segura para traslados al aeropuerto.
+                                {t('benefits.description')}
                             </p>
                         </m.div>
 
@@ -765,10 +749,10 @@ export default function AeropuertoPage() {
                             transition={{ duration: 0.6 }}
                         >
                             <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
-                                ¿Vuelo Próximo?
+                                {t('cta.title')}
                             </h2>
                             <p className="text-lg md:text-xl text-white/80 mb-10 max-w-2xl mx-auto">
-                                Reserva tu traslado ahora y viaja tranquilo. Sin estrés, sin sorpresas, 100% seguro.
+                                {t('cta.description')}
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -778,13 +762,13 @@ export default function AeropuertoPage() {
                                         className="inline-flex items-center justify-center gap-2 px-10 py-5 bg-white text-[#dd1828] font-bold text-lg rounded-full shadow-xl hover:shadow-2xl transition-all duration-300"
                                     >
                                         <Smartphone className="w-6 h-6" />
-                                        Descargar App Gratis
+                                        {t('cta.button')}
                                     </Link>
                                 </m.div>
                             </div>
 
                             <p className="mt-8 text-white/60 text-sm">
-                                Encuéntranos en el Terminal Nacional e Internacional del Aeropuerto de Santiago
+                                {t('cta.footer')}
                             </p>
                         </m.div>
                     </div>

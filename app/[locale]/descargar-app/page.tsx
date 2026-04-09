@@ -162,14 +162,14 @@ export default async function DescargarAppPage() {
             <div className="text-center mb-16">
               <div className="inline-block px-6 py-2 bg-[#F8D347]/10 rounded-full mb-4 border border-[#F8D347]/20">
                 <p className="text-sm font-semibold text-[#0C1A2B]">
-                  Preguntas Frecuentes
+                  {t('faqBadge')}
                 </p>
               </div>
               <h2 className="text-3xl md:text-5xl font-bold text-center mb-4 text-[#0C1A2B]">
                 {t('faq.title')}
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Resolvemos tus dudas sobre la aplicación ETAXI
+                {t('faqSubtitle')}
               </p>
             </div>
 
@@ -183,10 +183,10 @@ export default async function DescargarAppPage() {
         <section className="w-full py-16 bg-white">
           <div className="container mx-auto max-w-4xl px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#0C1A2B]">
-              ¿Listo para empezar?
+              {t('readyTitle')}
             </h2>
             <p className="text-lg text-[#596065] mb-8">
-              Descarga ETAXI gratis y viaja con la tranquilidad que mereces
+              {t('readyDescription')}
             </p>
             <DownloadAppCTA
               headline=""

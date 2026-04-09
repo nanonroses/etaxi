@@ -18,6 +18,9 @@
     "businessInfo": "Business Info",
     "contact": "Contact"
   },
+  "breadcrumbs": {
+    "home": "Home"
+  },
   "hero": {
     "title": "Legal Taxis with Modern Technology",
     "subtitle": "Chile's first 100% regulated platform. Travel safely with professional drivers, fair fares and complete traceability.",
@@ -58,7 +61,23 @@
     "title": "Download the ETAXI app",
     "description": "Available for iOS and Android",
     "appStore": "Download on App Store",
-    "playStore": "Get it on Google Play"
+    "playStore": "Get it on Google Play",
+    "badge": "Free Download",
+    "features": {
+      "booking": "Book in seconds",
+      "payment": "Secure integrated payment",
+      "tracking": "Real-time tracking",
+      "history": "Complete trip history"
+    },
+    "storeLabels": {
+      "googlePlay": "Available on",
+      "appStore": "Download on"
+    },
+    "ratingText": "4.8 / 5.0 - Over 50,000 downloads",
+    "readyTitle": "Ready to get started?",
+    "readyDescription": "Download ETAXI for free and travel with the peace of mind you deserve",
+    "faqBadge": "Frequently Asked Questions",
+    "faqSubtitle": "We answer your questions about the ETAXI app"
   },
   "howItWorks": {
     "title": "How it works",
@@ -166,6 +185,80 @@
       "description": "ETAXI is committed to maintaining the highest standards of legal compliance and transparency, working only with authorized professionals."
     }
   },
+  "ministerioValidation": {
+    "badge": "100% Legal and Regulated",
+    "title1": "Pioneers",
+    "title2": "in Legal",
+    "title3": "Certification",
+    "description": "ETAXI operates under the Chilean legal framework, with drivers and vehicles verified by authorities. Your safety is backed by law.",
+    "seal": {
+      "validatedBy": "Validated by",
+      "ministry1": "Ministry of",
+      "ministry2": "Transport",
+      "country": "Republic of Chile"
+    },
+    "validations": {
+      "law": {
+        "title": "Law 21.553",
+        "description": "Platform registered under the transport modernization law"
+      },
+      "decree": {
+        "title": "Decree 212",
+        "description": "Full compliance with passenger transport regulations"
+      },
+      "registry": {
+        "title": "National Registry",
+        "description": "Drivers registered in the National Service Registry"
+      },
+      "permits": {
+        "title": "Municipal Permits",
+        "description": "All taxis with valid municipal authorization"
+      }
+    },
+    "cta": "View Legal Compliance"
+  },
+  "appPreview": {
+    "badge": "Available for Free",
+    "title": "Discover the App",
+    "description": "Intuitive interface, easy to use and designed for your safety. Request your taxi in seconds.",
+    "rating": "4.8",
+    "downloads": "+10,000 downloads",
+    "appStore": "Download on",
+    "googlePlay": "Available on",
+    "screenshots": {
+      "home": "ETAXI home screen",
+      "request": "Request a taxi on ETAXI",
+      "tracking": "GPS tracking on ETAXI"
+    },
+    "features": {
+      "booking": "Book in seconds",
+      "payment": "Secure integrated payment",
+      "tracking": "Real-time tracking",
+      "history": "Complete trip history"
+    }
+  },
+  "airportCta": {
+    "badge": "SCL Airport Service",
+    "title": "Arriving or Departing from the",
+    "titleHighlight": "Airport",
+    "description": "Official ETAXI counter at Santiago Airport. Safe transport, preferential rates and 24/7 service for tourists and travelers.",
+    "features": {
+      "availability": "24/7",
+      "safe": "100% Safe",
+      "counter": "Official Counter"
+    },
+    "cta": "View Airport Service",
+    "card": {
+      "title": "SCL Airport",
+      "terminalLabel": "Terminal",
+      "terminalValue": "Domestic and International",
+      "scheduleLabel": "Schedule",
+      "scheduleValue": "24 hours, every day",
+      "guaranteeLabel": "Guarantee",
+      "guaranteeValue": "Fixed fare, no surprises",
+      "status": "Counter Available"
+    }
+  },
   "safetyPage": {
     "hero": {
       "title": "Your safety is our priority",
@@ -181,22 +274,193 @@
       "title": "Why is ETAXI safe?",
       "description": "ETAXI works exclusively with taxis regulated by the Ministry of Transport. Each trip has multiple layers of security to protect passengers and drivers."
     },
-    "features": {
-      "panic": {
-        "title": "Panic Button",
-        "description": "Instant access to authorities in case of emergency. Your real-time location is automatically shared."
+    "verifiedDrivers": {
+      "title": "100% Verified Drivers",
+      "subtitle": "Every driver undergoes a rigorous validation process before being allowed to operate",
+      "requirement1": {
+        "title": "Class A1 Professional License",
+        "description": "Valid professional driver's license as required by Traffic Law. We verify authenticity with the Civil Registry."
       },
-      "traceability": {
-        "title": "Trip Traceability",
-        "description": "Each trip is recorded: driver, license plate, route, times. You and your trusted contacts can track the trip in real time."
+      "requirement2": {
+        "title": "Clean Background",
+        "description": "No criminal records. Verification in the Registry of Disqualifications for working with minors."
       },
-      "regulatedDrivers": {
-        "title": "Regulated Drivers",
-        "description": "All our drivers are professionals with class A1 license, municipal registration and verified background checks according to Law 21.553."
+      "requirement3": {
+        "title": "National Service Registry",
+        "description": "Mandatory enrollment in the RNSTP (National Registry of Remunerated Passenger Transport Services)."
       },
-      "insurance": {
-        "title": "Mandatory Insurance",
-        "description": "All taxis have current civil liability insurance and SOAP according to Chilean regulations."
+      "requirement4": {
+        "title": "Mandatory Training",
+        "description": "All drivers complete training on platform usage, customer service and safety protocols."
+      }
+    },
+    "authorizedVehicles": {
+      "title": "100% Authorized Vehicles",
+      "subtitle": "Only taxis that comply with all current regulations",
+      "requirement1": {
+        "title": "Municipal Registration",
+        "description": "Valid registration in the municipal Taxi Registry as required by Supreme Decree 212/92."
+      },
+      "requirement2": {
+        "title": "Technical Inspection",
+        "description": "Up-to-date technical and emissions inspection. Verification every 6 months as required by the Ministry of Transport."
+      },
+      "requirement3": {
+        "title": "Certified Taximeter",
+        "description": "Taximeter certified and sealed by the SII (Internal Revenue Service). Official fare programmed."
+      },
+      "requirement4": {
+        "title": "Valid Insurance",
+        "description": "SOAP (Mandatory Personal Accident Insurance) and civil liability insurance up to date."
+      }
+    },
+    "liveTracking": {
+      "title": "Real-Time Traceability and Tracking",
+      "subtitle": "Complete tracking of your trip from start to finish",
+      "feature1": {
+        "title": "Real-Time GPS",
+        "description": "Geolocation system that records every second of the trip with GPS precision. Live updated location."
+      },
+      "feature2": {
+        "title": "Share Your Trip",
+        "description": "Share your live location with trusted contacts. They can see your route, driver and estimated arrival time."
+      },
+      "feature3": {
+        "title": "Route Recording",
+        "description": "Every meter traveled is documented. Complete route saved for auditing, claims or future inquiries."
+      },
+      "feature4": {
+        "title": "Automatic Notifications",
+        "description": "Alerts when the taxi is arriving, when the trip starts and when you reach your destination. Peace of mind for you and your family."
+      }
+    },
+    "driverProfile": {
+      "title": "Meet Your Driver Before Getting In",
+      "subtitle": "All information visible before confirming your trip",
+      "info1": {
+        "title": "Driver Photo",
+        "description": "Recent verified photo so you can easily identify your driver."
+      },
+      "info2": {
+        "title": "Full Name",
+        "description": "Identity verified with Chilean national ID."
+      },
+      "info3": {
+        "title": "Rating and Reviews",
+        "description": "Average rating from other passengers. Real comments from previous trips."
+      },
+      "info4": {
+        "title": "Vehicle Details",
+        "description": "Make, model, color and license plate of the taxi. Confirm it's the correct vehicle before getting in."
+      },
+      "info5": {
+        "title": "Number of Trips",
+        "description": "History of completed trips on the platform. Verifiable experience."
+      },
+      "info6": {
+        "title": "Certifications",
+        "description": "Badges for outstanding driver, punctuality, vehicle cleanliness and more."
+      }
+    },
+    "safetyComparison": {
+      "title": "ETAXI vs Unregulated Apps: Real Safety vs Risks",
+      "subtitle": "The difference between traveling protected or taking risks",
+      "feature1": {
+        "title": "Drivers",
+        "etaxi": "Professional A1 license + verified background + mandatory training",
+        "others": "Anyone with a car and basic license. No real verification."
+      },
+      "feature2": {
+        "title": "Vehicles",
+        "etaxi": "Registered taxis + specific technical inspection + sealed taximeter",
+        "others": "Private car without passenger transport inspection"
+      },
+      "feature3": {
+        "title": "Insurance",
+        "etaxi": "Mandatory SOAP + valid civil liability + complete coverage",
+        "others": "Basic private car insurance (does not cover passenger transport)"
+      },
+      "feature4": {
+        "title": "Oversight",
+        "etaxi": "Ministry of Transport + Municipalities + Law 21.553",
+        "others": "Foreign platform without real local oversight"
+      },
+      "feature5": {
+        "title": "Emergencies",
+        "etaxi": "Panic button + GPS + local 24/7 support + defined protocol",
+        "others": "Limited support in English from abroad"
+      }
+    },
+    "emergencySupport": {
+      "title": "Emergency System and 24/7 Support",
+      "subtitle": "Immediate help when you need it most",
+      "feature1": {
+        "title": "Integrated Panic Button",
+        "description": "One tap triggers alerts to: authorities, ETAXI central and emergency contacts. Your GPS location is shared automatically."
+      },
+      "feature2": {
+        "title": "24/7 Monitoring Center",
+        "description": "Dedicated team monitoring trips in real time. Immediate response to any anomaly or alert."
+      },
+      "feature3": {
+        "title": "Emergency Protocol",
+        "description": "Clear and defined procedures for each type of incident. Direct coordination with Carabineros (Chilean National Police) and emergency services."
+      },
+      "feature4": {
+        "title": "Multichannel Support",
+        "description": "Phone, WhatsApp, in-app chat and email. Support in Spanish, in Chile, by real people."
+      }
+    },
+    "tripAudit": {
+      "title": "Trip History and Audit",
+      "subtitle": "Every detail documented and accessible",
+      "feature1": {
+        "title": "Complete History",
+        "description": "Access all your trips: date, time, origin, destination, driver, fare and rating."
+      },
+      "feature2": {
+        "title": "Digital Receipts",
+        "description": "Detailed receipt for each trip. Exportable for expense reports, reimbursements or corporate billing."
+      },
+      "feature3": {
+        "title": "Permanent Traceability",
+        "description": "Permanent record stored securely. Available for claims, audits or future inquiries."
+      },
+      "feature4": {
+        "title": "Reports and Statistics",
+        "description": "Visualize your mobility patterns, total expenses and frequent drivers. Full control of your information."
+      }
+    },
+    "legalCompliance": {
+      "title": "Full Legal Compliance",
+      "subtitle": "100% aligned with Chilean remunerated transport regulations",
+      "law1": {
+        "title": "Law 21.553 (EAT Law)",
+        "description": "Modernization of remunerated passenger transport. ETAXI fully complies with all requirements established for digital taxi platforms."
+      },
+      "law2": {
+        "title": "Supreme Decree 212/92",
+        "description": "Regulations for remunerated passenger transport services. Vehicles and drivers verified according to technical specifications."
+      },
+      "law3": {
+        "title": "Municipal Registration",
+        "description": "All taxis operate with valid municipal permits. Compliance with local ordinances of each municipality."
+      },
+      "law4": {
+        "title": "Data Protection (Law 19.628)",
+        "description": "Personal data processing in accordance with Chilean law. Encrypted information and strict privacy protocols."
+      },
+      "badge": "Audited and Overseen by the Ministry of Transport and Telecommunications"
+    },
+    "cta": {
+      "title": "Travel Safely with ETAXI",
+      "subtitle": "Download the app and experience the peace of mind of traveling in legal taxis with maximum security",
+      "button": "Download App Now",
+      "features": {
+        "feature1": "Verified drivers",
+        "feature2": "Complete traceability",
+        "feature3": "Panic button",
+        "feature4": "100% Legal"
       }
     }
   },
@@ -206,14 +470,29 @@
       "subtitle": "Fast, safe and 100% regulated"
     },
     "form": {
-      "originLabel": "Origin",
-      "originPlaceholder": "Enter your origin location",
-      "destinationLabel": "Destination",
-      "destinationPlaceholder": "Where are you going?",
-      "passengersLabel": "Number of passengers",
-      "passengersPlaceholder": "E.g: 1, 2, 3...",
-      "submitButton": "Confirm ride",
-      "note": "This is a demo version. To request a real taxi, download the mobile app."
+      "title": "Request a Taxi",
+      "nameLabel": "Full name",
+      "namePlaceholder": "Your name",
+      "phoneLabel": "Phone",
+      "phonePlaceholder": "+56 9 1234 5678",
+      "emailLabel": "Email",
+      "emailPlaceholder": "your@email.com",
+      "originLabel": "Origin address",
+      "originPlaceholder": "123 Main Street, Santiago",
+      "destinationLabel": "Destination address",
+      "destinationPlaceholder": "456 Central Avenue, Santiago",
+      "whenLabel": "When do you need the taxi?",
+      "whenNow": "Now",
+      "when15min": "In 15 minutes",
+      "when30min": "In 30 minutes",
+      "when1hour": "In 1 hour",
+      "notesLabel": "Additional comments",
+      "notesPlaceholder": "E.g.: I have luggage, need a large taxi, etc.",
+      "submitButton": "Request taxi",
+      "sending": "Sending...",
+      "success": "Request received. We'll contact you soon.",
+      "error": "Error sending request. Please try again.",
+      "note": "You will be contacted by phone or email to confirm your taxi."
     },
     "howItWorks": {
       "title": "How it works",
@@ -344,7 +623,11 @@
         "question": "Can I cancel a trip?",
         "answer": "Yes, you can cancel your request before the driver arrives. Check the cancellation policy in the app for more details."
       }
-    }
+    },
+    "readyTitle": "Ready to get started?",
+    "readyDescription": "Download ETAXI for free and travel with the peace of mind you deserve",
+    "faqBadge": "Frequently Asked Questions",
+    "faqSubtitle": "We answer your questions about the ETAXI app"
   },
   "helpPage": {
     "hero": {
@@ -950,6 +1233,271 @@
       }
     }
   },
+  "legalPages": {
+    "terms": {
+      "title": "Terms and Conditions of Use",
+      "lastUpdated": "Last updated: January 2025",
+      "section1": {
+        "title": "1. Acceptance of Terms",
+        "content": "By accessing and using the website www.etaxi.cl (hereinafter, the 'Site') and the ETAXI mobile applications (hereinafter, the 'Apps'), you agree to be bound by these Terms and Conditions of Use, all applicable laws and regulations in Chile, and agree that you are responsible for compliance with all applicable local laws. If you do not agree with any of these terms, you must not use this Site or the Apps."
+      },
+      "section2": {
+        "title": "2. Description of the Service",
+        "subtitle": "ETAXI is a technology intermediation platform",
+        "content": "ETAXI SpA (hereinafter, 'ETAXI') is a technology platform that connects users (passengers) with legally authorized taxi drivers and their vehicles duly registered with competent authorities. ETAXI is NOT a transport operator, is NOT the owner of the vehicles, and is NOT the employer of the drivers. The transport service itself is provided by independent professional drivers or those affiliated with guilds, cooperatives or authorized taxi centrals.",
+        "responsibilities": {
+          "title": "Responsibilities:",
+          "etaxi": "ETAXI provides the technology, the digital platform, GPS trip traceability, the service assignment system and technical support.",
+          "operators": "Taxi operators, guilds, cooperatives or individual drivers are responsible for the transport service, vehicle conditions, compliance with traffic and transport regulations, and passenger care during the trip."
+        }
+      },
+      "section3": {
+        "title": "3. Scope of Service",
+        "web": {
+          "title": "3.1 Website (www.etaxi.cl)",
+          "content": "The Site serves informational and commercial purposes. It allows companies, guilds and users to learn about ETAXI services, request information, contact the sales team and access educational resources about the platform."
+        },
+        "apps": {
+          "title": "3.2 Mobile Applications",
+          "passenger": "Passenger App: Allows users to request taxi services, see the assigned vehicle's location, pay for the service and rate the experience.",
+          "driver": "Driver App: Allows authorized drivers to receive service requests, navigate to the passenger, mark trip states and manage their availability."
+        }
+      },
+      "section4": {
+        "title": "4. Registration and User Account",
+        "content": "To use the Apps, users must register by providing truthful, accurate and current information. Drivers must also meet specific legal requirements (Class A1 License, municipal permits, authorized vehicle, etc.) that will be validated by ETAXI before activation on the platform.",
+        "obligations": "The user is responsible for maintaining the confidentiality of their account and password, and for all activities that occur under their account."
+      },
+      "section5": {
+        "title": "5. Acceptable Use",
+        "intro": "By using ETAXI, the user agrees to:",
+        "rule1": "Provide truthful information and not impersonate identities.",
+        "rule2": "Not use the platform for illegal, fraudulent or unauthorized purposes.",
+        "rule3": "Not attempt to breach platform security, reverse engineer the Apps or access restricted areas.",
+        "rule4": "Respect drivers, passengers and support staff. Offensive, discriminatory or violent behavior may result in account suspension or deletion.",
+        "rule5": "Comply with applicable traffic and transport laws in Chile."
+      },
+      "section6": {
+        "title": "6. Limitations of Liability",
+        "intro": "ETAXI acts as a technology intermediary. Therefore:",
+        "limit1": "ETAXI is not liable for damages, losses, delays, accidents or harm that occur during the transport service provided by third parties (drivers, guilds, cooperatives).",
+        "limit2": "ETAXI does not guarantee uninterrupted availability of the platform, Apps or connectivity service. There may be interruptions due to maintenance, technical failures or force majeure.",
+        "limit3": "ETAXI is not responsible for the loss of personal belongings inside vehicles. The user should contact the driver or corresponding guild directly.",
+        "limit4": "ETAXI is not liable for the quality of the transport service provided by third parties, although it facilitates reporting, rating and continuous improvement mechanisms."
+      },
+      "section7": {
+        "title": "7. Rates and Payments",
+        "content": "Taxi service rates are determined by current regulations (regulated official rates) or by agreements between the user and the operator/guild in cases permitted by law. ETAXI may facilitate digital payment processing through third-party payment gateways. The user agrees to pay the corresponding amounts for services used."
+      },
+      "section8": {
+        "title": "8. Intellectual Property",
+        "content": "All content on the Site and Apps (texts, graphics, logos, icons, images, source code, design) is the property of ETAXI SpA or its licensors and is protected by Chilean intellectual property laws and international treaties. Unauthorized reproduction, distribution or modification is prohibited."
+      },
+      "section9": {
+        "title": "9. Modification of Terms",
+        "content": "ETAXI reserves the right to modify these Terms and Conditions at any time. Changes will take effect upon publication on the Site. It is the user's responsibility to periodically review these terms. Continued use of the Site or Apps after publication of changes constitutes acceptance of the new terms."
+      },
+      "section10": {
+        "title": "10. Applicable Law and Jurisdiction",
+        "content": "These Terms and Conditions are governed by the laws of the Republic of Chile. Any dispute arising from the use of the Site or Apps shall be submitted to the jurisdiction of the ordinary courts of justice in Santiago de Chile, with the parties expressly waiving any other jurisdiction that may correspond to them."
+      },
+      "section11": {
+        "title": "11. Contact",
+        "content": "For inquiries about these Terms and Conditions, you may contact us at:",
+        "email": "Email: legal@etaxi.cl",
+        "address": "Address: Santiago, Chile"
+      }
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "lastUpdated": "Last updated: January 2025",
+      "intro": "At ETAXI SpA ('ETAXI', 'we', 'our') we are committed to protecting your privacy. This Privacy Policy describes how we collect, use, share and protect your personal information when you use our website www.etaxi.cl and our mobile applications.",
+      "section1": {
+        "title": "1. Information We Collect",
+        "web": {
+          "title": "1.1 Through the Website",
+          "item1": "Contact data: Name, email, phone, company (when completing contact forms or requesting information).",
+          "item2": "Browsing data: IP address, browser type, pages visited, time spent (through cookies and similar technologies).",
+          "item3": "Commercial lead data: Information provided in B2B forms for companies and guilds interested in our solutions."
+        },
+        "apps": {
+          "title": "1.2 Through Mobile Applications",
+          "passenger": {
+            "title": "Passenger App:",
+            "item1": "Registration data: Name, phone, email (optional), profile photo (optional).",
+            "item2": "Location data: Real-time GPS location to request and track the trip.",
+            "item3": "Trip data: Origin, destination, route followed, duration, fare, assigned driver.",
+            "item4": "Payment data: Selected payment method (cash or digital). If using digital payment, card data is processed by third-party payment gateways and is not stored directly by ETAXI.",
+            "item5": "Device data: Model, operating system, unique identifiers (for push notifications and technical support)."
+          },
+          "driver": {
+            "title": "Driver App:",
+            "item1": "Personal data: Full name, RUT (Chilean tax ID), phone, email, photograph.",
+            "item2": "Professional data: Class A1 driver's license, municipal permits, background certificates.",
+            "item3": "Vehicle data: License plate, make, model, year, color, authorization documents.",
+            "item4": "Location data: Real-time GPS location when available to receive services.",
+            "item5": "Trip data: History of completed trips, ratings received, earnings generated."
+          }
+        }
+      },
+      "section2": {
+        "title": "2. How We Use Your Information",
+        "intro": "We use the collected information for:",
+        "purpose1": "Service operation: Connecting passengers with drivers, assigning trips, calculating routes and fares, processing payments.",
+        "purpose2": "Security and fraud prevention: Verifying driver identity, detecting suspicious behavior, ensuring regulatory compliance.",
+        "purpose3": "Customer support: Responding to inquiries, resolving complaints, providing technical assistance.",
+        "purpose4": "Service improvement: Analyzing usage patterns, aggregated statistics, optimizing assignment algorithms.",
+        "purpose5": "Communications: Sending service-related notifications, platform updates, commercial information (with your consent).",
+        "purpose6": "Legal compliance: Responding to requests from competent authorities when legally required."
+      },
+      "section3": {
+        "title": "3. Who We Share Your Information With",
+        "intro": "ETAXI may share your personal information with:",
+        "party1": {
+          "title": "Drivers and operators:",
+          "content": "Passengers share their name, origin/destination location and phone number with the assigned driver to facilitate the service. Drivers share their name, photo, vehicle and location with passengers."
+        },
+        "party2": {
+          "title": "Guilds, cooperatives and taxi centrals:",
+          "content": "If the driver belongs to an associated guild, they may access driver data and trip statistics for operational management."
+        },
+        "party3": {
+          "title": "Corporate clients (B2B):",
+          "content": "If you are an employee of a company that contracts ETAXI services, your company may access corporate trip information assigned to your account."
+        },
+        "party4": {
+          "title": "Technology service providers:",
+          "content": "Cloud servers (AWS, Google Cloud), mapping services (Google Maps), payment gateways, analytics tools (Google Analytics), email sending and push notification services."
+        },
+        "party5": {
+          "title": "Authorities and legal compliance:",
+          "content": "We may disclose information if required by law, court order, transport authority inspection or to protect the rights, safety and property of ETAXI and its users."
+        },
+        "noSale": "ETAXI does NOT sell or commercialize your personal information to third parties for advertising purposes."
+      },
+      "section4": {
+        "title": "4. Your Rights (ARCO Rights)",
+        "intro": "In accordance with Chilean personal data protection legislation, you have the right to:",
+        "right1": "Access: Request information about what personal data we hold about you.",
+        "right2": "Rectification: Correct inaccurate or incomplete data.",
+        "right3": "Cancellation: Request the deletion of your personal data when it is no longer necessary for the purposes for which it was collected.",
+        "right4": "Opposition: Object to the processing of your personal data in certain cases.",
+        "exercise": "To exercise these rights, you can send us an email at contacto@etaxichile.cl with your request. We will respond within a reasonable timeframe."
+      },
+      "section5": {
+        "title": "5. Information Security",
+        "content": "We implement technical and organizational measures to protect your personal information against unauthorized access, loss, alteration or disclosure. We use SSL/TLS encryption for data transmissions, secure authentication, access controls and security monitoring. However, no system is 100% secure. We also recommend you take precautions with your password and devices."
+      },
+      "section6": {
+        "title": "6. Data Retention",
+        "content": "We retain your personal information while your account is active or necessary to provide the service. Trip and transaction data may be retained for longer periods for legal, accounting and audit compliance (generally 5-7 years under Chilean regulations). Anonymized data may be retained indefinitely for statistical purposes."
+      },
+      "section7": {
+        "title": "7. Cookies and Similar Technologies",
+        "content": "We use cookies and similar technologies to improve user experience, remember preferences, analyze web traffic and show relevant content. For more information, see our Cookie Policy."
+      },
+      "section8": {
+        "title": "8. International Transfers",
+        "content": "Some of our technology service providers may be located outside Chile (e.g., cloud servers). In these cases, we ensure adequate protection measures exist through data processing contracts and standard transfer clauses."
+      },
+      "section9": {
+        "title": "9. Minors",
+        "content": "ETAXI is not directed at minors under 18 years of age. We do not intentionally collect personal information from minors without consent from their parents or guardians. If we discover that we have collected data from a minor without authorization, we will proceed to delete it."
+      },
+      "section10": {
+        "title": "10. Changes to This Policy",
+        "content": "We may update this Privacy Policy occasionally. The updated version will be published on our Site with the 'Last updated' date. We recommend reviewing this policy periodically."
+      },
+      "section11": {
+        "title": "11. Contact",
+        "content": "For privacy and data protection inquiries, contact us at:",
+        "email": "Email: contacto@etaxichile.cl",
+        "address": "Address: Santiago, Chile"
+      }
+    },
+    "cookies": {
+      "title": "Cookie Policy",
+      "lastUpdated": "Last updated: January 2025",
+      "intro": "This Cookie Policy explains what cookies are, how we use them on the website www.etaxi.cl, what types of cookies we use and how you can manage or disable them.",
+      "section1": {
+        "title": "1. What Are Cookies?",
+        "content": "Cookies are small text files stored on your device (computer, tablet, smartphone) when you visit a website. Cookies allow the website to recognize your device and remember information about your visit, such as your language preferences, settings and browsing activity."
+      },
+      "section2": {
+        "title": "2. What Do We Use Cookies For?",
+        "intro": "We use cookies for:",
+        "purpose1": "Site functionality: Remember your preferences (selected language, display settings).",
+        "purpose2": "Security: Detect and prevent fraudulent activities, protect your account.",
+        "purpose3": "Analysis and statistics: Understand how users interact with our site, what pages they visit, how long they stay. This helps us improve the user experience.",
+        "purpose4": "Performance: Measure site performance, identify technical issues and optimize loading speed."
+      },
+      "section3": {
+        "title": "3. Types of Cookies We Use",
+        "essential": {
+          "title": "3.1 Essential Cookies (Strictly Necessary)",
+          "content": "These cookies are essential for the website to function. They allow you to navigate the site and use basic features such as access to secure areas. Without these cookies, the site cannot function properly.",
+          "examples": "Examples: Session cookies, authentication cookies, security cookies."
+        },
+        "analytics": {
+          "title": "3.2 Analytics Cookies",
+          "content": "These cookies collect information about how visitors use the website (pages visited, time spent, links clicked). The information is aggregated and anonymous. We use these cookies to analyze web traffic and improve our site.",
+          "examples": "Examples: Google Analytics (if implemented), behavioral analysis cookies."
+        },
+        "functional": {
+          "title": "3.3 Functional Cookies",
+          "content": "These cookies allow the site to remember the choices you make (such as language, region or display preferences) and provide enhanced and more personalized features.",
+          "examples": "Examples: Language preference cookies, approximate location cookies."
+        },
+        "marketing": {
+          "title": "3.4 Marketing and Advertising Cookies (if applicable)",
+          "content": "These cookies are used to show ads relevant to the user and to measure the effectiveness of advertising campaigns. Currently, ETAXI does NOT use third-party marketing or advertising cookies. This section is included for future transparency.",
+          "note": "Note: If we implement advertising or remarketing in the future, we will update this policy and request your explicit consent where required by law."
+        }
+      },
+      "section4": {
+        "title": "4. Third-Party Cookies",
+        "content": "Some of our service providers (such as Google Analytics, Google Maps, payment gateways) may set cookies on your device when you visit our site. These third-party cookies are subject to those third parties' privacy policies. We recommend reviewing those policies.",
+        "examples": "Examples: Google Analytics, Google Maps, cloud service providers."
+      },
+      "section5": {
+        "title": "5. How to Manage and Disable Cookies",
+        "intro": "You can control and manage cookies in several ways:",
+        "browser": {
+          "title": "5.1 Browser Settings",
+          "content": "Most web browsers allow you to control cookies through their settings. You can configure your browser to reject cookies or to notify you when cookies are sent. However, if you disable cookies, some site features may not work properly.",
+          "links": "Links to cookie settings instructions:",
+          "chrome": "Google Chrome: Settings > Privacy and Security > Cookies",
+          "firefox": "Mozilla Firefox: Options > Privacy and Security > Cookies",
+          "safari": "Safari: Preferences > Privacy > Cookies",
+          "edge": "Microsoft Edge: Settings > Privacy, Search and Services > Cookies"
+        },
+        "optOut": {
+          "title": "5.2 Disable Analytics Cookies",
+          "content": "If you wish to disable Google Analytics specifically, you can install the Google Analytics opt-out add-on available at: https://tools.google.com/dlpage/gaoptout"
+        },
+        "consequences": {
+          "title": "5.3 Consequences of Disabling Cookies",
+          "content": "If you disable all cookies, you may not be able to use some website features, such as remembering your language preferences, keeping your session active or accessing personalized areas."
+        }
+      },
+      "section6": {
+        "title": "6. Cookie Duration",
+        "session": "Session cookies: Automatically deleted when you close your browser.",
+        "persistent": "Persistent cookies: Remain on your device for a specific period of time (days, months or years) or until you manually delete them.",
+        "duration": "The duration of our cookies varies depending on their purpose. Essential cookies are typically session-based, while analytics and functional cookies may be persistent (typically 6 months to 2 years)."
+      },
+      "section7": {
+        "title": "7. Updates to This Policy",
+        "content": "We may update this Cookie Policy occasionally to reflect changes in our practices or applicable legislation. The updated version will be published on our site with the 'Last updated' date."
+      },
+      "section8": {
+        "title": "8. Contact",
+        "content": "If you have questions about our Cookie Policy, you can contact us at:",
+        "email": "Email: contacto@etaxichile.cl",
+        "address": "Address: Santiago, Chile"
+      }
+    }
+  },
   "complianceRegulatoryPage": {
     "hero": {
       "badge": "B2B Regulatory Compliance",
@@ -1066,10 +1614,688 @@
       "ctaSecondary": "View Business Solution"
     }
   },
+  "airportPage": {
+    "hero": {
+      "badge": "SCL Santiago Airport",
+      "title1": "Safe and Reliable",
+      "titleHighlight": "Airport",
+      "title2": "Transfers",
+      "description": "Official ETAXI counter at Santiago International Airport. Modern, safe transport with preferential rates for tourists and travelers.",
+      "ctaApp": "Download App",
+      "ctaContact": "Contact Us",
+      "trust": {
+        "legal": "100% Legal",
+        "rating": "4.9 Stars",
+        "trips": "+50K Trips"
+      }
+    },
+    "heroCard": {
+      "title": "ETAXI Airport",
+      "subtitle": "Official Counter",
+      "locationLabel": "Location",
+      "locationValue": "Domestic and International Terminal",
+      "scheduleLabel": "Schedule",
+      "scheduleValue": "24 hours, 7 days",
+      "serviceApp": "App",
+      "serviceTotem": "Kiosk",
+      "serviceCounter": "Counter"
+    },
+    "stats": {
+      "trips": "Airport Trips",
+      "availability": "Availability",
+      "rating": "Rating",
+      "legal": "Legal and Safe"
+    },
+    "totemCounter": {
+      "badge": "Service Points",
+      "title": "Airport Experience",
+      "description": "Cutting-edge technology and human service for your comfort. Choose how to book your transfer.",
+      "totemScreen": {
+        "scanLabel": "Scan to book",
+        "requestButton": "REQUEST TAXI",
+        "ratesButton": "View Rates"
+      },
+      "totemFeatures": {
+        "qr": "Scan QR",
+        "touch": "Touch Screen",
+        "wifi": "Free WiFi",
+        "gps": "Built-in GPS"
+      },
+      "totemTitle": "Interactive Digital Kiosk",
+      "totemSubtitle": "24/7 self-service at the terminal",
+      "counterSign": "OFFICIAL ETAXI COUNTER",
+      "counterAgent": "ETAXI Staff",
+      "counterService": "In-Person Service",
+      "counterAvailable": "Available",
+      "counterFeatures": {
+        "personalized": "Personalized Service",
+        "languages": "Spanish & English",
+        "payment": "Multiple Payment",
+        "certified": "Certified Staff"
+      },
+      "counterWait": "Average wait time",
+      "counterTitle": "In-Person Counter",
+      "counterSubtitle": "Personalized attention from experts"
+    },
+    "services": {
+      "badge": "3 Ways to Book",
+      "title": "Choose How to Book",
+      "description": "Multiple service channels for your convenience. Avoid fraud and travel safely with ETAXI.",
+      "app": {
+        "title": "ETAXI App",
+        "description": "Book your transfer from your phone, before or after landing."
+      },
+      "totem": {
+        "title": "Interactive Kiosks",
+        "description": "Digital terminals at the airport to request your taxi quickly and safely."
+      },
+      "counter": {
+        "title": "In-Person Counter",
+        "description": "ETAXI staff at the airport for personalized service and fraud prevention."
+      }
+    },
+    "howItWorks": {
+      "badge": "Simple Process",
+      "title": "How Does It Work?",
+      "description": "4 simple steps for your safe transfer to or from the airport.",
+      "step1": {
+        "title": "Choose Your Method",
+        "description": "App, Kiosk or In-Person Counter - you decide how to book."
+      },
+      "step2": {
+        "title": "Confirm Your Trip",
+        "description": "Enter your destination and get a fixed price before departing."
+      },
+      "step3": {
+        "title": "Wait in Safe Zone",
+        "description": "We'll show you the exact spot where your driver is waiting."
+      },
+      "step4": {
+        "title": "Travel with Peace of Mind",
+        "description": "Enjoy a safe, comfortable transfer at the best price."
+      }
+    },
+    "benefits": {
+      "badge": "ETAXI Advantages",
+      "title": "Why Choose Us?",
+      "description": "ETAXI is the official and safe choice for airport transfers.",
+      "rates": {
+        "title": "Preferential Rates",
+        "description": "Special prices for airport transfers, no surprises or extra charges."
+      },
+      "safe": {
+        "title": "100% Safe",
+        "description": "Verified drivers and authorized vehicles. Your safety is our priority."
+      },
+      "available": {
+        "title": "Available 24/7",
+        "description": "Service 24 hours a day, 7 days a week. Any flight schedule."
+      },
+      "multilingual": {
+        "title": "Multilingual Service",
+        "description": "Staff trained to assist tourists in Spanish and English."
+      },
+      "fleet": {
+        "title": "Modern Fleet",
+        "description": "Comfortable vehicles with air conditioning and ample luggage space."
+      },
+      "support": {
+        "title": "On-Route Support",
+        "description": "Real-time GPS tracking and support throughout your trip."
+      }
+    },
+    "cta": {
+      "title": "Upcoming Flight?",
+      "description": "Book your transfer now and travel with peace of mind. No stress, no surprises, 100% safe.",
+      "button": "Download App Free",
+      "footer": "Find us at the Domestic and International Terminal at Santiago Airport"
+    }
+  },
+  "businessPage": {
+    "hero": {
+      "badge": "B2B and Guild Solutions",
+      "title": "Corporate Transport and Guild Solutions",
+      "subtitle": "Digitize your mobility operation with a 100% legal and certified platform that complies with Law 21.553. Complete traceability, centralized management and real-time reports.",
+      "ctaDemo": "Request Demo",
+      "ctaMeeting": "Schedule Meeting"
+    },
+    "enterprise": {
+      "title": "Solutions for Enterprises",
+      "subtitle": "Manage corporate transportation with full control, safety and regulatory compliance",
+      "benefit1": {
+        "title": "Regulated Corporate Transport",
+        "description": "Ensure all your company's transfers are made in 100% legal and authorized taxis. Comply with internal mobility policies and reduce legal risks."
+      },
+      "benefit2": {
+        "title": "Centralized Billing",
+        "description": "Receive a single consolidated monthly invoice with details of all trips. Simplify accounting and reduce administrative time."
+      },
+      "benefit3": {
+        "title": "Customized Cost Centers",
+        "description": "Assign each trip to specific projects, departments or cost centers. Full expense control by area of your organization."
+      },
+      "benefit4": {
+        "title": "Advanced Reports and Analytics",
+        "description": "Dashboard with real-time metrics: trips per user, expenses per cost center, peak hours, frequent routes and more. Make informed decisions."
+      },
+      "benefit5": {
+        "title": "Corporate Rate Control",
+        "description": "Fixed official rates without dynamic pricing. Budget with certainty and avoid surprises in mobility expenses."
+      },
+      "benefit6": {
+        "title": "Priority Service and Dedicated Support",
+        "description": "Preferential attention for your employees. Exclusive account manager and dedicated technical support for your company."
+      },
+      "benefit7": {
+        "title": "ERP and Systems Integration",
+        "description": "API to integrate ETAXI with your enterprise management system. Automate approvals, validations and data synchronization."
+      },
+      "benefit8": {
+        "title": "SLA and Service Guarantees",
+        "description": "Service level agreements with guaranteed response times. 24/7 availability for your critical operations."
+      }
+    },
+    "guild": {
+      "title": "Solutions for Guilds and Taxi Centrals",
+      "subtitle": "Modernize your fleet management while maintaining control and autonomy of your organization",
+      "intro": "ETAXI digitizes the operation of guilds and taxi centrals without altering their traditional structure. Maintain control of your organization while accessing world-class technology.",
+      "benefit1": {
+        "title": "Complete Fleet Management",
+        "description": "Control panel to manage drivers, vehicles, shifts and availability. Centralized registry of your authorized fleet with real-time status."
+      },
+      "benefit2": {
+        "title": "Automatic Trip Assignment",
+        "description": "Algorithm that distributes services among your drivers based on availability, location and shifts. Optimizes operations and maximizes earnings for everyone."
+      },
+      "benefit3": {
+        "title": "Real-Time Operator Panel",
+        "description": "Monitor your entire fleet on a live map. See which drivers are available, on a trip or off-duty. Full operational control."
+      },
+      "benefit4": {
+        "title": "GPS Traceability for Every Trip",
+        "description": "Complete record of each service: driver, passenger, route, times and fare. Ideal for municipal audits and permit renewals."
+      },
+      "benefit5": {
+        "title": "Guild Statistics and Reports",
+        "description": "Consolidated reports of trips, revenue, driver performance and trends. Make informed decisions for your guild."
+      },
+      "benefit6": {
+        "title": "Configurable Roles and Permissions",
+        "description": "Define permissions for board members, operators, supervisors and drivers. Each role with specific access based on your organizational structure."
+      },
+      "benefit7": {
+        "title": "Guild Rate Control",
+        "description": "Configure rates according to municipal regulations or guild agreements. Total transparency with no hidden charges or abusive commissions."
+      },
+      "benefit8": {
+        "title": "Full Guild Autonomy",
+        "description": "The guild maintains control over its members, internal policies and management. ETAXI only provides the technology without interfering in your organization."
+      }
+    },
+    "caseStudies": {
+      "title": "Success Stories",
+      "subtitle": "Companies and guilds that already trust ETAXI",
+      "case1": {
+        "company": "Northern Mining Company",
+        "industry": "Mining",
+        "employees": "500+",
+        "challenge": "Managing worker transfers during night shifts with full traceability for safety audits.",
+        "solution": "ETAXI implementation with corporate panel, trip assignment by shift and automatic compliance reports.",
+        "results": "30% reduction in transport costs. 100% traceability for audits. 95% worker satisfaction."
+      },
+      "case2": {
+        "company": "Central Taxi Guild",
+        "industry": "Taxi Guild",
+        "members": "120",
+        "challenge": "Competing with unregulated apps without losing guild identity. Needed modern technology while respecting traditional structure.",
+        "solution": "Complete digitization with operator panel, automatic assignment and guild statistics. Training for all members.",
+        "results": "+40% monthly trips. Full operational control. 95% active member retention."
+      },
+      "case3": {
+        "company": "National Retail Corporation",
+        "industry": "Retail",
+        "employees": "2,000+",
+        "challenge": "Replace taxi reimbursements with a centralized system with expense control and cost centers.",
+        "solution": "ETAXI integration with corporate ERP. Assignment by cost center and project. Consolidated monthly billing.",
+        "results": "50% reduction in administrative time. 25% savings in mobility costs. Full expense visibility."
+      }
+    },
+    "comparison": {
+      "title": "ETAXI vs Other Systems",
+      "subtitle": "Compare our B2B solution with market alternatives",
+      "feature1": {
+        "title": "Legal Compliance",
+        "etaxi": "100% legal. Only authorized taxis with Law 21.553 and DS 212",
+        "apps": "Unregulated vehicles. Risk of fines and inspections",
+        "traditional": "Legal but without traceability or digital control"
+      },
+      "feature2": {
+        "title": "Trip Traceability",
+        "etaxi": "Real-time GPS. Complete record of each trip for audits",
+        "apps": "Limited traceability. Driver can deviate",
+        "traditional": "No digital record. Only paper vouchers"
+      },
+      "feature3": {
+        "title": "Corporate Reports",
+        "etaxi": "Advanced dashboard. Reports by cost center, user and project",
+        "apps": "Basic reports. No integration with enterprise systems",
+        "traditional": "Manual Excel reports. High administrative effort"
+      },
+      "feature4": {
+        "title": "Rates and Costs",
+        "etaxi": "Fixed official rate. No dynamic pricing. Budgetable",
+        "apps": "Unpredictable dynamic rates. Surcharges during peak hours",
+        "traditional": "Official rate but no expense control"
+      },
+      "feature5": {
+        "title": "Enterprise Integration",
+        "etaxi": "API for ERP. Automatic data and cost center synchronization",
+        "apps": "Limited or nonexistent integration",
+        "traditional": "No digital integration"
+      },
+      "feature6": {
+        "title": "Billing",
+        "etaxi": "Consolidated monthly invoice. One document for accounting",
+        "apps": "Invoice per trip or receipts. High accounting effort",
+        "traditional": "Scattered invoices from multiple dispatchers. Hard to consolidate"
+      }
+    },
+    "enterpriseProcess": {
+      "title": "Implementation Process for Enterprises",
+      "subtitle": "From the first meeting to full operation in 5 steps",
+      "step1": {
+        "number": "1",
+        "title": "Initial Meeting and Demo",
+        "description": "Schedule a meeting with our sales team. We'll show you the platform in action, understand your needs and answer all your questions.",
+        "icon": "calendar"
+      },
+      "step2": {
+        "number": "2",
+        "title": "Requirements Analysis",
+        "description": "We analyze your current operation: users, frequent routes, cost centers, mobility policies and integration requirements. We design a custom solution.",
+        "icon": "fileText"
+      },
+      "step3": {
+        "number": "3",
+        "title": "Commercial Proposal and Contract",
+        "description": "We present a detailed technical and commercial proposal. We agree on rates, SLA, service conditions and sign the framework contract.",
+        "icon": "fileSignature"
+      },
+      "step4": {
+        "number": "4",
+        "title": "Setup and Training",
+        "description": "We configure your corporate account: users, cost centers, permissions, policies. We train your administrative team and end users.",
+        "icon": "settings"
+      },
+      "step5": {
+        "number": "5",
+        "title": "Operation and Continuous Support",
+        "description": "Your company starts operating with ETAXI. Dedicated account manager, 24/7 technical support, monthly reports and follow-up meetings.",
+        "icon": "checkCircle"
+      }
+    },
+    "guildProcess": {
+      "title": "Implementation Process for Guilds",
+      "subtitle": "Digitize your operation while maintaining guild control and autonomy",
+      "step1": {
+        "number": "1",
+        "title": "Contact and Presentation",
+        "description": "Meeting with the guild board. We explain how ETAXI works, respect your traditional structure and show success stories from other guilds.",
+        "icon": "users"
+      },
+      "step2": {
+        "number": "2",
+        "title": "Guild Operation Analysis",
+        "description": "We evaluate number of members, organizational structure, current assignment system, rates and specific guild needs.",
+        "icon": "clipboard"
+      },
+      "step3": {
+        "number": "3",
+        "title": "Guild Agreement and Conditions",
+        "description": "We negotiate commercial conditions with the board. We define commissions, assignment policies, rate control and guild autonomy.",
+        "icon": "handshake"
+      },
+      "step4": {
+        "number": "4",
+        "title": "Driver and Fleet Registration",
+        "description": "We validate documentation for each member (A1 license, permits, vehicle). We register drivers and taxis on the platform with all updated data.",
+        "icon": "fileCheck"
+      },
+      "step5": {
+        "number": "5",
+        "title": "Training for Members and Operators",
+        "description": "We train guild operators on the control panel and drivers on the app. In-person support during the first weeks of operation.",
+        "icon": "graduationCap"
+      },
+      "step6": {
+        "number": "6",
+        "title": "Digital Guild Operation",
+        "description": "The guild operates with modern technology while maintaining its autonomy. Operator panel to assign trips, guild statistics and continuous support.",
+        "icon": "activity"
+      }
+    },
+    "contactForm": {
+      "title": "Request Corporate Information",
+      "description": "Complete the form and our sales team will contact you to schedule a personalized demo.",
+      "typeLabel": "Organization type",
+      "typeEnterprise": "Enterprise / Corporation",
+      "typeGuild": "Guild / Taxi Central",
+      "typeMunicipality": "Municipality / Government",
+      "companyNameLabel": "Company/Guild name",
+      "companyNamePlaceholder": "E.g.: ABC Transport Ltd.",
+      "contactNameLabel": "Contact full name",
+      "contactNamePlaceholder": "Juan Perez Gonzalez",
+      "positionLabel": "Position",
+      "positionPlaceholder": "E.g.: Operations Manager",
+      "emailLabel": "Corporate email",
+      "emailPlaceholder": "contact@company.cl",
+      "phoneLabel": "Contact phone",
+      "phonePlaceholder": "+56 9 1234 5678",
+      "employeesLabel": "Number of employees/members",
+      "employeesPlaceholder": "E.g.: 100",
+      "cityLabel": "Main city of operation",
+      "cityPlaceholder": "Santiago, Valparaiso, Concepcion...",
+      "messageLabel": "Tell us about your needs",
+      "messagePlaceholder": "E.g.: We need to digitize our fleet management of 50 taxis...",
+      "submitButton": "Request Demo",
+      "sending": "Sending request...",
+      "success": "Request received. An executive will contact you within 24 hours.",
+      "error": "Error sending request. Please try again or write to us at contacto@etaxi.cl"
+    },
+    "cta": {
+      "title": "Ready to Digitize Your Operation?",
+      "subtitle": "Join the companies and guilds that already trust ETAXI to manage their regulated transport",
+      "demo": "Request Personalized Demo",
+      "meeting": "Schedule Meeting with Executive",
+      "phone": "Call Now: +56 9 6211 6017",
+      "trustBadge": "Over 50 companies and 20 guilds already operate with ETAXI"
+    },
+    "finalCTA": {
+      "enterprise": {
+        "title": "Are you an enterprise?",
+        "description": "Optimize your corporate transport with complete traceability and guaranteed compliance",
+        "button": "Schedule Enterprise Demo"
+      },
+      "guild": {
+        "title": "Do you represent a guild or taxi central?",
+        "description": "Modernize your operation without losing autonomy. Technology at the service of your guild",
+        "button": "Learn About Guild Solution"
+      }
+    },
+    "accordion": {
+      "badge": "All in One",
+      "title": "Complete Solution for Your Business",
+      "subtitle": "When you hire ETAXI for your company or guild, you receive a complete ecosystem of tools designed to digitize and optimize your transport operation.",
+      "ctaText": "Request Demo",
+      "included": "Included",
+      "items": {
+        "app": {
+          "title": "Mobile App",
+          "description": "iOS and Android app with real-time GPS tracking"
+        },
+        "fleet": {
+          "title": "Fleet Management",
+          "description": "Web dashboard to manage drivers, vehicles and shifts"
+        },
+        "monitoring": {
+          "title": "Monitoring Panel",
+          "description": "Live map with your entire fleet location 24/7"
+        },
+        "payment": {
+          "title": "Payment Gateway",
+          "description": "Integration with Webpay, Flow and credit cards"
+        },
+        "accounting": {
+          "title": "Accounting",
+          "description": "Electronic invoicing and automatic settlements"
+        }
+      }
+    }
+  },
+  "driverPage": {
+    "hero": {
+      "title": "Drive with the Platform that Respects Your Work",
+      "subtitle": "Join ETAXI and be part of the future of regulated taxis in Chile. More trips, better technology, always legal.",
+      "badge": "100% Legal and Regulated",
+      "cta1": "Register Now",
+      "cta2": "See Requirements"
+    },
+    "stats": {
+      "drivers": "1,000+",
+      "driversLabel": "Active drivers",
+      "trips": "50,000+",
+      "tripsLabel": "Monthly trips",
+      "rating": "4.8",
+      "ratingLabel": "Average rating",
+      "earnings": "$800K",
+      "earningsLabel": "Monthly average"
+    },
+    "benefits": {
+      "title": "Why Drive with ETAXI?",
+      "subtitle": "The platform designed for professional drivers",
+      "benefit1": {
+        "title": "Work 100% Legally",
+        "description": "No risk of fines or inspections. ETAXI complies with Law 21.553 and Decree 212. Your professional work is respected and valued."
+      },
+      "benefit2": {
+        "title": "No Abusive Commissions",
+        "description": "Fair and transparent commission. Coordinated with your guild or taxi central. No surprises, no unilateral changes."
+      },
+      "benefit3": {
+        "title": "More Trips, Better Technology",
+        "description": "Access passengers who value regulated taxis. Intuitive app with GPS, history and real-time statistics."
+      },
+      "benefit4": {
+        "title": "Dedicated 24/7 Support",
+        "description": "Technical team available when you need it. Initial training included. Active driver community."
+      },
+      "benefit5": {
+        "title": "Respect for Your Guild",
+        "description": "We work with cooperatives and taxi centrals. We don't compete with your organization, we strengthen it with technology."
+      },
+      "benefit6": {
+        "title": "Safety for You and Your Passengers",
+        "description": "Emergency button, complete traceability, mandatory insurance up to date. Protection on every trip."
+      }
+    },
+    "requirements": {
+      "title": "Requirements According to Chilean Regulations",
+      "subtitle": "To drive with ETAXI you must comply with current Ministry of Transport legislation",
+      "legal": {
+        "title": "Driver Requirements",
+        "req1": {
+          "title": "Professional License A1, A2 or A3",
+          "description": "Valid professional driver's license as required by Traffic Law (Law 18.290)"
+        },
+        "req2": {
+          "title": "Minimum Age 20 Years",
+          "description": "You must be at least 20 years old to operate as a taxi driver"
+        },
+        "req3": {
+          "title": "Professional Driving School Course",
+          "description": "Approved course from an authorized professional driving school"
+        },
+        "req4": {
+          "title": "Valid National ID",
+          "description": "Valid and current identity document"
+        },
+        "req5": {
+          "title": "Regional Residence",
+          "description": "You must reside in the region where you will operate as a driver"
+        }
+      },
+      "vehicle": {
+        "title": "Vehicle Requirements",
+        "req1": {
+          "title": "Minimum Engine Size 1.4 Liters",
+          "description": "Engine with minimum displacement of 1,400 cc (updated 2024)"
+        },
+        "req2": {
+          "title": "Maximum Age 3 Years",
+          "description": "The vehicle must not exceed 3 years of age at the time of initial registration"
+        },
+        "req3": {
+          "title": "4-Door Body",
+          "description": "Vehicle with 4-door body (basic and tourism taxis)"
+        },
+        "req4": {
+          "title": "Regulatory Paint",
+          "description": "Basic taxi: yellow roof and black body. Executive taxi: no special paint required"
+        },
+        "req5": {
+          "title": "Valid Technical Inspection",
+          "description": "Up-to-date Technical Inspection Certificate as required by the Ministry of Transport"
+        },
+        "req6": {
+          "title": "Vehicle Records Certificate",
+          "description": "Current Vehicle Records Certificate from the Motor Vehicle Registry"
+        }
+      },
+      "docs": {
+        "title": "Mandatory Documentation",
+        "req1": {
+          "title": "RNSTP Registration",
+          "description": "Ministry of Transport authorization registered in the National Registry of Passenger Transport Services (RNSTP)"
+        },
+        "req2": {
+          "title": "Taxi SOAP Insurance",
+          "description": "Mandatory Personal Accident Insurance (SOAP) for taxis, renewed annually"
+        },
+        "req3": {
+          "title": "Circulation Permit",
+          "description": "Valid circulation permit issued by the corresponding municipality"
+        },
+        "req4": {
+          "title": "Supplementary Insurance",
+          "description": "Supplementary insurance for remunerated passenger transport"
+        }
+      },
+      "optional": {
+        "title": "According to Work Mode",
+        "req1": "Membership in a guild, cooperative or transport company (if applicable)",
+        "req2": "Authorization from your taxi central or guild to operate with ETAXI",
+        "req3": "Up-to-date guild membership fees (if applicable)"
+      }
+    },
+    "onboarding": {
+      "title": "Onboarding Process",
+      "subtitle": "4 simple steps to start working with ETAXI",
+      "step1": {
+        "title": "Complete Registration",
+        "description": "Fill out the form with your personal and vehicle data. Takes only 5 minutes."
+      },
+      "step2": {
+        "title": "Document Validation",
+        "description": "Our team verifies your A1 license, municipal permits and vehicle documentation. Response within 24-48 hours."
+      },
+      "step3": {
+        "title": "Training and Setup",
+        "description": "We teach you how to use the driver app. We set up your profile and add you to your guild or taxi central on the platform."
+      },
+      "step4": {
+        "title": "Start Working!",
+        "description": "Download the app, activate your availability and start receiving trip requests. 24/7 support available."
+      }
+    },
+    "earnings": {
+      "title": "Earning Potential",
+      "subtitle": "Based on real data from active drivers in Santiago",
+      "fullTime": {
+        "title": "Full Time",
+        "hours": "40-45 hours/week",
+        "trips": "120-150 trips/month",
+        "earnings": "$700K - $1M",
+        "description": "Drivers who work full time with ETAXI"
+      },
+      "partTime": {
+        "title": "Part Time",
+        "hours": "20-25 hours/week",
+        "trips": "60-80 trips/month",
+        "earnings": "$350K - $500K",
+        "description": "Ideal to supplement other income"
+      },
+      "note": "* Estimated earnings. Vary by city, schedules and demand. Does not include operational costs (fuel, maintenance, etc.)"
+    },
+    "testimonials": {
+      "title": "What Our Drivers Say",
+      "testimonial1": {
+        "name": "Roberto Silva",
+        "experience": "15 years as a taxi driver",
+        "city": "Santiago",
+        "text": "After 15 years in this business, ETAXI is the best thing that's happened to regulated taxis. More trips, less idle time, and everything 100% legal."
+      },
+      "testimonial2": {
+        "name": "Maria Fernandez",
+        "experience": "8 years as a driver",
+        "city": "Vina del Mar",
+        "text": "The app is super easy to use and technical support always responds quickly. I feel supported and safe working with ETAXI."
+      },
+      "testimonial3": {
+        "name": "Carlos Munoz",
+        "experience": "3 years as a taxi driver",
+        "city": "Concepcion",
+        "text": "I started 6 months ago with ETAXI and it's already doubled my trips. Passengers value that we're legal and rate us well."
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "q1": {
+        "question": "How much commission does ETAXI charge?",
+        "answer": "The commission is coordinated directly with your guild or taxi central. It's transparent and fair, with no surprise changes. Contact us to learn the specific conditions for your area."
+      },
+      "q2": {
+        "question": "Do I need a smartphone?",
+        "answer": "Yes, you need an Android 6.0+ or iOS 13.0+ smartphone to use the driver app. It doesn't require a high-end phone, it works on basic devices."
+      },
+      "q3": {
+        "question": "Can I work with ETAXI and other platforms?",
+        "answer": "Yes, as long as your guild or taxi central authorizes it. ETAXI does not require exclusivity, but you must comply with your obligations as a professional driver."
+      },
+      "q4": {
+        "question": "What if I don't have a guild?",
+        "answer": "ETAXI primarily works with guilds, cooperatives and taxi centrals. If you're not affiliated, we can guide you on options in your municipality."
+      },
+      "q5": {
+        "question": "How do I receive trip payments?",
+        "answer": "The passenger pays the driver directly at the end of the trip (cash or methods you accept). ETAXI does not intermediate payments in this phase of the project."
+      },
+      "q6": {
+        "question": "Are there penalties for canceling a trip?",
+        "answer": "We understand that unexpected situations arise. There are no penalties for occasional cancellations, but frequent cancellations may affect your rating and trip assignments."
+      }
+    },
+    "cta": {
+      "title": "Ready to Join ETAXI?",
+      "subtitle": "Be part of the platform that is transforming regulated taxis in Chile",
+      "button": "Register as a Driver"
+    }
+  },
+  "driversPage": {
+    "joinForm": {
+      "title": "Join as a Driver",
+      "description": "Complete the form and we'll contact you to validate your documentation and onboard you to the platform.",
+      "fullNameLabel": "Full name",
+      "fullNamePlaceholder": "Juan Perez Gonzalez",
+      "phoneLabel": "Phone",
+      "phonePlaceholder": "+56 9 1234 5678",
+      "emailLabel": "Email",
+      "emailPlaceholder": "driver@example.cl",
+      "cityLabel": "City where you operate",
+      "cityPlaceholder": "Santiago",
+      "hasTaxiLabel": "Do you own a taxi?",
+      "notesLabel": "Additional information",
+      "notesPlaceholder": "E.g.: I belong to guild X, I have a valid A1 license...",
+      "submitButton": "Submit application",
+      "sending": "Sending...",
+      "success": "Application received. We'll contact you soon.",
+      "error": "Error sending application. Please try again."
+    }
+  },
   "footer": {
     "legal": {
       "terms": "Terms and Conditions",
       "privacy": "Privacy Policy",
+      "cookies": "Cookie Policy",
       "compliance": "Regulatory Compliance"
     },
     "support": {

@@ -4,7 +4,7 @@ import { m } from 'framer-motion';
 import { Star, Download, Smartphone, Apple, Play } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { PASSENGER_APP_URLS } from '@/lib/constants';
 
 // Phone mockup component
@@ -77,20 +77,20 @@ function PhoneMockup({
 
 export function AppPreview() {
     const locale = useLocale();
+    const t = useTranslations('appPreview');
 
-    // Screenshots - Cambiar estas rutas cuando tengas las imágenes reales
     const screenshots = [
         {
-            src: '/images/placeholders/Screenshot_20190428-185723_Etaxi Chile.webp', // Pantalla Home/Mapa
-            alt: 'Pantalla principal de ETAXI',
+            src: '/images/placeholders/Screenshot_20190428-185723_Etaxi Chile.webp',
+            alt: t('screenshots.home'),
         },
         {
-            src: '/images/placeholders/Screenshot_20190929-165858_Etaxi Chile.webp', // Pantalla Solicitar
-            alt: 'Solicitar taxi en ETAXI',
+            src: '/images/placeholders/Screenshot_20190929-165858_Etaxi Chile.webp',
+            alt: t('screenshots.request'),
         },
         {
-            src: '/images/placeholders/Screenshot_20190428-185735_Etaxi Chile.webp', // Pantalla Tracking
-            alt: 'Seguimiento GPS en ETAXI',
+            src: '/images/placeholders/Screenshot_20190428-185735_Etaxi Chile.webp',
+            alt: t('screenshots.tracking'),
         },
     ];
 
@@ -127,18 +127,18 @@ export function AppPreview() {
                         className="inline-flex items-center gap-2 px-4 py-2 bg-[#fff500]/20 border border-[#fff500]/30 rounded-full mb-6"
                     >
                         <Smartphone className="w-4 h-4 text-[#fff500]" />
-                        <span className="text-sm font-bold text-[#fff500]">Disponible Gratis</span>
+                        <span className="text-sm font-bold text-[#fff500]">{t('badge')}</span>
                     </m.div>
 
                     <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-                        Conoce la App{' '}
+                        {t('title')}{' '}
                         <span className="bg-gradient-to-r from-[#fff500] to-[#dd1828] bg-clip-text text-transparent">
                             ETAXI
                         </span>
                     </h2>
 
                     <p className="text-lg text-white/70 max-w-2xl mx-auto mb-6">
-                        Interfaz intuitiva, fácil de usar y diseñada para tu seguridad. Pide tu taxi en segundos.
+                        {t('description')}
                     </p>
 
                     {/* Rating badge */}
@@ -148,8 +148,8 @@ export function AppPreview() {
                                 <Star key={i} className="w-4 h-4 text-[#fff500] fill-[#fff500]" />
                             ))}
                         </div>
-                        <span className="text-white font-medium">4.8</span>
-                        <span className="text-white/60 text-sm">• +10,000 descargas</span>
+                        <span className="text-white font-medium">{t('rating')}</span>
+                        <span className="text-white/60 text-sm">• {t('downloads')}</span>
                     </div>
                 </m.div>
 
@@ -209,7 +209,7 @@ export function AppPreview() {
                     >
                         <Apple className="w-8 h-8 text-[#182b33]" />
                         <div className="text-left">
-                            <p className="text-[10px] text-gray-500 uppercase tracking-wide">Descargar en</p>
+                            <p className="text-[10px] text-gray-500 uppercase tracking-wide">{t('appStore')}</p>
                             <p className="text-lg font-bold text-[#182b33] -mt-1">App Store</p>
                         </div>
                     </m.a>
@@ -225,7 +225,7 @@ export function AppPreview() {
                     >
                         <Play className="w-8 h-8 text-[#182b33] fill-[#182b33]" />
                         <div className="text-left">
-                            <p className="text-[10px] text-gray-500 uppercase tracking-wide">Disponible en</p>
+                            <p className="text-[10px] text-gray-500 uppercase tracking-wide">{t('googlePlay')}</p>
                             <p className="text-lg font-bold text-[#182b33] -mt-1">Google Play</p>
                         </div>
                     </m.a>
@@ -240,10 +240,10 @@ export function AppPreview() {
                     className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12 max-w-3xl mx-auto"
                 >
                     {[
-                        'Reserva en segundos',
-                        'Pago seguro integrado',
-                        'Seguimiento en tiempo real',
-                        'Historial completo de viajes',
+                        t('features.booking'),
+                        t('features.payment'),
+                        t('features.tracking'),
+                        t('features.history'),
                     ].map((feature, index) => (
                         <m.div
                             key={index}

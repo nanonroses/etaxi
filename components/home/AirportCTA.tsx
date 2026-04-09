@@ -3,10 +3,11 @@
 import { m } from 'framer-motion';
 import { Plane, ArrowRight, Clock, Shield, MapPin } from 'lucide-react';
 import Link from 'next/link';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 
 export function AirportCTA() {
     const locale = useLocale();
+    const t = useTranslations('airportCta');
 
     return (
         <section className="w-full py-16 bg-gradient-to-br from-[#182b33] via-[#030c13] to-[#182b33] relative overflow-hidden">
@@ -59,27 +60,27 @@ export function AirportCTA() {
                             className="inline-flex items-center gap-2 px-4 py-2 bg-[#fff500]/20 rounded-full border border-[#fff500]/30 mb-6"
                         >
                             <Plane className="w-4 h-4 text-[#fff500]" />
-                            <span className="text-sm font-bold text-[#fff500]">Servicio Aeropuerto SCL</span>
+                            <span className="text-sm font-bold text-[#fff500]">{t('badge')}</span>
                         </m.div>
 
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
-                            ¿Llegas o Sales del{' '}
+                            {t('title')}{' '}
                             <span className="bg-gradient-to-r from-[#fff500] to-[#dd1828] bg-clip-text text-transparent">
-                                Aeropuerto
+                                {t('titleHighlight')}
                             </span>
                             ?
                         </h2>
 
                         <p className="text-lg text-white/80 mb-8 max-w-lg mx-auto lg:mx-0">
-                            Counter oficial ETAXI en el Aeropuerto de Santiago. Transporte seguro, tarifas preferenciales y atención 24/7 para turistas y viajeros.
+                            {t('description')}
                         </p>
 
                         {/* Features */}
                         <div className="flex flex-wrap justify-center lg:justify-start gap-4 mb-8">
                             {[
-                                { icon: Clock, text: '24/7' },
-                                { icon: Shield, text: '100% Seguro' },
-                                { icon: MapPin, text: 'Counter Oficial' },
+                                { icon: Clock, text: t('features.availability') },
+                                { icon: Shield, text: t('features.safe') },
+                                { icon: MapPin, text: t('features.counter') },
                             ].map((item, index) => (
                                 <m.div
                                     key={index}
@@ -105,7 +106,7 @@ export function AirportCTA() {
                                 className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-[#dd1828] to-[#ff4444] text-white font-bold text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 group"
                             >
                                 <Plane className="w-5 h-5" />
-                                Ver Servicio Aeropuerto
+                                {t('cta')}
                                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                             </Link>
                         </m.div>
@@ -136,7 +137,7 @@ export function AirportCTA() {
                                     </m.div>
                                     <div>
                                         <p className="text-[#fff500] text-xs font-bold uppercase tracking-wider">ETAXI</p>
-                                        <p className="text-white text-lg font-semibold">Aeropuerto SCL</p>
+                                        <p className="text-white text-lg font-semibold">{t('card.title')}</p>
                                     </div>
                                 </div>
 
@@ -145,24 +146,24 @@ export function AirportCTA() {
                                     <div className="bg-white/5 rounded-xl p-4 flex items-center gap-3">
                                         <MapPin className="w-5 h-5 text-[#fff500]" />
                                         <div>
-                                            <p className="text-white/50 text-xs">Terminal</p>
-                                            <p className="text-white font-medium text-sm">Nacional e Internacional</p>
+                                            <p className="text-white/50 text-xs">{t('card.terminalLabel')}</p>
+                                            <p className="text-white font-medium text-sm">{t('card.terminalValue')}</p>
                                         </div>
                                     </div>
 
                                     <div className="bg-white/5 rounded-xl p-4 flex items-center gap-3">
                                         <Clock className="w-5 h-5 text-[#fff500]" />
                                         <div>
-                                            <p className="text-white/50 text-xs">Horario</p>
-                                            <p className="text-white font-medium text-sm">24 horas, todos los días</p>
+                                            <p className="text-white/50 text-xs">{t('card.scheduleLabel')}</p>
+                                            <p className="text-white font-medium text-sm">{t('card.scheduleValue')}</p>
                                         </div>
                                     </div>
 
                                     <div className="bg-white/5 rounded-xl p-4 flex items-center gap-3">
                                         <Shield className="w-5 h-5 text-[#fff500]" />
                                         <div>
-                                            <p className="text-white/50 text-xs">Garantía</p>
-                                            <p className="text-white font-medium text-sm">Tarifa fija, sin sorpresas</p>
+                                            <p className="text-white/50 text-xs">{t('card.guaranteeLabel')}</p>
+                                            <p className="text-white font-medium text-sm">{t('card.guaranteeValue')}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -170,7 +171,7 @@ export function AirportCTA() {
                                 {/* Status indicator */}
                                 <div className="mt-6 flex items-center justify-center gap-2 py-3 bg-green-500/20 rounded-xl border border-green-500/30">
                                     <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-                                    <span className="text-green-400 text-sm font-medium">Counter Disponible</span>
+                                    <span className="text-green-400 text-sm font-medium">{t('card.status')}</span>
                                 </div>
                             </div>
                         </div>

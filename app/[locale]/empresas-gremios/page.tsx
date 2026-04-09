@@ -125,10 +125,19 @@ export default function EmpresasGremiosPage() {
 
           {/* Interactive Solutions Accordion */}
           <InteractiveImageAccordion
-            title="Solución Integral para tu Empresa"
-            subtitle="Cuando contratas ETAXI para tu empresa o gremio, recibes un ecosistema completo de herramientas diseñadas para digitalizar y optimizar tu operación de transporte."
-            ctaText="Solicitar Demo"
+            title={t('accordion.title')}
+            subtitle={t('accordion.subtitle')}
+            ctaText={t('accordion.ctaText')}
             ctaHref="#contact"
+            badgeText={t('accordion.badge')}
+            includedText={t('accordion.included')}
+            itemLabels={[
+              { title: t('accordion.items.app.title'), description: t('accordion.items.app.description') },
+              { title: t('accordion.items.fleet.title'), description: t('accordion.items.fleet.description') },
+              { title: t('accordion.items.monitoring.title'), description: t('accordion.items.monitoring.description') },
+              { title: t('accordion.items.payment.title'), description: t('accordion.items.payment.description') },
+              { title: t('accordion.items.accounting.title'), description: t('accordion.items.accounting.description') },
+            ]}
           />
         </section>
 

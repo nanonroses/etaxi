@@ -53,12 +53,13 @@ interface AccordionItemData {
 interface AccordionItemProps {
   item: AccordionItemData;
   isActive: boolean;
+  includedText: string;
   onMouseEnter: () => void;
   onClick: () => void;
 }
 
 // --- Accordion Item Component ---
-const AccordionItem = ({ item, isActive, onMouseEnter, onClick }: AccordionItemProps) => {
+const AccordionItem = ({ item, isActive, includedText, onMouseEnter, onClick }: AccordionItemProps) => {
   return (
     <div
       className={`
@@ -88,7 +89,7 @@ const AccordionItem = ({ item, isActive, onMouseEnter, onClick }: AccordionItemP
       {isActive && (
         <div className="absolute bottom-6 left-6 right-6 text-white">
           <span className="inline-block px-3 py-1 bg-[#dd1828] text-xs font-semibold rounded-full mb-2">
-            Incluido
+            {includedText}
           </span>
           <h3 className="text-xl md:text-2xl font-bold mb-1">{item.title}</h3>
           <p className="text-sm text-white/80">{item.description}</p>
@@ -130,12 +131,20 @@ const AccordionItem = ({ item, isActive, onMouseEnter, onClick }: AccordionItemP
   );
 };
 
+interface ItemLabel {
+  title: string;
+  description: string;
+}
+
 interface InteractiveImageAccordionProps {
   title?: string;
   subtitle?: string;
   ctaText?: string;
   ctaHref?: string;
+  badgeText?: string;
+  includedText?: string;
   items?: AccordionItemData[];
+  itemLabels?: ItemLabel[];
 }
 
 // --- Main Component ---
@@ -144,9 +153,17 @@ export function InteractiveImageAccordion({
   subtitle = "Cuando contratas ETAXI para tu empresa o gremio, recibes un ecosistema completo de herramientas diseñadas para digitalizar y optimizar tu operación de transporte.",
   ctaText = "Solicitar Demo",
   ctaHref = "#contact",
+  badgeText = "Todo en Uno",
+  includedText = "Incluido",
   items = accordionItems,
+  itemLabels,
 }: InteractiveImageAccordionProps) {
   const [activeIndex, setActiveIndex] = useState(0);
+
+  // Merge translated labels with default items if provided
+  const finalItems = itemLabels
+    ? items.map((item, i) => itemLabels[i] ? { ...item, title: itemLabels[i].title, description: itemLabels[i].description } : item)
+    : items;
 
   const handleItemHover = (index: number) => {
     setActiveIndex(index);
@@ -165,7 +182,7 @@ export function InteractiveImageAccordion({
           <div className="w-full lg:w-2/5 text-center lg:text-left">
             <div className="inline-block px-4 py-2 bg-[#dd1828]/20 rounded-full mb-4 border border-[#dd1828]/30">
               <p className="text-sm font-semibold text-[#fff500]">
-                Todo en Uno
+                {badgeText}
               </p>
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight tracking-tight">
@@ -185,7 +202,7 @@ export function InteractiveImageAccordion({
 
             {/* Feature list */}
             <div className="mt-8 grid grid-cols-1 gap-3">
-              {items.map((item, index) => {
+              {finalItems.map((item, index) => {
                 const IconComponent = item.icon;
                 return (
                   <button
@@ -232,11 +249,12 @@ export function InteractiveImageAccordion({
           <div className="w-full lg:w-3/5">
             {/* Desktop: Horizontal accordion */}
             <div className="hidden md:flex flex-row items-center justify-center gap-2 p-4">
-              {items.map((item, index) => (
+              {finalItems.map((item, index) => (
                 <AccordionItem
                   key={item.id}
                   item={item}
                   isActive={index === activeIndex}
+                  includedText={includedText}
                   onMouseEnter={() => handleItemHover(index)}
                   onClick={() => handleItemClick(index)}
                 />
@@ -247,17 +265,17 @@ export function InteractiveImageAccordion({
             <div className="md:hidden">
               <div className="relative h-[300px] rounded-2xl overflow-hidden">
                 <img
-                  src={items[activeIndex].imageUrl}
-                  alt={items[activeIndex].title}
+                  src={finalItems[activeIndex].imageUrl}
+                  alt={finalItems[activeIndex].title}
                   className="absolute inset-0 w-full h-full object-cover transition-all duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#030c13] via-[#030c13]/60 to-transparent"></div>
                 <div className="absolute bottom-6 left-6 right-6 text-white">
                   <span className="inline-block px-3 py-1 bg-[#dd1828] text-xs font-semibold rounded-full mb-2">
-                    Incluido
+                    {includedText}
                   </span>
-                  <h3 className="text-xl font-bold mb-1">{items[activeIndex].title}</h3>
-                  <p className="text-sm text-white/80">{items[activeIndex].description}</p>
+                  <h3 className="text-xl font-bold mb-1">{finalItems[activeIndex].title}</h3>
+                  <p className="text-sm text-white/80">{finalItems[activeIndex].description}</p>
                 </div>
               </div>
             </div>
